@@ -11,9 +11,12 @@ import dagger.Component;
 @Singleton
 @Component(modules = { UserModule.class, BackEndServiceModule.class })
 public interface MyComponent {
-	BackendService createBackendService();
+
+    // provide the dependency for dependent components
+    // (not needed for single-component setups)
+	BackendService provideBackendService();
 	
-	// allow to inject into BackendService
+	// allow to inject into our Main class
 	// method name not important
-	void injectIntoBackendService (BackendService service); #<1>
+	void inject(Main main); #<1>
 }

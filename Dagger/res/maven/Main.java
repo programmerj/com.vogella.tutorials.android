@@ -6,16 +6,27 @@ import com.vogella.java.dagger2.component.MyComponent;
 
 public class Main {
 
-	public static void main(String[] args) {
-		MyComponent component = DaggerMyComponent.builder().build();
-		BackendService createBackendService = component.createBackendService();
-		component.injectIntoBackendService(createBackendService);
-		boolean callServer = createBackendService.callServer();
-		if (callServer) {
-			System.out.println("Server call was successful. ");
-		} else {
-			System.out.println("Server call failed. ");
-		}
-	}
+    @Inject
+    BackendService backendService;
 
+    private MyComponent component;
+
+    private Main() {
+        component = DaggerMyComponent.builder().build();
+        component.inject(this);
+    }
+
+    private void callServer() {
+        boolean callServer = backendService.callServer();
+        if (callServer) {
+            System.out.println("Server call was successful. ");
+        } else {
+            System.out.println("Server call failed. ");
+        }
+    }
+
+	public static void main(String[] args) {
+        Main main = new Main();
+        main.callServer();
+	}
 }
