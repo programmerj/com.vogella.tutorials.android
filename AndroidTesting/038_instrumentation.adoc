@@ -85,7 +85,7 @@ The `index.html` gives an overview and links to the individual test pages.
 
 === How to replace the application for instrumentation tests
 
-You can replace the application class for the instrumentation tests by overriding the `AndroidJUnitRunner` and its `AndroidJUnitRunner` method.
+You can replace the application class for the instrumentation tests by overriding the `AndroidJUnitRunner` and its `newApplication` method.
 
 [source,java]
 ----
