@@ -10,7 +10,7 @@ public class BackendService {
 	private String serverUrl;
 	
 	@Inject
-	public BackendService(String serverUrl) {
+	public BackendService(@Named("serverUrl") String serverUrl) {
 		this.serverUrl = serverUrl;
 	}
 	
