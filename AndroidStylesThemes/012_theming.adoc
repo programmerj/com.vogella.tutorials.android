@@ -68,7 +68,7 @@ The following layout defines buttons with the Android 4.0 button style.
 include::res/styles/main.xml[]
 ----
 
-image::styling20.png[Screenshot of the running application with the menu open,pdfwidth=60%]
+image::styling20.png[Screenshot of the running application with the menu open]
 
 === Themes
 

@@ -14,7 +14,7 @@ menu:File[New Module]
 and select
 `Android Library`.
 		
-image::library_studio08.png[Selection for creating a library project,pdfwidth=60%]
+image::library_studio08.png[Selection for creating a library project]
 		
 Use
 _com.example.android.rssfeedlibrary_
@@ -22,12 +22,12 @@ as module name and
 _Rssfeed Library_
 as library name.
 		
-image::library_studio10.png[Setting the library property,pdfwidth=60%]
+image::library_studio10.png[Setting the library property]
 		
 If prompted for a template select that no activity should be created. 
 As a result Android Studio shows another module.
 		
-image::library_studio24.png[Setting the library property,pdfwidth=60%]
+image::library_studio24.png[Setting the library property]
 	
 === Create the model class
 		
@@ -71,11 +71,11 @@ tab and select
 `Module dependencies`
 via the + sign.
 		
-image::library_studio30.png[Define dependency in Android Studio - Selecting dependency,pdfwidth=60%]
+image::library_studio30.png[Define dependency in Android Studio - Selecting dependency]
 		
-image::library_studio40.png[Define dependency in Android Studio - Select module,pdfwidth=60%]
+image::library_studio40.png[Define dependency in Android Studio - Select module]
 
-image::library_studio50.png[Define dependency in Android Studio - Select module,pdfwidth=60%]
+image::library_studio50.png[Define dependency in Android Studio - Select module]
 
 === Use library project to update detailed fragments
 		

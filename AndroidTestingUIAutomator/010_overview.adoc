@@ -42,7 +42,7 @@ develop tests for it via the
 _uiautomator_
 library. It is depicted in the following screenshot.
 
-image::uiautomatorviewer10.png[uiautomatorviewer in usage,pdfwidth=60%]
+image::uiautomatorviewer10.png[uiautomatorviewer in usage]
 
 To launch the uiautomatorviewer tool, switch on the command line to the android-sdk/tools/ directory and start
 the tool via uiautomatorviewer.

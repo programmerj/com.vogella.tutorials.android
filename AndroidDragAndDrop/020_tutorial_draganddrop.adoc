@@ -62,5 +62,5 @@ you should be able to drag the
 `ImageViews`
 to another container.
 		
-image::draganddrop10.png[Drag and Drop Screenshot of the Application,pdfwidth=60%]
+image::draganddrop10.png[Drag and Drop Screenshot of the Application]
 

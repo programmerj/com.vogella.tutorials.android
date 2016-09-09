@@ -20,7 +20,7 @@ From this dialog the user can choose to stop the application.
 Android modifies the user interface and handles input events from one single thread, called the  _main thread_. 
 Android collects all events in this thread in a queue and processes this queue with an instance of the `Looper` class.
 		
-image::looper_messagequeue10.png[Message Queue in Android with Looper,pdfwidth=60%]
+image::looper_messagequeue10.png[Message Queue in Android with Looper]
 
 
 === Threading in Android

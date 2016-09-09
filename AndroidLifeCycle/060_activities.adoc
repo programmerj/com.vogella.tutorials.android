@@ -60,7 +60,7 @@ This method is guaranteed to be called as of API 11.
 The life cycle of an activity with its most important methods is
 displayed in the following diagram.
 		
-image::activity_lifecycle10.png[Activity life cycle,pdfwidth=60%]
+image::activity_lifecycle10.png[Activity life cycle]
 		
 Android has more life cycle methods but not all of these methods
 are

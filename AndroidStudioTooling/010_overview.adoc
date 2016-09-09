@@ -86,7 +86,7 @@ version is
 stable, the beta channel contains the stable version until the next version's beta.
 * Stable channel: Contains the most recent stable version of Android Studio.
 		
-image::as_updatesettings10.png[Update setttings,pdfwidth=60%]
+image::as_updatesettings10.png[Update setttings]
 		
 
 === Using a proxy with Android Studio

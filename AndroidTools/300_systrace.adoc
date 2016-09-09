@@ -9,9 +9,9 @@ type of events should be
 profiled, e.g.
 Graphics and View.
 	
-image::systrace10.png[Enable traces,pdfwidth=60%]
+image::systrace10.png[Enable traces]
 
-image::systrace20.png[Enable traces, select Graphics and View,pdfwidth=60%]
+image::systrace20.png[Enable traces, select Graphics and View]
 	
 To use systrace, open a terminal and run
 _systrace.py_
@@ -26,9 +26,9 @@ directly from Eclipse via the
 `DDMS`
 perspective.
 	
-image::systrace40.png[Systrace with ADT Part 1,pdfwidth=60%]
+image::systrace40.png[Systrace with ADT Part 1]
 
-image::systrace50.png[Systrace with ADT Part 2,pdfwidth=60%]
+image::systrace50.png[Systrace with ADT Part 2]
 	
 _Systrace_
 captures events for 5 seconds. As result

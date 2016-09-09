@@ -58,5 +58,5 @@ required. If an application is restarted by the user its gets moved to
 the end of this queue if it reaches the lowest prio again, as
 indicated by the following graphic.
 	
-image::process_termination10.png[LRU list for process determination,pdfwidth=60%]
+image::process_termination10.png[LRU list for process determination]
 

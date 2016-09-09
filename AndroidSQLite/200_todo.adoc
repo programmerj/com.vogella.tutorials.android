@@ -57,7 +57,7 @@ will use a
 		
 The resulting application will look similar to the following.
 		
-image::database1.png[Todo Example application OverviewActivity,pdfwidth=60%]
+image::database1.png[Todo Example application OverviewActivity]
 
 image::database2.png[Todo Example application DetailsActivity,pdfwidth=40%]
 	
@@ -335,7 +335,7 @@ An existing todo item can be deleted on the list via a
 long
 press.
 		
-image::todo2.png[Deleting an todo item,pdfwidth=60%]
+image::todo2.png[Deleting an todo item]
 		
 To change an existing todo item, touch the corresponding row. This
 starts the second

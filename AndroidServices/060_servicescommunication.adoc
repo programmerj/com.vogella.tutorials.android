@@ -41,7 +41,7 @@ signal to the activity that his processing has finished.
 
 This communication flow is depicted in the following graphic.
 
-image::service_receiver10.png[Broadcast receiver used for service to activity communication,pdfwidth=60%]
+image::service_receiver10.png[Broadcast receiver used for service to activity communication]
 
 TIP: Android provides the `LocalBroadcastManager`
 class in the support library v4. This is a helper class to register

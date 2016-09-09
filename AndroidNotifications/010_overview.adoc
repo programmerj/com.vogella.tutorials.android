@@ -19,7 +19,7 @@ and unset the
 `Show notifications`
 checkbox to prevent the app to show notifications.
 
-image::usercandisablenotifications10.png[Showing the Notification bar with the created notification,pdfwidth=60%]
+image::usercandisablenotifications10.png[Showing the Notification bar with the created notification]
 
 === Setting up Notifications
 
@@ -63,7 +63,7 @@ notification.
 include::res/snippets/configureNotifcation.txt[]
 ----
 
-image::notification10.png[Showing the Notification bar with the created notification,pdfwidth=60%]
+image::notification10.png[Showing the Notification bar with the created notification]
 
 Android 4.1 supports expandable notifications. In addition to
 normal
@@ -85,7 +85,7 @@ dp.
 include::res/snippets/bigStyle.java[]
 ----
 
-image::notification20.png[Showing the Notification bar with the created notification,pdfwidth=60%]
+image::notification20.png[Showing the Notification bar with the created notification]
 
 === Canceling Notifications
 

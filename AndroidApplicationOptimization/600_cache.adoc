@@ -42,7 +42,7 @@ depicted in the
 following
 graphic.
 		
-image::lrucache10.png[LRU cache in general,pdfwidth=60%]
+image::lrucache10.png[LRU cache in general]
 		
 The following example code demonstrates a possible implementation of the `LruCache` class for caching images.
 		

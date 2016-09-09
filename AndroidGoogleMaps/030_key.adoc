@@ -58,12 +58,12 @@ https://code.google.com/apis/console/[ Google APIs Console]
 `Services`
 entry.
 		
-image::apiconsole10.png[Google APIs Console,pdfwidth=60%]
+image::apiconsole10.png[Google APIs Console]
 		
 Activate the
 `Google Maps Android API v2`.
 		
-image::apiconsole20.png[Google APIs Console,pdfwidth=60%]
+image::apiconsole20.png[Google APIs Console]
 		
 === Create key for your application
 		
@@ -77,14 +77,14 @@ entry. Afterwards click on the
 _Create new Android key..._
 entry.
 		
-image::apiconsole30.png[Google APIs Console,pdfwidth=60%]
+image::apiconsole30.png[Google APIs Console]
 		
 Enter your SHA-1 fingerprint and the package of your application
 separated by a semicolon. For example you can use the
 `com.vogella.android.locationapi.maps`
 package.
 		
-image::apiconsole40.png[Google APIs Console,pdfwidth=60%]
+image::apiconsole40.png[Google APIs Console]
 		
 The procedure is described in detail in the following link:
 https://developers.google.com/maps/documentation/android/start#installing_the_google_maps_android_v2_api - Getting a Google Maps key.

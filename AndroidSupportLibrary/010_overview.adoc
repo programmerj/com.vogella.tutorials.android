@@ -96,7 +96,7 @@ include::res/compat/MainActivity.java[]
 Also ensures that only standard elements are using the generated layout file. The following is an example
 listing for a simple standard layout file.
 		
-image::firstlayoutconversion10.png[Changing the styles file,pdfwidth=60%]
+image::firstlayoutconversion10.png[Changing the styles file]
 		
 [source,xml]
 ----

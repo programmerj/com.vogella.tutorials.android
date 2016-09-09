@@ -17,7 +17,7 @@ See https://developer.android.com/training/material/compatibility.html - Maintai
 As of material design you can customize the themes base colors.
 The following screenshot shows several of these colors.
 		
-image::materialcolorpalette10.png[Customize the Color Palette,pdfwidth=60%]
+image::materialcolorpalette10.png[Customize the Color Palette]
 		
 The following listing is an example of styling it with different
 colors (defined in your /res/values folder).

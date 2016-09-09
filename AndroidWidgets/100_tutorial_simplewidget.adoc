@@ -14,7 +14,7 @@ so that the widgets updates once the user clicks on it.
 The resulting
 widget will look like the following.
 		
-image::random10.png[Screenshot of the final Widget of this tutorial,pdfwidth=60%]
+image::random10.png[Screenshot of the final Widget of this tutorial]
 
 === Create project and widget implementation
 		
@@ -53,7 +53,7 @@ _widget_info.xml_
 via right click on the res folder and by selecting
 menu:New[Android resource file].
 		
-image::widgetinfo10.png[Creating the widget provider 1,pdfwidth=60%]
+image::widgetinfo10.png[Creating the widget provider 1]
 		
 [source,xml]
 ----
@@ -94,8 +94,8 @@ launcher to
 install your
 new widget on the home screen and test it.
 		
-image::widgetinstall10.png[Installing the widget part 1,pdfwidth=60%]
+image::widgetinstall10.png[Installing the widget part 1]
 		
-image::widgetinstall20.png[Installing the widget part 2,pdfwidth=60%]
+image::widgetinstall20.png[Installing the widget part 2]
 		
 	

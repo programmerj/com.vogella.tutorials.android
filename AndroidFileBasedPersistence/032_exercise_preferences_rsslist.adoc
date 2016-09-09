@@ -81,5 +81,5 @@ value in the preference screen.
 include::res/preferences/SettingsActivity2.java[]
 ----
 
-image::rsspreferencewithvalue10.png[Showing the current value in the preferences,pdfwidth=60%]
+image::rsspreferencewithvalue10.png[Showing the current value in the preferences]
 

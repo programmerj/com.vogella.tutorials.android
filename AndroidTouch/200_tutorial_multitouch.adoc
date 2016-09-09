@@ -40,5 +40,5 @@ pointers are supported, test out how many simultaneous pointers your
 device supports. This application should look similar to the following
 screenshot.
 	
-image::multitouch_exercise10.png[Multitouch exercise,pdfwidth=60%]
+image::multitouch_exercise10.png[Multitouch exercise]
 	

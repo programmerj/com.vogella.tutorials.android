@@ -19,11 +19,11 @@ view
 you can select the process for which you want to analyze the view
 hierarchy.
 	
-image::hierarchyviewer10.png[Hierarchy Viewer for selecting the process,pdfwidth=60%]
+image::hierarchyviewer10.png[Hierarchy Viewer for selecting the process]
 
 The currently active layout is analyzed and displayed. 
 
-image::hierarchyviewer20.png[Hierarchy Viewer,pdfwidth=60%]
+image::hierarchyviewer20.png[Hierarchy Viewer]
 	
 The
 `Tree View`

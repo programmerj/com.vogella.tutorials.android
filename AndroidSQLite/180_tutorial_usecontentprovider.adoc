@@ -17,15 +17,15 @@ menu and then the
 entry to
 create contacts.
 		
-image::contact10.png[Selecting the "Contacts" application from the application choicer,pdfwidth=60%]
+image::contact10.png[Selecting the "Contacts" application from the application choicer]
 		
 The app will ask you if you want to login. Either login or
 select "Not now". Press ""Create a new contact". You can create local
 contacts.
 		
-image::contact20.png[Create a new contact,pdfwidth=60%]
+image::contact20.png[Create a new contact]
 
-image::contact30.png[Details for a maintained contact,pdfwidth=60%]
+image::contact30.png[Details for a maintained contact]
 		
 Finish adding your first contact. Afterwards the app allows you
 to add more contacts via the + button. As a result you should have a

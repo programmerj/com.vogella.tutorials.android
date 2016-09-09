@@ -144,7 +144,7 @@ and a
 . The following graphic shows a list with different layouts for odd
 and even rows.
 		
-image::adapter10.png[Adapter provides data and defines the layout per row,pdfwidth=60%]
+image::adapter10.png[Adapter provides data and defines the layout per row]
 		
 		
 Within the

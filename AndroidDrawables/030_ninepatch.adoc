@@ -10,7 +10,7 @@ _Drawable_
 is to small for the
 view. This is the stretch area.
 
-image::9patchdrawable10.png[Defining the 9 patch Drawable stretch area,pdfwidth=60%]
+image::9patchdrawable10.png[Defining the 9 patch Drawable stretch area]
 	
 On the right and bottom side you define the area where a text should
 be

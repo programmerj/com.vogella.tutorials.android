@@ -11,7 +11,7 @@ custom views and your
 activities. Android supports multiple pointers,
 e.g. fingers which are interacting with the screen.
 		
-image::androidtouch10.png[Android touch,pdfwidth=60%]
+image::androidtouch10.png[Android touch]
 		
 The base class for touch support is the
 `MotionEvent`

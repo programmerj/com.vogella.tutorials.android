@@ -63,5 +63,5 @@ alarm. After the defined number of seconds a _Toast_ should be
 displayed. Keep in mind that the vibration alarm does not work on the
 Android emulator.
 		
-image::receive10.png[Alarm application running,pdfwidth=60%]
+image::receive10.png[Alarm application running]
 		

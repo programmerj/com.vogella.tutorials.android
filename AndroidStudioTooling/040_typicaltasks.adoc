@@ -19,13 +19,13 @@ The easiest way to create a new resource file, e.g., a layout file, is the conte
 To create a new folder, see <<androidstudio_creatingresourcefolder>>.
 This is demonstrates for the creation of a new layout file in the following screenshot.
 
-image::as_createlayoutfile10.png[Creating a new layout file,pdfwidth=60%]
+image::as_createlayoutfile10.png[Creating a new layout file]
 		
-image::as_createlayoutfile20.png[Creating a new layout file selection dialog,pdfwidth=60%]
+image::as_createlayoutfile20.png[Creating a new layout file selection dialog]
 		
 NOTE: If you want to create a new layout file for a certain qualifier, you can select it in the creation dialog.
 
-image::as_createlayoutfile30.png[Creating a new layout file for portait,pdfwidth=60%]
+image::as_createlayoutfile30.png[Creating a new layout file for portait]
 	
 [[androidstudio_creatingresourcefile]]
 === Creating a new resource file
@@ -38,9 +38,9 @@ Similar to the above described creation of layout file, you can create other res
 If a resource folder is missing, you have to create it. 
 This is demonstrated by the following screenshots for the creation of the _layout-port_folder.
 		
-image::layoutportaitmode10.png[Create resource folder for port layout first step,pdfwidth=60%]
+image::layoutportaitmode10.png[Create resource folder for port layout first step]
 		
-image::layoutportaitmode20.png[Create resource folder for port layout second step,pdfwidth=60%]
+image::layoutportaitmode20.png[Create resource folder for port layout second step]
 
 [[androidstudio_workingonlayoutfiles]]
 === Working on layout files
@@ -75,9 +75,9 @@ Double-click on the value in this case to see the placeholder value.
 From the menu of Android Studio, select menu:File[New>Vector Assert] to create a new vector drawable.
 The creation process is demonstrated for the _ic_tethering_ icon.
 		
-image::vector_assets10.png[Using Vector assets step 20,pdfwidth=60%]
+image::vector_assets10.png[Using Vector assets step 20]
 		
-image::vector_assets20.png[Using Vector assets step 10,pdfwidth=60%]
+image::vector_assets20.png[Using Vector assets step 10]
 		
 
 [[androidstudio_createmenu]]
@@ -85,28 +85,28 @@ image::vector_assets20.png[Using Vector assets step 10,pdfwidth=60%]
 		
 If not yet present, create a new directory called _menu_.
 
-image::menu_resources10.png[Create menu directory,pdfwidth=60%]
+image::menu_resources10.png[Create menu directory]
 		
 Create a new XML resource called _mainmenu.xml_ for your menu.
 
-image::menu_resources20.png[Create new menu resources,pdfwidth=60%]
+image::menu_resources20.png[Create new menu resources]
 		
 Afterwards you can manually edit the generated file via the _Text_ tab or use the _Design_ tab to edit it via drag and drag.
 
-image::menu_resources30.png[Create new menu resources,pdfwidth=60%]
+image::menu_resources30.png[Create new menu resources]
 
 
 === Create preference file
 
 If you project does not have an _/app/res/xml_ folder create one.
 
-image::preferences_createxmlfolder10.png[Creating a xml folder,pdfwidth=60%]
+image::preferences_createxmlfolder10.png[Creating a xml folder]
 
-image::preferences_createxmlfolder20.png[Creating a xml folder,pdfwidth=60%]
+image::preferences_createxmlfolder20.png[Creating a xml folder]
 
 You can now create an Android XML resource in the xml folder.
 
-image::preferences_createxmlfolder30.png[Creating a preference resource file,pdfwidth=60%]
+image::preferences_createxmlfolder30.png[Creating a preference resource file]
 
 image::preferences_createxmlfolder40.png[Creating a preference resource file,pdfwidth=40%]
 

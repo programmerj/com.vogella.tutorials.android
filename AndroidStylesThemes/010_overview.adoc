@@ -57,7 +57,7 @@ application with a
 nice device frame around it. 
 Simply make a screenshot on your device and drag it onto the correct device to get a nice image for it.
 
-image::deviceart10.png[Device art,pdfwidth=60%,width=40%]
+image::deviceart10.png[Device art,width=40%]
 ====
 
 
@@ -69,7 +69,7 @@ second or even third fragment might be visible.
 
 This approach is depicted by the following graphic.
 
-image::responsivedesign10.png[Responsive design,pdfwidth=60%]
+image::responsivedesign10.png[Responsive design]
 
 It is recommended not to use the full screen width for text in case you are beyond a certain width on a device.
 This border is typically above `w1000dp`.
