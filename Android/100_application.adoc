@@ -60,9 +60,9 @@ The following picture shows an activity called _MainActivity_.
 On a smaller screen it shows only one fragment and allows the user to navigate to another fragment. 
 On a wide screen it shows those two fragments immediately.
 
-image::fragmentsusage10.png[Shows only one Fragment at a time, pdfwidth=60%]
+image::fragmentsusage10.png[Shows only one Fragment at a time]
 
-image::fragmentsusage20.png[Two Fragments side by side, pdfwidth=60%]
+image::fragmentsusage20.png[Two Fragments side by side]
 
 _Views_ are user interface widgets, e.g., buttons or text fields. 
 Views have attributes which can be used to configure their appearance and behavior.

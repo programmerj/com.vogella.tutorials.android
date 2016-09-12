@@ -9,7 +9,7 @@ In this exercise you create an Android project and start it on an Android virtua
 Press the _Start a new Android Studio project_ link to get started. 
 Alternatively you can select the menu:File[New Project...] entry from the menu, if you already created a project earlier.
 		
-image::as_first10.png[Creating a new Android Studio project, pdfwidth=60%]
+image::as_first10.png[Creating a new Android Studio project]
 
 Use the following data of input for your project. 
 Project location and package name are derived from your input. 
@@ -36,31 +36,31 @@ If you want another package name, press the small _Edit_ hyperlink.
 |===
 
 
-image::as_first20.png[Creating a new Android Studio project, pdfwidth=60%]
+image::as_first20.png[Creating a new Android Studio project]
 		
 
-image::as_first30.png[Creating a new Android Studio project, pdfwidth=60%]
+image::as_first30.png[Creating a new Android Studio project]
 		
 Android Studio automatically downloads the required Android SDK, if that has not already been done. 
 Depending on your installation, the next dialog might not be displayed.
 		
-image::as_first40.png[Creating a new Android Studio project, pdfwidth=60%]
+image::as_first40.png[Creating a new Android Studio project]
 		
 
 Afterwards select the _Empty Activity_ template.
 
-image::as_first50.png[Creating a new Android Studio project, pdfwidth=60%]
+image::as_first50.png[Creating a new Android Studio project]
 		
 On the last page, ensure that "Backwards Compability is not selected.
 
-image::as_first60.png[Creating a new Android Studio project, pdfwidth=60%]
+image::as_first60.png[Creating a new Android Studio project]
 		
 
 === Review the generated project
 The wizard generates now an Android project. 
 Review the generated project structure and files.
 
-image::as_first70.png[pdfwidth=60%]
+image::as_first70.png[]
 
 NOTE: The _Android_ view does not show the real file structure. It shows a logical view of the application.
 
@@ -71,19 +71,19 @@ Define a new Android Virtual Device (AVD) by opening the _AVD Manager_ via menu:
 Afterwards press the _Create Virtual Device..._ button.
 		
 		
-image::androidstudio_create_avd10.png[Create a new AVD, pdfwidth=60%]
+image::androidstudio_create_avd10.png[Create a new AVD]
 
 Select values similar to the following screenshots.
 
 		
-image::androidstudio_create_avd20.png[Settings for a new AVD, pdfwidth=60%]
+image::androidstudio_create_avd20.png[Settings for a new AVD]
 		
 On the next screen select the latest API level for your AVD. 
 You may need to select the option for additional images as highlighted in the following screenshot.
 
-image::androidstudio_create_avd30.png[Settings for a new AVD, pdfwidth=60%]
+image::androidstudio_create_avd30.png[Settings for a new AVD]
 
-image::androidstudio_create_avd40.png[Settings for a new AVD, pdfwidth=60%]
+image::androidstudio_create_avd40.png[Settings for a new AVD]
 		
 		
 Afterwards press the _Finish_ button. 
@@ -93,7 +93,7 @@ This will create the AVD configuration and display it under the list of availabl
 		
 Select your new entry and press the _Play_ button.
 
-image::androidstudio_create_avd50.png[Settings for a new AVD, pdfwidth=60%]
+image::androidstudio_create_avd50.png[Settings for a new AVD]
 
 === Start the application on your virtual device
 		
@@ -101,9 +101,9 @@ Select menu:Run[Run 'app'] to start your application.
 This opens a dialog in which you can select your device to deploy your application to.
 		
 		
-image::androidstudio_create_avd60.png[Settings for a new AVD, pdfwidth=60%]
+image::androidstudio_create_avd60.png[Settings for a new AVD]
 		
 After a while your application should start on the virtual device.
 
-image::androidstudio_create_avd70.png[Settings for a new AVD, pdfwidth=60%]
+image::androidstudio_create_avd70.png[Settings for a new AVD]
 		

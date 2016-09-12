@@ -108,5 +108,5 @@ and send new geo coordinates to your
 _activity_
 via the Emulator.
 		
-image::map30.gif[pdfwidth=60%]
+image::map30.gif[]
 

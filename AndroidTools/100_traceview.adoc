@@ -33,7 +33,7 @@ select the
 _Start Method Profiling_
 button as depicted in the following screenshot.
 		
-image::traceview10.png[pdfwidth=60%]		
+image::traceview10.png[]		
 		
 Use your application and re-press the same button to stop
 profiling.
@@ -41,9 +41,9 @@ This will open a new editor which shows you
 the tracing
 results.
 		
-image::traceview20.png[pdfwidth=60%]		
+image::traceview20.png[]		
 		
-image::traceview20.png[pdfwidth=60%]
+image::traceview20.png[]
 		
 You can zoom into the graphic to get more details. To zoom out,
 double-click on the time line.

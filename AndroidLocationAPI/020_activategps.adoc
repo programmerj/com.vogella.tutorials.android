@@ -34,7 +34,7 @@ menu:Window[Open Perspective > Other... > DDMS].
 In the Emulator Control part you can enter the geocoordinates
 and press the _Send_ button.
 		
-image::gpsfix20.png[pdfwidth=60%,width=60%]
+image::gpsfix20.png[]
 		
 You can also set the geoposition the Android emulator via
 telnet.

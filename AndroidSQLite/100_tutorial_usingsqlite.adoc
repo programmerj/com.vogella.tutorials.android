@@ -17,7 +17,7 @@ have to deal with the persistence layer.
 
 The resulting application will look like the following.
 
-image::dbexample10.png[pdfwidth=60%]
+image::dbexample10.png[]
 
 Using a DAO is not always the right approach. A DAO
 creates

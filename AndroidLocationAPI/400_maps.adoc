@@ -194,5 +194,5 @@ Google API's in the
 version of your
 SDK.
 
-image::location04.gif[pdfwidth=60%,width=60%]
+image::location04.gif[,width=60%]
 

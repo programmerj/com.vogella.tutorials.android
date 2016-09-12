@@ -47,9 +47,9 @@ include::res/filter/StartBrowser.java[]
 		
 If you select your component, the HTML code is loaded and displayed into your `TextView`.
 		
-image::browserfilter10.png[pdfwidth=60%]
+image::browserfilter10.png[]
 		
-image::browserfilter20.png[pdfwidth=60%]
+image::browserfilter20.png[]
 
 === Optional: Make it a real browser
 

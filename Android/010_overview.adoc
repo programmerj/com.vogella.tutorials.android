@@ -9,7 +9,7 @@ The project responsible for developing the Android system is called the _Android
 This Android operating system can be divided into the four areas as depicted in the following graphic. 
 An Android application developer typically works with the two layers on top to create new Android applications.
 		
-image::androidsoftwarelayer10.png[Android software layers, pdfwidth=60%]
+image::androidsoftwarelayer10.png[Android software layers]
 
 The levels can be described as:
 		
@@ -78,11 +78,11 @@ At the time of this writing the Eclipse Gradle tooling does not support Android 
 
 Please register for https://bugs.eclipse.org/bugs/show_bug.cgi?id=468315 to get this fixed in Eclipse.
 
-image::EclipseGradleAndroidSupport.png[Vote for Grade support in Eclipse, pdfwidth=60%]
+image::EclipseGradleAndroidSupport.png[Vote for Grade support in Eclipse]
 
 In addition you can try to convince Google to support Eclipse. Please go to https://code.google.com/p/android/issues/detail?id=81451 and press the star sign.
 	
-image::eclipsegradlesupportbug.png[Vote for Eclipse support by Google, pdfwidth=60%]
+image::eclipsegradlesupportbug.png[Vote for Eclipse support by Google]
 	
 ****
 		

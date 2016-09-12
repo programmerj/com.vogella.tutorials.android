@@ -17,7 +17,7 @@ instead of the
 _ActionBar_
 and the theme is different.
 		
-image::AndroidTodoQRCode.png[pdfwidth=60%]
+image::AndroidTodoQRCode.png[]
 		
 We will create a "To-do" application which
 allows

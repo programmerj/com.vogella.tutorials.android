@@ -4,7 +4,7 @@ the activity "GestureTest". Create a few gestures and copy them to
 your application as described in the
 last chapter.    
 
-image::gesture10.png[pdfwidth=60%]
+image::gesture10.png[]
 
 Unfortunately the UI builder does not support GestureOverlayView,
 please see
@@ -29,5 +29,5 @@ include::res/gestures/GestureTest.java[]
 Start your application. As a result you should be able to perform gestures and see the
 result. We only show a Toast but of course you could perform all kind of actions.  
 
-image::gesture20.png[pdfwidth=60%]
+image::gesture20.png[]
 

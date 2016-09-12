@@ -9,7 +9,7 @@ The Android SDK Manager allows you to install and delete Android packages for a 
 		
 Select menu:Tools[Android>SDK Manager] or the _SDK Manager_ icon in the toolbar of Android Studio to open the Android SDK manager.
 
-image::androidsdkmanager_androidstudio10.png[Android SDK manager in Android Studio,, pdfwidth=60%]
+image::androidsdkmanager_androidstudio10.png[Android SDK manager in Android Studio,]
 		
 [[androidapiversion_installtationoftools]]
 === Install selected Android version or library
@@ -17,7 +17,7 @@ image::androidsdkmanager_androidstudio10.png[Android SDK manager in Android Stud
 In the Android SDK manager select the version of desired Android version the tree and press the _Install_ button. 
 The following screenshot shows the selection for the _API 18_ version of Android.
 		
-image::androidstudiosdkmanager10.png[Install Android API, pdfwidth=60%]
+image::androidstudiosdkmanager10.png[Install Android API]
 		
 Press the _OK_ button to start he installation.
 		
