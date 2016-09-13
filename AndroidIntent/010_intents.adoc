@@ -54,7 +54,7 @@ Android supports explicit and implicit intents.
 An application can define the target component directly in the intent (_explicit intent_) or ask the Android system to evaluate registered components based on the intent data(_implicit intents_).
 		
 Explicit intents explicitly define the component which should be called by the Android system, by using the Java class as identifier.
-Explicit intents are typically used within on application as the classes in an application are controlled by the application developer.
+Explicit intents are typically used within an application as the classes in an application are controlled by the application developer.
 The following shows how to create an explicit intent and send it to the Android system to start an activity.
 
 		
