@@ -4,7 +4,7 @@
 :experimental:
 :icons:
 :imagesdir: ./img
-(c) 2009, 2016 vogella GmbH
+Lars Vogel (c) 2009, 2016 vogella GmbH
 Version 2.10, 28.06.2016
 :docinfodir: ../
 :vgwort: AndroidAnimation
