@@ -46,7 +46,7 @@ method.
 If the service runs in the same process as the activity, it is
 possible to return the service to the activity. This allows that the
 activity can call methods of the service directly. This technique is
-demonstrated by <xref linkend="exercise_bindlocalservice" />.
+demonstrated by <<exercise_bindlocalservice" />.
 		
 === Interprocess communication services bindings
 		

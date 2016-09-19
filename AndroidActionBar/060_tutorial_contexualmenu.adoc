@@ -6,7 +6,7 @@ In this exercise you add a contextual action mode to one of your existing applic
 === Create menu resource in the res/menu folder
 		
 For this, create a new menu XML resource with the _actionmode.xml_ file name. 
-See <xref linkend="androidstudio_createmenu" /> for details.
+See <<androidstudio_createmenu" /> for details.
 		
 [source,xml]
 ----
