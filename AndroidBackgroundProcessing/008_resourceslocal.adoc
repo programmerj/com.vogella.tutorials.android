@@ -2,17 +2,17 @@
 
 === Concurrency Resources
 		
-http://www.vogella.com/tutorials/JavaConcurrency/article.html - Java Concurrency
+http://www.vogella.com/tutorials/JavaConcurrency/article.html[Java Concurrency]
 
-http://www.vogella.com/tutorials/AndroidNetworking/article.html - Networking with Android
+http://www.vogella.com/tutorials/AndroidNetworking/article.html[Networking with Android]
 
-http://android-developers.blogspot.de/2010/07/multithreading-for-performance.html - Google blog about multithreating
+http://android-developers.blogspot.de/2010/07/multithreading-for-performance.html[Google blog about multithreating]
 		
 === Android Resources
 		
-http://www.vogella.com/tutorials/Android/article.html - Introduction to Android Development
+http://www.vogella.com/tutorials/Android/article.html[Introduction to Android Development]
 
-http://www.vogella.com/tutorials/AndroidFragments/article.html - Tutorial about the usage of fragments
+http://www.vogella.com/tutorials/AndroidFragments/article.html[Tutorial about the usage of fragments]
 
-http://www.vogella.com/tutorials/AndroidServices/article.html - Tutorial about Android services
+http://www.vogella.com/tutorials/AndroidServices/article.html[Tutorial about Android services]
 

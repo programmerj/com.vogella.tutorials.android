@@ -1,5 +1,4 @@
 == Android NDK resources
     
-http://tools.android.com/tech-docs/android-ndk-preview - Googles documentation for NDK
+http://tools.android.com/tech-docs/android-ndk-preview[Googles documentation for NDK]
 
-    

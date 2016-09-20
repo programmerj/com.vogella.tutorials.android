@@ -4,6 +4,5 @@ http://martinfowler.com/eaaDev/uiArchs.html[Martin Fowler about GUI Architecture
 
 http://www.tinmegali.com/en/model-view-presenter-android-part-1 [MVP compared with MVC]
 
-https://github.com/android10/Android-CleanArchitecture - Android clean architecture example application
-
+https://github.com/android10/Android-CleanArchitecture[Android clean architecture example application]
 

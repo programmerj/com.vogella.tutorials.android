@@ -1,6 +1,5 @@
 == Android Resources
 	
-http://developer.android.com/guide/topics/ui/dialogs.html - Android Dialogs standard documentation
-	
+http://developer.android.com/guide/topics/ui/dialogs.html[Android Dialogs standard documentation]
 
 	

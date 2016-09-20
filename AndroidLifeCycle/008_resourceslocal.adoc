@@ -1,8 +1,7 @@
 == Android ActionBar Resources
 
-http://developer.android.com/design/index.html - Android Design Page
-	
-http://actionbarsherlock.com - Android ActionBar Sherlock
-	
+http://developer.android.com/design/index.html[Android Design Page]
+
+http://actionbarsherlock.com[Android ActionBar Sherlock]
 
 	

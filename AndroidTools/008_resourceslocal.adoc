@@ -1,7 +1,4 @@
 == Android Animation Resources
 	
-http://developer.android.com/guide/developing/tools/traceview.html - Traveview homepage
-		
-	
-
+http://developer.android.com/guide/developing/tools/traceview.html[Traveview homepage]
 

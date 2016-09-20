@@ -1,7 +1,6 @@
 == Android library resources
 	
-http://developer.android.com/tools/support-library/setup.html - Google guide to install the support libraries
+http://developer.android.com/tools/support-library/setup.html[Google guide to install the support libraries]
 
-See http://www.vogella.com/tutorials/AndroidSupportLibrary/article.html - Using the Android support libraries from Google
-
+http://www.vogella.com/tutorials/AndroidSupportLibrary/article.html[Using the Android support libraries from Google]
 

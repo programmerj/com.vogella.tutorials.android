@@ -19,5 +19,3 @@ http://blog.sqisland.com/2015/12/mock-application-in-espresso.html[Chiu-Ki Chan 
 
 https://artemzin.com/blog/how-to-mock-dependencies-in-unit-integration-and-functional-tests-dagger-robolectric-instrumentation[Artem Zinnatullin blog post on How to mock dependencies in Unit, Integration and Functional tests; Dagger, Robolectric and Instrumentation]
 
-
-

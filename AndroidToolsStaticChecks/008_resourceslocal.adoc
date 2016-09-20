@@ -1,7 +1,6 @@
 == Android static code check resources
 
-http://tools.android.com/tech-docs/support-annotations - Support Annotations technical documentation
+http://tools.android.com/tech-docs/support-annotations[Support Annotations technical documentation]
 
-http://developer.android.com/guide/developing/tools/traceview.html - Traveview homepage
-
+http://developer.android.com/guide/developing/tools/traceview.html[Traveview homepage]
 

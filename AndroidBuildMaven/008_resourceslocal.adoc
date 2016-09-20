@@ -1,8 +1,7 @@
 [[resources_gradlebuild]]
 == Android Gradle build links
 	
-http://tools.android.com/tech-docs/new-build-system/user-guide  - Android tools Gradle user guide
+http://tools.android.com/tech-docs/new-build-system/user-guide [Android tools Gradle user guide]
 
-http://tools.android.com/tech-docs/new-build-system/resource-shrinking - Official documentation for resource skrinking
+http://tools.android.com/tech-docs/new-build-system/resource-shrinking[Official documentation for resource skrinking]
 			
-

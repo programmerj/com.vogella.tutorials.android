@@ -1,13 +1,12 @@
 == Robolectric resources
 
-http://robolectric.org - Robolectric Homepage
+http://robolectric.org[Robolectric Homepage]
 
-https://github.com/robolectric/robolectric/wiki/2.4-to-3.0-Upgrade-Guide Robelectric update guide to version 3.0
+https://github.com/robolectric/robolectric/wiki/2.4-to-3.0-Upgrade-Guide Robelectric update guide to version 3.0]
 
-https://github.com/robolectric/robolectric - Robolectric hosting page at Github
+https://github.com/robolectric/robolectric[Robolectric hosting page at Github]
 
-https://github.com/robolectric/robolectric-samples - Robolectric samples
+https://github.com/robolectric/robolectric-samples[Robolectric samples]
 
-https://github.com/robolectric/deckard-gradle - Robolectric and Espresso example project
-
+https://github.com/robolectric/deckard-gradle[Robolectric and Espresso example project]
 

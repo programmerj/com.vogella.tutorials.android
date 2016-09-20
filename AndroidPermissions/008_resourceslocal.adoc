@@ -1,8 +1,7 @@
 == Android permissions resources
 
-http://developer.android.com/guide/topics/security/permissions.html - Android runtime permissions - Official documentation
+http://developer.android.com/guide/topics/security/permissions.html[Android runtime permissions[Official documentation]
 	
-https://github.com/googlesamples/android-RuntimePermissions/ - Code example for demonstrating runtime permissions
-	
+https://github.com/googlesamples/android-RuntimePermissions/[Code example for demonstrating runtime permissions]
 
 	

@@ -14,11 +14,9 @@ http://blog.sqisland.com/2015/05/espresso-match-toolbar-title.html[How to write 
 https://android.googlesource.com/platform/frameworks/testing[Git repository for the Android Testing] 
 Checkout the `android-support-test` branch for the testing libraries.
 	
-	
 https://developer.android.com/training/testing/ui-testing/espresso-testing.html[Google developer Android tutorial]
 	
 https://androidresearch.wordpress.com/2015/04/04/an-introduction-to-espresso[Android Espresso tutorial including instructions how to test RecyclerView]
 
 https://code.google.com/p/android-test-kit/wiki/EspressoIntentsSetupInstructions[Espresso intents wiki pages]
-
 

@@ -1,8 +1,6 @@
 == Android ActionBar Resources
 	
-https://developer.android.com/tools/support-library/index.html - Android Support Library documentation
+https://developer.android.com/tools/support-library/index.html[Android Support Library documentation]
 	
-http://android-developers.blogspot.de/2015/05/android-design-support-library.html - Overview of the design library
-
-
+http://android-developers.blogspot.de/2015/05/android-design-support-library.html[Overview of the design library]
 

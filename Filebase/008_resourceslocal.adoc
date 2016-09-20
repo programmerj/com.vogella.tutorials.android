@@ -1,5 +1,4 @@
 == Firebase links
 	
-https://firebase.google.com/docs/database/ - Using the firebase database
-
+https://firebase.google.com/docs/database/[Using the firebase database]
 

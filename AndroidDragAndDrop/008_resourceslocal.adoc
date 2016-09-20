@@ -2,24 +2,23 @@
 
 === Android Resources
 		
-http://developer.android.com/guide/topics/ui/dialogs.html - Android Dialogs standard documentation.
+http://developer.android.com/guide/topics/ui/dialogs.html[Android Dialogs standard documentation]
 		
-http://www.vogella.com/tutorials/Android/article.html- Android Development Tutorial
+http://www.vogella.com/tutorials/Android/article.html- Android Development Tutorial]
 		
-http://www.vogella.com/tutorials/AndroidListView/article.html - Android ListView and ListActivity
+http://www.vogella.com/tutorials/AndroidListView/article.html[Android ListView and ListActivity]
 		
-http://www.vogella.com/tutorials/AndroidSQLite/article.html - Android SQlite Database
+http://www.vogella.com/tutorials/AndroidSQLite/article.html[Android SQlite Database]
 		
-http://www.vogella.com/tutorials/AndroidWidgets/article.html - Android Widgets
+http://www.vogella.com/tutorials/AndroidWidgets/article.html[Android Widgets]
 		
-http://www.vogella.com/tutorials/AndroidLiveWallpaper/article.html - Android Live Wallpaper
+http://www.vogella.com/tutorials/AndroidLiveWallpaper/article.html[Android Live Wallpaper]
 		
-http://www.vogella.com/tutorials/AndroidServices/article.html - Android Services
+http://www.vogella.com/tutorials/AndroidServices/article.html[Android Services]
 		
-http://www.vogella.com/tutorials/AndroidLocationAPI/article.html - Android Location API and Google Maps
+http://www.vogella.com/tutorials/AndroidLocationAPI/article.html[Android Location API and Google Maps]
 		
-http://www.vogella.com/tutorials/AndroidIntent/article.html - Android Intents
+http://www.vogella.com/tutorials/AndroidIntent/article.html[Android Intents]
 		
-http://www.vogella.com/tutorials/AndroidNetworking/article.html - Android and Networking
-
+http://www.vogella.com/tutorials/AndroidNetworking/article.html[Android and Networking]
 

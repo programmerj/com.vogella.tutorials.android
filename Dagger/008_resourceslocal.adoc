@@ -1,18 +1,17 @@
 [[resourcesdagger]]
 == Dagger resources
 	
-http://code.tutsplus.com/tutorials/dependency-injection-with-dagger-2-on-android--cms-23345-  Dependency injection with Dagger 2
+http://code.tutsplus.com/tutorials/dependency-injection-with-dagger-2-on-android--cms-23345-  Dependency injection with Dagger 2]
 	
-https://speakerdeck.com/jakewharton/dependency-injection-with-dagger-2-devoxx-2014 - Presentation from Jake Wharton about Dagger 2
+https://speakerdeck.com/jakewharton/dependency-injection-with-dagger-2-devoxx-2014[Presentation from Jake Wharton about Dagger 2]
 	
-http://artemzin.com/blog/jfyi-overriding-module-classes-with-dagger2/ - Overriding @Module classes with Dagger 2 in tests
+http://artemzin.com/blog/jfyi-overriding-module-classes-with-dagger2/[Overriding @Module classes with Dagger 2 in tests]
 	
-http://blog.sqisland.com/2015/04/dagger-2-espresso-2-mockito.html - Testing with Dagger, Mockito, and Espresso
+http://blog.sqisland.com/2015/04/dagger-2-espresso-2-mockito.html[Testing with Dagger, Mockito, and Espresso]
 
-http://engineering.circle.com/instrumentation-testing-with-dagger-mockito-and-espresso/ - Instrumentation Testing with Dagger, Mockito, and Espresso	
+http://engineering.circle.com/instrumentation-testing-with-dagger-mockito-and-espresso/[Instrumentation Testing with Dagger, Mockito, and Espresso]
 
-https://github.com/codepath/android_guides/wiki/Dependency-Injection-with-Dagger-2 - Detailed Dagger 2 tutorial
+https://github.com/codepath/android_guides/wiki/Dependency-Injection-with-Dagger-2[Detailed Dagger 2 tutorial]
 
-https://github.com/frogermcs/GithubClient - Github client using Dagger 2
-
+https://github.com/frogermcs/GithubClient[Github client using Dagger 2]
 

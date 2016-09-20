@@ -1,29 +1,28 @@
 == Android Resources
 		
-http://www.vogella.com/tutorials/AndroidListView/article.html - Android ListView, ListActivity and ListFragment
+http://www.vogella.com/tutorials/AndroidListView/article.html[Android ListView, ListActivity and ListFragment]
 
-http://www.vogella.com/tutorials/AndroidSQLite/article.html - Android SQlite Database
+http://www.vogella.com/tutorials/AndroidSQLite/article.html[Android SQlite Database]
 
-http://www.vogella.com/tutorials/AndroidWidgets/article.html - Android Widgets
+http://www.vogella.com/tutorials/AndroidWidgets/article.html[Android Widgets]
 
-http://www.vogella.com/tutorials/AndroidLiveWallpaper/article.html - Android Live Wallpaper
+http://www.vogella.com/tutorials/AndroidLiveWallpaper/article.html[Android Live Wallpaper]
 
-http://www.vogella.com/tutorials/AndroidServices/article.html - Android Services
+http://www.vogella.com/tutorials/AndroidServices/article.html[Android Services]
 		
-http://www.vogella.com/tutorials/AndroidLocationAPI/article.html - Android Location API and Google Maps
+http://www.vogella.com/tutorials/AndroidLocationAPI/article.html[Android Location API and Google Maps]
 
-http://www.vogella.com/tutorials/AndroidIntent/article.html - Android Intents
+http://www.vogella.com/tutorials/AndroidIntent/article.html[Android Intents]
 
-http://www.vogella.com/tutorials/AndroidNetworking/article.html - Android and Networking
+http://www.vogella.com/tutorials/AndroidNetworking/article.html[Android and Networking]
+
+http://code.google.com/intl/de-DE/android/[Android Homepage]
 		
-http://code.google.com/intl/de-DE/android/ - Android Homepage
+http://developer.android.com[Android Developer Homepage]
 		
-http://developer.android.com - Android Developer Homepage
+http://code.google.com/p/android/issues/list[Android Issues / Bugs]
+
+http://groups.google.com/group/android-developers[Android Google Groups]
 		
-http://code.google.com/p/android/issues/list - Android Issues / Bugs
-		
-http://groups.google.com/group/android-developers - Android Google Groups
-		
-http://android-developers.blogspot.com/2009/04/live-folders.html - Android Live Folder
-		
+http://android-developers.blogspot.com/2009/04/live-folders.html[Android Live Folder]
 		

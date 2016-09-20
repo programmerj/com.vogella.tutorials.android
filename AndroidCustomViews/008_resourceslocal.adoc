@@ -1,7 +1,4 @@
 == Custom view resources
 	
-
-https://github.com/renard314/ListView3d - Source code for an ListView which uses 3D effects	
-
-
+https://github.com/renard314/ListView3d[Source code for an ListView which uses 3D effects]
 

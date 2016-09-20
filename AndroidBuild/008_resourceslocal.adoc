@@ -7,4 +7,3 @@ http://google.github.io/android-gradle-dsl/current/[Android Gradle Plug-in DSL]
 
 http://tools.android.com/tech-docs/new-build-system/resource-shrinking[Official documentation for resource skrinking]
 			
-

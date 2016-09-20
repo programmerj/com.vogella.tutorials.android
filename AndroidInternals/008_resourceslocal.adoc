@@ -2,31 +2,31 @@
 
 === Android Resources
 		
-http://www.vogella.com/tutorials/AndroidListView/article.html - Android ListView and ListActivity
+http://www.vogella.com/tutorials/AndroidListView/article.html[Android ListView and ListActivity]
 		
-http://www.vogella.com/tutorials/AndroidLocationAPI/article.html - Android Location API and Google Maps
+http://www.vogella.com/tutorials/AndroidLocationAPI/article.html[Android Location API and Google Maps]
 
-http://www.vogella.com/tutorials/AndroidIntent/article.html - Android Intents
+http://www.vogella.com/tutorials/AndroidIntent/article.html[Android Intents]
 
-http://www.vogella.com/tutorials/AndroidNetworking/article.html - Android and Networking
+http://www.vogella.com/tutorials/AndroidNetworking/article.html[Android and Networking]
 		
-http://code.google.com/intl/de-DE/android/ - Android Homepage
+http://code.google.com/intl/de-DE/android/[Android Homepage]
 		
-http://developer.android.com - Android Developer Homepage
+http://developer.android.com[Android Developer Homepage]
 		
-http://code.google.com/p/android/issues/list - Android Issues / Bugs
+http://code.google.com/p/android/issues/list[Android Issues / Bugs]
 		
-http://groups.google.com/group/android-developers - Android Google Groups
-		
-http://market.android.com - Android Market
-		
-http://www.sqlite.org/ - SQLite database webpage
+http://groups.google.com/group/android-developers[Android Google Groups]
 
-http://developer.android.com/guide/topics/providers/content-providers.html - Content Provider Tutorial by Google
+http://market.android.com[Android Market]
 		
-http://developer.android.com/guide/tutorials/notepad/ - Notepad Tutorial from Google
+http://www.sqlite.org/[SQLite database webpage]
+
+http://developer.android.com/guide/topics/providers/content-providers.html[Content Provider Tutorial by Google]
+
+http://developer.android.com/guide/tutorials/notepad/[Notepad Tutorial from Google]
+
+http://androidcore.com/[Android Core Snippets / Tutorial page]
 		
-http://androidcore.com/ - Android Core Snippets / Tutorial page
-		
-http://marakana.com/forums/android/android_examples/ - Marakana Android Tutorials
+http://marakana.com/forums/android/android_examples/[Marakana Android Tutorials]
 		

@@ -1,5 +1,4 @@
 == Android testing resources
 	
-https://developer.android.com/training/testing/ui-testing/uiautomator-testing.html - Google training side for UI Automator
-
+https://developer.android.com/training/testing/ui-testing/uiautomator-testing.html[Google training side for UI Automator]
 
