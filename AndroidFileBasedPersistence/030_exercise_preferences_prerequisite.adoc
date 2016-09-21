@@ -2,8 +2,7 @@
 		
 The following exercise assumes that you have created an Android
 project called
-_com.example.android.rssfeed
-_
+_com.example.android.rssfeed_
 with one entry called
 `Settings`
 in the action bar.
