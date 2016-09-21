@@ -55,8 +55,7 @@ result.
 === Solve performance problems
 
 Improve the performance based on the measurements of
-_Traceview_
-.
+_Traceview_.
 Here are some pointers what to improve.
 
 * Replace the bold styling in the `getView()` method with the corresponding `android:textStyle="bold` attribute in your layout to avoid the

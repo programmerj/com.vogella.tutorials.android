@@ -6,8 +6,7 @@ for an introduction into Git and its installation.
 
 You also need to install an
 additional tool called
-_repo_
-. Execute the following commands for this.
+_repo_. Execute the following commands for this.
 	
 [source,java]
 ----

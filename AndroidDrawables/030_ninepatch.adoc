@@ -27,8 +27,7 @@ program in the
 _android-sdk/tools_
 installation folder, which makes it easy to
 create
-_9 Patch drawables_
-.
+_9 Patch drawables_.
 	
 A nice online generator for 9 patch drawables can be found under the
 following URL:

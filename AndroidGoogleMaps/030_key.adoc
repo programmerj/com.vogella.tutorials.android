@@ -22,8 +22,7 @@ deployment. During development with Eclipse, Eclipse us
 automatically
 creates
 and uses a
-_debug key_
-.
+_debug key_.
 	
 === Creating the SHA-1 for your signature key
 		

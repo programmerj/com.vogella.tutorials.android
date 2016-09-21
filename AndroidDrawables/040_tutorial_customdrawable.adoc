@@ -30,8 +30,7 @@ class to the following. The code assumes that you have a bitmap in
 your
 _drawable_
 folder called
-_dog.png_
-.
+_dog.png_.
 	
 [source,java]
 ----

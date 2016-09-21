@@ -5,8 +5,7 @@ In the
 in the
 `Setting`
 or your Android device you can activate
-_Profile GPU rendering_
-. With this option the system tracks the time it took to draw the last
+_Profile GPU rendering_. With this option the system tracks the time it took to draw the last
 128 frames.
 
 After activating this and restarting your application you can get

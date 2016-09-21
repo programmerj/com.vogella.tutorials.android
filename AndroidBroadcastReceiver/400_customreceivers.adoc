@@ -49,8 +49,7 @@ events don't leave your application.
 		
 The following example shows an activity
 which registers for a customer event called
-_my-event_
-.
+_my-event_.
 		
 [source,java]
 ----

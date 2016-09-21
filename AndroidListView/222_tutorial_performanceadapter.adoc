@@ -14,8 +14,7 @@ include::res/layoutinflator/MyPerformanceArrayAdapter.java[]
 ----
 
 Use your new adapter in your
-_activity_
-. If you run the application it should look the same but it will be
+_activity_. If you run the application it should look the same but it will be
 much faster, especially for large datasets.
 		
 [source,java]

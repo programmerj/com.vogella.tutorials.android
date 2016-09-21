@@ -22,8 +22,7 @@ _-xhdpi_
 ,
 _-xxhdpi_
 subfolders of
-_res/drawable_
-. The ADT project creation wizard
+_res/drawable_. The ADT project creation wizard
 creates these
 folders by default. If
 these bitmaps are provided in different folder, the Android system

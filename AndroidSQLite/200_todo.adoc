@@ -220,8 +220,7 @@ include::res/resources/strings.xml[]
 We will define three layouts. One will be used for the display of a
 row
 in the list, the other ones will be used by our
-_activities_
-.
+_activities_.
 		
 The row layout refers to an icon called _reminder_.
 Paste an icon of
@@ -287,8 +286,7 @@ individual
 todo item
 in the
 `TodoDetailActivity`
-_activity_
-.
+_activity_.
 		
 [source,xml]
 ----

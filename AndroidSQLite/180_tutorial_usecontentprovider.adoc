@@ -38,8 +38,7 @@ _de.vogella.android.contentprovider_
 with the
 _activity_
 called
-_ContactsActivity_
-.
+_ContactsActivity_.
 		
 Change the corresponding
 layout file in the

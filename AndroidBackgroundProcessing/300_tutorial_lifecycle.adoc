@@ -8,8 +8,7 @@ restarted and that the dialog is correctly displayed and closed.
 For this example create a new Android project called
 _de.vogella.android.threadslifecycle_
 with the Activity called
-_ThreadsLifecycleActivity_
-. Also add the
+_ThreadsLifecycleActivity_. Also add the
 permission to use the
 Internet to your
 _AndroidManifest.xml_

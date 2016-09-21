@@ -4,8 +4,7 @@
 === Exercise: Writing Robotium tests
 
 Create an Android project called
-_com.vogella.android.test.robotium.target_
-. Display three buttons in the first
+_com.vogella.android.test.robotium.target_. Display three buttons in the first
 activity.
 If the first button is
 pressed, start another activity which displays
@@ -16,8 +15,7 @@ list.
 === Create test project and add Robotium
 
 Create a test project called
-_com.vogella.android.test.robotium.targetTest_
-. Create a folder called
+_com.vogella.android.test.robotium.targetTest_. Create a folder called
 `libs`
 and place the Robotium
 `JAR`

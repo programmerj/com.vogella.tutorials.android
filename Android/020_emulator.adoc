@@ -131,10 +131,7 @@ device or a
 Google device.
 
 
-An AVD created for
-Android contains the programs from the
-_Android Open Source Project_
-.
+An AVD created for Android contains the programs from the _Android Open Source Project_.
 An AVD created for the Google API's contains additional Google
 specific code.
 

@@ -23,8 +23,7 @@ include::res/single/SingleTouchEventView.java[]
 ----		
 		
 Add this view to your
-_activity_
-.
+_activity_.
 
 [source,java]
 ----

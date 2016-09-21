@@ -17,8 +17,7 @@ Create a new project called
 _de.vogella.android.alarm_
 with the
 activity called
-_AlarmActivity_
-.
+_AlarmActivity_.
 		
 Create the following layout.
 

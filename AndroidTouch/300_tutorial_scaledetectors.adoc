@@ -15,8 +15,7 @@ include::res/scale/ImageViewWithZoom.java[]
 Add this
 `View`
 to your
-_activity_
-.
+_activity_.
 	
 [source,java]
 ----

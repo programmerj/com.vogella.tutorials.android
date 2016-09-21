@@ -41,8 +41,7 @@ include::res/ani/AnimationExampleActivity.java[]
 Create a new
 _activity_
 called
-_HitActivity_
-.
+_HitActivity_.
 	
 [source,java]
 ----
@@ -51,6 +50,5 @@ include::res/ani/HitActivity.java[]
 	
 If you run this example and press the different Buttons, the animation
 should start. Via the ActionBar you can navigate to your other
-_activity_
-.
+_activity_.
 	

@@ -16,8 +16,7 @@ or
 is retained during configuration changes. This allows you to perform
 background processing without explicitly considering the lifecycle of
 your
-_activity_
-.
+_activity_.
 
 === Headless fragments
 		

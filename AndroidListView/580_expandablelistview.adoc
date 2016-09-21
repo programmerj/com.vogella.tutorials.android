@@ -32,8 +32,7 @@ with the activity called
 .
 		
 Create or adjust the following layout files. First
-_layout/activity_main.xml_
-.
+_layout/activity_main.xml_.
 		
 [source,xml]
 ----
@@ -41,8 +40,7 @@ include::res/expandablelistview/activity_main.xml[]
 ----
 		
 Afterwards create
-_layout/listrow_group.xml_
-.
+_layout/listrow_group.xml_.
 		
 [source,xml]
 ----
@@ -50,8 +48,7 @@ include::res/expandablelistview/listrow_group.xml[]
 ----
 		
 The last required layout is
-_layout/listrow_details.xml_
-.
+_layout/listrow_details.xml_.
 		
 [source,xml]
 ----

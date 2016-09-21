@@ -23,8 +23,7 @@ should be used
 for
 special
 configurations. This are called
-_resource qualifiers_
-.
+_resource qualifiers_.
 For
 example, you can
 specify
@@ -190,8 +189,7 @@ devices.
 
 		
 A layout resource file is referred to as
-_layout_
-. A layout
+_layout_. A layout
 specifies the
 `ViewGroups`
 ,

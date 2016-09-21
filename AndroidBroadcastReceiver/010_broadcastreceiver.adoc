@@ -110,8 +110,7 @@ menu:Manage[Application]
 This is an additional security feature as the user can be sure that
 only the applications he started will receive
 broadcast
-_intents_
-.
+_intents_.
 
 TIP: This does not mean the user has to start the application again
 after a reboot. The Android system remembers that

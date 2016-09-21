@@ -38,8 +38,7 @@ _BlankTemplate_
 template.
 		
 Create the following layout for your
-_activity_
-. It uses a
+_activity_. It uses a
 `FrameLayout`
 to show two different parts of the user interface. The button bar is
 initially hidden. The button uses a drawable. Either add such a

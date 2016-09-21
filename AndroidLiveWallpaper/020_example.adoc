@@ -1,11 +1,9 @@
 == Android Wallpaper Example
 	
 Create a new project called
-_de.vogella.android.wallpaper_
-. Do not
+_de.vogella.android.wallpaper_. Do not
 create an
-_activity_
-.
+_activity_.
 	
 Create the
 _/res/xml_
@@ -34,8 +32,7 @@ wallpaper. This resource file
 will be linked
 to
 from the
-_AndroidManifest.xml_
-. You could also
+_AndroidManifest.xml_. You could also
 include the "android:thumbnail attribute" which would
 point to a
 drawable which gives a smaller image of the running
@@ -63,8 +60,7 @@ include::res/MyPoint.java[]
 ----
 	
 Create a new
-_activity_
-. Create the
+_activity_. Create the
 _prefs.xml_
 preference
 file
@@ -89,8 +85,7 @@ include::res/MyPreferencesActivity.java[]
 ----	
 	
 Create the following coding for the Wallpaper
-_service_
-.
+_service_.
 	
 [source,java]
 ----

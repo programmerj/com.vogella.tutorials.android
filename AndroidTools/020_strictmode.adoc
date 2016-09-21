@@ -9,8 +9,7 @@ This
 includes file and network access.
 	
 To ensure this you can use
-_StrictMode_
-. StrictMode is available as of API 9 (Android
+_StrictMode_. StrictMode is available as of API 9 (Android
 2.3.3) and
 allows to
 setup thread policies for your
@@ -27,8 +26,7 @@ in
 the user interface thread.
 	
 The following code shows how to use
-_StrictMode_
-. As the
+_StrictMode_. As the
 _activity_
 violates these settings it
 will crash.

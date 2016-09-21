@@ -36,8 +36,7 @@ coding. Don't forget to register the
 _activity_
 in
 the
-_AndroidManfest.mf_
-.
+_AndroidManfest.mf_.
 	
 [source,java]
 ----
