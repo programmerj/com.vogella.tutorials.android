@@ -39,7 +39,7 @@ WARNING: Ensure that both activities are registered in the Android manifest.
 Start your application and trigger the second activity. 
 Review the notifications and ensure you know why this order of things are happening.
 
-image::activity_lifecycle20.png[Notifications about the lifecycle,pdfwidth=30%]
+image::activity_lifecycle20.png[Notifications about the lifecycle]
 
 Press the Back button on the second activity. 
 Validate that `onSaveInstanceState()` is not called. 

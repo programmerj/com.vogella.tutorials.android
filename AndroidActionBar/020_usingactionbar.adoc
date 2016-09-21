@@ -114,8 +114,8 @@ include::res/navigation/hide.java[]
 
 The following screenshots show an application with and without the navigation buttons.
 
-image::dimnavigationbuttons10.png[Application with action bar,pdfwidth=30%]
-image::dimnavigationbuttons20.png[Application with dimmed action bar,pdfwidth=30%]
+image::dimnavigationbuttons10.png[Application with action bar]
+image::dimnavigationbuttons20.png[Application with dimmed action bar]
 
 === Using immersive full screen mode
 

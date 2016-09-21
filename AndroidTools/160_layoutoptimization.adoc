@@ -13,7 +13,7 @@ the
 `TextView`
 in the layout and to style parts of its text content differently.
 	
-image::spannablestring10.png[Styling TextView with TextAppearanceSpan,pdfwidth=30%,width=30%]
+image::spannablestring10.png[Styling TextView with TextAppearanceSpan,width=30%]
 	
 Create a project called
 _com.vogella.android.textview.spannablestring_.
