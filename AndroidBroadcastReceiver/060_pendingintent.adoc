@@ -29,6 +29,5 @@ class.
 To perform an activity via a
 pending intent, you receive the
 activity via
-`PendingIntent.getActivity()`
-.
+`PendingIntent.getActivity()`.
 	

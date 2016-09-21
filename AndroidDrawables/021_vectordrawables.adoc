@@ -20,6 +20,5 @@ http://blog.sqisland.com/2014/10/first-look-at-animated-vector-drawable.html[]
 for several examples.
 	
 Vector drawbles are also available for older platform via the support library as
-`VectorDrawableCompat`
-.
+`VectorDrawableCompat`.
 	

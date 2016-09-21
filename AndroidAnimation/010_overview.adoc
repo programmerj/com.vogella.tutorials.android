@@ -32,8 +32,7 @@ animation. You can use this listener to perform actions before or
 after a certain animation, e.g. add or remove a
 `View`
 from a
-`ViewGroup`
-.
+`ViewGroup`.
 		
 === ViewPropertyAnimator
 		

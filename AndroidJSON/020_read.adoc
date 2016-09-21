@@ -26,8 +26,7 @@ Please note that some URIs return a
 object
 while
 others return a
-`JSONArray`
-.
+`JSONArray`.
 
 === Project
 

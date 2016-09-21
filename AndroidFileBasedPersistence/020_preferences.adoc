@@ -75,8 +75,7 @@ include::res/preferences/updatePrefs.txt[]
 You can listen to changes in the preferences via the
 `registerOnSharedPreferenceChangeListener()`
 method on
-`SharedPreferences`
-.
+`SharedPreferences`.
 		
 [source,java]
 ----

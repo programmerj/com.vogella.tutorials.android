@@ -9,14 +9,12 @@ adapter implementations; the most important
 are
 `ArrayAdapter`
 and
-`CursorAdapter`
-.
+`CursorAdapter`.
 `ArrayAdapter`
 can handle data based on
 `Arrays`
 or
-`java.util.List`
-.
+`java.util.List`.
 `SimpleCursorAdapter`
 can
 handle database related data.

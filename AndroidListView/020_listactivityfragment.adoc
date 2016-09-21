@@ -42,8 +42,7 @@ include::res/fragmentslist/MyListFragment.java[]
 ----
 		
 The next example code demonstrates the usage of a
-`ListActivity`
-.
+`ListActivity`.
 		
 [source,java]
 ----
@@ -57,15 +56,13 @@ include::res/snippets/MyListActivity.java[]
 You can use a custom layout with
 `ListActivity`
 or
-`ListFragment`
-. In this case the fragment or activity searches in the provided
+`ListFragment`. In this case the fragment or activity searches in the provided
 layout for a
 `ListView`
 with the pre-defined
 `android:id`
 attribute set to
-`@android:id/list`
-. This usage is demonstrated by the following code snippet.
+`@android:id/list`. This usage is demonstrated by the following code snippet.
 		
 
 		

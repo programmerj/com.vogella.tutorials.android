@@ -20,6 +20,5 @@ include::res/animation/ani.java[]
 Alternative you can implement a class which extends
 `Drawable`
 and implements
-`Animatable`
-.
+`Animatable`.
 

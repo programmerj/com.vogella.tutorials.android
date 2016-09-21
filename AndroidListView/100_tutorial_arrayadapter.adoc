@@ -4,8 +4,7 @@
 The following exercise demonstrates how to use a
 `ListView`
 in an
-`ListActivity`
-. You use
+`ListActivity`. You use
 the predefined
 `ArrayAdapter`
 class
@@ -16,8 +15,7 @@ _de.vogella.android.listactivity_
 with the
 activity
 called
-`MyListActivity`
-.
+`MyListActivity`.
 	
 Change
 `MyListActivity`

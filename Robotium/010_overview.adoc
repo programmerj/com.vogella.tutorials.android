@@ -31,8 +31,7 @@ https://github.com/RobotiumTech/[Robotium at Github]
 Robotium extends the Android test framework to make it simpler to
 write tests. The main class for testing with Robotium
 is
-`Solo`
-.
+`Solo`.
 	
 `Solo`
 is initialized with the

@@ -147,8 +147,7 @@ to
 and
 `numberDecimal`
 on the
-`EditText`
-. As an example you can use the last line in the following XML
+`EditText`. As an example you can use the last line in the following XML
 snippet. Also change its ID to "inputValue".
 		
 [source,java]

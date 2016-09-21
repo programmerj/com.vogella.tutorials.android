@@ -3,8 +3,7 @@
 A _view_ in Android represents a widget, e.g., a button, or a layout manager.
 The Android SDK provides standard
 views (widgets), e.g., via the `Button`, `TextView`, `EditText` classes.
-It also includes complex widgets, for example, `ListView`
-.
+It also includes complex widgets, for example, `ListView`.
 	
 All views in Android extend the `android.view.View` class. 
 This class is relatively large (more than 18 000 lines of code) and provides a lot of base functionality for subclasses.

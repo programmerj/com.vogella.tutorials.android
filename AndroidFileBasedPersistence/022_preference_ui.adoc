@@ -17,8 +17,7 @@ menu:File[New > Other... > Android > Android XML File]
 and select the
 `Preference`
 as
-`Resource Type`
-.
+`Resource Type`.
 		
 === PreferenceFragment
 		
@@ -29,6 +28,5 @@ maintaining preference values. This fragment can load an XML
 preference
 definition file
 via the method
-`addPreferencesFromResource()`
-.
+`addPreferencesFromResource()`.
 		

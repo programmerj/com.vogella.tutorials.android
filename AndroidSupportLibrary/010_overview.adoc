@@ -83,10 +83,8 @@ activity
 to extend
 `Activity`
 instead of any other activity like
-`AppCompatActivity`
-. Also, reduces the example code to the minimum. The following is an example for an activity called
-`MainActivity`
-.
+`AppCompatActivity`. Also, reduces the example code to the minimum. The following is an example for an activity called
+`MainActivity`.
 
 [source,java]
 ----

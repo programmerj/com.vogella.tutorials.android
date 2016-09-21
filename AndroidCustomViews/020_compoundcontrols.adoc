@@ -22,8 +22,7 @@ connection logic
 For performance reasons you may want to rewrite your combound
 view to
 a custom view which extends
-`View`
-. This may you can typically flatten your view hierarchy. Drawing the
+`View`. This may you can typically flatten your view hierarchy. Drawing the
 view requires in this case less traversals and this can be
 significantly faster if implemented correctly.
 ====

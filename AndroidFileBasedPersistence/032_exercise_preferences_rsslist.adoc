@@ -20,8 +20,7 @@ include::res/preferences/mypreferences.xml[]
 Create the class
 `SettingsActivity`
 which extends
-`PreferenceActivity`
-. This
+`PreferenceActivity`. This
 activity
 loads the
 preference

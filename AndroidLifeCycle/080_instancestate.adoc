@@ -22,8 +22,7 @@ should be restored.
 The
 `onSaveInstanceState()`
 can be used to store this instance state as a
-`Bundle`
-. A
+`Bundle`. A
 `Bundle`
 can contain primitive data types, arrays, String and
 objects which are

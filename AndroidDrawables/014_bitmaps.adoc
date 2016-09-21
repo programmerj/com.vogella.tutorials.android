@@ -23,8 +23,7 @@ The following example code shows how to create an
 object for the
 _assets_
 folder and assign it to an
-`ImageView`
-.
+`ImageView`.
 
 [source,java]
 ----

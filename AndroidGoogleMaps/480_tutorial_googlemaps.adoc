@@ -22,8 +22,7 @@ Create a new Android project called
 _com.vogella.android.locationapi.maps_
 with an activity
 called
-`ShowMapActivity`
-.
+`ShowMapActivity`.
 		
 === Add permissions to the project
 		
@@ -45,8 +44,7 @@ file.
 === Adjust layout file
 		
 In this example we use the
-`MapFragment`
-. Change your layout file to the following code.
+`MapFragment`. Change your layout file to the following code.
 		
 [source,txt]
 ----

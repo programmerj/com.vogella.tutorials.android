@@ -11,8 +11,7 @@ but allow you to define groups and details for this group.
 `ExpandableListView`
 expects
 and adapter of type
-`BaseExpandableListAdapter`
-.
+`BaseExpandableListAdapter`.
 		
 In this case you have to define two layouts, one for the group
 and another one for the details row.
@@ -28,8 +27,7 @@ image::expandablelistview10.png[Screenshot of ExpandableListView]
 Create a project called
 _com.vogella.android.listview.expandable_
 with the activity called
-`MainActivity`
-.
+`MainActivity`.
 		
 Create or adjust the following layout files. First
 _layout/activity_main.xml_.
@@ -56,8 +54,7 @@ include::res/expandablelistview/listrow_details.xml[]
 ----
 		
 Create the following class which hold your domain model for the
-`ExpandableListView`
-.
+`ExpandableListView`.
 		
 [source,java]
 ----

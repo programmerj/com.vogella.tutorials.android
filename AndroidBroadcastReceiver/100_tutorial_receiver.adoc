@@ -14,8 +14,7 @@ notified and log a message.
 === Create project
 		
 Create a new project called
-`de.vogella.android.receiver.phone`
-. Also create an activity.
+`de.vogella.android.receiver.phone`. Also create an activity.
 		
 TIP:Remember that your receiver is only called if the user started
 it once. This requires an activity.

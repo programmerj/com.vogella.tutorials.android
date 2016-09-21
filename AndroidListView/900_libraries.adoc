@@ -8,8 +8,7 @@ an Open
 Source
 library to implement the pull to refresh
 pattern for a
-`Listview`
-. https://github.com/chrisbanes/Android-PullToRefresh.
+`Listview`. https://github.com/chrisbanes/Android-PullToRefresh.
 	
 Also you may want to use the swipe to dismiss gesture to delete
 items

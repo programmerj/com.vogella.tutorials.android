@@ -24,8 +24,7 @@ and assigns
 this data to the
 _views_
 in the row of the
-`ListView`
-.
+`ListView`.
 		
 These items are
 typically called the
@@ -98,8 +97,7 @@ method is called if the data is not available anymore.
 		
 To react to selections in the list, set an `OnItemClickListener` to
 your
-`ListView`
-.
+`ListView`.
 		
 [source,java]
 ----

@@ -29,7 +29,6 @@ http://www.xmlpull.org/[ http://www.xmlpull.org/]
 .
 	
 On Android it is recommended to use the
-`XmlPullParser`
-. It has a relatively simple API compared to SAX and DOM and is fast
+`XmlPullParser`. It has a relatively simple API compared to SAX and DOM and is fast
 and requires less memory then the DOM API.
 	

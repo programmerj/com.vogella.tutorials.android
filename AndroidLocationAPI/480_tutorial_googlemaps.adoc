@@ -4,8 +4,7 @@
 		
 In the following chapter we will build an Android application which
 shows a
-`MapView`
-. It also shows a compass and the current geoposition. Via an
+`MapView`. It also shows a compass and the current geoposition. Via an
 `ItemizedOverlay`
 implementation we will also display the last 5 positions on the map.
 		

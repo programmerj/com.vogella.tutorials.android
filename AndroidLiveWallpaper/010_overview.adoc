@@ -31,8 +31,7 @@ method
 and return
 an
 object of type
-`android.service.wallpaper.WallpaperService.Engine`
-. This
+`android.service.wallpaper.WallpaperService.Engine`. This
 objects
 handles the
 lifecycle
@@ -54,8 +53,7 @@ cycle methods, as for example
 ,
 `onTouchEvent()`
 and
-`onCommand()`
-.
+`onCommand()`.
 		
 The
 service

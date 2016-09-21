@@ -20,8 +20,7 @@ include::res/report/TracerActivity.java[]
 Create two activities which extend this one. The first activity
 should
 allow to start the second one via an
-`Intent`
-.
+`Intent`.
 
 [source,java]
 ----

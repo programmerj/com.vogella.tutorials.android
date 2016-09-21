@@ -22,14 +22,12 @@ method of the
 `View`
 start a drag operation. In this method you also specify the data
 which is passed to the drop target via an instance of
-`ClipData`
-.
+`ClipData`.
 		
 You also pass to the
 `startDrag`
 method an instance of
-`DragShadowBuilder`
-.
+`DragShadowBuilder`.
 This object specifies the picture used for the drag operation. For
 example you can
 pass in the
@@ -67,8 +65,7 @@ with
 which are used as a drop zone, gets a
 `OnDragListener`
 assigned via the
-`setOnDragListener`
-.
+`setOnDragListener`.
 		
 [source,java]
 ----

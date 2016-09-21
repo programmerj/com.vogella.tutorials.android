@@ -37,8 +37,7 @@ to draw a rectangle with rounded corners and much more.
 For drawing on the
 `Canvas`
 object you use an object of type
-`Paint`
-.
+`Paint`.
 		
 		
 The

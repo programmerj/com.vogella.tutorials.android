@@ -59,8 +59,7 @@ Services
 which run in the process of the application are sometimes
 called
 local
-`services`
-.
+`services`.
 		
 === Platform service and custom services
 		

@@ -240,8 +240,7 @@ The Android SDK uses the
 _camelCase_
 notation
 for most of its IDs, e.g.,
-`buttonRefresh`
-. It is good practice to follow this approach.
+`buttonRefresh`. It is good practice to follow this approach.
 		
 		
 The

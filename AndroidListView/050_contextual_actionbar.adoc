@@ -13,8 +13,7 @@ To assign a contextual action mode to a long click on an individual
 item, use the method
 `setOnItemLongClickListener()`
 on
-`ListView`
-. This methods includes information about the selected item. In this
+`ListView`. This methods includes information about the selected item. In this
 method you can start the `ActionMode`.
 	
 The following examples demonstrate that. It assumes that you

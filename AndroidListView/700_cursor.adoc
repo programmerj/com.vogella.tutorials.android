@@ -5,8 +5,7 @@ In case you work with a content provider or directly with the database
 you can use the
 `SimpleCursorAdapter`
 to define the data for your
-`ListView`
-. The following will demonstrates how to access the Contacts
+`ListView`. The following will demonstrates how to access the Contacts
 ContentProvider.
 	
 Create a new Android project called

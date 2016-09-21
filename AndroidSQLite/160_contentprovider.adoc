@@ -79,8 +79,7 @@ content providers.
 To create your custom content provider
 you have to define a class
 which extends
-`android.content.ContentProvider`
-. You must declare this class as content provider in
+`android.content.ContentProvider`. You must declare this class as content provider in
 the Android
 manifest file.
 The corresponding entry
@@ -112,11 +111,9 @@ Your content provider must implement several methods, e.g.
 ,
 `getType()`
 and
-`onCreate()`
-. In case you do not support certain methods its good practice to
+`onCreate()`. In case you do not support certain methods its good practice to
 throw an
-`UnsupportedOperationException()`
-.
+`UnsupportedOperationException()`.
 
 The
 query() method must return a Cursor object.

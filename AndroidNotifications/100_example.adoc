@@ -5,8 +5,7 @@ _de.vogella.android.notificationmanager_
 with the
 _activity_
 class called
-`CreateNotificationActivity`
-. This
+`CreateNotificationActivity`. This
 _activity_
 should use the
 _main.xml_

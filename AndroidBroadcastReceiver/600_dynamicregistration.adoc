@@ -62,15 +62,12 @@ retrieve that data
 through the return value of
 `registerReceiver(BroadcastReceiver,
 	IntentFilter)
-`
-. This also works for a null
-`BroadcastReceiver`
-.
+`. This also works for a null
+`BroadcastReceiver`.
 		
 In all other ways,
 this behaves just as
-`sendBroadcast(Intent)`
-.
+`sendBroadcast(Intent)`.
 		
 Sticky broadcast intents
 typically require special permissions.

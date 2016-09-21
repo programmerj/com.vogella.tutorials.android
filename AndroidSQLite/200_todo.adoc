@@ -68,19 +68,16 @@ Create the project
 with the
 _activity_
 called
-`TodosOverviewActivity`
-. Create another
+`TodosOverviewActivity`. Create another
 _activity_
 called
-`TodoDetailActivity`
-.
+`TodoDetailActivity`.
 		
 === Database classes
 		
 Create the
 package
-`de.vogella.android.todos.database`
-.
+`de.vogella.android.todos.database`.
 This package
 will store
 the
@@ -170,8 +167,7 @@ First define a menu
 `listmenu.xml
 `
 in the folder
-`res/menu`
-. If you use the Android resource wizard to create the "listmenu.xml"
+`res/menu`. If you use the Android resource wizard to create the "listmenu.xml"
 file, the folder will be created
 for you; if you create the file
 manually you also need to create the
@@ -297,8 +293,7 @@ include::res/layout/todo_edit.xml[]
 		
 Change the coding of your activities to the following.
 First
-`TodosOverviewActivity.java`
-.
+`TodosOverviewActivity.java`.
 		
 [source,java]
 ----

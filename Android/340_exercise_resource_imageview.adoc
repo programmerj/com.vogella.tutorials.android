@@ -23,15 +23,13 @@ to assign the png file (which is represented at runtime via a
 `Drawable`
 object)
 to your
-`ImageView`
-.
+`ImageView`.
 The parameter of the
 `setImageResource()`
 method is the
 `R`
 reference to your file, e.g.,
-`R.drawable.your_png_file`
-.
+`R.drawable.your_png_file`.
 		
 === Validating
 Ensure that if you press your new button, the displayed image is replaced.

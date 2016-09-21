@@ -4,8 +4,7 @@
 === Interaction between the model and Listview
 
 Frequently you need to select items in your
-`ListView`
-. As the row of the
+`ListView`. As the row of the
 `ListView`
 are getting recycled you cannot store the selection on the
 `View`
@@ -64,8 +63,7 @@ include::res/interactive/rowbuttonlayout.xml[]
 ----
 
 Create the following
-`Adapter`
-. This adapter adds a listener
+`Adapter`. This adapter adds a listener
 on the
 `Checkbox`
 view

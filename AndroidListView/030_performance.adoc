@@ -65,8 +65,7 @@ assign
 new
 data to the views contained in the view
 hierarchy of the
-`convertView`
-. This avoids inflating an XML file and creating new Java objects.
+`convertView`. This avoids inflating an XML file and creating new Java objects.
 		
 In case Android cannot reuse a row, the Android system passes
 `null`

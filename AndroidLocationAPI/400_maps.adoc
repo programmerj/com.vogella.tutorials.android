@@ -61,8 +61,7 @@ MapActivity simplify the handling
 similar to
 `ListActivity`
 simplifies the usage of
-`ListViews`
-.
+`ListViews`.
 
 A
 `MapView`
@@ -98,8 +97,7 @@ compass.
 
 The following code snippet shows how you can register
 myLocationOverlay for your
-`MapView`
-.
+`MapView`.
 
 [source,txt]
 ----
@@ -134,8 +132,7 @@ instance, and add it to the list obtained from MapView.getOverlays().
 is the base class for an
 `Overlay`
 which consists of a list of
-`OverlayItems`
-.
+`OverlayItems`.
 `ItemizedOverlay`
 handles sorting north-to-south for drawing, creating span
 bounds,

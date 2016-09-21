@@ -4,8 +4,7 @@
 
 Shape Drawables are XML files which allow to define a geometric
 object with colors, borders and gradients which can get assigned to
-`Views`
-. The advantage of using XML Shape Drawables is that they
+`Views`. The advantage of using XML Shape Drawables is that they
 automatically adjust to the correct size.
 
 The following listing shows an example of a Shape Drawable.
@@ -29,8 +28,7 @@ include::res/drawable/main.xml[]
 State drawables allow to define states. For each state a
 different
 drawable can get assigned to the
-`View`
-. For example the
+`View`. For example the
 following
 defines different drawables for a button
 depending on its

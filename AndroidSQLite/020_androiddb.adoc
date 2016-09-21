@@ -68,8 +68,7 @@ and
 `onUpgrade()`
 methods. These methods are called in the corresponding methods
 of
-`SQLiteOpenHelper`
-. This way your implementation of
+`SQLiteOpenHelper`. This way your implementation of
 `SQLiteOpenHelper`
 stays readable, even if you have several tables.
 
@@ -278,12 +277,10 @@ easier.
 To work with databases and
 `ListViews`
 you can use the
-`SimpleCursorAdapter`
-. The
+`SimpleCursorAdapter`. The
 `SimpleCursorAdapter`
 allows to set a layout for each row of the
-`ListViews`
-.
+`ListViews`.
 
 You also define an array which contains the column names and another
 array which contains the IDs of

@@ -47,8 +47,7 @@ views
 , e.g., an
 `ImageView`
 and a
-`TextView`
-. The following graphic shows a list with different layouts for odd
+`TextView`. The following graphic shows a list with different layouts for odd
 and even rows.
 		
 image::adapter10.png[Adapter provides data and defines the layout per row]

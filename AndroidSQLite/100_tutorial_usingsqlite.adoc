@@ -36,8 +36,7 @@ to
 introduce the
 `Loader`
 class, which should be used as of Android 3.0 for managing a database
-`Cursor`
-. And this class
+`Cursor`. And this class
 introduces additional
 complexity.
 

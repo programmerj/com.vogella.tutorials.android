@@ -46,7 +46,6 @@ include::res/layoutopt/MainActivity.java[]
 ----	
 	
 The resulting layout is much faster than a layout based on
-`RelativeLayout`
-. Also HTML styling was avoid as the HTML parser is relatively
+`RelativeLayout`. Also HTML styling was avoid as the HTML parser is relatively
 expensive.
 	

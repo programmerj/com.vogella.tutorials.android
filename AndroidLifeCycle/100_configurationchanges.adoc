@@ -55,8 +55,7 @@ attribute on your
 _activity_
 definition in
 your
-`AndroidManifest.xml`
-. The following setting avoids an
+`AndroidManifest.xml`. The following setting avoids an
 _activity_
 restart incase of orientation
 changes or

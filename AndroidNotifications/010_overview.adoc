@@ -96,8 +96,7 @@ it.
 You can also call the
 `cancel()`
 for a specific notification ID on the
-`NotificationManager`
-. The
+`NotificationManager`. The
 `cancelAll()`
 method call removes all
 of the notifications you

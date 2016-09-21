@@ -48,8 +48,7 @@ Rename
 the ID of the existing
 `TextView`
 to
-`contactview`
-. Delete the default text.
+`contactview`. Delete the default text.
 		
 The resulting layout file
 should look like the following.
@@ -76,8 +75,7 @@ tab click the
 _Add_
 button,
 and select the
-`Uses Permission`
-.
+`Uses Permission`.
 From the drop-down list select
 the
 `android.permission.READ_CONTACTS`
@@ -94,7 +92,6 @@ If you run this application the data is read from the
 `ContentProvider`
 of the People application
 and displayed in a
-`TextView`
-. Typically you would display such data in a
+`TextView`. Typically you would display such data in a
 `ListView`.
 		

@@ -54,8 +54,7 @@ the activity is not yet fully initialized.
 
 There is no need to
 implement this method for headless
-`fragments`
-.The
+`fragments`.The
 inflated views become part of the view hierarchy of its
 containing
 activity.
