@@ -20,7 +20,7 @@ include::res/explicit/activity_main.xml[]
 Create a new layout called _activity_result.xml_. 
 In the next step you create a new activity which will use this layout file.
 		
-Enter _activity_result.xml_ as file name and press the _Finish_ button. 
+Enter _activity_result.xml_ as file name and press the btn:[Finish] button. 
 Change your layout so that it is similar to the following XML file.
 		
 [source,xml]
@@ -75,7 +75,7 @@ This value should be placed in the `TextView` with the `displayintentextra` ID.
 		
 === Exercise: Return data from ResultActivity
 		
-In the following exercise you transfer data back from your second sub-activity to the `MainActivity` once the user selects the _Back_ button.
+In the following exercise you transfer data back from your second sub-activity to the `MainActivity` once the user selects the btn:[Back] button.
 
 Add the implementation of the `finish()` method to the `ResultActivity` class.
 		

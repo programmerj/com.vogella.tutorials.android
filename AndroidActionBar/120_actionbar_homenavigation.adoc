@@ -28,10 +28,10 @@ include::res/navigation/home.xml[]
 
 === Application icon as Up button
 		
-You can use the application icon also as  _Up_ button, e.g., to go to the parent activity of the current activity. 
+You can use the application icon also as  btn:[Up] button, e.g., to go to the parent activity of the current activity. 
 The back button on the device always returns to the previous activity.
 		
-Both can be different, for example, if the user started the option to write an email from the home screen, the back button will return the user to the home screen while the _Up_ button would return the user to the activity which shows an overview of all emails.
+Both can be different, for example, if the user started the option to write an email from the home screen, the back button will return the user to the home screen while the btn:[Up] button would return the user to the activity which shows an overview of all emails.
 		
 To enable the _Up_ display, you can use the following code snippet in your activity.
 
@@ -44,6 +44,6 @@ NOTE: This snippet only enables the _Up_ display on your home icon.
 You need to implement the correct behavior in your activity in the `onOptionsItemSelected()` method. 
 The corresponding action still has the `android.R.id.home` ID.
 
-WARNING: The difference between _Up_ and the _Back_ button can be confusing for the end user. 
+WARNING: The difference between btn:[Up] and the btn:[Back] button can be confusing for the end user. 
 If you decide to implement _Up_, in your application, it is recommended to perform some end user testing to see if the _Up_ implementation is intuitive for them or not.
 	

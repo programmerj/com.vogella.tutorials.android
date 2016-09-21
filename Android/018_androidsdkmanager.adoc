@@ -14,12 +14,12 @@ image::androidsdkmanager_androidstudio10.png[Android SDK manager in Android Stud
 [[androidapiversion_installtationoftools]]
 === Install selected Android version or library
 		
-In the Android SDK manager select the version of desired Android version the tree and press the _Install_ button. 
+In the Android SDK manager select the version of desired Android version the tree and press the btn:[Install] button. 
 The following screenshot shows the selection for the _API 18_ version of Android.
 		
 image::androidstudiosdkmanager10.png[Install Android API]
 		
-Press the _OK_ button to start he installation.
+Press the btn:[OK] button to start he installation.
 		
 The _SDK Platforms_ tab is used to install API versions, which the _SDK Tools_ is used to install the development tools.
 		

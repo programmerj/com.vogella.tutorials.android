@@ -35,7 +35,7 @@ See the following link for setting up the library v7 in your project: http://dev
 === Once upon a time their was the options menu
 
 Applications with a target SDK version less than API 11 use the _options menu_, if such a button is present on the device. 
-The option menu is displayed if the user presses the _Option_ button. 
+The option menu is displayed if the user presses the btn:[Option] button. 
 The toolbar bar is superior to the options menu, as the action bar is clearly visible, while the options menu is only shown on request.
 In case of the options menu, the user may not recognize that options are available in the application.
 

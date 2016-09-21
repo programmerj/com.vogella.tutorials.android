@@ -119,6 +119,6 @@ include::res/simpledb/TestDatabaseActivity.java[]
 
 === Running the apps
 
-Install your application and use the _Add_ and _Delete_ button.
+Install your application and use the btn:[Add] and btn:[Delete] button.
 Restart your application to validate that the data is still there.
 

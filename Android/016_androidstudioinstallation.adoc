@@ -53,7 +53,7 @@ image::androidstudio_configuration30.png[Configuration wizard of Android Studio]
 
 image::androidstudio_configuration40.png[Configuration wizard of Android Studio]
 		
-Once you reach the last page, press the _Finish_ button.
+Once you reach the last page, press the btn:[Finish] button.
 
 image::androidstudio_configuration50.png[Configuration wizard of Android Studio]
 

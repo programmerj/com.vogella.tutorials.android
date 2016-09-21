@@ -30,8 +30,7 @@ the
 view
 and
 select the
-_Start Method Profiling_
-button as depicted in the following screenshot.
+btn:[Start Method Profiling] button as depicted in the following screenshot.
 		
 image::traceview10.png[]		
 		

@@ -68,7 +68,7 @@ NOTE: The _Android_ view does not show the real file structure. It shows a logic
 
 		
 Define a new Android Virtual Device (AVD) by opening the _AVD Manager_ via menu:Tools[Android>AVD Manager].
-Afterwards press the _Create Virtual Device..._ button.
+Afterwards press the btn:[Create Virtual Device...] button.
 		
 		
 image::androidstudio_create_avd10.png[Create a new AVD]
@@ -86,12 +86,12 @@ image::androidstudio_create_avd30.png[Settings for a new AVD]
 image::androidstudio_create_avd40.png[Settings for a new AVD]
 		
 		
-Afterwards press the _Finish_ button. 
+Afterwards press the btn:[Finish] button. 
 This will create the AVD configuration and display it under the list of available virtual devices.
 		
 === Start your virtual device
 		
-Select your new entry and press the _Play_ button.
+Select your new entry and press the btn:[Play] button.
 
 image::androidstudio_create_avd50.png[Settings for a new AVD]
 

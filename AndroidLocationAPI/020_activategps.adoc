@@ -32,7 +32,7 @@ select
 menu:Window[Open Perspective > Other... > DDMS].
 		
 In the Emulator Control part you can enter the geocoordinates
-and press the _Send_ button.
+and press the btn:[Send] button.
 		
 image::gpsfix20.png[]
 		

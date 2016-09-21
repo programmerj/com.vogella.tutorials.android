@@ -75,8 +75,7 @@ TIP: Prefer using the `onRestoreInstanceState()` method for restoring the instan
 This approach separates the initial setup from restoring the state.
 
 If the user interacts with an activity and presses the
-_Back_
-button or if the
+btn:[Back] button or if the
 `finish()`
 method of an activity is called, the activity is removed from the
 current activity stack and recycled. In this case there is no instance
@@ -85,8 +84,7 @@ state to save and the
 method is not called.
 
 If the user interacts with an activity and presses the
-_Home_
-button, the activity instance state must be saved. The
+btn:[Home] button, the activity instance state must be saved. The
 `onSaveInstanceState()`
 method is called. If the user
 restarts the application it will resume

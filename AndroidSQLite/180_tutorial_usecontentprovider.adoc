@@ -72,8 +72,7 @@ and select the
 `Permissions`
 tab. On that
 tab click the
-_Add_
-button,
+btn:[Add] button,
 and select the
 `Uses Permission`.
 From the drop-down list select
