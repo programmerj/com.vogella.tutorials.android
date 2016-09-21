@@ -94,7 +94,7 @@ The implementation of `RecyclerView` requires a few classes to be implemented.
 The most important classes are listed in the following table
 
 .Important classes of the RecyclerView API
-[cols="1, 3, 1"]
+[cols="1, 3, 1",options="header"]
 |===
 |Class |Purpose|Optional
 

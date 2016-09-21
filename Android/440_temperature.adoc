@@ -45,7 +45,7 @@ Select the _res/values/strings.xml_ file to open the editor for this file.
 Add the `Color` and String definitions to the file as described by the following table.
 		
 .New attributes to add
-[cols="1, 2, 2"]
+[cols="1, 2, 2",options="header"]
 |===
 |Type
 |Name

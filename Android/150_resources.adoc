@@ -45,7 +45,7 @@ prefixes.
 
 
 .Resources
-[cols="1,1,4"]
+[cols="1,1,4",options="header"]
 |===
 |Resource |Folder |Description
 

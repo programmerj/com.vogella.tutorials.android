@@ -131,7 +131,7 @@ Similar to the `<activity>` tag, you can use the service, receiver and provider 
 The `uses-sdk` section in the manifest allows you to specify the `minSdkVersion` and `targetSdkVersion` version of your application.
 
 .Minimum and target version
-[cols="1,3"]
+[cols="1,3",options="header"]
 |===
 | Value | Description
 

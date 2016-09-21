@@ -10,7 +10,7 @@ The Android Studio toolbar contains several entries which are specific for Andro
 image::androidstudiotoolbar.png[The Android Studio toolbar]
 
 .Toolbar
-[cols="1, 4"] 
+[cols="1, 4",options="header"] 
 |===
 |Number |Action
 
