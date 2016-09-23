@@ -38,6 +38,7 @@ public class MakePhotoActivity extends Activity {
 	}
 
 	public void onClick(View view) {
+		camera.startPreview();
 		camera.takePicture(null, null,
 				new PhotoHandler(getApplicationContext()));
 	}
