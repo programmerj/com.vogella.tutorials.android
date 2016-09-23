@@ -40,4 +40,4 @@ import static com.your.package.test.Matchers.withItemHint;
 onView(withItemHint("test")).check(matches(isDisplayed())); 
 ----
 
-See https://google.github.io/android-testing-support-library/docs/espresso/advanced/#matching-data-using-ondata-and-a-custom-viewmatcher
+See https://google.github.io/android-testing-support-library/docs/espresso/lists/#matching-data-using-ondata-and-a-custom-viewmatcher

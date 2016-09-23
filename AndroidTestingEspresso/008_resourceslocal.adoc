@@ -1,7 +1,7 @@
 [[androidonlineespresso]]
 === Espresso resources
 	
-https://code.google.com/p/android-test-kit/wiki/Espresso[Android Espresso testing homepage]
+https://google.github.io/android-testing-support-library/[Android Espresso testing homepage]
 	
 https://github.com/googlesamples/android-testing/blob/master/downloads/espresso-cheat-sheet-2.1.0.pdf[Espresso Cheat Sheat]
 	
@@ -18,5 +18,5 @@ https://developer.android.com/training/testing/ui-testing/espresso-testing.html[
 	
 https://androidresearch.wordpress.com/2015/04/04/an-introduction-to-espresso[Android Espresso tutorial including instructions how to test RecyclerView]
 
-https://code.google.com/p/android-test-kit/wiki/EspressoIntentsSetupInstructions[Espresso intents wiki pages]
+https://google.github.io/android-testing-support-library/docs/espresso/intents/index.html[Espresso intents wiki page]
 
