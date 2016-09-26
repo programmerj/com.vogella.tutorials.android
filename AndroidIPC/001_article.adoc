@@ -17,23 +17,23 @@ It is based on Eclipse 4.4, Java 1.6 and Android 4.4.
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 ////content not there
-include::content/010_services.adoc[]
-include::content/012_customservices.adoc[]
-include::content/020_bindingservices.adoc[]
+include::010_services.adoc[]
+include::012_customservices.adoc[]
+include::020_bindingservices.adoc[]
 ////
 include::../web/advertisement/inBetween01.adoc[]
 ////
-include::content/050_process.adoc[]
-include::content/060_servicescommunication.adoc[]
+include::050_process.adoc[]
+include::060_servicescommunication.adoc[]
 ////
 include::../web/advertisement/inBetween02.adoc[]
 ////
-include::content/100_scheduleservice.adoc[]
-include::content/320_tutorial_intentservice.adoc[]
+include::100_scheduleservice.adoc[]
+include::320_tutorial_intentservice.adoc[]
 ////
 include::../web/advertisement/inBetween03.adoc[]
 ////
-include::content/400_tutorial_ownservice.adoc[]
+include::400_tutorial_ownservice.adoc[]
 ////
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
