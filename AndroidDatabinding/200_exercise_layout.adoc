@@ -1,5 +1,4 @@
 == Exercise: Use data binding
-=== Target of this exercise
 		
 In this exercise you learn how to interact between your user interface widgets using data binding.
 Create a new Android application for this exercise, with the `com.vogella.android.databinding` top level package.

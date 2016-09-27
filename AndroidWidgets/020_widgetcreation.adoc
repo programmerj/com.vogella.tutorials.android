@@ -71,7 +71,7 @@ These adapter
 views
 require that you define a
 _collection view widget_
-which is described later in this $book.
+which is described later in this {textselfreference}.
 		
 The only interaction that is possible with the
 views

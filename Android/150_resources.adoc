@@ -292,7 +292,7 @@ include::res/ids/activity_main.xml[]
 		
 [NOTE]
 ====
-While the above is good practice for real projects, the tutorials of this $book avoid the usage of a separate id file as this setup is time consuming.
+While the above is good practice for real projects, the tutorials of this {textselfreference} avoid the usage of a separate id file as this setup is time consuming.
 ====
 
 === System resources

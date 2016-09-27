@@ -1,7 +1,5 @@
 == Exercise: Trigger refresh on the  MyListFragment via the toolbar
 
-=== Target of this exercise
-
 For testing purpose you want to fill your list only once the user selects refresh from the toolbar (or via swipe-to-refresh).
 Therefore your recycler view should be initially empty.
 

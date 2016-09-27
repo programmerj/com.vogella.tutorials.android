@@ -1,7 +1,6 @@
 [[androidstudio_starter]]
 == Exercise: Getting started with Android Studio
 
-=== Target of this exercise
 In this exercise you create an Android project and start it on an Android virtual device.
 		
 === Create a new Android project

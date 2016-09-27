@@ -1,9 +1,7 @@
 [[tutorialtemperature]]
 == Exercise: Create a temperature converter
-=== Target of this exercise
 
 In this exercise you learn how to create and consume Android resources.
-		
 		
 This application is available on Google Play under the following URL: http://play.google.com/store/apps/details?id=de.vogella.android.temperature
 		

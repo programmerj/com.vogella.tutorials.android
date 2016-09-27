@@ -1,7 +1,5 @@
 == Exercise: Drag and drop
 
-=== Target of this exercise
-
 In this exercise you create several view groups which allow to drag views between them.
 
 		

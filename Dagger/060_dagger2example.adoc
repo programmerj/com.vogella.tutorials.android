@@ -1,8 +1,6 @@
 [[exercise_daggerintro]]
 == Exercise: Dependency injection with Dagger 2
 
-=== Target of this exercise
-
 In this example you use Dagger 2 in a standard Java program managed by Maven.
 
 This exercise can be done via any Java IDE you like, for example the Eclipse IDE with the Maven tooling installed.
