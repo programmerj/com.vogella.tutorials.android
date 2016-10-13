@@ -1,8 +1,7 @@
 == Android Basics
 		
 The following assumes that you have already basic knowledge in
-http://www.vogella.com/tutorials/Android/article.html[ Android development]
-. Please check the
+http://www.vogella.com/tutorials/Android/article.html[ Android development]. Please check the
 http://www.vogella.com/tutorials/Android/article.html - Android development tutorial
 to learn the basics.
 		

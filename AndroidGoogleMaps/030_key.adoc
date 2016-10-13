@@ -52,8 +52,7 @@ the
 _Google APIs Console_
 that you want to use Google Maps for Android. You can reach this
 console via the following link:
-https://code.google.com/apis/console/[ Google APIs Console]
-. Select here the
+https://code.google.com/apis/console/[ Google APIs Console]. Select here the
 `Services`
 entry.
 		

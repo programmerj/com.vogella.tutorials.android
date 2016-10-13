@@ -43,14 +43,12 @@ the program "aapt" (Android Asset Packaging Tool). To
 simplify
 development Google provides the Android Developer Tools
 (ADT) for
-http://www.vogella.com/tutorials/Eclipse/article.html[ Eclipse]
-. The ADT performs automatically the conversion from class to dex
+http://www.vogella.com/tutorials/Eclipse/article.html[ Eclipse]. The ADT performs automatically the conversion from class to dex
 files and creates the apk during deployment.
 		
 For an introduction into
 http://www.vogella.com/tutorials/Android/article.html[Android development]
 please see the
-http://www.vogella.com/tutorials/Android/article.html[Android Development Tutorial]
-. The rest of this article tries to look inside the Android runtime
+http://www.vogella.com/tutorials/Android/article.html[Android Development Tutorial]. The rest of this article tries to look inside the Android runtime
 system.
 		

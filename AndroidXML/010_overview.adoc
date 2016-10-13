@@ -25,8 +25,7 @@ Android provides for XML parsing and writing the
 `XmlPullParser`
 class. This parser is not available in standard Java but is similar to
 the Stax parser. The parser is hosted at
-http://www.xmlpull.org/[ http://www.xmlpull.org/]
-.
+http://www.xmlpull.org/[ http://www.xmlpull.org/].
 	
 On Android it is recommended to use the
 `XmlPullParser`. It has a relatively simple API compared to SAX and DOM and is fast

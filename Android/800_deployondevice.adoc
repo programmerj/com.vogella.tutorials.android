@@ -81,8 +81,7 @@ Google Play requires a one time fee, currently 25 Dollar. After
 that
 the developer can directly upload his application and the required
 icons, under
-https://play.google.com/apps/publish[Google Play Publishing]
-.
+https://play.google.com/apps/publish[Google Play Publishing].
 
 
 Google performs some automatic scanning of applications, but no

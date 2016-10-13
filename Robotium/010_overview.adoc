@@ -25,8 +25,7 @@ NOTE: Robotium tests perceive the application under test as black box, i.e., it 
 The homepage of Robotium is currently located under the following URL:
 http://code.google.com/p/robotium/[Robotium homepage]
 but is moving to
-https://github.com/RobotiumTech/[Robotium at Github]
-.
+https://github.com/RobotiumTech/[Robotium at Github].
 	
 Robotium extends the Android test framework to make it simpler to
 write tests. The main class for testing with Robotium

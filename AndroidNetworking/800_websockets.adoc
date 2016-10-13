@@ -14,6 +14,5 @@ payloads in the data.
 It is good practice to use JSON as data format for the messages.
 
 You find a Java library for both the server and the client under
-http://java-websocket.org/[]
-.
+http://java-websocket.org/[].
 
