@@ -15,14 +15,10 @@ The tooling to develop Android applications allows you to define filters for the
 To write log statements, you use the
 `android.util.Log`
 class with the
-`Log.v()`
-,
-`Log.d()`
-,
-`Log.i()`
-,
-`Log.w()`
-,
+`Log.v()`,
+`Log.d()`,
+`Log.i()`,
+`Log.w()`,
 `Log.e()`
 or
 `Log.wtf()`
@@ -49,7 +45,7 @@ include::res/log/Constants.java[]
 Android advises that a deployed application should not contain logging code. 
 The Android development tools provide the `BuildConfig.DEBUG` flag for this purpose. 
 This flag will be automatically set to `false` if you export the Android application for deployment. 
-During development it will be set to `true` , therefore allowing you to see your logging statements during development.
+During development it will be set to `true`, therefore allowing you to see your logging statements during development.
     
     
 The following example show how to write an error log message.

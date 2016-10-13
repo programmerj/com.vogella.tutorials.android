@@ -22,8 +22,7 @@ In the constructor of your subclass you
 call the
 `super()`
 method of
-`SQLiteOpenHelper`
-,
+`SQLiteOpenHelper`,
 specifying the database name and the current database version.
 
 In this class you need to
@@ -84,8 +83,7 @@ close the database.
 More specifically
 `SQLiteDatabase`
 provides the
-`insert()`
-,
+`insert()`,
 `update()`
 and
 `delete()`
@@ -190,8 +188,7 @@ ordering.
 |===
 
 If a condition is not required you can pass
-`null`
-, e.g. for the group by
+`null`, e.g. for the group by
 clause.
 
 The
@@ -202,8 +199,7 @@ example a "where" statement might look like:
 "_id=19 and summary=?".
 
 If you specify placeholder values in the where clause via
-`?`
-,
+`?`,
 you pass
 them as the
 selectionArgs parameter to the query.
@@ -240,8 +236,7 @@ reached.
 provides typed
 `get*()`
 methods, e.g.
-`getLong(columnIndex)`
-,
+`getLong(columnIndex)`,
 `getString(columnIndex)`
 to access the column data for the current position of the result.
 The

@@ -70,8 +70,7 @@ method on the
 `ListView`
 object.
 		
-TIP: Adapters are not only used by `ListView`, but also by other views which extend `AdapterView` as, for example, `Spinner`
-, `GridView`, `Gallery` and `StackView`.
+TIP: Adapters are not only used by `ListView`, but also by other views which extend `AdapterView` as, for example, `Spinner`, `GridView`, `Gallery` and `StackView`.
 	
 [[androidlists_filtersort]]
 === Filtering and sorting

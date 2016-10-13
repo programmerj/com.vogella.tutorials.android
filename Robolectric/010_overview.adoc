@@ -20,7 +20,7 @@ Robolectric is not an integration test framework, i.e., you cannot not test the 
 === Shadow objects
 
 Robolectric replaced all Android classes by so-called _shadow objects_.
-If a method is implemented by Robolectric ,it forwards these method calls to the shadow object.
+If a method is implemented by Robolectric,it forwards these method calls to the shadow object.
 Shadow objects behave similar to the Android implementation.
 If a method is not implemented by the shadow object, it simply returns a default value, e.g., null or 0.
 

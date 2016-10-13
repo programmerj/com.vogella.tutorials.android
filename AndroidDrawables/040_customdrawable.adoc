@@ -1,8 +1,7 @@
 == Custom Drawables
 	
 You can also create custom
-_Drawable_
-, which can use the Canvas
+_Drawable_, which can use the Canvas
 API for their display. For these drawables
 you can use the full Canvas API to design them to your need.
 

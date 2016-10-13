@@ -74,8 +74,7 @@ can be used with other user interface components in the same layout.
 The
 `MapController`
 class can be used to interact with the
-`MapView`
-, e.g. by moving it. A
+`MapView`, e.g. by moving it. A
 `Geopoint`
 is a position described via
 latitude

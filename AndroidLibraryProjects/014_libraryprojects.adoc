@@ -40,10 +40,8 @@ To create a library project, set the
 flag in the Android project generation wizard.
 		
 The library project must declare all its components, e.g.,
-_activities_
-,
-_service_
-, etc. via the
+_activities_,
+_service_, etc. via the
 _AndroidManifest.xml_
 file. The application
 which uses the library must also declare all the

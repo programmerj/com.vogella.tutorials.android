@@ -18,7 +18,7 @@ This is the density of the first available Android device (G1).
 This size is also known asmdpi (medium dots per inch).
 		
 		
-If you specify the size in `dp` , Android automatically scale your user interface component, depending on the device.
+If you specify the size in `dp`, Android automatically scale your user interface component, depending on the device.
 		
 On a mdpi (a.k.a. medium density) device one `dp` is the same as one pixel. 
 A `dp` on ldpi (low density) device is smaller (approx. 120dip), on a hdpi (high density) device is larger (approx. 240dpi). 

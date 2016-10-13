@@ -44,7 +44,7 @@ Add a new activity called _ResultActivity_ to the _AndroidManifest.xml_ file.
 include::res/explicit/AndroidManifest.xml[]
 ----
 		
-NOTE: This new activity will be started via the `MainActivity` , hence it is called a sub-activity.
+NOTE: This new activity will be started via the `MainActivity`, hence it is called a sub-activity.
 
 === Start sub-activity
 		

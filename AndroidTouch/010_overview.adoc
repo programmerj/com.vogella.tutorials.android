@@ -137,8 +137,7 @@ index can
 change over time, e.g. if one finger is lifted
 from the device. The stable version of a
 pointer is the
-_pointer id_
-,
+_pointer id_,
 which can be determined with the
 `getPointerId(pointerIndex)`
 method from the

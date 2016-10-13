@@ -29,12 +29,10 @@ class.
 To create notifications you use the
 `NotificationManager`
 class which can be received from the
-`Context`
-, e.g. an
+`Context`, e.g. an
 _activity_
 or a
-_service_
-,
+_service_,
 via the
 `getSystemService()`
 method.

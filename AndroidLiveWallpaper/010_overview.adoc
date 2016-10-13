@@ -43,14 +43,10 @@ wallpaper. The
 `Engine`
 class defines the life
 cycle methods, as for example
-`onCreate()`
-,
-`onSurfaceCreated()`
-,
-`onVisibilityChanged()`
-,
-`onOffsetsChanged()`
-,
+`onCreate()`,
+`onSurfaceCreated()`,
+`onVisibilityChanged()`,
+`onOffsetsChanged()`,
 `onTouchEvent()`
 and
 `onCommand()`.

@@ -28,7 +28,7 @@ will connect you to your device and give you
 Linux command
 line
 access
-to the underlying file system, e.g. ls, rm, , cd, mkdir,
+to the underlying file system, e.g. ls, rm,, cd, mkdir,
 etc. The
 application data is stored in the directory
 "/data/data/package_of_your_app".

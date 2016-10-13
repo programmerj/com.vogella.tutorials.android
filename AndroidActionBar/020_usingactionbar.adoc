@@ -96,7 +96,7 @@ include::res/modify/title.java[]
 You also add a `Drawable` to the action bar as background via the `ActionBar.setBackgroundDrawable()` method.
 
 The toolbar scales the image. 
-Therefore it is best practice to provide a scalable drawable , e.g., a 9-patch or XML drawable.
+Therefore it is best practice to provide a scalable drawable, e.g., a 9-patch or XML drawable.
 
 As of Android 4.2 the background of the action bar can also be animated via an `AnimationDrawable`.
 

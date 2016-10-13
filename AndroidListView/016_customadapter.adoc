@@ -43,8 +43,7 @@ This root of the layout is typically a
 `ViewGroup`
 (layout manager)
 and contains several other
-views
-, e.g., an
+views, e.g., an
 `ImageView`
 and a
 `TextView`. The following graphic shows a list with different layouts for odd

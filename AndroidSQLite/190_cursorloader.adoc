@@ -21,8 +21,7 @@ framework to access the
 The
 `SimpleCursorAdapter`
 class, which can be used with
-`ListViews`
-,
+`ListViews`,
 has the
 `swapCursor()`
 method. Your

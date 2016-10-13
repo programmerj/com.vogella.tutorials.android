@@ -9,7 +9,7 @@ AsyncTasks should be used for short background operations which need to update t
 		
 To use `AsyncTask` you must subclass it. 
 AsyncTask uses generics and varargs. 
-The parameters are the following `AsyncTask <TypeOfVarArgParams , ProgressValue , ResultValue>`.
+The parameters are the following `AsyncTask <TypeOfVarArgParams, ProgressValue, ResultValue>`.
 
 An `AsyncTask` is started via the `execute()` method.	
 This `execute()` method calls the `doInBackground()` and the `onPostExecute()` method.

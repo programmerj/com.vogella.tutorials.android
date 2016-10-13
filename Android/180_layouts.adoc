@@ -125,8 +125,7 @@ columns, and cells.
 		
 		
 You can specify how many columns you want to define for each
-`View`
-,
+`View`,
 in which row and column it should be placed as well as how many
 columns and
 rows it should use. If not specified,

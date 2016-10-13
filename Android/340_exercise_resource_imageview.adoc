@@ -7,7 +7,7 @@ Create two new images to your project called _ic_tethering_ and _ic_offline_.
 === Add views to your project
 		
 Open your layout file and add a new `Button` and an `ImageView` to it.
-Assign the ic_offline file to your `ImageView` , via your layout file as demonstrated in the following XML snippet.
+Assign the ic_offline file to your `ImageView`, via your layout file as demonstrated in the following XML snippet.
 
 [source,java]
 ----

@@ -8,7 +8,7 @@ simplify the
 analysis of your application. For example you can enable
 that the touch area is highlighted.
 	
-If you have a phone with Android 4.2 , try going to the About section in the _Settings_ and tap the `Build number` entry 7 times.
+If you have a phone with Android 4.2, try going to the About section in the _Settings_ and tap the `Build number` entry 7 times.
 	
 If you phone does not have this option try using an emulator.
 	

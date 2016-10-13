@@ -36,8 +36,7 @@ The tasks are called "todo items" or "todos" in this tutorial.
 The application consists
 out of
 two
-_activities_
-, one for
+_activities_, one for
 seeing a list of all todo items and
 one for
 creating and
@@ -135,10 +134,8 @@ include::res/todo/MyTodoContentProvider.java[]
 
 `MyTodoContentProvider`
 implements
-`update()`
-,
-`insert()`
-,
+`update()`,
+`insert()`,
 `delete()`
 and
 `query()`
@@ -225,10 +222,8 @@ type "png" called
 into your
 `res/drawable`
 folders (
-`drawable-hdpi`
-,
-`drawable-mdpi`
-,
+`drawable-hdpi`,
+`drawable-mdpi`,
 `drawable-ldpi`
 )
 		
@@ -239,7 +234,7 @@ by the Android wizard
 or
 rename the reference in the layout file. Please note that the
 Android Developer Tools sometimes change the name of this generated
-icon , so your file might not be called
+icon, so your file might not be called
 "ic_launcher.png".
 		
 Alternatively you could

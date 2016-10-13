@@ -56,8 +56,7 @@ collection of resources. If the base
 URI is
 combined with an instance
 identifier, e,g.,
-`content://test/2`
-, it represents a single instance.
+`content://test/2`, it represents a single instance.
 
 === Accessing a content provider
 
@@ -101,14 +100,10 @@ include::res/def/declare.txt[]
 ----
 
 Your content provider must implement several methods, e.g.
-`query()`
-,
-`insert()`
-,
-`update()`
-,
-`delete()`
-,
+`query()`,
+`insert()`,
+`update()`,
+`delete()`,
 `getType()`
 and
 `onCreate()`. In case you do not support certain methods its good practice to

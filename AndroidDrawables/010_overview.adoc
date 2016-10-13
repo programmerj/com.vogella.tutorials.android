@@ -14,12 +14,9 @@ Every Drawable is stored as individual files in one of the
 _res/drawable_
 folders. Typically you would store bitmaps for different resolutions
 in the
-_-mdpi_
-,
-_-hdpi_
-,
-_-xhdpi_
-,
+_-mdpi_,
+_-hdpi_,
+_-xhdpi_,
 _-xxhdpi_
 subfolders of
 _res/drawable_. The ADT project creation wizard

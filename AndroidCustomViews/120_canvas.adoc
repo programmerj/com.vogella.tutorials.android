@@ -24,8 +24,7 @@ methods for drawing operations, e.g.
 for drawing a color,
 `drawBitmap()`
 to draw a
-`Bitmap`
-,
+`Bitmap`,
 `drawText()`
 to draw a text,
 `drawRoundRect()`
@@ -90,8 +89,7 @@ method to draw a rectancle with rounded corners.
 Other
 _Shaders_
 provided by the Android platform are
-`LinearGradient`
-,
+`LinearGradient`,
 `RadialGradient`
 and
 `SweepGradient`

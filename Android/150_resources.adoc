@@ -191,10 +191,8 @@ devices.
 A layout resource file is referred to as
 _layout_. A layout
 specifies the
-`ViewGroups`
-,
-`Views`
-,
+`ViewGroups`,
+`Views`,
 their
 relationship and
 their attributes via an XML representation.

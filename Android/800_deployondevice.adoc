@@ -2,7 +2,7 @@
 === How to deploy
 In general there are restrictions how to deploy an Android
 application to your device. You can deploy the application via USB in
-test mode onto your device , email yourself the
+test mode onto your device, email yourself the
 application or use one
 of the many Android markets to install the
 application. The following
