@@ -3,8 +3,6 @@
 === What are single-pane or multi-pane layouts?
 (((Single-pane layout)))
 (((Multi-pane layout)))
-
-
 Android devices exists in a variety of screen sizes and densities.
 
 A _panel_ or _pane_ represents a part of the user interface. 
@@ -24,7 +22,6 @@ image::panel30.png[Panel]
 
 === What are fragments?
 (((Fragments)))
-
 A _fragment_ is an independent Android component which can be used by an activity.
 A fragment encapsulates functionality so that it is easier to reuse within activities and layouts.
 

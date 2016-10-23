@@ -2,7 +2,6 @@
 === What is the toolbar (action bar)?
 (((Action Bar,Toolbar)))
 (((Toolbar)))
-		
 The _toolbar bar_ (formerly known as action bar) is represented as of Android 5.0 via the `Toolbar` view group.
 It can be freely positioined into your layout file.
 It can display the activity title, icon, actions which can be triggered, additional views and other interactive items. 

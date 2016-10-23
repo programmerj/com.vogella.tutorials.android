@@ -2,7 +2,6 @@
 === Resource files
 (((Resource files)))
 (((Resource qualifiers)))
-		
 Android allows you to create static resources like images and XML configuration files. This allows you to keep
 these resources separate
 from the source code of your Android application.
@@ -223,7 +222,6 @@ simple layout manager is sufficient.
 	
 === Good practices for resources IDs
 (((Resource ID,Good practices)))
-		
 If a view needs to be accessed via Java or XML code, you have to give the view a unique ID via the `android:id` attribute. 
 To assign a new
 ID to a view

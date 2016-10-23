@@ -98,8 +98,7 @@ image::asproxy10.png[Defining a proxy]
 		
 
 === Android Device Monitor
-(((Android Device Monitor in Android Studio)))	
-
+(((Android Device Monitor in Android Studio)))
 Android Studio allows to open the Android Device Monitor via the toolbar or via the menu:Tools[Android>Android Device Monitor]. menu.
 	
 This starts an Eclipse based application called _Android Device Monitor_ for interacting with your Android (virtual) device and your Android application.

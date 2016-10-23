@@ -3,7 +3,6 @@
 
 === The job scheduler API
 (((JobScheduler)))
-
 The Android 5.0 Lollipop (API 21) release introduces a job scheduler API via the `JobScheduler` class.
 This API allows to batch jobs when the device has more resources available. 
 In general this API can be used to schedule everything that is not time critical for the user.

@@ -14,7 +14,6 @@ Using this scenario makes sense in case you have different static layout files f
 		
 === Handling dynamics in fragments
 (((FragmentManager)))
-		
 The `FragmentManager` class allows you to add, remove and replace fragments in the layout of your activity.
 It can accessed in an activity via the `getFragmentManager()` method. 	
 		
@@ -55,7 +54,6 @@ include::res/fragments/check.java[]
 (((Multi pane mode, Determine which mode you are in)))
 (((Dual pane mode, Determine which mode you are in)))
 (((Single pane mode, Determine which mode you are in)))
-		
 As the logic in the activity depends on the scenario (single/multi pane), you typically write a check to determine in which mode you are.
 There are several approaches to perform this. 
 One way is to define a configuration file in the _values_ resource folder.

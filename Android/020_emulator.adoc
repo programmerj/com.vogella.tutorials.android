@@ -84,7 +84,6 @@ on the AVD.
 === Debug certificate and expire date
 (((Debug certificate)))
 (((Debug certificate)))
-
 Android applications must be signed before they can get
 installed
 on an

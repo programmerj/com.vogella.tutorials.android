@@ -2,7 +2,6 @@
 (((Logging)))
 (((Log statements)))
 (((LogCat view)))
-
 === The log system of Android
 	
 The Android system uses a centralized system for all logs. 
@@ -11,7 +10,6 @@ The tooling to develop Android applications allows you to define filters for the
 
 === Create log statements
 (((BuildConfig)))
-    
 To write log statements, you use the
 `android.util.Log`
 class with the
