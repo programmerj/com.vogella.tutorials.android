@@ -11,8 +11,7 @@ https://github.com/codepath/android_guides/wiki/UI-Testing-with-Espresso[Codepat
 	
 http://blog.sqisland.com/2015/05/espresso-match-toolbar-title.html[How to write a customer matcher for the toolbar]
 	
-https://android.googlesource.com/platform/frameworks/testing[Git repository for the Android Testing] 
-Checkout the `android-support-test` branch for the testing libraries.
+https://android.googlesource.com/platform/frameworks/testing[Git repository for the Android Testing] - Checkout the `android-support-test` branch for the testing libraries.
 	
 https://developer.android.com/training/testing/ui-testing/espresso-testing.html[Google developer Android tutorial]
 	

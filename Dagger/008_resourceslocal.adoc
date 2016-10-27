@@ -1,7 +1,7 @@
 [[resourcesdagger]]
 == Dagger resources
 	
-http://code.tutsplus.com/tutorials/dependency-injection-with-dagger-2-on-android--cms-23345-  Dependency injection with Dagger 2]
+http://code.tutsplus.com/tutorials/dependency-injection-with-dagger-2-on-android--cms-23345[Dependency injection with Dagger 2]
 	
 https://speakerdeck.com/jakewharton/dependency-injection-with-dagger-2-devoxx-2014[Presentation from Jake Wharton about Dagger 2]
 	
