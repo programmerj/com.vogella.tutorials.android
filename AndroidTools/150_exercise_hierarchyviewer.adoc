@@ -1,13 +1,8 @@
 == Exercise: Hierarchy Viewer
 	
-Continue to use the same example as in the Traceview Excercise
-. Open the
-`Hierarchy View`
-_perspective_
-and analyze the view layer.
+Continue to use the same example as in the Traceview Excercise. 
+Open the `Hierarchy View` _perspective_ and analyze the view layer.
 	
-While none of these layout layers is very performance intensive
-it
-contains redundant layers and unnecessary views. Remove the
-unnecessary view layers.
+While none of these layout layers is very performance intensive it contains redundant layers and unnecessary views. 
+Remove the unnecessary view layers.
 	

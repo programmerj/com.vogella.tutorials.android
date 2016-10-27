@@ -11,8 +11,7 @@ This enables you to run your Android tests in your continuous integration enviro
 _Robolectric_ supports resource handling, e.g., inflation of `views`.
 You can also use the `findViewById()` to search in a `view`.
 
-The homepage of Robolectric under the following URL: http://robolectric.org
-.
+The homepage of Robolectric under the following URL: http://robolectric.org.
 
 Robolectric is not an integration test framework, i.e., you cannot not test the interaction of Android components with it.
 
@@ -25,3 +24,4 @@ Shadow objects behave similar to the Android implementation.
 If a method is not implemented by the shadow object, it simply returns a default value, e.g., null or 0.
 
 To access a shadow object use `Shadows.shadowOf`.
+
