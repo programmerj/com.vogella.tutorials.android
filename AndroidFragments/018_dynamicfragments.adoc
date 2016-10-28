@@ -60,19 +60,24 @@ One way is to define a configuration file in the _values_ resource folder.
 The key / value pair defaults to false and a additional configuration file set this value to true for the desired screensize.
 		
 For example this is a possible default _config.xml_ configuration file.
-		
+
 [source,xml]
 ----
-include::res/mode/config.xml[]
-----
-		
-		
+<resources>
+    <item type="bool" name="twoPaneMode">false</item>
+</resources>
+----    
+    
+Create the same file in your _res/values-land_ folder with a different value.
+
 In the _values-land_ folder you would place a _config.xml_ configuration file with a different value.
 		
 [source,xml]
 ----
-include::res/mode/config2.xml[]
-----
+<resources>
+    <item type="bool" name="twoPaneMode">true</item>
+</resources>
+----        
 
 In your code you can access the state via the following snippet.
 		
