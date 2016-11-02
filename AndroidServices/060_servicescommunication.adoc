@@ -2,143 +2,65 @@
 
 === Options for communication
 
-There are several possibilities for an
-activity
-to communicate
-with
-a
-service
-and vice versa. This section discusses the possible
-approaches and provides
-recommendation which to use.
+There are several possibilities for a communication between an activity and a service.
+The following description discusses the possible approaches and provides recommendation which to use.
 
 === Using Intent data
 
 In a simple scenario no direct communication is required.
-The
-service
-receives the intent data from the starting Android component
-and performs its work. No notification is necessary. For example, in
-case the service updates a content provider, the activity is notified
-by the content provider and no extra step in the service is
-necessary. This approach works for local and services running in
-their own process.
+The service receives the intent data from the starting Android component and performs its work. 
+No notification is necessary. 
+For example, in case the service updates a content provider, the activity is notified by the content provider and no extra step in the service is necessary. 
+This approach works for local and services running in their own process.
 
 === Using receiver
 
-You can also use broadcast events and registered receivers for
-the
-communication.
-For example, your
-activity
-can dynamically register a
-broadcast receiver for an event
-and the
-service
-sends outs corresponding
-events. This is a very typical scenario, in which the service need to
-signal to the activity that his processing has finished.
+You can use broadcasts and registered receivers for the communication.
+For example, your activity can register a broadcast receiver for an event and the service sends outs corresponding events. 
+This is a very typical scenario, in which the service need to signal to the activity that his processing has finished.
 
 This communication flow is depicted in the following graphic.
 
 image::service_receiver10.png[Broadcast receiver used for service to activity communication]
 
-TIP: Android provides the `LocalBroadcastManager`
+This approach works for local and services running in their own process.
+
+[TIP]
+====
+Android provides the `LocalBroadcastManager`
 class in the support library v4. This is a helper class to register
 for
 and send broadcasts of Intents to local objects within your
 process. This approach improves security as the broadcast events
 are only visible within your process and is faster than using
 standard events.
-
-This approach works for local and services running in their own
-process.
+====
 
 === Activity binding to local service
 
-If the
-service
-is started in the same process as the
-activity, the
-activity
-can directly bind to the service. This is a relatively simple
-and
-efficient way to communicate and recommended for activities
-which need to have a fast communication layer with the service.
+If the service is started in the same process as the activity, the activity can directly bind to the service. 
+This is a relatively simple and efficient way to communicate and recommended for activities which need to have a fast communication layer with the service.
 
 This approach works for local services.
 
 === Handler and ResultReceiver or Messenger
 
-If the service should be communicating back to the
-activity,
-it can
-receive an object of type
-`Messenger`
-via the
-`Intent`
-data it receives from the
-activity. If the
-`Messenger`
-is bound to a
-`Handler`
-in the
-activity,
-the
-`service`
-can send objects of type
-`Message`
-to the
-activity.
+If the service should be communicating back to the activity, it can receive an object of type `Messenger` via the `Intent` data it receives from the activity. 
+If the `Messenger` is bound to a `Handler` in the activity, the `service` can send objects of type `Message` to the activity.
 
-A
-`Messenger`
-is parcelable, which means it can be passed to another process and
-you
-can use this object to send
-`Messages`
-to the
-`Handler`
-in the
-activity.
+A `Messenger` is parcelable, which means it can be passed to another process and you  can use this object to send `Messages` to the `Handler` in the activity.
 
-`Messenger`
-also provides the method
-`getBinder()`
-which allows passing a
-`Messenger`
-to the
-activity. The
-activity
-can therefore send
-`Messages`
-to the
-service.
+`Messenger` also provides the method `getBinder()` which allows passing a `Messenger` to the activity. 
+The activity can therefore send `Messages` to the service.
 
-This approach works for local services running in their own
-process.
+This approach works for local services running in their own process.
 
 === AIDL for services in a different process
 
-To bind to a
-service
-which runs in a different process, you need to use
-Inter Process
-Communication (IPC) as the data needs to be sent between
-different
-processes. To do so, you need to create a AIDL file which
-looks
-similar to a Java interface, but ends with the
-_.aidl_
-file extension
-and is only allowed to extend other AIDL files.
+To bind to a service which runs in a different process, you need to use Inter Process Communication (IPC) to community your the data.
+To do so, you need to create a AIDL file which looks similar to a Java interface, but ends with the _.aidl_ file extension and is only allowed to extend other AIDL files.
 
-This approach is required if you need to bind to a service
-running in
-another process, i.e., if your service is consumed by other
-Android applications.
+This approach is required if you need to bind to a service running in another process, i.e., if your service is consumed by other Android applications.
 
-You can find more information about this approach in the
-http://developer.android.com/guide/components/aidl.html- 
-Android developer documentation about AIDL.
+You can find more information about this approach in the http://developer.android.com/guide/components/aidl.html[Android developer documentation about AIDL].
 
