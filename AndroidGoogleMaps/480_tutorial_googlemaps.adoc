@@ -1,11 +1,6 @@
 == Tutorial: Google Maps
 
-=== Target of this exercise
-		
-In this exercise you create an Android application which
-shows a
-`GoogleMap`
-via a fragment.
+In this exercise you create an Android application which shows a `GoogleMap` via a fragment.
 		
 === Install Google Play Services
 		

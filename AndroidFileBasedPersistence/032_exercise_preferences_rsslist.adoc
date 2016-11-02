@@ -1,7 +1,5 @@
 == Exercise: Preference setting for the RSSfeed
 
-=== Target of this exercise
-
 In this exercise you allow the user to enter his preferred URL for an RSS feed via another activity. 
 This activity uses a preference xml file to define the user interface. 
 	

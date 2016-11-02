@@ -1,7 +1,5 @@
 == Exercise: Create an Android library module
 
-=== Target of this exercise
-		
 Our library project will contain the data model and a method to get the number of instances. 
 The library provides access to (fake) RSS data. 
 An _RSS_ document is an XML file which can be used to publish blog entries and news. 

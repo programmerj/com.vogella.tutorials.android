@@ -1,7 +1,5 @@
 == Exercise: Lifecycle
 
-=== Target of this exercise
-
 In this exercise you create an application which allows you to observe the life cycle call of the Android system to your Android application.
 
 === Create project

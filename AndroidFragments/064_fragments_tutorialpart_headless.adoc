@@ -1,9 +1,7 @@
 == Exercise: Use a headless retained fragment to store the state
 
-=== Target of this exercise
-
-We would like to remember the last selection. 
-We use a headless fragment for this
+In this exercise you would like to remember the last selection of the user. 
+We use a headless fragment for this.
 
 === Create headless fragment
 
