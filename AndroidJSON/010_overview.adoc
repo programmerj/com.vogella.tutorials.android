@@ -1,11 +1,5 @@
 == Android and JSON
 	
-The Android platform
-includes
-the json.org libraries which
-allow
-working efficiently
-with JSON
-files. But you can also easily integrated
-other solution for parsing JSON files.
+The Android platform includes the `json.org` library which allows processing and creating JSON files. 
+Altnatively you can use existing Open Source libraries like `GSON` or `Moshi` for your JSON processing.
 	

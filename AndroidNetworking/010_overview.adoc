@@ -1,45 +1,68 @@
-== Overview of HTTP access on Android
+== Overview of network access on Android
 
-=== Available official API's
+=== Accessing the network in Android
 
-Android contains the standard Java network
-`java.net`
-package which can be used to access network resources. The base class
-for HTTP network access in the
-`java.net`
-package is the
-`HttpURLConnection`
-class.
+Android contains the standard Java network `java.net` package which can be used to access network resources. 
+The base class for HTTP network access in the `java.net` package is the `HttpURLConnection` class.
 
-TIP: Android
-also
-contains the
-Apache HttpClient library but it is not
-recommended anymore to use it, as Google is focusing their efforts
-on improving the
-`HttpURLConnection`
-implementation.
+[NOTE]
+====
+Older Android versions also contains the Apache `HttpClient` library.
+But Google recommends not to use this library, as Android version of `HttpURLConnection` is highly efficient.
+====
 
-=== Required permissions
-
-To access the Internet your
-application requires the
-`android.permission.INTERNET`
-permission.
-
-To check the network state your application requires the
-`android.permission.ACCESS_NETWORK_STATE`
-permission.
-
-=== Open source libraries
-
-Performing network operations on Android can be cumbersome. You
-have to open and close a connections, enable caches and ensure to
-perform the network operation in a background thread.
+Performing network operations with standard Java API can be cumbersome. 
+You have to open and close a connections, enable caches and ensure to perform the network operation in a background thread.
 
 To simplify these operations several popular Open Source libraries
 are available. The most popular ones are the following:
 
-* Volley
-* OkHttp
+* OkHttp for efficient HTTP access
+* Retrofit for REST based clients
+* Glide for image processing
+
+=== Permission to access the network
+
+To access the Internet your application requires the `android.permission.INTERNET` permission.
+On modern Android API versions, this permission is automatically granted to your application.
+
+
+=== Check the network availability
+	
+The network on an Android device is not always available. 
+To check the network state your application requires the `android.permission.ACCESS_NETWORK_STATE` permission.
+You can check the network is currently available via the following code.
+
+[source,txt]
+----
+include::res/status/check.txt[]
+----	
+	
+This requires the `ACCESS_NETWORK_STATE` permission.
+
+
+
+===  Good practices for network access under Android
+
+Within an Android application you should avoid performing long running operations on the user interface thread. 
+This includes file and network access.
+
+As of Android 3.0 (Honeycomb) the system is configured to crash with a `NetworkOnMainThreadException` exception, if network is accessed in the user interface thread.
+
+A typical setup for performing network access in a productive Android application is using a service.
+While it is possible to do network access from an activity or a fragment, using a service typical leads to a better overall design because you code in the activity becomes simpler.
+
+[TIP]
+====
+For testing you can allow network access in the main thread via the following snippet at the beginning of your `onCreate()` method of your activity.
+
+[source,txt]
+----
+include::res/strictmode/turnoff.txt[]
+----
+====
+
+
+
+
 

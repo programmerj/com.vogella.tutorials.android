@@ -1,6 +1,7 @@
 == Gradle for building Android applications
 	
-=== Overview
+=== Build files for Android applications
+
 The build process of Android projects is handled by the Gradle build system. 
 If you create a new project in Android studio, the Gradle build scripts are automatically created. 
 Android studio wraps the Gradle runtime, hence no additional installation is required.
@@ -48,9 +49,7 @@ Here is an overview of the important Android Gradle tasks:
 
 To see all available tasks, use the `gradlew wrapper` command.
 
-gradle build
- 
-[source,shell]
+[source,console]
 ----
 include::res/gradle/runBuild.sh[]
 ----
@@ -60,14 +59,14 @@ By default, the Gradle build creates two _.apk_ files in the _build/outputs/apk_
 	
 To build and start your unit tests on the JVM use the following command.
 
-[source,shell]
+[source,console]
 ----
 include::res/gradle/runTests.sh[]
 ----
 	
 To build and start your instrumented tests on your Android device use the following command.
 
-[source,shell]
+[source,console]
 ----
 include::res/gradle/runInstrumentedTests.txt[]
 ----

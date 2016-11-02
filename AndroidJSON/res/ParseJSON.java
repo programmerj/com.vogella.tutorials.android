@@ -20,13 +20,12 @@ import android.os.Bundle;
 import android.util.Log;
 
 public class ParseBugzillaActivity extends Activity {
-	/** Called when the activity is first created. */
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		
-		# Just for testing, allow network access in the main thread
-		# NEVER use this is productive code
+		`
+		# Just for testing, allow network access in the main thread.
+		# NEVER use this is productive code.
 		StrictMode.ThreadPolicy policy = new StrictMode.
 		ThreadPolicy.Builder().permitAll().build();
 		StrictMode.setThreadPolicy(policy); 

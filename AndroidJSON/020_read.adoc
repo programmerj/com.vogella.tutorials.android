@@ -1,14 +1,11 @@
 == Example: reading JSON from Bugzilla
+
 === JSON Example: Bugzilla
 
-https://wiki.mozilla.org/Bugzilla:REST_API[Bugzilla]
-plans to add a REST interface serving JSON.
-You can just call a URI
-and
-retrieve
-JSON.
-Here are some examples from Mozilla which already
-downported this API.:
+https://wiki.mozilla.org/Bugzilla:REST_API[Bugzilla] plans to add a REST interface serving JSON.
+You can just call a URI and retrieve JSON.
+
+Here are some examples from Mozilla which already downported this API.:
 
 . Bugzilla URIs
 |===
@@ -21,43 +18,24 @@ downported this API.:
 |Get all comments for the bug 707428
 |===
 
-Please note that some URIs return a
-`JSONObject`
-object
-while
-others return a
-`JSONArray`.
+Please note that some URIs return a `JSONObject` object while others return a `JSONArray`.
 
 === Project
 
-Create a new
-Android
-project called
-_com.vogella.bugzilla.json_
-with
-the package
-_com.vogella.bugzilla.json_
-and the activity
-called
-_ParseBugzillaActivity_.
+Create a new Android project called _com.vogella.bugzilla.json_ with the package _com.vogella.bugzilla.json_ and the activity called `ParseBugzillaActivity`.
 
-Create the following coding for the activity. This will download the
-twitter feed for the Twitter user called
-_vogella_
-and write the number of entries and the text messages to the Android
-log file.
+Create the following coding for the activity. 
 
 [source,java]
 ----
 include::res/ParseJSON.java[]
 ----
 
-WARNING:The code example allows network access in the main thread to simplify the code snippet. 
+[WARNING]
+====
+The code example allows network access in the main thread to simplify the code snippet. 
 In reality always ensure that network access is done in a background thread.
+=====
 
-To run this example assign the
-_uses-permission_
-to your
-_AndroidManifest.xml_
-for "android.permission.INTERNET".
+To run this example assign the _uses-permission_ to your _AndroidManifest.xml_ for "android.permission.INTERNET".
 

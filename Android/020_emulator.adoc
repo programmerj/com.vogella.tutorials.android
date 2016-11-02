@@ -101,10 +101,9 @@ You need to install the drivers by running the .exe file.
 ====
 This additional installation step is required on Window to accelerate the Intel emulator.
 Only downloading the driver via the Android does not make a difference.
+====
 
-
-After the installation, you can create a new AVD based on the Intel
-emulator. 
+After the installation, you can create a new AVD based on the Intel emulator. 
 The emulator does start faster and is way faster during the execution of your Android application.
 
 === Installation of the Intel emulator on Linux

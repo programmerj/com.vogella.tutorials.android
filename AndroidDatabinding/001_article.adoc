@@ -14,7 +14,6 @@ This tutorial describes the usage of data binding in Android applications to syn
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
-include::080_layoutfiles.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::200_exercise_layout.adoc[]	
 include::../support.adoc[]						

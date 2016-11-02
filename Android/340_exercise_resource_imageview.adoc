@@ -1,11 +1,12 @@
 == Exercise: Using resources in XML files and in code
+
 === Add images to your application
-		
+
 In this exercise you continue to use the existing application.
 Create two new images to your project called _ic_tethering_ and _ic_offline_.
-		
-=== Add views to your project
-		
+
+=== Add widgets to display images to your layout
+
 Open your layout file and add a new `Button` and an `ImageView` to it.
 Assign the ic_offline file to your `ImageView`, via your layout file as demonstrated in the following XML snippet.
 
@@ -13,24 +14,14 @@ Assign the ic_offline file to your `ImageView`, via your layout file as demonstr
 ----
 include::res/exercise_resourceloading/assignimage.xml[]
 ----
-		
 
 === Replace images via button click
 		
-If the button is clicked, use the `findViewById()` to search for the `ImageView`.
-Use its `setImageResource()` method
-to assign the png file (which is represented at runtime via a
-`Drawable`
-object)
-to your
-`ImageView`.
-The parameter of the
-`setImageResource()`
-method is the
-`R`
-reference to your file, e.g.,
-`R.drawable.your_png_file`.
+If the new button is clicked, use the `findViewById()` to search for the `ImageView`.
+Use its `setImageResource()` method to assign the png file to your`ImageView`.
+The parameter of the `setImageResource()` method is the `R` reference to your file, e.g., `R.drawable.your_png_file`.
 		
 === Validating
+
 Ensure that if you press your new button, the displayed image is replaced.
-		
+
