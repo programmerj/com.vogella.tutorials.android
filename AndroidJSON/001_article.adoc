@@ -15,8 +15,6 @@ This article describes how to process JSON within Android.
 
 include::../web/advertisement/afterTableOfContent.adoc[]	
 include::010_overview.adoc[]
-include::020_read.adoc[]
-include::030_write.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
