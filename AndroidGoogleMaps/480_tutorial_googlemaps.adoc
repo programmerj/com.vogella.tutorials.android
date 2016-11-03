@@ -9,7 +9,7 @@ Download and install the Google Play Service.
 === Get API key for Google Maps
 		
 Get your API key for Google maps, as described in
-http://com.vogella.tutorials.android/AndroidGoogleMaps/build/html5/article.html#getting-the-google-map-key.
+http://www.vogella.com/tutorials/AndroidGoogleMaps/article.html#getting-the-google-map-key.
 		
 === Create Project
 		

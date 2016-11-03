@@ -1,6 +1,4 @@
 == Android Styling resources
 
-http://shreyasachar.github.io/AndroidAssetStudio/[Material Design Asset Studio]
-        
 http://android-holo-colors.com/[Android Holo color theme generator]
 

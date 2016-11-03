@@ -1,14 +1,10 @@
 == Android templates
 
-You can define your own templates for the Android project
-creation
-wizard. See the following links for more information.
+You can define your own templates for the Android project creation wizard. 
+See the following links for more information.
 
 Roman Nurik:
 https://plus.google.com/113735310430199015092/posts/XTKTamk4As8
-
-Official documentation:
-https://dl.dropbox.com/u/231329/android/templatedocs/index.html
 
 Additional code templates -
 https://github.com/jgilfelt/android-adt-templates

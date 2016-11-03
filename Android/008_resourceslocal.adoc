@@ -10,11 +10,11 @@ http://code.google.com/p/android/issues/list[Android bug tracker]
 		
 http://groups.google.com/group/android-developers[Android Google Groups]
 		
-http://source.android.com/devices/graphics/architecture.html- Android graphics framework]
+http://source.android.com/devices/graphics/architecture.html[Android graphics framework]
 		
 https://github.com/googlesamples/android-RuntimePermissions[Code example for demonstrating runtime permissions]
 	
-https://possiblemobile.com/2013/06/context/ Overview of the Eclipse contenxt] 
+https://possiblemobile.com/2013/06/context/[Overview of the Eclipse contenxt] 
 	
 === Android learning resources
 

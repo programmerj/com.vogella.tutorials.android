@@ -6,7 +6,7 @@ http://www.vogella.com/tutorials/AndroidLocationAPI/article.html[Android Locatio
 
 http://www.vogella.com/tutorials/AndroidNetworking/article.html[Android and Networking]
 		
-http://code.google.com/intl/de-DE/android/[Android Homepage]
+https://www.android.com/intl/de_de/[Android Homepage]
 		
 http://code.google.com/p/android/issues/list[Android Issues / Bugs]
 		

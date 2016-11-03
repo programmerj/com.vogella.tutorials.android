@@ -1,6 +1,6 @@
 == Exercise: Create Custom Drawables
 
-NOTE: This example is based on http://www.curious-creature.org/2012/12/11/android-recipe-1-image-with-rounded-corners/- Blog post from Roman Guy.
+NOTE: This example is based on http://www.curious-creature.org/2012/12/11/android-recipe-1-image-with-rounded-corners/[Blog post from Roman Guy].
 
 Create the following Android project called
 _com.vogella.android.drawables.custom_

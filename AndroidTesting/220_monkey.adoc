@@ -27,4 +27,4 @@ include::examples/monkey/restartadb.txt[]
 You can use the `-s [seed]`	parameter to ensure that the generated sequence of events is always the same.
 
 
-For more info on Monkey please see the http://developer.android.com/guide/developing/tools/monkey.html[Monkey description].
+For more info on Monkey please see the https://developer.android.com/studio/test/monkey.html[Monkey description].

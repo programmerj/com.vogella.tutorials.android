@@ -6,9 +6,7 @@ http://www.vogella.com/tutorials/Android/article.html[Introduction to Android De
 
 http://www.vogella.com/tutorials/AndroidLocationAPI/article.html[Android Location API and Google Maps]
 
-http://code.google.com/intl/de-DE/android/[Android Homepage]
-
-http://crest.codegist.org/index.html[Crest Framework to access rest services, works also on Android]
+https://www.android.com/intl/de_de/[Android Homepage]
 
 http://hc.apache.org/[Apache HttpClient]
 
