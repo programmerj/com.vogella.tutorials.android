@@ -120,8 +120,6 @@ Select menu:Settings[Development Options], then enable the _USB-Debugging_ optio
 You may also need to install the driver for your mobile phone.
 Linux and Mac OS usually work out of the box while MS Windows typically requires the installation of a driver.
 
-For details on the driver installation on Windows please see http://developer.android.com/guide/developing/device.html.
-
 [NOTE]
 ====
 Of course, the minimum Android version of your Android application needs to fit to the Android version on your device.
