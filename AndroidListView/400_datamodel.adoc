@@ -3,94 +3,57 @@
 [[listviewselection_data]]
 === Interaction between the model and Listview
 
-Frequently you need to select items in your
-`ListView`. As the row of the
-`ListView`
-are getting recycled you cannot store the selection on the
-`View`
-level.
+Frequently you need to select items in your `ListView`. 
+As the rows of the `ListView` are getting recycled you cannot store the selection on the `View` level.
 
 image::interactive10.png[ListView with Interaction and full model]
 	
-Selection is just one possible example but you can imange other
-interaction between your row and model.
+Selection is just one possible example but you can imagine other interaction between your row and model.
 
-To persist the selection you have to update your data model with
-the selected state.
+To persist the selection you have to update your data model with the selected state.
 
-To update the data model in your
-`ListView`
-you define your own
-`Adapter`
-class. In this adapter class you attach a listener to the
-`View`
-which is responsible for selecting the model element. If selected you
-update the state in the model which you can add
-as a tag to the View
-to have access to it.
+To update the data model in your `ListView` you define your own `Adapter` class. 
+In this adapter class you attach a listener to the `View` which is responsible for selecting the model element. 
+If selected, you update the state in the model which you can add as a tag to the View to have access to it.
 
-The following example demonstrates how to use standard Java
-object
-and
-how to interact from the
-`Views`
-with the model.
+The following example demonstrates how to use standard Java objects and how to interact from the `Views` with the model.
 
 [[listadvanced_interactive]]
 === Tutorial: Domain Model and list view rows interaction
 
-Continue to use the
-`de.vogella.android.listactivity`
-project.
+Continue to use the `de.vogella.android.listactivity` project.
 
-Create the following
-`Model`
-which hold the name and the information if this element is
-currently
-selected.
+Create the following `Model` which holds the name and the information if this element is currently selected.
 
 [source,java]
 ----
 include::res/interactive/Model.java[]
 ----
 
-Create the following new layout file called
-_rowbuttonlayout.xml_.
+Create the following new layout file called _rowbuttonlayout.xml_.
 
 [source,xml]
 ----
 include::res/interactive/rowbuttonlayout.xml[]
 ----
 
-Create the following
-`Adapter`. This adapter adds a listener
-on the
-`Checkbox`
-view
-. If the checkbox
-is selected the underlying data of
-the model is
-changed.
-`Checkbox`
-gets the corresponding model element
-assigned via the
-`getTag()`
-method.
+Create the following `Adapter`. 
+This adapter adds a listener on the `Checkbox` view. 
+If the checkbox is selected the underlying data of the model is changed.
+`Checkbox` gets the corresponding model element assigned via the `getTag()` method.
 
 [source,java]
 ----
 include::res/interactive/InteractiveArrayAdapter.java[]
 ----
 
-Finally change your
-activity
-to the following.
+Finally change your activity to the following.
 
 [source,java]
 ----
 include::res/interactive/MyList.java[]
 ----
 
- If you start your app you should be able to flag items. These
-changes will be reflected in your model.
+If you start your app you should be able to flag items. 
+These changes will be reflected in your model.
 

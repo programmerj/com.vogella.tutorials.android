@@ -3,25 +3,10 @@
 [[adapterown_custom]]
 === Developing a custom adapter
 		
-The
-`ArrayAdapter`
-is limited as it supports only the mapping of
-`toString()`
-to one view in the row layout.
-To control the data assignment and to
-support
-several views, you
-have to
-create your
-custom adapter
-implementation.
+The `ArrayAdapter` is limited as it supports only the mapping of `toString()` to one view in the row layout.
+To control the data assignment and to support several views, you have to create your custom adapter implementation.
 		
-For this you would extend an
-existing adapter
-implementation or
-subclass the
-`BaseAdapter`
-class directly.
+For this you would extend an existing adapter implementation or subclass the `BaseAdapter` class directly.
 
 TIP: Frequently you extend `ArrayAdapter` to write a custom adapter, as this is simpler than extending `BaseAdapter` directly.
 	
@@ -29,66 +14,28 @@ TIP: Frequently you extend `ArrayAdapter` to write a custom adapter, as this is 
 === Preparing a row for the list
 		
 The adapter needs to create a layout for each row of the list.
-The
-`ListView`
-instance
-calls the
-`getView()`
-method on the adapter for each data element. In this method the
-adapter creates the row
-layout and maps the data to the views in the
-layout.
+The `ListView` instance calls the `getView()` method on the adapter for each data element. 
+In this method the adapter creates the row layout and maps the data to the views in the layout.
 		
-This root of the layout is typically a
-`ViewGroup`
-(layout manager)
-and contains several other
-views, e.g., an
-`ImageView`
-and a
-`TextView`. The following graphic shows a list with different layouts for odd
-and even rows.
+This root of the layout is typically a `ViewGroup` (layout manager) and contains several other views, e.g., an `ImageView` and a `TextView`. 
+The following graphic shows a list with different layouts for odd and even rows.
 		
 image::adapter10.png[Adapter provides data and defines the layout per row]
 		
-Within the
-`getView()`
-method you would inflate an XML based layout and then set
-the
-content
-of
-the individual views based on the Java object for this row.
-To
-inflate the XML layout file, you can use the
-`LayoutInflator`
-system
-service.
+Within the `getView()` method you would inflate an XML based layout and then set the content of the individual views based on the Java object for this row.
+To inflate the XML layout file, you can use the `LayoutInflator` system service.
 		
-NOTE: This layout inflator service can get accessed via the `getLayoutInflator()` method of the activity or via the
-`context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)` method call.
+NOTE: This layout inflator service can get accessed via the `getLayoutInflator()` method of the activity or via the `context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)` method call.
 		
-After the adapter inflated the layout, it searches for the relevant
-views in the layout and fills them with the data.
-The individual
-elements
-in the layout can be found via
-the
-`findViewById()`
-method call on the top level view.
+After the adapter inflated the layout, it searches for the relevant views in the layout and fills them with the data.
+The individual elements in the layout can be found via the `findViewById()` method call on the top level view.
 
 [[adapterown_example]]
 === Example for a custom adapter
 		
-The following code shows an implementation of a custom adapter. This
-adapter
-assumes that you have two png files (no.png and ok.png) in
-one of
-your
-_directory]]res/drawable_
-folders. The coding inflates an XML layout file,
-finds the relevant
-views
-in the layout and sets their content based on the input data.
+The following code shows an implementation of a custom adapter. 
+This adapter assumes that you have two png files (no.png and ok.png) in one of your _directory]]res/drawable_ folders. 
+The coding inflates an XML layout file, finds the relevant views in the layout and sets their content based on the input data.
 		
 [source,java]
 ----
@@ -98,14 +45,6 @@ include::res/snippets/MySimpleArrayAdapter.java[]
 [[adapterown_interaction]]
 === Updating the data model from the adapter
 
-The row can also contain
-_views_
-which interact with the underlying data model via the adapter. For
-example, you can
-have
-a
-`Checkbox`
-in your row layout and if the
-`Checkbox`
-is selected, the underlying data is changed.
+The row can also contain _views_ which interact with the underlying data model via the adapter. 
+For example, you can have a `Checkbox` in your row layout and if the `Checkbox` is selected, the underlying data is changed.
 

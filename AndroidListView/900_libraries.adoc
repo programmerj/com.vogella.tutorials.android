@@ -1,20 +1,10 @@
 [[actionbar_libraries]]
 == Additional Open Source libraries
 	
-Sometimes having to press a refresh button on the ActionBar to
-refresh
-data can be annoying for the user. Chris Banes has implemented
-an Open
-Source
-library to implement the pull to refresh
-pattern for a
-`Listview`. https://github.com/chrisbanes/Android-PullToRefresh.
+Sometimes having to press a refresh button on the ActionBar to refresh data can be annoying for the user. 
+Chris Banes has implemented an Open Source library to implement the pull to refresh pattern for a `Listview`. 
+See https://github.com/chrisbanes/Android-PullToRefresh.
 	
-Also you may want to use the swipe to dismiss gesture to delete
-items
-from a ListView. Roman Nurik provides an example for this at
-https://github.com/romannurik/android-swipetodismiss[Android swipe-to-dismiss library]
-which
-Jake Wharton backported to earlier Android releases at
-https://github.com/JakeWharton/SwipeToDismissNOA[SwipeToDismissNOA].
+Also you may want to use the swipe to dismiss gesture to delete items from a ListView. 
+Roman Nurik provides an example for this at https://github.com/romannurik/android-swipetodismiss[Android swipe-to-dismiss library] which Jake Wharton backported to earlier Android releases at https://github.com/JakeWharton/SwipeToDismissNOA[SwipeToDismissNOA].
 

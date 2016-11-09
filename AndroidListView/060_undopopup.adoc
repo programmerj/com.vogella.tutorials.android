@@ -6,65 +6,43 @@
 It is good practice to allow the user to undo critical actions.
 Such a critical action is, for example, the deletion of list items.
 		
-A proven
-pattern to handle this undo option is to offer
-a
-selection
-at the end of the
-screen. This selection vanishes after a
-predefined
-time or once
-the user continues to interact with the
-application.
+A proven pattern to handle this _undo option_ is to offer a selection at the end of the screen. 
+This selection vanishes after a predefined time or once the user continues to interact with the application.
 		
-For example, the
-Gmail application implements such a
-behavior.
+For example, the Gmail application implements such a behavior.
 		
 image::undobutton02.png[Undo button]
 	
 [[listview_undoaction2]]
 === Example
 		
-The following description contains an example for implementing
-an undo action. It uses an animation to phase out the
-undo button
-automatically out after a while.
+The following description contains an example for implementing an _undo action_. 
+It uses an animation to phase out the undo button automatically out after a while.
 		
-For this example create a new project called
-_com.vogella.android.userinterface.undo_
-based on the
-_BlankTemplate_
-template.
+For this example create a new project called _com.vogella.android.userinterface.undo_ based on the _BlankTemplate_ template.
 		
-Create the following layout for your
-_activity_. It uses a
-`FrameLayout`
-to show two different parts of the user interface. The button bar is
-initially hidden. The button uses a drawable. Either add such a
-drawable
-to your project or remove the reference.
+Create the following layout for your _activity_. 
+It uses a `FrameLayout` to show two different parts of the user interface. 
+The button bar is initially hidden. 
+The button uses a drawable. 
+Either add such a drawable to your project or remove the reference.
 		
 [source,xml]
 ----
 include::res/undo/activity_main.xml[]
 ----
 		
-Change your
-_activity_
-so that it is similar to the following code. The project
-wizard generated an `ActionBar` entry. This entry is
-used in the following code. If in doubt, create your own `ActionBar`
-entry.
+Change your _activity_ so that it is similar to the following code. 
+The project wizard generated an `ActionBar` entry. 
+This entry is used in the following code. 
+If in doubt, create your own `ActionBar` entry.
 		
 [source,java]
 ----
 include::res/undo/MainActivity.java[]
 ----
 		
-If you select the entry in the
-_ActionBar_,
-the button bar becomes visible for 5 seconds.
+If you select the entry in the _ActionBar_, the button bar becomes visible for 5 seconds.
 		
 image::undobutton10.png[Undo button]
 	

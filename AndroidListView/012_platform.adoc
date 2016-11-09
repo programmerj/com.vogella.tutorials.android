@@ -4,59 +4,23 @@
 [[listview_defaultadapter]]
 === Default platform adapter
 		
-Android provides default
-adapter implementations; the most important
-are
-`ArrayAdapter`
-and
-`CursorAdapter`.
-`ArrayAdapter`
-can handle data based on
-`Arrays`
-or
-`java.util.List`.
-`SimpleCursorAdapter`
-can
-handle database related data.
+Android provides default adapter implementations; the most important are `ArrayAdapter` and `CursorAdapter`.
+`ArrayAdapter` can handle data based on `Arrays` or `java.util.List`.
+`SimpleCursorAdapter` can handle database related data.
 
 [[arrayAdapter]]
 === Using ArrayAdapter
 		
-The
-`ArrayAdapter`
-class can handle a list or array of Java objects as input. Every Java
-object is mapped to one row. By
-default,
-it maps the
-`toString()`
-method of the object to a view in the row layout.
+The `ArrayAdapter` class can handle a list or arrays of Java objects as input. 
+Every Java object is mapped to one row. 
+By default, it maps the `toString()` method of the object to a view in the row layout.
 		
-You can
-define
-the ID
-of the view in the constructor of the
-`ArrayAdapter`
-otherwise the
-`android.R.id.text1`
-ID is used as default.
+You can define the ID of the view in the constructor of the `ArrayAdapter` otherwise the `android.R.id.text1` ID is used as default.
 		
-The
-`ArrayAdapter`
-class allows to remove all elements in its underlying data structure
-with the
-`clear()`
-method call. You can then add new elements via the
-`add()`
-method or a `Collection` via the
-`addAll()`
-method.
+The `ArrayAdapter` class allows to remove all elements in its underlying data structure with the `clear()` method call. 
+You can then add new elements via the `add()` method or a `Collection` via the `addAll()` method.
 		
-You can also directly modify the underlying data structure and call
-the
-`notifyDataSetChanged()`
-method on the
-adapter
-to notify it about the changes in data.
+You can also directly modify the underlying data structure and call the `notifyDataSetChanged()` method on the adapter to notify it about the changes in data.
 		
 WARNING: If you want to change the data in your adapter, the underlying data structure must support this operation. 
 This is, for example, the case for the `ArrayList` class, but not for arrays.
@@ -64,23 +28,16 @@ This is, for example, the case for the `ArrayList` class, but not for arrays.
 [[listview_listviewexample]]
 === ListView example with ArrayAdapter
 		
-The following listing shows a layout file called
-_activity_listviewexampleactivity.xml_
-which includes a
-`ListView`.
+The following listing shows a layout file called _activity_listviewexampleactivity.xml_ which includes a `ListView`.
 		
 [source,xml]
 ----
 include::res/snippets/layoutwidthlist.xml[]
 ----
 		
-The following example shows the usage of the
-`ListView`
-view in an activity. It uses a default layout from the Android
-platform for the row layout. It also demonstrates the removal of list
-items and uses
-animations for
-the removal.
+The following example shows the usage of the `ListView` view in an activity. 
+It uses a default layout from the Android platform for the row layout. 
+It also demonstrates the removal of list items and uses animations for the removal.
 		
 [source,java]
 ----

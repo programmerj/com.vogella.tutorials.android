@@ -3,46 +3,24 @@
 [[listactivity_overview]]
 === Default container for using ListView
 		
-Android provides specialized fragment and activity classes to
-simplify list
-handling.
+Android provides specialized fragment and activity classes to simplify list handling.
 		
-The classes are the
-`ListActivity`
-class if you want to use lists in activities and the
-`ListFragment`
-class if you want to use lists in fragments.
+The classes are the `ListActivity` class, if you want to use lists in activities, and the `ListFragment` class, if you want to use lists in fragments.
 		
-You do not have to assign a layout to these elements. If you do
-not define a layout, the activity or fragment contains a
-single
-`ListView`
-by default.
-`ListActivity`
-and
-`ListFragment`
-also allow you to override
-a
-`onListItemClick()`
-method for handling selection of list items.
+You do not have to assign a layout to these elements. 
+If you do not define a layout, the activity or fragment contains a single `ListView` by default.
+`ListActivity` and `ListFragment` also allow you to override a `onListItemClick()` method for handling selection of list items.
 		
-Both classes allow you to set the adapter to the default
-`ListView`
-via the
-`setListAdapter()`
-method.
+Both classes allow you to set the adapter to the default `ListView` via the `setListAdapter()` method.
 		
-The following example code shows a simple
-`ListFragment`
-implementation.
+The following example code shows a simple `ListFragment` implementation.
 		
 [source,java]
 ----
 include::res/fragmentslist/MyListFragment.java[]
 ----
 		
-The next example code demonstrates the usage of a
-`ListActivity`.
+The next example code demonstrates the usage of a `ListActivity`.
 		
 [source,java]
 ----
@@ -53,16 +31,9 @@ include::res/snippets/MyListActivity.java[]
 [[listactivity_layout]]
 === ListActivity and custom layout
 		
-You can use a custom layout with
-`ListActivity`
-or
-`ListFragment`. In this case the fragment or activity searches in the provided
-layout for a
-`ListView`
-with the pre-defined
-`android:id`
-attribute set to
-`@android:id/list`. This usage is demonstrated by the following code snippet.
+You can use a custom layout with `ListActivity` or `ListFragment`. 
+In this case the fragment or activity searches in the provided layout for a `ListView` with the predefined `android:id` attribute set to `@android:id/list`. 
+This usage is demonstrated by the following code snippet.
 		
 
 		
@@ -71,26 +42,12 @@ attribute set to
 include::res/lists/listid.xml[]
 ----
 		
-		<warning>
-
-	If you do not use this ID or do not include a
-	`ListView`
-	into your layout, the application crashes once you try to display
-	the activity or the fragment.
+WARNING: If you do not use this ID or do not include a `ListView` into your layout, the application crashes once you try to display the activity or the fragment.
 	
 [[listactivity_emptyview]]
 === Placeholder for an empty list
 		
-You can also use a view with the
-`@android:id/empty`
-ID in your layout. The corresponding activity and fragment shows this
-view automatically if the
-`ListView`
-is empty and hides it otherwise.
-For example, you could
-display
-an
-error message
-in such
-a view.
+You can also use a view with the `@android:id/empty` ID in your layout. 
+The corresponding activity and fragment shows this view automatically if the `ListView` is empty and hides it otherwise.
+For example, you could display an error message in such a view.
 

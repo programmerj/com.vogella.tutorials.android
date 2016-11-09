@@ -3,121 +3,51 @@
 [[adapterperformance_motivation]]
 === Motivation
 		
-Performance is especially important on Android as users expect
-fast reaction times. Compared to desktop computers an Android
-device
-is relatively slow from the hardware perspective.
+Performance is especially important on Android as users expect fast reaction times. 
+Compared to desktop computers an Android device is relatively slow from the hardware perspective.
 		
-This part describes how to reduce these operations to implement your
-custom list adapter efficiently. The default Android adapters like
-`ArrayAdapter`
-are already performance optimized.
+This part describes how to reduce these operations to implement your custom list adapter efficiently. 
+The default Android adapters like `ArrayAdapter` are already performance optimized.
 	
 [[adapterperformance_problems]]
 === Time consuming operations
 		
-Every
-view
-which get inflated from an XML layout file will result
-in a Java
-object. Inflating layouts and creating Java objects is
-expensive with regards to
-time and
-memory
-consumption.
+Every view which gets inflated from an XML layout file will result in a Java object. 
+Inflating layouts and creating Java objects are expensive with regards to time and memory consumption.
 		
-In addition using the
-`findViewById()`
-method is relatively time consuming, even though it is not as bad
-as
-XML inflating.
+In addition using the `findViewById()` method is relatively time consuming, even though it is not as bad as XML inflating.
 	
 [[adapterperformance_convertview]]
 === Avoiding layout inflation and object creation
 		
-A
-`ListView`
-typically contains more data than the number of displayed rows.
-If the
-user scrolls
-the
-list, then rows and
-their
-associated
-views
-are being
-scrolled
-out of the visible area. The Java objects which
-represents the
-rows
-can be reused for newly visible rows.
+A `ListView` typically contains more data than the number of displayed rows.
+If the user scrolls the list, then the rows and their associated views will be scrolled out of the visible area. 
+The Java objects which represent the rows can be reused for newly visible rows.
 		
-If Android determines that a
-row is not visible anymore, it allows the
-`getView()`
-of the adapter
-method to reuse the associated view via the
-`convertView`
-parameter.
+If Android determines that a row is not visible anymore, it allows the `getView()` of the adapter method to reuse the associated view via the `convertView` parameter.
 		
-The adapter can
-assign
-new
-data to the views contained in the view
-hierarchy of the
-`convertView`. This avoids inflating an XML file and creating new Java objects.
+The adapter can assign new  data to the views contained in the view hierarchy of the `convertView`. 
+This avoids inflating an XML file and creating new Java objects.
 		
-In case Android cannot reuse a row, the Android system passes
-`null`
-to the
-`convertView`
-parameter. Therefore the adapter implementation needs to check for
-this.
+In case Android cannot reuse a row, the Android system passes `null` to the `convertView` parameter. 
+Therefore the adapter implementation needs to check for this.
 	
 [[adapterperformance_holder]]
 === View holder pattern
 		
-A
-_ViewHolder_
-implementation
-allows to avoid the
-`findViewById()`
-method in an adapter.
+A _ViewHolder_ implementation allows to avoid the `findViewById()` method in an adapter.
 		
-A
-`ViewHolder`
-class is typically a static inner class in your adapter which holds references
-to
-the relevant views.
-in your layout. This reference is assigned to
-the
-row view as a tag via the
-`setTag()`
-method.
+A `ViewHolder` class is typically a static inner class in your adapter which holds references to the relevant views in your layout. 
+This reference is assigned to the row view as a tag via the `setTag()` method.
 		
-If we receive a
-`convertView`
-object, we can get the instance of the
-`ViewHolder`
-via the
-`getTag()`
-method and assign the new attributes to the
-views
-via the
-`ViewHolder`
-reference.
+If we receive a `convertView` object, we can get the instance of the `ViewHolder` via the `getTag()` method and assign the new attributes to the views via the `ViewHolder` reference.
 		
-While this sounds complex this is approximately 15 % faster then
-using the
-`findViewById()`
-method.
+While this sounds complex this is approximately 15 % faster then using the `findViewById()` method.
 
 [[adapterperformance_example]]
 === Example
 		
-The following code shows a performance optimized adapter
-implementation which reuses existing views and implements the holder
-pattern.
+The following code shows a performance optimized adapter implementation which reuses existing views and implements the holder pattern.
 		
 [source,java]
 ----

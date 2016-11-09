@@ -1,20 +1,14 @@
 [[tutorial_twolistitems]]
 == Tutorial: How to display two items in a ListView
 
-You can use the
-`SimpleAdapter`
-class to show the data of two elements. This class expects a Array of
-Strings (
-`from`
-data) in which the fields of the input data are defined. It also
-requires a Array of ints which defines the IDs of the widgets in the
-layout for the row to which these fields are mapped.
+You can use the `SimpleAdapter` class to show the data of two elements. 
+This class expects an Array of Strings (`from` data) in which the fields of the input data are defined. 
+It also requires an Array of ints which defines the IDs of the widgets in the layout for the row to which these fields are mapped.
 
-The actual data is then a list of Maps. The Map defines for each
-field in the from data a value.
+The actual data is then a list of Maps. 
+The Map defines for each field in the `from` data a value.
 
- The following shows an example which reuses an predefined layout
-from Android for the row.
+The following shows an example which reuses a predefined layout from Android for the row.
 
 [source,java]
 ----
