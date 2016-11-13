@@ -6,7 +6,7 @@
 Create a new Android project with the _testing.android.vogella.com.simpleactivity_ package and the Empty Activity template.
 		
 		
-Add a second activity called `SecondActivity` to your project via menu:File[New>Activity>Blank Activity].
+Add a second activity called `SecondActivity` to your project via menu:File[New>Activity>Empty Activity].
 This activity should use a layout with at least one `TextView`. 
 The id of the `TextView` should be "resultText" and its text should be set to "Started".
 		

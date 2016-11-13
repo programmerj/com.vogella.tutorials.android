@@ -4,7 +4,7 @@
 [[exercise_applicationtesting_project]]	
 === Create project
 
-Create a new Android application with the `com.vogella.android.testing.applicationtest` package name based on the _Blank Activity_ template.
+Create a new Android application with the `com.vogella.android.testing.applicationtest` package name based on the _Empty Activity_ template.
 
 Add the following application object to your application.
 

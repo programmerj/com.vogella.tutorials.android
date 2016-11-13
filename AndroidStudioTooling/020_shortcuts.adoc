@@ -46,10 +46,13 @@ The following is a list of useful shortcuts for Android Studio.
 |
 |Show the possible parameters of a method or an constructor.
 
-|kbd:[Shift+Alt+Up] or kbd:[Shift+Alt+Down]
-|
-|Moves line up or down
-
 |===
 
 
+[TIP]
+====
+The Gradle operation _Sync now_ is a frequent task, I suggest to assign a shortcut to it. 
+For this, select menu:File[Settings...Keymap] and use the right mouse click to assign a shortcut to _Sync now_.
+
+image::syncnow-android-studio-shortcut.png[Assing a shortcut to "Sync Now" in Android Studio]
+====

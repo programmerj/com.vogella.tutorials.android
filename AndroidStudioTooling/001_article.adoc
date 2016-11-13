@@ -15,6 +15,7 @@ It focuses on the usage of the IDE and not on the Android development in general
  
 include::../web/advertisement/afterTableOfContent.adoc[]               
 include::010_overview.adoc[]
+include::020_shortcuts.adoc[]
 include::040_typicaltasks.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::060_workingwithgit.adoc[]
