@@ -13,7 +13,7 @@ import android.widget.Toolbar;
 public class RssfeedActivity extends Activity implements
         MyListFragment.OnItemSelectedListener {
 
-    SelectionStateFragment stateFragment;
+    // as before
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +23,7 @@ public class RssfeedActivity extends Activity implements
         // #<1>
         Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
         setActionBar(tb);
-        // as before
+        // more code as before
     }
 
     // #<2>
@@ -52,14 +52,11 @@ public class RssfeedActivity extends Activity implements
             default:
                 break;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
     @Override
     public void onRssItemSelected(String link) {
-    	// as before
+    	// more code as before
     }
-
-
 }

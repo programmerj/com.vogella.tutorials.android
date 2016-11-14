@@ -1,13 +1,13 @@
 == Exercise: Trigger refresh on the  MyListFragment via the toolbar
 
-For testing purpose you want to fill your list only once the user selects refresh from the toolbar (or via swipe-to-refresh).
-Therefore your recycler view should be initially empty.
+For testing purpose you want to fill your recyler view only once the user selects refresh from the toolbar (or via swipe-to-refresh).
+Therefore, your recycler view should be initially empty.
 
 === Remove the initial data
 
-Remove the call to `updateListContent()` in the `OnCreate()` method of your `MyListFragment` class. 
+In your _RSS Reader_ project remove the call to `updateListContent()` in the `onCreate()` method of your `MyListFragment` class. 
 
-=== Update the data in the MyListFragment if refresh is selected
+=== Update the MyListFragment if refresh is selected
 In your `RssfeedActivity` class, implement the logic of the `Refresh` action. 
 If the user selects refresh, the `updateListContent()` method in your `MyListFragment` should be called.
 
@@ -17,7 +17,8 @@ If the user selects refresh, the `updateListContent()` method in your `MyListFra
 public boolean onOptionsItemSelected(MenuItem item) {
 	switch (item.getItemId()) {
      case R.id.action_refresh:
-   Toast.makeText(this, "Action Settings selected", Toast.LENGTH_SHORT).show();
+     //TODO 
+     // find fragment via FragmentManager and call updateListContent() on it.
    break;
      default:
    break;
@@ -26,10 +27,8 @@ public boolean onOptionsItemSelected(MenuItem item) {
 }
 ----
 
-
 ////
-TODO - Move to optional section
-
+TODO Move to advanced chapter
 In your `MyListFragment` tell Android that the fragment also contributes actions via the `onCreate` method and evaluate the refresh action.
 
 [source,java]

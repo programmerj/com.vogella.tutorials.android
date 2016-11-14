@@ -1,13 +1,9 @@
 == Managing the application life cycle
 
-In an ideal case all
-Android applications started by the user
-remain in memory, that makes
-restarting applications faster. But in
-reality the available memory on an Android device is limited. To
-manage
-these limited
-resources the Android
+In an ideal case all Android applications started by the user remain in memory.
+That makes applications switching much faster for the user.
+But in reality the available memory on an Android device is limited. 
+To manage these limited resources the Android
 system is
 allowed to terminate
 running
@@ -23,6 +19,7 @@ If the Android system needs to terminate processes it follows the
 following priority system.
 
 .Priorities
+[cols="1,3,1",options="header"]
 |===
 |Process status |Description |Priority
 	
