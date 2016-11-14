@@ -130,6 +130,12 @@ Select the menu:Code[Generate...] menu entry to generate getter, setter, constru
 To rename a resource, e.g., a Java file, select menu:Refactor[Rename...] from the context menu of the corresponding resource or use the kbd:[Shift+F6] shortcut.
 
 
+=== Structure overview of a class / interface (similar to Outline view in Eclipse)
+
+To see the structure of a class or an interface you can use the _Structure_ view (kbd:Alt+7[]).
+This gives you an overview of the selected element, similar to the _Outline_ view in Eclipse.
+
+image::structure_view_in_androidstudio.png[]
 [[androidstudio_sourceupdate]]
 === Using Java 8 in Android applications
         
@@ -166,7 +172,6 @@ android {
   }
 }
 ----
-
 
 === Using live template in your Java code
 	

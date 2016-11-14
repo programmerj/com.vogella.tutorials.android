@@ -46,6 +46,10 @@ The following is a list of useful shortcuts for Android Studio.
 |
 |Show the possible parameters of a method or an constructor.
 
+|kbd:[Shift+Alt+&#8593;] or kbd:[Shift+Alt+&#8595;] 
+|
+|Moves selected line(s) up or down.
+
 |===
 
 

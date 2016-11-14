@@ -1,10 +1,11 @@
 == Introduction to Android Studio
 
-=== Introduction to Android Studio
+=== What is Android Studio?
 Android Studio is currently the IDE promoted by Google for Android development. 
-It is based on IntelliJ and is basically a fork of its code base with additional Android development capabilities added.
+It is based on IntelliJ and adds  Android development capabilities.
 		
 === The Android Studio toolbar
+
 The Android Studio toolbar contains several entries which are specific for Android development 
 
 image::androidstudiotoolbar.png[The Android Studio toolbar]
@@ -33,13 +34,10 @@ image::androidstudiotoolbar.png[The Android Studio toolbar]
 Android Studio stores the projects by default in the home folder of the user under _AndroidStudioProjects_.
 		
 		
-The main directory contains configuration files for Android Studio and the Gradle build files. The application
-relevant files are
-contained in the
-_app_
-folder and the most interesting files are contained in the
-_src_
-folder. This structure is depicted in the following screenshot.
+The main directory contains configuration files for Android Studio and the Gradle build files. 
+The application relevant files are contained in the _app_ folder.
+The most interesting files are contained in the _src_ folder. 
+This structure is depicted in the following screenshot.
 		
 image::androidstudio_filestructure10.png[Android Studio file structure]
 		
@@ -51,39 +49,36 @@ This view is not identical with the file structure.
 
 === Opening new projects / switching between projects
 		
-Android Studio displays different projects in a different window. You can select menu:File[Open...] to open an existing project. 
+Android Studio displays different projects in a different window. 
+You can select menu:File[Open...] to open an existing project. 
 This opens a new window with this project.
 		
 		
-Alternative you can close the current project via menu:File[Close Project]. and create a new one or open an existing project.
+Alternative, you can close the current project via menu:File[Close Project] and create a new one or open an existing project.
 		
 === Clean build / synchronizing the project with Gradle
 		
-Unfortunately the build functionality in Android Studio sometimes fails to recognize that a resource has changed.
-If you want to trigger manually a full rebuild, select menu:Build[Clean Project] to perform a clean build with Gradle.
-		
+The build functionality in Android Studio sometimes fails to recognize that a resource has changed.
+If you want to trigger manually a full rebuild, select menu:Build[Clean Project] to perform a complete build of all input.
 		
 Changes in the Gradle build file, require manual intervention.
 To synchronize your project with Gradle, use menu:Tools[Android>Sync Project with Gradle Files] or press the corresponding hyperlink in the tooltip of the Gradle build file editor.
 		
 === Updating settings for Android Studio
-
 		
-Android Studio is provided in different flavors, the user can select if he want to use a stable version or test out
-recent features.
+Android Studio is provided in different flavors. 
+The user can select if he want to use a stable version or test out recent features.
 
-* Canary channel: Canary builds are the bleeding edge, released about weekly. While these builds do get tested,
-they are still
-subject to bugs, as we want people to see what's new as soon as possible. This is not recommended
+* Canary channel: 
+Canary builds are the bleeding edge, released about weekly. 
+While these builds do get tested, they are still subject to bugs, as we want people to see what's new as soon as possible. This is not recommended
 for production.
-* Dev channel: Dev builds are hand-picked older canary builds that survived the test of time. It should be
-updated roughly
-bi-weekly or
-monthly.
-* Beta channel: When we reach a beta milestone for the next version of Android Studio, we post the beta builds
-here. When the
-version is
-stable, the beta channel contains the stable version until the next version's beta.
+* Dev channel: 
+Dev builds are hand-picked older canary builds that survived the test of time. 
+It should be updated roughly bi-weekly or monthly.
+* Beta channel: 
+If a new beta milestone for the next version of Android Studio is reached, this channel gets an update.
+When the version is stable, the beta channel contains the stable version until the next version's beta.
 * Stable channel: Contains the most recent stable version of Android Studio.
 		
 image::as_updatesettings10.png[Update setttings]
@@ -98,8 +93,9 @@ image::asproxy10.png[Defining a proxy]
 		
 
 === Android Device Monitor
+
 (((Android Device Monitor in Android Studio)))
-Android Studio allows to open the Android Device Monitor via the toolbar or via the menu:Tools[Android>Android Device Monitor]. menu.
+Android Studio allows to open the Android Device Monitor via the toolbar or via the menu:Tools[Android>Android Device Monitor] menu.
 	
 This starts an Eclipse based application called _Android Device Monitor_ for interacting with your Android (virtual) device and your Android application.
 	
