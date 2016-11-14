@@ -1,4 +1,4 @@
-== Exercise: Use different number of fragments depending on the configuration
+== Exercise: Fragments depending on the configuration
 
 The _RssfeedActivity_ should show two fragments (two panes) if started in landscape mode.
 In this exercise you adjust your application to support this.

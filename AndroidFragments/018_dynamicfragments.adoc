@@ -66,7 +66,7 @@ For example this is a possible default _config.xml_ configuration file.
 <resources>
     <item type="bool" name="twoPaneMode">false</item>
 </resources>
-----    
+----
     
 Create the same file in your _res/values-land_ folder with a different value.
 
@@ -77,7 +77,7 @@ In the _values-land_ folder you would place a _config.xml_ configuration file wi
 <resources>
     <item type="bool" name="twoPaneMode">true</item>
 </resources>
-----        
+----
 
 In your code you can access the state via the following snippet.
 		
@@ -85,3 +85,49 @@ In your code you can access the state via the following snippet.
 ----
 include::res/mode/Access.java[]
 ----
+
+=== Adding fragments transition to the backstack
+	
+You can add a `FragmentTransition` to the backstack to allow the user to use the back button to reverse the transition.
+	
+For this you can use the `addToBackStack()` method on the `FragmentTransition` object.
+
+=== Animations for fragment transitions
+	
+During a fragment transaction, you can define animations based on the _Property Animation_ API via the `setCustomAnimations()` method.
+	
+You can also use several standard Android animations via the `setTransition()` method call.
+These are defined via the constants starting with `FragmentTransaction.TRANSIT_FRAGMENT_*`.
+	
+Both methods allow you to define an entry animation and an existing animation.
+
+
+=== Persisting data in fragments
+
+==== Persisting data between application restarts
+		
+Frequently in your Android application you need to persist your application data. For this, you can for example
+use an
+SQLite database or a file.
+		
+
+==== Persisting data between configurations changes
+		
+If you want to persist data between configuration changes, you can also use the application object.
+		
+		
+In addition to that you can use the `setRetainState(true)` method call on the fragment. 
+This retains the fragment instances between configuration changes.
+It only works if the fragments are not added to the backstack. 
+In this case the data must be stored as member (field).
+
+[NOTE]
+====
+Using this method is not recommended by Google for fragments which have a user interface. 
+See <<headlessfragments1>>.
+====
+
+You can use the `onSaveInstanceState()` method to place the data in the `Bundle`.
+You can retrieve that data the `onActivityCreated()` method.
+		
+

@@ -1,9 +1,0 @@
-== Animations for fragment transitions
-	
-During a fragment transaction, you can define animations based on the _Property Animation_ API via the `setCustomAnimations()` method.
-	
-You can also use several standard Android animations via the `setTransition()` method call.
-These are defined via the constants starting with `FragmentTransaction.TRANSIT_FRAGMENT_*`.
-	
-Both methods allow you to define an entry animation and an existing animation.
-
