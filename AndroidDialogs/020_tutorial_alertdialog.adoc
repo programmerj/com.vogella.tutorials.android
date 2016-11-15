@@ -1,5 +1,4 @@
 == Exercise: Using the DialogFragment class
-=== Target
 		
 The following demonstrates the usage of the `DialogFragment` dialog in an activity with an existing dialog and with a custom layout for the dialog.
 		

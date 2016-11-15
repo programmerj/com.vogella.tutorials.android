@@ -6,8 +6,8 @@ The Android Support Library package is a set of code libraries that provide back
 They also provide features and widgets that are only available through the library APIs. 
 Each support library is backward-compatible to a specific Android API level.
 
-In general you find two types of support libraries. The first type provides framework functionality for older API
-releases, the second type provides new functionality for all devices. This functionality is either net yet part of the
+In general you find two types of support libraries. 
+The first type provides framework functionality for older API releases, the second type provides new functionality for all devices. This functionality is either net yet part of the
 platform or will never be part of the platform, so that Google can continue to improve it faster than Android platform
 API.
 
@@ -43,7 +43,7 @@ Includes also support for material design user interface.
 |compile "com.android.support:recyclerview-v7:24.0.0"
 
 | Design library to support material design
-| Support of 
+| Adds support for material design applications
 | compile 'com.android.support:design:24.0.0'
 |===
 
@@ -59,16 +59,9 @@ http://developer.android.com/tools/support-library/features.html.
 === Why would you remove the support library?
 		
 Support libraries are changing very fast therefore it is hard to create a "stable" description how to use them.
-Also unfortunately the templates of Android studio for generating Android projects are changing all the time
-and have recently been changed to include the design support library, even if that is not necessary, e.g., in case
-you are targeting a recent device.
-This
-make
-testing a new feature or standard API harder
-and makes it
-harder to follow a tutorial as the
-generated
-project changes all the time.
+Also unfortunately the templates of Android studio for generating Android projects are changing all the time.
+This make testing a new feature or standard API harder.
+It also makes it harder to follow a tutorial.
 		
 	
 === Converting a project to a standard Android project
@@ -77,22 +70,17 @@ The build dependency in the Gradle build file does not hurt but you need to remo
 compatibility library from your code and your resources.
 		
 		
-For this,
-change the code of the generated
-activity
-to extend
-`Activity`
-instead of any other activity like
-`AppCompatActivity`. Also, reduces the example code to the minimum. The following is an example for an activity called
-`MainActivity`.
+For this, change the code of the generated activity to extend `Activity` instead of any other activity like `AppCompatActivity`. 
+Also, reduces the example code to the minimum. 
+The following is an example for an activity called `MainActivity`.
 
 [source,java]
 ----
 include::res/compat/MainActivity.java[]
 ----		
 
-Also ensures that only standard elements are using the generated layout file. The following is an example
-listing for a simple standard layout file.
+Also ensures that only standard elements are using the generated layout file. 
+The following is an example listing for a simple standard layout file.
 		
 image::firstlayoutconversion10.png[Changing the styles file]
 		
@@ -101,9 +89,8 @@ image::firstlayoutconversion10.png[Changing the styles file]
 include::res/compat/activity_main.xml[]
 ----
 		
-Also ensure that the theme is a default theme, instead of the compatibility theme. For this check the
-_app/res/values/styles.xml_
-folder to use the standard material theme.
+Also ensure that the theme is a default theme, instead of the compatibility theme. 
+For this check the _app/res/values/styles.xml_ folder to use the standard material theme.
 
 image::firststylechangesxml.png[Changing the styles file,pdfwidth=40%]
 
