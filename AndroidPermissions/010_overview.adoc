@@ -15,53 +15,93 @@ or a content provider.
 
 === Permission concept in Android
 
-Android contains a permission system and predefined
-permissions
-for certain tasks. Every application can request
-required
-permissions
-and also define new permissions. For example, an application may
-declare
-that it
-requires access to
-the Internet.
+Android contains a permission system and predefined permissions for certain tasks. 
+Every application can request required permissions. 
+For example, an application may declare that it requires network access.
+It can also define new permissions. 
 
-Permissions have different levels. Some permissions are
-automatically granted by the Android system, some are
-automatically
-rejected. In most cases the requested permissions are presented
-to
-the
-user before installing the
-application. The user needs
-to
-decide if
-these permissions shall be given to the application.
+System permissions have different levels, e.g., protection levels.
 
-If the user denies a required permission, the related
-application cannot be
-installed. The check of
-the permission
-is only
-performed during
-installation, permissions
-cannot be denied or granted
-after the
-installation.
+The permission concept has changed since API 23. 
+Before API level 23 the user was asked during installation, after API level the user is asked during runtime.
 
-An Android application declares the required permissions in its
-_AndroidManifest.xml_
-configuration file. It can also define additional permissions which
-it can use to restrict access to certain
-components.
+An Android application declares the required permissions in its Android manifest. 
+It can also define additional permissions which it can use to restrict access to certain components.
 
-NOTE: Not all users pay attention to the required permissions during installation. 
-But some users do and they write negative reviews on Google Play if they believe the application is too invasive.
+=== Workflow before API 23
+
+Before API 23 the requested permissions are presented to the user before installing the application. 
+The user needs  to decide if  these permissions shall be given to the application.
+
+If the user denies a required permission, the related application cannot be installed. 
+The check of the permission is only performed during installation.
+Permissions cannot be denied or granted after the installation.
 
 === Runtime permissions
 
-Android 6.0 Marshmallow (API 23) introduced a new runtime permission model. If your application targets Android 6.0,
-you must use the new permissions model. See
-https://developer.android.com/preview/features/runtime-permissions.html - Official documentation
-for details.
+
+Android 6.0 Marshmallow (API 23) introduced a new runtime permission model. 
+If your application targets Android 6.0, you must use the new permissions model. 
+
+The two most important protection levels are normal and dangerous permissions:
+
+* Normal permissions  are permissions which are deemed harmless for the users privacy or the operation of other applications. 
+For example, the permission to set the time zone. 
+Normal permission are automatically granted to the application. 
+See https://developer.android.com/guide/topics/security/normal-permissions.html[Normal permissions] for a complete list.
+
+* Dangerous permissions affect the users private information, or could potentially affect his data or the operation of other application. 
+For example, the ability to read the users contact data.
+Dangerous permissions must be granted by the user at runtime to the app.
+
+You can check, if you have the permission, via the `checkSelfPermission` method.
+[source, java]
+----
+// called in a standard activity, use  ContextCompat.checkSelfPermission for AppCompActivity
+
+int permissionCheck = checkSelfPermission(this, Manifest.permission.WRITE_CALENDAR);
+if (!permissionCheck == PackageManager.PERMISSION_GRANTED) {
+  // User may have declined earlier, ask Android if we should show him a reason
+    if (shouldShowRequestPermissionRationale(thisActivity, Manifest.permission.WRITE_CALENDAR)) {
+        // show an explanation to the user 
+        // Good practise: don't block thread after the user sees the explanation, try again to request the permission.
+    } else {
+        // request the permission.
+        // CALLBACK_NUMBER is a integer constants
+        requestPermissions(thisActivity,  new String[]{Manifest.permission.WRITE_CALENDAR}, CALLBACK_NUMBER);
+        // The callback method gets the result of the request.
+    }
+} else {
+// got permission use it
+}
+----
+
+If the user is asked to grant the permission, you receive a call back.
+
+[source, java]
+----
+@Override
+public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+    switch (requestCode) {
+        case MY_PERMISSIONS_REQUEST_READ_CONTACTS: {
+            // If request is cancelled, the result arrays are empty.
+            if (grantResults.length > 0
+                && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                // permission was granted, do your work....
+            } else {
+                // permission denied
+                // Disable the functionality that depends on this permission.
+            }
+            return;
+        }
+
+        // other 'case' statements for other permssions
+    }
+}
+----
+
+
+
+
+See https://developer.android.com/preview/features/runtime-permissions.html[Using permissions in Android] for details.
 

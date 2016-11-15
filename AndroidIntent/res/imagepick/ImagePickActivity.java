@@ -1,5 +1,5 @@
 
-package de.vogella.android.imagepick;
+package com.vogella.android.imagepick;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

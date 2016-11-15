@@ -16,7 +16,6 @@ It is based on Android Studio and Android 5.0.
 
 include::../web/advertisement/afterTableOfContent.adoc[]	
 include::010_overview.adoc[]
-include::../AndroidBroadcastReceiver/060_pendingintent.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::100_example.adoc[]
 include::../support.adoc[]
