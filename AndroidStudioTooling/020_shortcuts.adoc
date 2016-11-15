@@ -1,5 +1,6 @@
-== Android Studio keyboard shortcuts
+== Using Android Studio efficiently
 
+=== Keyboard shortcuts
 The following is a list of useful shortcuts for Android Studio.
 
 .Useful shortcuts
@@ -53,10 +54,14 @@ The following is a list of useful shortcuts for Android Studio.
 |===
 
 
-[TIP]
-====
+=== Add shortcut for synchronizing your Gradle file
+
 The Gradle operation _Sync now_ is a frequent task, I suggest to assign a shortcut to it. 
 For this, select menu:File[Settings...Keymap] and use the right mouse click to assign a shortcut to _Sync now_.
 
 image::syncnow-android-studio-shortcut.png[Assing a shortcut to "Sync Now" in Android Studio]
-====
+
+=== Place closing tag in Android XML files in new line
+
+image::xml_formatter_setting_android10.png[]
+
