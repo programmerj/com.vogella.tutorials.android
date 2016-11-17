@@ -1,6 +1,7 @@
 == Exercise: Using the DialogFragment class
 		
-The following demonstrates the usage of the `DialogFragment` dialog in an activity with an existing dialog and with a custom layout for the dialog.
+The following demonstrates the usage of the `DialogFragment` dialog in an activity.
+It uses an existing dialog and with a custom layout for the dialog.
 		
 === Create project and layout files
 

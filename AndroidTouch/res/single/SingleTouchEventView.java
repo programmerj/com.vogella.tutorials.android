@@ -1,5 +1,4 @@
-
-package de.vogella.android.touch.single;
+package com.vogella.android.touch.single;
 
 import android.content.Context;
 import android.graphics.Canvas;

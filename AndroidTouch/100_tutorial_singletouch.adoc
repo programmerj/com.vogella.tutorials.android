@@ -2,58 +2,55 @@
 
 === Draw via touch
 		
-This exercise demonstrates the handling of (single) touch events
-within a custom
-view.
+This exercise demonstrates the handling of (single) touch events within a custom view.
 		
-Create an Android project called
-_com.vogella.android.touch.single_
-with the
-_activity_
-called
-_SingleTouchActivity_.
+Create an Android project called _com.vogella.android.touch.single_ with the activity called _SingleTouchActivity_.
 		
-Create the following
-`SingleTouchEventView`
-class which implements a View which supports single touch.
+Create the following `SingleTouchEventView` class which implements a View which supports single touch.
 		
 [source,java]
 ----
 include::res/single/SingleTouchEventView.java[]
-----		
+----
 		
-Add this view to your
-_activity_.
+Add this view to your _activity_.
 
 [source,java]
 ----
 include::res/single/SingleTouchActivity.java[]
 ----
 		
-If you run your application you will be able to draw on the
-screen with your finger (or with the mouse in the emulator).
+If you run your application you will be able to draw on the screen with your finger (or with the mouse in the emulator).
 		
-Change your coding so that you use a layout definition based on
-XML. Hint: to use your own view in an XML layout definition you have
-to
-use the full-qualified class name (class including package
-information).
+Change your coding so that you use a layout definition based on XML. 
+
+[NOTE]
+====
+To use your own view in an XML layout definition you have to use the full-qualified class name (class including package information).
+====
+
+=== Allow to pick the line width
+
+Add a menu to your application
+
+[source, xml]
+----
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Pick pen" android:id="@+id/action_pickpen"/>
+</menu>
+----
+
+
 		
 === Tracking
 		
-Add code to your drawing example so that the current position
-of a
-finger is marked via a circle. To draw a circle you can use the
-`addCircle(x, y, 50, Path.Direction.CW)`
-method call on a
-`Path`
-or use the canvas element directly.
+Add code to your drawing example so that the current position of a finger is marked via a circle.
+To draw a circle you can use the `addCircle(x, y, 50, Path.Direction.CW)` method call on a `Path` or use the canvas element directly.
 		
-Make sure that only the current position is highlighted
-with a
-circle. The circle should appears as soon as the
-finger goes down and
-vanish once the finger goes up.
+Make sure that only the current position is highlighted with a circle.
+The circle should appears as soon as the finger goes down and vanish once the finger goes up.
 		
 The result should look like the following. 
 
