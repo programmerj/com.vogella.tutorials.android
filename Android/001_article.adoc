@@ -25,7 +25,7 @@ include::140_manifestmf.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
 include::150_resources.adoc[]
 include::180_viewsandlayouts.adoc[]
-include::200_exercise_layout.adoc.adoc[]
+include::200_exercise_layout.adoc[]
 include::210_exercise_dynamiclayout.adoc[]
 include::../web/advertisement/inBetween03.adoc[]
 
