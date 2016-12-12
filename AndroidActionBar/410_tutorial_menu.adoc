@@ -3,7 +3,8 @@
 === Add a refresh icon
 		
 Continue to use the _RSS Reader_ project. 
-Create a new called _ic_refresh_ via menu:File[New>Vector Asset].
+Create a new drawable called _ic_refresh_ via the menu:File[New>Vector Asset] menu entry.
+Select a fitting image from the example.
 
 === Add menu resources
 		
@@ -76,7 +77,7 @@ Change your `RssfeedActivity` class to the following code, to configure the tool
 [source,java]
 ----
 include::res/social/OverviewActivity.java[]
-----		
+----
 
 === Run the application and test the toolbar
 		

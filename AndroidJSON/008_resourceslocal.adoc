@@ -1,10 +1,5 @@
-== Links and Literature
-
-=== Android Resources
+== Android JSON links
 		
-http://www.vogella.com/tutorials/Android/article.html[Android Tutorial]
+http://www.vogella.com/tutorials/JavaLibrary-Gson/article.html[Gson Tutorial]
 
-http://www.vogella.com/tutorials/AndroidLocationAPI/article.html[Android Location API and Google Maps]
-
-http://code.google.com/intl/de-DE/android/[Android Homepage]
-
+https://github.com/square/moshi[Moshi Homepage]

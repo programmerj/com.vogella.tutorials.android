@@ -6,5 +6,5 @@ http://www.vogella.com/tutorials/Android/article.html[Introduction to Android De
 
 https://developer.android.com/training/location/retrieve-current.html[Google tutorial]
 		
-http://code.google.com/intl/de-DE/android/[Android Homepage]
+https://www.android.com/intl/de_de/[Android Homepage]
 

@@ -1,6 +1,4 @@
 == Exercise: Using RecylerView
-
-=== Target of this exercise
 		
 In this exercise you create a project which uses the `RecyclerView` class to display a list.
 		

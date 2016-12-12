@@ -1,9 +1,0 @@
-== Write JSON
-	
-Writing JSON is very simple. Just create the JSONObject or JSONArray and use the toString() method.
-	
-[source,txt]
-----
-include::res/writeJSON.txt[]
-----
-	

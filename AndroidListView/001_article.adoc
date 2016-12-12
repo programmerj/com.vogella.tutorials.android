@@ -5,13 +5,13 @@
 :icons:
 :imagesdir: ./img
 Lars Vogel, (c) 2010, 2016 vogella GmbH
-Version 6.1, 18.06.2016
+Version 6.2, 09.11.2016
 :docinfodir: ../
 :vgwort: AndroidListView
 
 [abstract]
 
-This tutorial describes how to use the ListView view together with activities and fragments in Android. 
+This tutorial describes how to use ListView together with activities and fragments in Android. 
 
 include::../web/advertisement/afterTableOfContent.adoc[]			
 include::010_overview.adoc[]

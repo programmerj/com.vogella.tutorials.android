@@ -16,7 +16,7 @@ http://www.vogella.com/tutorials/AndroidIntent/article.html[Android Intents]
 		
 http://www.vogella.com/tutorials/AndroidNetworking/article.html[Android and Networking]
 		
-http://code.google.com/intl/de-DE/android/[Android Homepage]
+https://www.android.com/intl/de_de/[Android Homepage]
 		
 http://developer.android.com[Android Developer Homepage]
 		
@@ -24,5 +24,5 @@ http://code.google.com/p/android/issues/list[Android Issues / Bugs]
 		
 http://groups.google.com/group/android-developers[Android Google Groups]
 		
-http://android-ui-utils.googlecode.com/hg/asset-studio/dist/index.html[Android Assets Studio]
+https://developer.android.com/studio/write/image-asset-studio.html[Android Assets Studio]
 

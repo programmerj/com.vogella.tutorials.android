@@ -1,30 +1,16 @@
 == Telnet to your Android device
 	
-Alternatively to adb you can also use telnet to connect to the
-device.
-This allows you to simulate certain things, e.g. incoming
-call, change
-the network connectivity, set your current geocodes, etc.
-Use "telnet
-localhost 5554" to connect to your simulated
-device. To
-exit the console
-session, use the
-`quit`
-or
-`exit`
-command.
+Alternatively to adb you can also use telnet to connect to the device.
+This allows you to simulate certain things, e.g. incoming call, change the network connectivity, set your current geocodes, etc.
+Use "telnet localhost 5554" to connect to your simulated device. 
+To exit the console session, use the `quit` or `exit` command.
 	
-For example to change the power settings of your phone, to
-receive an sms and to get an incoming call make the following.
+For example to change the power settings of your phone, to receive an sms and to get an incoming call make the following.
 	
 [source,bourne]
 ----
 include::res/shell/telnet.txt[]
 ----
 	
-
-	
-For more information on the emulator console please see
-http://developer.android.com/guide/developing/tools/emulator.html#console - Emulator Console manual
+For more information on the emulator console please see https://developer.android.com/studio/run/emulator-commandline.html[Emulator Console manual].
 	

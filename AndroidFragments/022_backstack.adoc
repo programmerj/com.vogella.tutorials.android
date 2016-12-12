@@ -1,6 +1,0 @@
-== Adding fragments transition to the backstack
-	
-You can add a `FragmentTransition` to the backstack to allow the user to use the back button to reverse the transition.
-	
-For this you can use the `addToBackStack()` method on the `FragmentTransition` object.
-

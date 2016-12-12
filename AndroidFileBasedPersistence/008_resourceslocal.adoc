@@ -6,6 +6,6 @@ http://www.vogella.com/tutorials/Android/article.html[Introduction to Android De
 		
 http://www.vogella.com/tutorials/AndroidLocationAPI/article.html[Android Location API and Google Maps]
 		
-http://code.google.com/intl/de-DE/android/[Android Homepage]
+https://www.android.com/intl/de_de/[Android Homepage]
 		
-		
+https://www.android.com/intl/de_de/

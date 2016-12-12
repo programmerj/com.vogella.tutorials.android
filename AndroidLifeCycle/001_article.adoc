@@ -14,7 +14,6 @@ Understanding the Android lifecycle. This tutorial describes how the Android app
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
-include::020_application.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::030_contentprovider.adoc[]
 include::060_activities.adoc[]

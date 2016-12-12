@@ -16,7 +16,7 @@ http://www.vogella.com/tutorials/AndroidIntent/article.html[Android Intents]
 
 http://www.vogella.com/tutorials/AndroidNetworking/article.html[Android and Networking]
 
-http://code.google.com/intl/de-DE/android/[Android Homepage]
+https://www.android.com/intl/de_de/[Android Homepage]
 		
 http://developer.android.com[Android Developer Homepage]
 		

@@ -1,28 +1,16 @@
 [[listsactivity_layout]]
 == Exercise: ListActivity with custom layout
 
-In our
-example your will define your layout for the rows and use
-it in your adapter.
+In our example your will define your layout for the rows and use it in your adapter.
 	
-Create the
-_rowlayout.xml_
-layout file
-in the
-_directory]]res/layout_
-folder of
-the
-`de.vogella.android.listactivity`
-project.
+Create the _rowlayout.xml_ layout file in the _directory]]res/layout_ folder of the `de.vogella.android.listactivity` project.
 	
 [source,xml]
 ----
 include::res/listlayout/rowlayout.xml[]
 ----
 	
-Change your
-activity
-so that is using the new layout.
+Change your activity so that it uses the new layout.
 	
 [source,java]
 ----

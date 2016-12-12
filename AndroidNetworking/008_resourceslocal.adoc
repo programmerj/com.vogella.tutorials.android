@@ -8,5 +8,7 @@ http://www.vogella.com/tutorials/AndroidLocationAPI/article.html[Android Locatio
 
 http://code.google.com/intl/de-DE/android/[Android Homepage]
 
+https://www.android.com/intl/de_de/[Android Homepage]
+
 http://hc.apache.org/[Apache HttpClient]
 

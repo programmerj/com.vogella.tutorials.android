@@ -1,4 +1,4 @@
-= ACross component and blackbox testing of Android applications with the UI Automator framework - Tutorial
+= Android cross component with the UI Automator framework - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:

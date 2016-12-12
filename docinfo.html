@@ -1,7 +1,7 @@
-<link rel="stylesheet" type="text/css" href="http://www.vogella.com/css/articles_left_right.css">
+<link rel="stylesheet" type="text/css" href="http://www.vogella.com/css/articles.css">
 <link rel="stylesheet" type="text/css" href="http://www.vogella.com/css/header.css">
 
-<!-- Google analytics (Jennifer) -->
+<!-- Google analytics -->
 
 <script type="text/javascript">
 
@@ -17,11 +17,6 @@
 		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 	})();
 </script>
-
-<!-- Load jQuery -->
-<script type="text/javascript" src="../../javascript/jquery/jquery.js"></script>
-<!-- jQuery Hide Buttons -->
-<script type="text/javascript" src="../../javascript/jquery/jquery_hideButtons.js"></script>
 
 <!-- Lake Quincy Ads Responsive -->  
 <script type='text/javascript'>
@@ -96,6 +91,24 @@
 <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js"></script>
 <!-- End Cookie Consent plugin -->
 
+<!-- Share on Facebook -->
+<script language="javascript">
+    function fbshareCurrentPage()
+    {
+    	window.open("https://www.facebook.com/sharer/sharer.php?u="+escape(window.location.href), '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+    	return false; 
+    }
+</script>
+
+<!-- Share on Twitter -->
+<script>
+	function tweetCurrentPage()
+	{ 
+		window.open("https://twitter.com/share?url="+escape(window.location.href)+"&text="+document.title, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+		return false; 
+		}
+</script>
+
 <div id="headerpart">
 
 	<div id="logo">
@@ -145,11 +158,12 @@
 							</ul>
 						</li>
 						<li><a href="http://www.vogella.com/training/git/index.html">Git and Gerrit Training</a></li>
-						<li><a href="http://www.vogella.com/training/build/index.html">Testing and Building Training</a>
+						<li><a href="http://www.vogella.com/training/testbuild/index.html">Testing and Building Training</a>
 							<ul>
 								<li><a href="http://www.vogella.com/training/eclipse/tycho.html">Testing and building Eclipse RCP</a></li>
-								<li><a href="http://www.vogella.com/training/build/maven.html">Apache Maven</a></li>
-								<li><a href="http://www.vogella.com/training/build/gradle.html">Gradle</a></li>	
+								<li><a href="http://www.vogella.com/training/testbuild/maven.html">Apache Maven</a></li>
+								<li><a href="http://www.vogella.com/training/testbuild/gradle.html">Gradle</a></li>	
+								<li><a href="http://www.vogella.com/training/testbuild/javatesting.html">Java test technologies</a></li>	
 							</ul>
 						</li>
 						<li><a href="http://www.vogella.com/training/programming/index.html">Programming Languages Training</a>
@@ -235,14 +249,12 @@
 		(adsbygoogle = window.adsbygoogle || []).push({});
 	</script>
 
-	<p/>
-	
+	<br/>
+	<br/>
+	<br/>
 	<br/>
 	<br/>
 
-	<!-- Nonresponsive Lake Quincy 160x600 Wide Skycraper code
-	<div data-type="ad" data-publisher="lqm.javaeclipseandroid.site" data-zone="right" data-format="160x600"></div>-->
-	
 	<!-- Responsive Lake Quincy Ads -->
 	<div id='ad-left'>
 		<script type='text/javascript'>
@@ -263,23 +275,19 @@
 		<h1>Quick links</h1>
 		<ul>
 			<li><a href="http://www.vogella.com/training/eclipse/eclipsercp.html" onclick="_gaq.push(['_trackEvent', 'vogella Services', 'clicked', 'next RCP training']);">06 FEB - RCP Training</a></li>
-			<li><a href="http://www.vogella.com/training/android/androidprofessional.html" onclick="_gaq.push(['_trackEvent', 'vogella Services', 'clicked', 'next Android training']);">14 NOV - Android Development</a></li>
+			<li><a href="http://www.vogella.com/training/android/androidprofessional.html" onclick="_gaq.push(['_trackEvent', 'vogella Services', 'clicked', 'next Android training']);">20 FEB - Android Development</a></li>
 			<li><a href="http://www.vogella.com/training/" onclick="_gaq.push(['_trackEvent', 'vogella Services', 'clicked', 'training']);">vogella Training</a></li>
 			<li><a href="http://www.vogella.com/books/index.html" onclick="_gaq.push(['_trackEvent', 'vogella Services', 'clicked', 'books']);">vogella Books</a></li>
 		</ul>
+		<h1>Share</h1>
 		<div class="social_media_icons">
-			<a class="no_underline" href="http://www.twitter.com/vogellacompany">
-				<img src="http://www.vogella.com/img/tutoriallinks/twitter.png" alt="Follow me on twitter"/>
+ 			<a href="javascript:tweetCurrentPage()">
+				<img src="http://www.vogella.com/img/tutoriallinks/twitter.png" alt="Tweet" title="Tweet"/>
 			</a>
-			<a class="no_underline" rel="me" href="https://profiles.google.com/104044918586174763681">
-				<img src="http://www.vogella.com/img/tutoriallinks/google_plus.png" alt="Follow me on Google+"/>
+			
+			<a href="javascript:fbshareCurrentPage()">
+				<img src="http://www.vogella.com/img/common/facebook_small.png" alt="Share on Facebook" title="Share on Facebook">
 			</a>
 		</div>
 	</div>
 </div> <!--rightcol-->
-
-
-
-
-
-

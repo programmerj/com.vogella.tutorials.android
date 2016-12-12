@@ -11,7 +11,7 @@ Which variant is build is defined via the _Build Variants_ view.
 	
 === Creating a new Android application
 		
-Create a new Project with the _Blank Activity_ template and the top level package `com.vogella.android.gradlebuildflavors`.
+Create a new Project with the _Empty Activity_ template and the top level package `com.vogella.android.gradlebuildflavors`.
 	
 		
 Define two additional product flavors in the _app/build.gradle_ file called "prod" and "mock".
@@ -21,7 +21,8 @@ Define two additional product flavors in the _app/build.gradle_ file called "pro
 include::res/gradle/productFlavours_complete.build[]
 ----	
 
-Create the desired folder structure for prod and mock flavors. See <<androidstudio_creatingresourcefolder>> and <<androidstudio_creatingresourcefile>> for further information. 
+Create the desired folder structure for prod and mock flavors. 
+See <<androidstudio_creatingresourcefolder>> and <<androidstudio_creatingresourcefile>> for further information. 
 If you select _Android resource directory_ you can select the flavor in the following dialog as depicted in the next screenshot.
 	
 image::newresourcedirectory.png[Resource directory for the paid flavor]
@@ -84,10 +85,9 @@ public class ShareIntentBuilder {
 
 === Implement different MainActivity versions in your flavor
 
-Allow the activity which triggers this intent to be replaced in your “mock” flavor
+Allow the activity which triggers this intent to be replaced in your “mock” flavor.
 If in a flavor “mock” is selected, start a second activity in your application which displays the send data.
 If the flavor "prod" is selected send the shared intent.
 
 NOTE: Classes cannot be overriden, you need to create the classes in their specific flavors and not in the main flavor.
-
 

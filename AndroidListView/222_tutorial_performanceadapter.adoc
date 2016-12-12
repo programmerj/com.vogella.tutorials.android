@@ -1,21 +1,17 @@
 [[listsactivity_performance]]
 == Performance Optimization
 
-The following will implement a performance optimized version of
-the adapter from the previous example.
+The following will implement a performance optimized version of the adapter from the previous example.
 		
-Create the following
-`MyPerformanceArrayAdapter`
-class.
+Create the following `MyPerformanceArrayAdapter` class.
 		
 [source,java]
 ----
 include::res/layoutinflator/MyPerformanceArrayAdapter.java[]
 ----
 
-Use your new adapter in your
-_activity_. If you run the application it should look the same but it will be
-much faster, especially for large datasets.
+Use your new adapter in your _activity_. 
+If you run the application it should look the same but it will be much faster, especially for large datasets.
 		
 [source,java]
 ----

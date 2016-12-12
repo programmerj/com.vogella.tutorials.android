@@ -1,0 +1,113 @@
+[[exercise_displayapopup]]
+== Exercise: Your first view interaction
+
+=== Review generated layout
+
+In your project which you created in the <<androidstudio_starter>> exercise, open the
+`activity_main.xml`	layout file in the `res/layout`	folder.
+
+Investigate the XML layout in the visual editor as well in as the XML structure.
+
+=== Adjust views
+
+Remove all views, except the top level entry which is the layout manager. 
+In the visual design mode you can remove a view by right-clicking it and by selecting the _Delete_ entry for the context menu.
+
+If necessary change the layout manager to `RelativeLayout`.	
+The result layout file should look similar to the following file.
+
+[source,java]
+----
+include::res/exercise_layoutsimple/activity_main.xml[]
+----		
+
+[NOTE]
+====		
+Android Studio replaces placeholder values with the real values. 
+This makes it sometimes harder to compare files.
+Double-click on the value in this case to see the placeholder value.
+====
+		
+Add an _Plain Text_ widget (EditText) and a _Button_ to your layout.
+The easiest way is to find these elements in the _Palette_ and drag and drop them into your layout.
+		
+		
+Use the text (XML) editor to change the ID of the new _EditText_ field to `main_input`.
+In the XML file this looks like `@+id/main_input`.
+		
+Change the button text to _Start_ via the `android:text` property in your layout file.
+Assign the name `onClick` to the `android:onClick` property of your `Button`.
+
+[NOTE]
+====
+This defines that a `public void onClick (View view)` method is be called in the activity once the button is pressed.
+This method is implemented in the next step.
+====		
+
+After these changes your layout file should be similar to the following code.
+		
+		
+[source,java]
+----
+include::res/exercise_layoutsimple/solution_activity_main.xml[]
+----
+		
+[NOTE]
+====
+You see some warning messages in the editor, e.g., because you used hard-codes strings. 
+These can be ignored for small demo applications.
+====
+
+=== Validate layout
+
+You can start your application in the emulator or use the layout review in your IDE.
+The resulting layout should look like the following screenshot.
+		
+image::exercise_firstlayout10.png[Final layout, pdfwidth=30%]
+		
+If you run your application and press the button your application crashes because you still need to adjust your activity.
+		
+	
+=== Implement button behavior in your activity
+
+Implement the following method in your `MainActivity` class.
+		
+[source,java]
+----
+include::res/exercise_layoutsimple/onClick.java[]
+----		
+
+=== Validate button interaction
+		
+Start your application. Press your button and validate that a popup message (Toast) is shown.
+		
+
+	
+=== Display text from your EditText field
+		
+Go back to the source code and use the `findViewById(id)` method with the correct `id` and cast the returned object into `EditText`.
+
+[source,java]
+----
+EditText text = (EditText) findViewById(id)
+----
+
+You can get the right id via the R` class. 
+It should be stored under ID and called _main_input_.
+		
+		
+Use the `text.getText().toString()` method to read the string in the editor field and add the text to your Toast message.
+		
+		
+		
+[source,java]
+----
+include::res/exercise_layoutsimple/solution_MainActivity.java[]
+----
+ 
+	
+=== Validate popup message
+		
+Restart your application and ensure that the popup message displays the text which the text field contains.
+
+

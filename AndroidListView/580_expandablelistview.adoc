@@ -3,67 +3,50 @@
 [[expandablelistview_concept]]
 === ExpandableListView
 		
-The
-`ExpandableListView`
-is similar to
-`ListView`	
-but allow you to define groups and details for this group.
-`ExpandableListView`
-expects
-and adapter of type
-`BaseExpandableListAdapter`.
+The `ExpandableListView` is similar to `ListView`, but allows you to define groups and details for this group.
+`ExpandableListView` expects an adapter of type `BaseExpandableListAdapter`.
 		
-In this case you have to define two layouts, one for the group
-and another one for the details row.
+In this case you have to define two layouts, one for the group and another one for the details row.
 		
 [[expandablelistview_example]]
 === ExpandableListView example
 
-In the following example you create an expandable listview
-similar to the following screenshot.
+In the following example you create an expandable listview similar to the following screenshot.
 		
 image::expandablelistview10.png[Screenshot of ExpandableListView]
 		
-Create a project called
-_com.vogella.android.listview.expandable_
-with the activity called
-`MainActivity`.
+Create a project called _com.vogella.android.listview.expandable_ with the activity called `MainActivity`.
 		
-Create or adjust the following layout files. First
-_layout/activity_main.xml_.
+Create or adjust the following layout files. 
+First _layout/activity_main.xml_.
 		
 [source,xml]
 ----
 include::res/expandablelistview/activity_main.xml[]
 ----
 		
-Afterwards create
-_layout/listrow_group.xml_.
+Afterwards create _layout/listrow_group.xml_.
 		
 [source,xml]
 ----
 include::res/expandablelistview/listrow_group.xml[]
 ----
 		
-The last required layout is
-_layout/listrow_details.xml_.
+The last required layout is _layout/listrow_details.xml_.
 		
 [source,xml]
 ----
 include::res/expandablelistview/listrow_details.xml[]
 ----
 		
-Create the following class which hold your domain model for the
-`ExpandableListView`.
+Create the following class which holds your domain model for the `ExpandableListView`.
 		
 [source,java]
 ----
 include::res/expandablelistview/Group.java[]
 ----
 
-Finally create the adapter as described by the following listing
-and change the activity to the code
-provided below.
+Finally create the adapter as described by the following listing and change the activity to the code provided below.
 		
 [source,java]
 ----

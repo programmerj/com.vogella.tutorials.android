@@ -1,4 +1,4 @@
-package de.vogella.android.intent.browserfilter;
+package com.vogella.android.intent.browserfilter;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

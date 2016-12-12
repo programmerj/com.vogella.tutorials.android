@@ -1,10 +1,10 @@
-== Using dialogs in Android with DialogFragments
+== Using dialogs with DialogFragments
 
 === Using dialogs in Android
 		
-In the past you could open dialogs from your activity via the `showDialog(int)` method but since the introduction of fragments which method has been deprecated.
-You should use an instance of `DialogFragment` to show a dialog. 
-A DialogFragment is a fragment that displays a dialog window, floating on top of its activity’s window. 
+
+To show a dialog in your `Activity` you use an instance of `DialogFragment`. 
+A `DialogFragment` is a fragment that displays a dialog window, floating on top of its activities window. 
 You can either return an existing dialog implementation in your fragment or implement a custom layout to be shown.
 
 === Using existing dialogs
@@ -16,15 +16,14 @@ Typically, you use one of its subclasses, e.g., `AlertDialog`, `ProgressDialog`,
 Android also provides a `ProgressDialog`, which can be opened via a `ProgressDialog.open()` method call.
 
 === Custom layout for your DialogFragment
-
 		
 If you want to create your custom dialog, you create a layout file for the dialog. 
 This layout file can be inflated and returns via the `onCreateView()` method of the fragment.
 		
 === Communication to the activity via the DialogFragment
-
 		
 Your implementation of `DialogFragment` communicates similar to other fragment to the activity. 
-A good practice is that the fragment defines an interface which the activity must implement so that the fragment can call back into the activity without knowing the implementation details of the activity.
+A good practice is that the fragment defines an interface which the activity must implement.
+The fragment can call back into the activity without knowing the implementation details of the activity.
 
 		

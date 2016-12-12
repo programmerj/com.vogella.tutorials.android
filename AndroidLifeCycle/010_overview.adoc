@@ -1,28 +1,19 @@
 == Managing the application life cycle
 
-In an ideal case all
-Android applications started by the user
-remain in memory, that makes
-restarting applications faster. But in
-reality the available memory on an Android device is limited. To
-manage
-these limited
-resources the Android
-system is
-allowed to terminate
-running
-processes or
-recycling Android
-components.
+=== The out-of-memory killer
+
+In an ideal case all Android applications started by the user remain in memory.
+That makes applications switching much faster for the user.
+But in reality the available memory on an Android device is limited. 
+To manage these limited resources the Android system can terminate running processes.
 	
-If the Android system needs to free up resources it follows a
-simple set of rules. Every process gets a priority in the following
-order.
+If the Android system needs to free up resources it follows a simple set of rules. 
+Every process gets a priority in the following order.
 	
-If the Android system needs to terminate processes it follows the
-following priority system.
+If the Android system needs to terminate processes it follows the following priority system.
 
 .Priorities
+[cols="1,3,1",options="header"]
 |===
 |Process status |Description |Priority
 	
@@ -49,14 +40,27 @@ Android keeps them in a least recent used (LRU) list and if requires terminates 
 |5
 |===
 	
-All processes in the "Empty" list are added
-to a least
-recently used list (LRU list) and the processes which are at
-the
-beginning of this lists are killed by the out-of-memory killer if
-required. If an application is restarted by the user its gets moved to
-the end of this queue if it reaches the lowest prio again, as
-indicated by the following graphic.
+All processes in the empty list are added to a _least recently used_ list (LRU list).
+The processes which are at the beginning of this lists will be the ones killed by the out-of-memory killer. 
+If an application is restarted by the user, its gets moved to the end of this queue.
+If it reaches the lowest prio again, as indicated by the following graphic.
 	
 image::process_termination10.png[LRU list for process determination]
+
+=== Application
+	
+The application object is created before any of your Android components are started. 
+If you do not specify one in your _AndroidManifest.xml_ file, the Android system creates a default object for you.
+It is started in a new process with a unique ID under a unique user. 
+This object provides the following main life-cycle methods:
+
+* `onCreate()` - called before the first components of the application starts
+* `onLowMemory()` - called when the Android system requests that the application cleans up memory
+* `onTrimMemory()` - called when the Android system requests that the application cleans up memory. 
+This message includes an indicator in which position the application is. 
+For example the constant TRIM_MEMORY_MODERATE indicates that the process is around the middle of the background LRU list; freeing memory can help the system keep other processes running later in the list for better overall performance.
+* `onTerminate()` - only for testing, not called in production
+* `onConfigurationChanged()` - called whenever the configuration changes
+
+The application object starts before any component and runs at least as long as another component of the application runs.
 

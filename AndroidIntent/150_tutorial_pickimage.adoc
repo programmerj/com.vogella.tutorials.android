@@ -6,7 +6,7 @@ The following example shows how to pick an image from any registered photo appli
 	
 === Create project
 		
-Create a new Android project called _de.vogella.android.imagepick_ with one _activity_ called _ImagePickActivity_.
+Create a new Android project called _com.vogella.android.imagepick_ with one _activity_ called _ImagePickActivity_.
 		
 Change the _activity_main.xml_ layout file to the following.
 		

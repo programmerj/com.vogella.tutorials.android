@@ -2,5 +2,5 @@
 
 http://tools.android.com/tech-docs/support-annotations[Support Annotations technical documentation]
 
-http://developer.android.com/guide/developing/tools/traceview.html[Traveview homepage]
+https://developer.android.com/studio/profile/traceview.html[Traceview homepage]
 

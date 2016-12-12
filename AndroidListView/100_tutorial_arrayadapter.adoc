@@ -1,28 +1,13 @@
 [[exercise_listsactivity_simple]]
 == Exercise: Using ListView and ListActivity
 	
-The following exercise demonstrates how to use a
-`ListView`
-in an
-`ListActivity`. You use
-the predefined
-`ArrayAdapter`
-class
-and an existing Android layout for the rows.
+The following exercise demonstrates how to use a `ListView` in an `ListActivity`. 
+You use the predefined `ArrayAdapter` class and an existing Android layout for the rows.
 	
-Create a new Android project called
-_de.vogella.android.listactivity_
-with the
-activity
-called
-`MyListActivity`.
+Create a new Android project called _de.vogella.android.listactivity_ with the activity called `MyListActivity`.
 	
-Change
-`MyListActivity`
-class based on the
-following code example. Note that the
-`setContentView()`
-method is not used.
+Change `MyListActivity` class based on the following code example. 
+Note that the `setContentView()` method is not used.
 	
 [source,java]
 ----

@@ -1,50 +1,32 @@
 == Tutorial: Google Maps
 
-=== Target of this exercise
-		
-In this exercise you create an Android application which
-shows a
-`GoogleMap`
-via a fragment.
+In this exercise you create an Android application which shows a `GoogleMap` via a fragment.
 		
 === Install Google Play Services
 		
-Download and install the Google Play Service.
-
-=== Get API key for Google Maps
-		
-Get your API key for Google maps, as described in
-http://com.vogella.tutorials.android/AndroidGoogleMaps/build/html5/article.html#getting-the-google-map-key.
+Ensure you installed the Google Play Service.
 		
 === Create Project
 		
-Create a new Android project called
-_com.vogella.android.locationapi.maps_
-with an activity
-called
-`ShowMapActivity`.
+Create a new Android project called _com.vogella.android.maps_ and use the _Google Maps Activity_ template.
 		
-=== Add permissions to the project
+=== Validate generated manifest
 		
-Change the manifest
-file
-to the following code by adding
-permissions to your
-application.
+Check the manifest file for the added permissions by this template.
 		
 [source,txt]
 ----
 include::res/maps/uses.txt[]
-----		
+----
+
+The template generated a file called `google_maps_api.xml`. 
+This file contains instruction how to get a Google Maps API key.
 		
-Get a valid API key for your application and enter this key in the
-_AndroidManifest.xml_
-file.
+Get a valid API key for your application and enter this key in the `google_maps_api.xml` file.
 		
 === Adjust layout file
 		
-In this example we use the
-`MapFragment`. Change your layout file to the following code.
+In this example we use the `MapFragment`. Change your layout file to the following code.
 		
 [source,txt]
 ----
@@ -53,21 +35,45 @@ include::res/maps/activity_main.xml[]
 
 === Activity
 
-Change your activity
-to the following.
+Change your activity to the following.
 		
 [source,java]
 ----
 include::res/maps/MainActivity.java[]
-----		
+----
+
+
+[WARNING]
+====
+Currently you have to enable multidex support to run this exmaple:
+[source, java]
+----
+android {
+    compileSdkVersion 25
+    buildToolsVersion "24.0.0"
+    defaultConfig {
+        applicationId "com.vogella.android.maps"
+        minSdkVersion 23
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+----
+====
 
 === Run and Test
 		
-Run and test your application. You should be able to zoom in and
-out
-and send new geo coordinates to your
-_activity_
-via the Emulator.
+Run and test your application. 
+You should be able to move on the Map and to zoom in and out.
 		
 image::maps30.png[pdfwidth=30%,width=30%]		
 	

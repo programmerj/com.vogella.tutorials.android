@@ -3,100 +3,59 @@
 [[androidlists_view]]
 === Views for handling lists
 		
-Android provides the
-`ListView`
-and the
-`ExpandableListView`
-classes
-which is capable of displaying a scrollable list of items.
-The
-`ExpandableListView`
-class
-supports a grouping of items.
+Android provides the `ListView` and the `ExpandableListView` classes which are capable of displaying a scrollable list of items.
+The `ExpandableListView` class supports a grouping of items.
 		
 [[androidlists_inputtype]]
 === Possible input types for lists
 		
-The input to the list (items in the list) can
-be arbitrary Java
-objects. The adapter extracts the correct data from the data object
-and assigns
-this data to the
-_views_
-in the row of the
-`ListView`.
+The input of a list (items in the list) can be arbitrary Java objects. 
+The adapter extracts the correct data from the data object and assigns this data to the _views_ in the row of the `ListView`.
 		
-These items are
-typically called the
-_data model_
-of the list.
+These items are typically called the _data model_ of the list.
 An adapter can receive data as input.
 
 [[androidlists_adapterintro]]
 === Adapters
 		
-An
-_adapter_
-manages the data model and adapts it to the individual entries in the widget. An adapter extends the
-`BaseAdapter`
-class.
+An _adapter_ manages the data model and adapts it to the individual entries in the widget. 
+An adapter extends the `BaseAdapter` class.
 		
-Every line in the widget displaying the data consists of a layout which can
-be as
-complex as you want. A typical line in a list has an image
-on the
-left side and two text lines in the middle as depicted in the
-following graphic.
+Every line in the widget displaying the data consists of a layout which can be as complex as you want. 
+A typical line in a list has an image on the left side and two text lines in the middle as depicted in the following graphic.
 		
 image::listview_line10.png[Listview example layout]
 		
-A layout file for a such a line might look like the following.
+A layout file for such a line might look like the following.
 		
 [source,xml]
 ----
 include::res/snippets/rowlayout_complex.xml[]
 ----
 		
-The adapter would inflate the layout for each row in its
-`getView()`
-method
-and assign the data to the individual views in the row.
+The adapter would inflate the layout for each row in its `getView()` method and assign the data to the individual views in the row.
 		
-The adapter is assigned to the
-`ListView`
-via the
-`setAdapter`
-method on the
-`ListView`
-object.
+The adapter is assigned to the `ListView` via the `setAdapter` method on the `ListView` object.
 		
 TIP: Adapters are not only used by `ListView`, but also by other views which extend `AdapterView` as, for example, `Spinner`, `GridView`, `Gallery` and `StackView`.
 	
 [[androidlists_filtersort]]
 === Filtering and sorting
 		
-Filtering and sorting of the data is handled by the adapter. You
-need to
-implement the logic in your custom adapter implementation.
+The filtering and sorting of the data is handled by the adapter. 
+You need to implement the logic in your custom adapter implementation.
 
 [[adapterown_updates]]
 === Data updates in the adapter
 		
-The
-`notifyDataSetChanged()`
-method on the adapter is called if the data has changed or if new
-data is available.
+The `notifyDataSetChanged()` method on the adapter is called if the data has changed or if new data is available.
 		
-The
-`notifyDataSetInvalidated()`
-method is called if the data is not available anymore.
+The `notifyDataSetInvalidated()` method is called if the data is not available anymore.
 
 [[listview_adapterlistener]]
 === Listener
 		
-To react to selections in the list, set an `OnItemClickListener` to
-your
-`ListView`.
+To react to selections in the list, set an `OnItemClickListener` to your `ListView`.
 		
 [source,java]
 ----

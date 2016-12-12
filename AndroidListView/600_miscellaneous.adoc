@@ -3,10 +3,7 @@
 [[miscellaneous_longclick]]
 === Adding a longclick listener to the list items
 		
-You can also add a
-`LongItemClickListener`
-to the
-list view via the `setOnItemLongClickListener()`  method.
+You can also add a `LongItemClickListener` to the list view via the `setOnItemLongClickListener()` method.
 		
 [source,java]
 ----
@@ -16,38 +13,10 @@ include::res/longclick/MyList.java[]
 [[miscellaneous_headerfooter]]
 === Header and footer
 		
-You can of course put arbitrary
-views
-elements around your list view.
-For
-example you can define a layout with
-two
-text views
-and a
-list view
-between them.
-In this case the two text views will
-always be
-visible
-above the list
-(header) and the other will be
-visible below
-the
-list. If you want
-to display a list header or list footer
-only at
-the
-see
-the
-beginning or end of
-the list you can use the
-`addHeaderView()`
-method
-or
-`addFooterView()`
-method on the
-`ListView`
-class.
+You can of course put arbitrary views elements around your list view.
+For example you can define a layout with two text views and a list view between them.
+In this case the two text views will always be visible above the list (header) and the other will be visible below the list. 
+If you want to display a list header or list footer only at the beginning or end of the list you can use the `addHeaderView()` method or `addFooterView()` method on the `ListView` class.
 		
 [source,java]
 ----

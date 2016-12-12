@@ -10,7 +10,7 @@ http://www.vogella.com/tutorials/AndroidIntent/article.html[Android Intents]
 
 http://www.vogella.com/tutorials/AndroidNetworking/article.html[Android and Networking]
 		
-http://code.google.com/intl/de-DE/android/[Android Homepage]
+https://www.android.com/intl/de_de/[Android Homepage]
 		
 http://developer.android.com[Android Developer Homepage]
 		
@@ -18,7 +18,7 @@ http://code.google.com/p/android/issues/list[Android Issues / Bugs]
 		
 http://groups.google.com/group/android-developers[Android Google Groups]
 
-http://market.android.com[Android Market]
+https://play.google.com/store[Google Play]
 		
 http://www.sqlite.org/[SQLite database webpage]
 

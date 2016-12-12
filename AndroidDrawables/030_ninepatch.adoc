@@ -29,6 +29,7 @@ installation folder, which makes it easy to
 create
 _9 Patch drawables_.
 	
+
 ////
 A nice online generator for 9 patch drawables can be found under
 http://android-ui-utils.googlecode.com/hg/asset-studio/dist/nine-patches.html[Simple Nine-patch generator].

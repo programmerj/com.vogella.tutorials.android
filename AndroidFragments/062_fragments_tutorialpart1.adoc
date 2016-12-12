@@ -1,22 +1,19 @@
 == Exercise: Using fragments
 
-=== Target of this exercise
-		
 The following tutorial demonstrates how to use fragments in a standard Android application without using the support library.
 The application uses layouts with different fragments depending on portrait and landscape mode.
 		
 In portrait mode the _RssfeedActivity_ shows one fragment.
 From this fragment the user can navigate to another _activity_ which contains another fragment.
 		
-		
 In landscape mode _RssfeedActivity_ shows both fragments side by side.
-		
 		
 === Create Project
 	
 Create a new Android project with the following data. Do NOT use the compability layer.
 
-Table Android project
+.Android project
+[cols="1,3",options="header"]
 |===
 |Property |Value
 

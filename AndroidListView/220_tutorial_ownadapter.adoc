@@ -1,36 +1,26 @@
 [[tutorial_ownadapter]]
 == Tutorial: Implementing your customer adapter
 		
-The following uses
-two images "no.png" and "ok.png". I placed it
-in the
-"res/drawable-mdpi" folder. You must create your own icons. In
-case you do not find any icons just copy "icon.png" and use a drawing
-program to
-change
-it a little bit.
+The following uses two images "no.png" and "ok.png". 
+I placed them in the "res/drawable-mdpi" folder. 
+You must create your own icons. 
+In case you do not find any icons just copy "icon.png" and use a drawing program to change it a little bit and create a second one.
 		
-Create the class
-`MySimpleArrayAdapter`
-which will serve as our adapter.
+Create the class `MySimpleArrayAdapter` which will serve as our adapter.
 		
 [source,java]
 ----
 include::res/simpleadapter/MySimpleArrayAdapter.java[]
 ----
 		
-To use this adapter, change the
-_activity_
-to
-the following.
+To use this adapter, change the _activity_ to the following.
 		
 [source,java]
 ----
 include::res/simpleadapter/MyListActivity.java[]
 ----
 		
-If you run this example you should get a list with different
-icons for the certain elements.
+If you run this example you should get a list with different icons for the certain elements.
 		
 image::listlayoutIndividual10.png[ListView with different elements for each row]
 	

@@ -1,4 +1,17 @@
-== Layout manager and ViewGroups
+== Views and layout manager
+
+
+=== View - The user interface widgets in Android
+	
+A _view_ in Android represents a widget, e.g., a button, or a layout manager.
+The Android SDK provides standard views (widgets), e.g., via the `Button`, `TextView`, `EditText` classes.
+Additional libraries provide more complex widgets, for example, `RecyclerView`.
+	
+All views in Android extend the `android.view.View` class, this class provides a lot of base functionality for subclasses.
+For example, it provides the base support for touch.
+
+The main packages for views are part of the `android.view` namespace for all the base classes and `android.widget` for the default widgets of the Android platform.
+	
 
 [[layoutmanager_overview]]
 === Using a layout manager

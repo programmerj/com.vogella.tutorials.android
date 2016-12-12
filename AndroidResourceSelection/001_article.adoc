@@ -15,7 +15,6 @@ It describes how to support different screen sizes, languages and densities on d
 				
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_deviceconfigurations.adoc[]
-include::020_resource_selectors.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::024_translations.adoc[]
 include::030_screensize.adoc[]

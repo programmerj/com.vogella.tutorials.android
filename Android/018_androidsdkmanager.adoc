@@ -1,5 +1,5 @@
 [[androidapiversion_installation]]
-== Android SDK Manager
+== Managing your Android SDK versions
 
 [[androidapiversion_sdk]]
 === Using the Android SDK manager

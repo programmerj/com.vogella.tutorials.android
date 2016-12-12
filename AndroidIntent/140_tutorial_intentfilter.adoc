@@ -8,7 +8,7 @@ The example activity downloads the HTML source of this page and displays it in a
 	
 === Create project
 		
-Create an Android project called _de.vogella.android.intent.browserfilter_ with an activity called `BrowserActivity`.
+Create an Android project called _com.vogella.android.intent.browserfilter_ with an activity called `BrowserActivity`.
 		
 === Register activity as browser
 		

@@ -1,14 +1,13 @@
 == Exercise: Influence view layout at runtime
 
-In this exercise you add radio buttons the layout of the application you created in <<androidstudio_starter>>. 
-Depending on the user selection the radio button arrangement changes from horizontal to vertical.
+In this exercise you add radio buttons the layout of the application you created in <<androidstudio_starter>> and extended in <<exercise_displayapopup>>.
+Depending on the user selection the radio button arrangement will change from horizontal to vertical.
 
 === Add radio group and radio buttons to your layout
 
 Open your layout file and add a radio group with two radio buttons to your layout.
 
-
-Assign them based on the following table.
+Assign IDs to them, based on the following table.
 
 .ID Assignment
 |===
@@ -25,14 +24,8 @@ Assign them based on the following table.
 |===
 
 
-The resulting layout file
-should be similar to
-the
-following
-listing.
-Note: Only the
-`RadioGroup`
-part is new.
+The resulting layout file should be similar to the following listing.
+
 
 
 [source,xml]
@@ -40,10 +33,14 @@ part is new.
 include::res/exercise_radiogroup/textlayout.txt[]
 ----
 
+[NOTE]
+====
+Only the `RadioGroup` part needs to be added to your layout, the rest should already be there from previous exercises.
+====
 
 The resulting layout should look like the following screenshot.
 
-image::exercise_radiogroup20.png[Show the layout]
+image::exercise_radiogroup20.png[Show the layout, pdfwidth=30%]
 
 === Change radio group orientation dynamically
 
@@ -83,5 +80,5 @@ include::res/exercise_radiogroup/listener.txt[]
 
 === Validating
 Run your application and select the different radio button.
-Ensure that the orientation of the buttons is changed based on your selection.
+Ensure that the orientation of the radio buttons changes based on your selection.
 
