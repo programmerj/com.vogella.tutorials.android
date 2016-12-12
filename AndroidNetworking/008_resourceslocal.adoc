@@ -8,7 +8,5 @@ http://www.vogella.com/tutorials/AndroidLocationAPI/article.html[Android Locatio
 
 http://code.google.com/intl/de-DE/android/[Android Homepage]
 
-http://crest.codegist.org/index.html[Crest Framework to access rest services, works also on Android]
-
 http://hc.apache.org/[Apache HttpClient]
 
