@@ -1,50 +1,30 @@
 == Android Widgets
 
 === Overview about AppWidgets
+
+=== Home screen widgets 
+        
+Home screen widgets are broadcast receivers which provide interactive components.
+They are primarily used on the Android home screen. 
+They typically display some kind of data and allow the user to perform actions with them. 
+For example, a widget can display a short summary of new emails and if the user selects an email, it could start the email application with the selected email.
+        
+To avoid confusion with views (which are also called widgets), this text uses the term _home screen widgets_, if it speaks about widgets.
+
+A widget runs as part of the process of its host.
+This requires that the widget preserves the permissions of their application.
 		
-_Widgets_
-are little applications which can be placed on a widget host,
-typically the
-_home screen_
-or the
-_lock screen_
-of your
-Android device.
+Widget use `RemoteViews` to create their user interface.
+A `RemoteView` can be executed by another process with the same permissions as the original application.
+This way the widget runs with the permissions of its defining application.
 		
-A widget runs as part of the
-process of its host. This requires
-that the widget
-preserves the
-permissions of their application.
-		
-Widget
-use
-`RemoteViews`
-to create their user interface. A
-`RemoteView`
-can be executed by another process with the same permissions as the
-original application. This way the
-widget
-runs with
-the
-permissions of its defining application.
-		
-The user interface for a
-_Widget_
-is defined by a broadcast receiver.
-This receiver
-inflates its layout
-into an object of type
-`RemoteViews`.
-This
-object is delivered to Android, which hands it over the home
-screen
-application.
+The user interface for a _Widget_ is defined by a broadcast receiver.
+This receiver inflates its layout into an object of type `RemoteViews`.
+This object is delivered to Android, which hands it over the home screen application.
 		
 === Steps to create a Widget
 		
-To create a widget,
-you:
+To create a widget, you:
 		
 * Define a layout file
 * Create an XML file (`AppWidgetProviderInfo`) which describes the properties of the widget, e.g. size or the fixed update frequency.
@@ -54,21 +34,11 @@ you:
 		
 === Widget size
 		
-Before Android 3.1 a widget
-always took a fixed amount of cells
-on the home screen.
-A cell is
-usually used to display the icon of one
-application. As a
-calculation
-rule you should define the size of the
-widget with the
-formula:
+Before Android 3.1 a widget always took a fixed amount of cells on the home screen.
+A cell is usually used to display the icon of one application.
+As a calculation rule you should define the size of the widget with the formula:
 `((Number of columns / rows) * 74) - 2`.
-These are device
-independent
-pixels and the `-2` is used to avoid rounding
-errors.
+These are device independent pixels and the `-2` is used to avoid rounding errors.
 		
 As of Android 3.1 a widget
 can be flexible in size, e.g., the

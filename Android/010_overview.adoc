@@ -1,36 +1,38 @@
-== Introduction into development of Android applications
+== High-level overview of Android development
 
 === The Android operating system
 		
 _Android_ is an operating system based on the Linux kernel. 
-The project responsible for developing the Android system is called the _Android Open Source Project_ (AOSP) and it lead by  Google.
+Android is developed in the _Android Open Source Project_ (AOSP).
+This project is lead by  Google.
 		
-		
-This Android operating system can be divided into the four areas as depicted in the following graphic. 
+The Android operating system can be divided into the four areas as depicted in the following graphic. 
 An Android application developer typically works with the two layers on top to create new Android applications.
 		
 image::androidsoftwarelayer10.png[Android software layers]
 
 The levels can be described as:
 		
-* Applications - The Android Open Source Project contains  several default application, like the Browser, Camera, Gallery, Music, Phone and more.
-* Application framework - An API which allows high-level interactions with the Android system from Android applications.
-* Libraries and runtime - The libraries for many common framework functions, like, graphic rendering, data storage, web browsing. 
-It also contains the Android Runtime, as well as the core Java libraries for running Android applications.
+* Applications - Contains the applications, like the Browser, Camera, Gallery, Music and Phone
+* Application framework - An API which allows high-level interactions with the Android system
+* Libraries and runtime - The libraries for many common framework functions, like graphic rendering, data storage, web browsing. 
+Also contains the Android Runtime, as well as the core Java libraries for running Android applications.
 * Linux kernel - Communication layer for the underlying hardware.
 
-Android is published in different version, which are listed in the following table.
+=== Android versions
+
+The Android operating system is published in different versions, which are listed in the following table.
 
 .Android versions
 |===
 |Code name	|Version	|API level
-|Nougat	| N	| 24
+|Nougat	| 7.0 – 7.1.1	| 24 -25
 |Marshmallow	|6.0	| 23
 |Lollipop	|5.1	| 22
 |Lollipop	|5.0	| 21
 |KitKat	|4.4 - 4.4.4	| 19
 |Jelly Bean	|4.1.x - 4.3.x	|16 - 18
-|Ice Cream Sandwich	|4.0.1 - 4.0.4|14 -15
+|Ice Cream Sandwich	|4.0.1 - 4.0.4|14 - 15
 |Honeycomb	|3.2.x	|13
 |Honeycomb	|3.0 - 3.1	|11 - 12
 |Gingerbread	|2.3 -  2.3.7|9-10
@@ -43,90 +45,75 @@ Android is published in different version, which are listed in the following tab
 |(no code name)	|1.0|	1
 |===
 
-=== How to develop Android applications
+[[androidapplication]]
+=== Android application
+		
+An _Android application_ (app) is a single installable unit which can be started and used independently.
+An Android application consists of configuration files, Java source and resource files. 
+You can define the following _components_ in your configuration files:
 
-Android applications are primarily written in the Java programming language.
-		
-During development the developer creates the Android specific configuration files and writes the application logic in the Java programming language.
-		
-The Android development tooling converts these application files into an Android application.
-If the developer trigger the deployment, the whole Android application is compiled, packaged, deployed and potentially started.
-		
-		
-The _Android Software Development Kit_ (Android SDK) and the Gradle tooling contains the necessary tools to create, compile and package Android applications. 
-The Android team provides a Gradle plug-in to build Android applications.
-You find the available versions of this plug-in under the following URL: https://jcenter.bintray.com/com/android/tools/build/gradle/
+.Android application components
+[cols="1,3",options="header"]
+|===
+|Component |Description
 
-The Android SDK contains the _Android debug bridge_ (adb). 
-adb is  a tool that allows you to connect to a virtual or real Android device, for the purpose of managing the device or debugging your application.
+|Application
+|An Android application can have one `Application` class which is instantiated before any other Android component.
+It is the last component which is stopped during application shutdown.
 		
-=== Android Developer Tools and Android Studio
-		
-Google provides an IDE called _Android Studio_ as the preferred development environment for creating Android applications. 
-This IDE is based on the IntelliJ IDE.
-		
-The Android tools provide specialized editors for Android specific files.
-Most of Android's configuration files are based on XML. 
-In this case these editors allow you to switch between the XML representation of the file and a structured user interface for entering the data.
+If not explicitly defined, Android creates a default application object for your application.
 
-.Using Eclipse for Android development
-****
+|Activity
+|An activity is the visual representation of an Android application.
+An Android application can have several activities.
 
-	
-The Google development team focus their future development on Android Studio.
-At the time of this writing the Eclipse Gradle tooling does not support Android applications.
+Activities use views and fragments to create their user interface and to interact with the user. 
 
-Please register for https://bugs.eclipse.org/bugs/show_bug.cgi?id=468315 to get this fixed in Eclipse.
+|Service
+|A _service_ performs tasks without providing an user interface.
+They can communicate with other Android components and send notifications to the user.
+For example, a broadcast receiver can notify the user via the notification framework in Android.
 
-image::EclipseGradleAndroidSupport.png[Vote for Grade support in Eclipse]
 
-In addition you can try to convince Google to support Eclipse. Please go to https://code.google.com/p/android/issues/detail?id=81451 and press the star sign.
-	
-image::eclipsegradlesupportbug.png[Vote for Eclipse support by Google]
-	
-****
+|Broadcast receiver (short: receiver)
+|A receiver can be registered to listen to system messages and intents. 
+A receiver gets notified by the Android system if the specified event occurs.
 		
-=== Conversion process from source code to Android application
+For example, you can register a receiver for the event that the Android system finished the boot process. 
+Or you can register for the event that the state of the phone changes, e.g., someone is calling.
 
-NOTE: This is background information about the build process. It is not necessary for you to develop Android applicatoins. Feel free to skip.
-		
-The Java source files are converted to Java class files by the Java compiler.
-The Android SDK contains a tool called _dx_ which converts Java class files into a _.dex_ (Dalvik Executable) file. 
-All class files of the application are placed in this _.dex_ file. 
-During this conversion process redundant information in the class files are optimized in the _.dex_ file.
-For example, if the same `String` is found in different class files, the _.dex_ file contains only one reference of this `String`.
-	
-These _.dex_ files are therefore much smaller in size than the corresponding class files.
 
-The _.dex_ file and the resources of an Android project, e.g., the images and XML files, are packed into an _.apk_ (Android Package) file. 
-The program _aapt_ (Android Asset Packaging Tool) performs this step.
+|Content provider (short: provider)
+|A provider defines a structured interface to application data. 
+A provider can be used for accessing data within one application, but can also be used to share data with other applications.
 		
-The resulting _.apk_ file contains all necessary data to run the Android application and can be deployed to an Android device via the _adb_ tool.
+Android contains an SQLite database which is frequently used in conjunction with a content provider. 
+The SQLite database would store the data, which would be accessed via the provider.
 
-As of Android 5.0 the _Android RunTime_ (ART) is used as runtime for all Android applications.
-ART uses _Ahead Of Time_ compilation. 
-During the installation of  an application on an Android device, the application code is translated into machine code.
-This results in approx. 30% larger compile code, but allows faster execution at startup.
-		
-This also saves battery life, as the compilation is only done once, during the first start of the application.
-		
-The `dex2oat` tool takes the .dex file created by the Android tool change and compiles that into an Executable and Linkable Format (ELF file).
-This file contains the dex code, compiled native code and meta-data.
-Keeping the .dex code allows that existing tools still work.
-		
-The garbage collection in ART has been optimized to reduce times in which the application freezes.
-		
-=== Google Play
-		
-Google offers the _Google Play_ service, a marketplace in which programmers can offer their application to Android users. 
-Customers use the _Google Play_ application which allows them to buy and install applications from the Google Play service.
-		
-Google Play also offers an update service. 
-If a application developer uploads a new version of his application to Google Play, this service notifies existing users about the update allows them to install the update.
-		
-		
-Google Play provides access to services and libraries for Android  application programmers, too. 
-For example, it provides a service to use and display Google Maps.
-Providing these services via Google Play has the advantage that they are available  for older Android releases. 
-Google can update them without the need for an update of the Android release on the phone.
+|===
 
+=== Defining the user interface
+
+The user interface of activities is defined with fragments, views and layout managers.
+These elements are typically defined via an XML layout file.
+
+_Views_ are user interface widgets, e.g., buttons or text fields. 
+Views have attributes which can be used to configure their appearance and behavior.
+
+_Layout managers_ (_ViewGroup_) are responsible for arranging other views. 
+
+_Fragments_ are components which run in the context of an activity.
+A fragment encapsulates application logic and layout information.
+It is therefore easier to reuse them and to support devices of different size.
+For example,  a smaller screen shows only one fragment with the option to navigate to the next screen.
+On a larger screen it shows two fragments.
+        
+[[overview_context]]
+=== Context
+		
+Instances of the class `android.content.Context` provide the connection to the Android system and actual device.
+It gives access to the system and application resources and services.
+For example, you can check the size of the current device display via it.
+		
+Activities and services extend the `Context` class. 
+Therefore, they can be directly used to access the `Context`.

@@ -17,6 +17,36 @@ This wrapper  allows you to run a Gradle build without any additional installati
 If you press the run button in Android Studio, it triggers the corresponding Gradle task and starts the application.
 
 
+[NOTE]
+====
+You find the available versions of the Android Gradle plug-in under the following URL: https://jcenter.bintray.com/com/android/tools/build/gradle/
+====
+
+
+=== Conversion process from source code to Android application
+
+The Java source files are converted to Java class files by the Java compiler.
+The Android SDK contains a tool called _dx_ which converts Java class files into a _.dex_ (Dalvik Executable) file. 
+All class files of the application are placed in this _.dex_ file. 
+During this conversion process redundant information in the class files are optimized in the _.dex_ file.
+For example, if the same `String` is found in different class files, the _.dex_ file contains only one reference of this `String`.
+	
+These _.dex_ files are therefore much smaller in size than the corresponding class files.
+
+The _.dex_ file and other resources, e.g., the images and XML files, are packed into an _.apk_ (Android Package) file. 
+The program _aapt_ (Android Asset Packaging Tool) performs this step.
+		
+The resulting _.apk_ file contains all necessary data to run the Android application and can be deployed to an Android device via the _adb_ tool.
+
+As of Android 5.0 the _Android RunTime_ (ART) is used as runtime for all Android applications.
+ART uses a combination of _Ahead Of Time_ and _Just In Time _ compilation. 
+During the installation of  an application on an Android device, the application code is translated into machine code.
+		
+The `dex2oat` tool takes the .dex file created by the Android tool chain and compiles that into an Executable and Linkable Format (ELF file).
+This file contains the dex code, compiled native code and meta-data.
+Keeping the .dex code allows that existing tools still work.
+		
+
 === Using Gradle on the command line
 	
 You can start your Gradle build also from the command line.

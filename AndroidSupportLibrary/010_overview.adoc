@@ -11,10 +11,26 @@ The first type provides framework functionality for older API releases, the seco
 platform or will never be part of the platform, so that Google can continue to improve it faster than Android platform
 API.
 
+		
+[[adtinstallation_supportlibrary]]
+=== Install support library
+
+The support library allows you to use additional functionality.
+This functionality might be provided by higher Android API levels.
+It also provides functionality that is unbundled from Android, for example the `RecyclerView` widget for efficient list display.
+
+Android provides several versions of the support libraries. 
+These are valid as of the respective API level of Android. 
+For example, the support library v7 works as of Android devices with version API 7.
+Higher versions of the support library require also the lower versions to work. 
+For example, support the v7 library requires the v4 library.
+		
+
+
 === The support libraries from Google
 	
-You have different components here. At the time of this writing you
-have:
+You have different components here. 
+At the time of this writing you have:
 
 .Support library versions
 |===

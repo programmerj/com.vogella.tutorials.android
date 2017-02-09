@@ -75,20 +75,28 @@ installation of non-market application. Typically this setting can
 be
 found under the "Security" settings.
 
-=== Google Play (Market)
+=== Google Play
+		
+Google offers the _Google Play_ service, a marketplace in which programmers can offer their application to Android users. 
+Customers use the _Google Play_ application which allows them to buy and install applications from the Google Play service.
+		
+Google Play also offers an update service. 
+If a application developer uploads a new version of his application to Google Play, this service notifies existing users about the available update.
+		
+		
+Google Play provides access to services and libraries for Android  application programmers, too. 
+For example, it provides a service to use and display Google Maps.
+Providing these services via Google Play has the advantage that they are available  for older Android releases. 
+Google can update them without the need for an update of the Android release on the phone.
 
-Google Play requires a one time fee, currently 25 Dollar. After
-that
-the developer can directly upload his application and the required
-icons, under
-https://play.google.com/apps/publish[Google Play Publishing].
 
 
-Google performs some automatic scanning of applications, but no
-approval process is in place. All application, which do not contain
-malware, will be published. Usually a few minutes after upload,
-the
-application is
-available.
+Google Play requires a one time fee, currently 25 Dollar.
+After that payment, the developer can upload his application and the required icons, via https://play.google.com/apps/publish[Google Play Publishing].
+
+
+Google performs some automatic scanning of applications, but no approval process is in place.
+All application, which do not contain malware, are published. 
+Usually a few minutes after upload, the application is available.
 
 

@@ -2,8 +2,28 @@
 
 === What is Android Studio?
 Android Studio is currently the IDE promoted by Google for Android development. 
-It is based on IntelliJ and adds  Android development capabilities.
+It is based on IntelliJ and adds Android development capabilities.
 		
+
+.Using Eclipse for Android development
+****
+	
+The Google development team support officially only Android Studio as tooling to develop Android apps.
+Unfortunately the Eclipse Gradle tooling does not support Android applications.
+
+If you are interested in using the Eclipse IDE for modern Android development, register for https://bugs.eclipse.org/bugs/show_bug.cgi?id=468315 to indicate your interest.
+
+image::EclipseGradleAndroidSupport.png[Vote for Grade support in Eclipse]
+
+In addition you can try to convince Google to support Eclipse. 
+Please go to https://code.google.com/p/android/issues/detail?id=81451 and press the star sign.
+	
+image::eclipsegradlesupportbug.png[Vote for Eclipse support by Google]
+	
+****
+
+
+
 === The Android Studio toolbar
 
 The Android Studio toolbar contains several entries which are specific for Android development 
@@ -87,7 +107,7 @@ image::as_updatesettings10.png[Update setttings]
 === Using a proxy with Android Studio
 		
 You can use Android Studio and Gradle behind a proxy. For this you have to enter it via menu:File[Settings...].
-Android Studio updates also the setting for Gradle to use this proxy. This works better as of Android Studio 1.4.
+Android Studio updates also the setting for Gradle to use this proxy. 
 		
 image::asproxy10.png[Defining a proxy]
 		
