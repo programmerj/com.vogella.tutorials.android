@@ -1,13 +1,13 @@
-== Strings and translations
-
 === Strings and translations
+
+==== Strings and translations
 		
 You can also use resource selectors for your _values_ folder with contains, for example, your string values. 
 Use the _values-qualifier_ folder for this.
 		
 For example, to provide English and German text resources, use the _values-en_ and _values-de_ folder.
 		
-=== Plurals
+==== Plurals
 		
 Android supports Plurals. 
 Plurals are XML based resources which allow to handle different quantities. 
@@ -33,7 +33,7 @@ include::res/plurals/Test.java[]
 Note that the selection is made based on grammatical necessity. 
 A string for zero in English will be ignored even if the quantity is 0, because 0 isn’t grammatically different from 2, or any other number except 1 (“no tutorial”, “one tutorial”, “two tutorials”, and so on).
 		
-=== Using Google translate
+==== Using Google translate
 		
 You can either translate your String manually (either yourself or a paid organization) or use a machine translation.
 		

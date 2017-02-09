@@ -1,10 +1,10 @@
 == Defining the size of UI components in layout files
+
 === Fixed or relative dimensions
 		
 Android allows you to define the size of user interface components in fixed or relative dimensions in the layout files. 
-If you use fixed sized dimensions, e.g., pixels, your user interface may look fine on a certain device, but the button might be too small on other devices with a higher pixel density.
+Always use relative dimensions in your Android application, as this allows your UI to adapt to the actual device resolution.
 		
-It is recommended to always use relative dimensions in your Android application.
 
 === Using dp as relative dimension
 
@@ -33,4 +33,23 @@ This unit is similar to dp, but it is also scaled by the user preference.
 		
 If the users select to increase the font size in this settings, views which use `sp` are scaled accordingly.
 		
+=== Defining the size of UI components in source code
+	
+The Android API frequently requires you to specify a size in pixels and does not accept `dp` as input.
+In this case you need to transform your desired `dp` into actual pixels.
+	
+You can use the following method to calculate the right amount of pixels for a dimension specified in `dp`.
+
+[source,java]
+----
+include::res/convert/convertToPixelFromDp.java[]
+----
+	
+The density for the current device can be queried with the following method call.
+	
+[source,xml]
+----
+include::res/convert/dpi.java[]
+----
+	
 	

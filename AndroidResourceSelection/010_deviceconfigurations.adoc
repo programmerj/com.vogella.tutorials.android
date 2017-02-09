@@ -1,19 +1,90 @@
-== Android device configurations
+== Resources and Android device configurations
 
-=== Handling different Android devices
+Android devices comes in a variety of different configurations in the sense of size, screen pixel density, language settings, etc.
+Android supports the automatic selection of resources fitting to the device configuration.
 
-Android device comes in a variety of different configurations in the sense of size, screen pixel density, language settings, etc.
-
-To provide the correct resources and setting for these different configurations, Android support the automatic selection of resources and the definition of the size of user interface components in a relative size format (device independent pixel).
-
-=== Resource qualifiers
-
-Android allows you to use resource qualifiers to specify that certain resources should only be used for a specific device configuration (e.g., orientation, resolution, languages). 
-To provide different resource files, e.g., layouts for configurations described by a `qualifier` selector, you should create a new sub-folder in the _res_ folder using this qualifier, for example, _layout-qualifier_ for layouts.
-
-NOTE: Android selects the correct file automatically based on the current configuration.
+For this, you provide different resources in pre-defined sub-folders in the `res` directory.
+The suffix name of a sub-folder defines the device configuration for which it is valid, e.g., orientation, resolution, languages). 
 
 === Important resource qualifiers
+
+==== Screen density
+
+		
+Screens of Android devices are different in terms of resolution and in terms of density of the pixels on the screen.
+In case of a different screen densities the same length of a user interface component consists of a different amount of pixels.
+		
+For example, if you specify the pixels directly, you might get the following result on a device with a relatively low number of pixels.
+
+image::deviceindependendpixels10.png[Device Independent pixels on low resolution devices,pdfwidth=40%]
+
+Using the same number of pixels on a device with more pixels might lead to an unusable graphical user interface.
+		
+image::deviceindependendpixels20.png[Device independent pixels on low resolution devices,pdfwidth=40%]
+		
+For this reason you should provide graphical resources, e.g., the laucher and action bar icons in different resolutions. 
+This can be done by using resource qualifiers based on the pixel desity.
+		
+You can use the density as resource qualifier. 
+Android support the following selections. 
+The baseline is 160 dots per inch (dpi). 
+If for example the Android device has 320 dpi, the Drawable from the _drawable-hdpi_ is selected.
+
+.Density resource selector
+|===
+|Density selector |Equals
+
+|ldpi
+|160 dpi x 0.75
+
+|mdpi
+|160 dpi
+
+|hdip
+|1.5 x 160 dpi = 240 dpi
+
+|xhdpi
+|2 x 160 dpi = 320 dpi
+
+|xxhdpi
+|3 x 160 dpi = 480 dpi
+
+|xxxhdpi
+|4 x 160 dpi = 640 dpi
+|===
+
+=== Icon sizes
+You should provide your launcher, action bar and notification bar icons in the important five size.
+		
+.Android icons size
+|===
+|Icons |mdpi |hdpi |xhdpi |xxhdpi |xxxhdpi
+
+|Launcher icon	
+|48 px	
+|72 px	
+|96 px	
+|144 px	
+|192 px
+
+|Action bar icon	
+|32 px	
+|48 px	
+|64 px	
+|96 px	
+|128 px
+
+|Notification icon	
+|24 px	
+|36 px	
+|48 px	
+|72 px	
+|96 px
+|===
+
+The launch icon should also be provide in 512x512 px for the published application in Google Play.
+		
+	
     
 ==== Using orientation as resource qualifier
         

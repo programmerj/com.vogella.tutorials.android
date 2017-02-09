@@ -74,30 +74,12 @@ include::res/resources/values.xml[]
 === Resource files and R.java
 
 		
-Every relevant resource in the
-_res_
-folder, gets an ID assigned by the Android build system.
-Android generates
-_gen_
-a
-_R.java_
-file
-which contains the generated
-values. These
-references are static
-integer
+Every relevant resource in the _res_ folder, gets an ID assigned by the Android build system.
+The Android tooling generates a _R.java_ file which contains the generated
 values.
+These references are static integer values.
 		
-
-		
-If you
-add a new
-resource file, the corresponding
-reference is
-automatically
-created in a
-_R.java_
-file.
+If you add a new resource file, the corresponding reference is automatically created in a _R.java_ file.
 Manual changes in the
 _R.java_
 file are not

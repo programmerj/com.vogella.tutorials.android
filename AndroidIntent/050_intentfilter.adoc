@@ -1,8 +1,6 @@
 [[intentfilter]]
 == Registering for intents via intent filters
 
-=== What is an intent filter?
-		
 Intents are used to signal to the Android system that a certain event has occurred. 
 Intents often describe the action which should be performed and provide data upon which such an action should be done.
 For example, your application can start a browser component for a certain URL via an intent.
@@ -25,8 +23,6 @@ It can also contain additional meta-data.
 If an intent is sent to the Android system, the Android platform runs a receiver determination. 
 It uses the data included in the intent.
 If several components have registered for the same intent filter, the user can decide which component should be started.
-		
-=== Defining intent filter
 		
 You can register your Android components via intent filters for certain events.
 If a component does not define one, it can only be called by explicit intents. 

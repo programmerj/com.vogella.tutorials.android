@@ -1,4 +1,4 @@
-== Building user interfaces
+== Using views and view groups to design the user interface
 
 === View - The widgets in Android
 	
@@ -54,8 +54,10 @@ image::layout_wrap_content.png[Layout with wrap_content]
 		
 image::layout_match_parent.png[Layout with match_parent]
 
+=== Overview of Android layout managers
+
 [[layoutmanager_constraintlayout]]
-=== Constraint layout
+==== Constraint layout
 
 Constraint layout is provided by an external library.
 It allows you to use a flat view hierarchy and has great performance.
@@ -64,7 +66,7 @@ New projects should prefer the usage of constraint layout.
 
 
 [[layoutmanager_framelayout]]
-=== FrameLayout
+==== FrameLayout
 		
 `FrameLayout` is a layout manager which draws all child elements on top of each other. 
 This allows to create nice visual effects.
@@ -75,7 +77,7 @@ image::undobutton02.png[FrameLayout]
 		
 
 [[layoutmanager_linearlayout]]
-=== LinearLayout
+==== LinearLayout
 		
 `LinearLayout` puts all its child elements into a single column or row depending on the `android:orientation` attribute. 
 Possible values for this attribute are `horizontal` and `vertical`.
@@ -104,7 +106,7 @@ to
 zero to always have a certain ratio.
 		
 [[layoutmanager_relativelayout]]
-=== RelativeLayout
+==== RelativeLayout
 		
 `RelativeLayout`
 allows positioning the widget relative to each other. This can be
@@ -127,7 +129,7 @@ include::res/snippets/centerlayout.txt[]
 		
 
 [[gridlayout_overview]]
-=== GridLayout
+==== GridLayout
 		
 `GridLayout`
 was introduced with Android 4.0. This layout allows you to organize a
@@ -165,16 +167,13 @@ image::gridlayout.png[GridLayout Activity result, pdfwidth=40%]
 [[gridlayout_scrollview]]
 === ScrollView
 		
-The `ScrollView` or the `HorizontalScrollView` class is not a layout manager.
-It is useful to make views available, even if they do not fit onto the screen.
+The `ScrollView` or the `HorizontalScrollView` class is useful to make views available, even if they do not fit onto the screen.
 A scroll view can contain one view, e.g., a layout manager containing more views.
 If the child view is too large, scroll view allows scrolling the content.
-		
 		
 image::layout_scrollview10.png[Scroll view]
 		
 
-		
 The following code shows an example layout file which uses a `ScrollView`.
 
 [source,xml]

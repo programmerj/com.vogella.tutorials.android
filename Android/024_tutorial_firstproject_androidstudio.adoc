@@ -104,5 +104,9 @@ image::androidstudio_create_avd60.png[Settings for a new AVD]
 		
 After a while your application should start on the virtual device.
 
-image::androidstudio_create_avd70.png[Settings for a new AVD]
-		
+image::androidstudio_create_avd70.png[First running android app,pdfwidth=50%] 
+
+[TIP]
+====
+You can resize the emulator interactively via the corners of the emulator window.
+====		

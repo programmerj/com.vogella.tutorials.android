@@ -1,4 +1,4 @@
-== Android data binding
+== Using data binding in Android applications
 
 === Introduction to data binding in Android
 
