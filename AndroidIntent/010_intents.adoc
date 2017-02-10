@@ -29,7 +29,7 @@ Such a flow of events is depicted in the following graphic.
 image::androidtask10.png[Defining an Android tasks]
 
 
-=== Starting activities
+=== Starting activities or services
 		
 To start an activity, use the method `startActivity(intent)`. 
 This method is defined on the `Context` object which `Activity` extends.
@@ -46,10 +46,8 @@ include::res/snippets/startActivity.java[]
 Activities which are started by other Android activities are called _sub-activities_. 
 This wording makes it easier to describe which activity is meant.
 		
-=== Starting services
 		
-You can also start services via intents. 
-Use the `startService(Intent)` method call for that.
+To start a services via intents, use the `startService(Intent)` method call.
 		
 === Sending out explicit or implicit intents
 		
@@ -78,6 +76,32 @@ All installed web browsers should be registered to the corresponding intent data
 ----		
 include::res/snippets/viewintent.java[]
 ----
+
+=== Determine valid intent receivers
+	
+Sometimes you want to determine if a component has registered for an intent.
+For example, you want to check if a certain intent receiver is available and in case a component is available, you enable a functionality in your application.
+	
+This check can be done via the `PackageManager` class.
+	
+The following example code checks if a component has registered for a certain intent.
+Construct your intent as you are desired to trigger it and pass it to the following method.
+	
+[source,java]
+----	
+include::res/check/check.java[]
+----
+	
+Based on the result you can adjust your application. 
+For example, you could disable or hide certain menu items.
+	
+=== Intents as event triggers
+	
+Intents can be used to send broadcast messages into the Android system.
+A _broadcast receiver_ can register to an event and is notified if such an event is sent.
+	
+Your application can register to system events, e.g., a new email has arrived, system boot is complete or a phone call is received and react accordingly.
+	
 
 	
 	

@@ -62,21 +62,17 @@ A layout file for a such a line might look like the following.
 include::res/snippets/rowlayout_complex.xml[]
 ----
 
+[[recylerview_gradledependency]]
 === Gradle dependency to use recycler view  
 	
-The `RecyclerView` widget is part of a separate library valid for API 7 level or higher. 
-Add the following dependency to your Gradle build file to use recycler view.
+The `RecyclerView` widget is delivered as library and can be used as of API 7 level or higher. 
+Add the a dependency to the latest version of this library to your Gradle build file to use it.
 	
 [source,gradle]
 ----
-dependencies {
-    ...
-    compile "com.android.support:recyclerview-v7:23.0.1"
-}
+include::res/recyclerview/build.gradle[]
 ----
 
-
-		
 		
 === Default layout manager
 		

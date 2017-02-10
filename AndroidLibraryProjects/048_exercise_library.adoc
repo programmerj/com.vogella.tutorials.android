@@ -6,19 +6,12 @@ An _RSS_ document is an XML file which can be used to publish blog entries and n
 
 === Create library module
 		
-For Android Studio each library is a module. To create a new library
-module in Android Studio, select
-menu:File[New Module]
-and select
-`Android Library`.
+For Android Studio each library is a module. 
+To create a new library module in Android Studio, select menu:File[New Module] and select `Android Library`.
 		
 image::library_studio08.png[Selection for creating a library project]
 		
-Use
-_com.example.android.rssfeedlibrary_
-as module name and
-_Rssfeed Library_
-as library name.
+Use _com.example.android.rssfeedlibrary_ as module name and _Rssfeed Library_ as library name.
 		
 image::library_studio10.png[Setting the library property]
 		
@@ -44,12 +37,8 @@ include::res/net/RssItem.java[]
 	
 === Create instances
 		
-Create a new class called
-`RssFeedProvider`
-with a static method to return a list of
-`RssItem`
-objects. This method does currently only return
-test data.
+Create a new class called `RssFeedProvider` with a static method to return a list of `RssItem` objects.
+This method does currently only return test data.
 		
 [source,java]
 ----
@@ -59,15 +48,9 @@ include::res/net/RssFeedProvider.java[]
 === Define dependency to the library project
 		
 		
-To use the library add it as a dependency in your project select
-menu:File[Project Structure]. 
-Select the
-_app_
-entry. Switch to the
-`Dependencies`
-tab and select
-`Module dependencies`
-via the + sign.
+To use the library add it as a dependency in your project select menu:File[Project Structure]. 
+Select the _app_ entry.
+Switch to the `Dependencies` tab and select `Module dependencies` via the + sign.
 		
 image::library_studio30.png[Define dependency in Android Studio - Selecting dependency]
 		
@@ -77,15 +60,8 @@ image::library_studio50.png[Define dependency in Android Studio - Select module]
 
 === Use library project to update detailed fragments
 		
-Use the static method of
-`RssFeedProvider`
-to get the list of
-`RssItem`
-objects and display the number in your
-`DetailFragment`
-instead of current system time.
-		
-To send the new data, change the `updateDetail` method in your `MyListFragment` class.
+Update the `updateDetail` method in your `MyListFragment` class to use the `RssFeedProvider` provider.
+This is only test code.
 		
 [source,java]
 ----

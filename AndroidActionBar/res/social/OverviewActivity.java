@@ -45,10 +45,16 @@ public class RssfeedActivity extends Activity implements
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+            case R.id.action_refresh:
+                Toast.makeText(this, "Action Refresh selected", Toast.LENGTH_SHORT).show();
+                return true;
+
             case R.id.action_settings:
                 Toast.makeText(this, "Action Settings selected", Toast.LENGTH_SHORT).show();
                 return true;
-
+            case R.id.action_network:
+                Toast.makeText(this, "Action Network selected", Toast.LENGTH_SHORT).show();
+                return true;
             default:
                 break;
         }

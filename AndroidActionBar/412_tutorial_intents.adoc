@@ -1,0 +1,17 @@
+== Exercise: Trigger intents from the toolbar
+
+If the `action_network` action is selected, trigger the intent to control the network connectivity.
+
+[source, java]
+----
+@Override
+public boolean onOptionsItemSelected(MenuItem item) {
+    switch (item.getItemId()) {
+       ... as before
+         case R.id.action_network:
+             Intent wirelessIntent = new Intent("android.settings.WIRELESS_SETTINGS");
+             startActivity(wirelessIntent);
+             return true;
+        ...as before
+    }
+----

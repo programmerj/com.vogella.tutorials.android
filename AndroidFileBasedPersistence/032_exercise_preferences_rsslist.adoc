@@ -30,16 +30,11 @@ the values.
 include::res/preferences/SettingsActivity.java[]
 ----
 
-Register this class as an activity in your
-_AndroidManifest.xml_
-file.
+Register this class as an activity in your _AndroidManifest.xml_ file.
 
 === Connect your settings activity
 
-Open the preference
-activity via the
-`onOptionsItemSelected()`
-method as demonstrated in the following listing.
+Open the preference activity via the `onOptionsItemSelected()` method as demonstrated in the following listing.
 
 [source,java]
 ----
@@ -60,13 +55,10 @@ String url = settings.getString("url", "http://www.vogella.com/article.rss");
 
 === Validating
 
-Run your application. Select from your action bar the
-`Settings`
-action.
-You should be able to enter a URL. If you press the back
-button and press the refresh button, ensure that the
-value of the url
-preference is used in your activity.
+Run your application. 
+Select from your action bar the `Settings` action.
+You should be able to enter a URL. 
+If you press the back button and press the refresh button, ensure that the value of the url preference is used in your activity.
 
 === Optional: Show the current value in the settings
 

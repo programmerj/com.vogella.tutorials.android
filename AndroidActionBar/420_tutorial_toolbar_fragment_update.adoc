@@ -1,30 +1,50 @@
 == Exercise: Trigger refresh on the  MyListFragment via the toolbar
 
-For testing purpose you want to fill your recyler view only once the user selects refresh from the toolbar (or via swipe-to-refresh).
-Therefore, your recycler view should be initially empty.
+In this exercise you call a method in your list fragment based on the toolbar selection.
+It continues to use the _RSS Reader_ project.
 
-=== Remove the initial data
-
-In your _RSS Reader_ project remove the call to `updateListContent()` in the `onCreate()` method of your `MyListFragment` class. 
-
-=== Update the MyListFragment if refresh is selected
-In your `RssfeedActivity` class, implement the logic of the `Refresh` action. 
-If the user selects refresh, the `updateListContent()` method in your `MyListFragment` should be called.
+=== Create a updateListContent method in MyListFragment
 
 [source,java]
 ----
-@Override
-public boolean onOptionsItemSelected(MenuItem item) {
-	switch (item.getItemId()) {
-     case R.id.action_refresh:
-     //TODO 
-     // find fragment via FragmentManager and call updateListContent() on it.
-   break;
-     default:
-   break;
-  }
-	return true;
+public void updateListContent() {
+  Toast.makeText(getContext(), "updateListContent called in MyListFragment", Toast.LENGTH_SHORT).show();
 }
+----
+
+=== Update the MyListFragment if the refresh action is selected
+In your `RssfeedActivity` class, call the `updateListContent()` method in your `MyListFragment` if the `action_refresh` action is selected. 
+
+[source,java]
+----
+ @Override
+ public boolean onOptionsItemSelected(MenuItem item) {
+  switch (item.getItemId()) {
+   case R.id.action_refresh:
+    if (getResources().getBoolean(R.bool.twoPaneMode)) {
+     MyListFragment fragment = (MyListFragment) getFragmentManager().findFragmentById(R.id.listFragment);
+     fragment.updateListContent();
+    } else {
+     Fragment fragmentById = getFragmentManager().findFragmentById(R.id.fragment_container);
+     if (fragmentById instanceof MyListFragment) {
+      MyListFragment fragment = (MyListFragment) fragmentById;
+      fragment.updateListContent();
+     }
+    }
+
+    return true;
+   case R.id.action_settings:
+    Toast.makeText(this, "Action Settings selected", Toast.LENGTH_SHORT).show();
+    return true;
+   case R.id.action_network:
+    Intent wirelessIntent = new Intent("android.settings.WIRELESS_SETTINGS");
+    startActivity(wirelessIntent);
+    return true;
+   default:
+    break;
+  }
+  return super.onOptionsItemSelected(item);
+ }
 ----
 
 ////

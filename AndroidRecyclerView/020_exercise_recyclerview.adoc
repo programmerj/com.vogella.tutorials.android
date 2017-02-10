@@ -1,4 +1,4 @@
-== Exercise: Using RecylerView
+== Exercise: Using RecylerView in a new Android application
 		
 In this exercise you create a project which uses the `RecyclerView` class to display a list.
 		
@@ -8,15 +8,8 @@ image::recyclerview_target10.png[RecyclerView example, pdfwidth=40%]
 
 Create a new Android project using the `com.vogella.android.recylerview` top level package name.
 		
-Add the following dependency to your Gradle build file to use RecylerView.
-
-[source,gradle]
-----
-dependencies {
-    ...
-    compile "com.android.support:recyclerview-v7:23.0.1"
-}
-----
+Add a required dependency to your Gradle build file.
+See <<recylerview_gradledependency>> for details.
 		
 === Create layout files
 		

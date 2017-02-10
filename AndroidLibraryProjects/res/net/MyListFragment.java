@@ -1,59 +1,11 @@
-package com.example.android.rssreader;
-
-import android.app.Fragment;
-import android.content.Context;
-import android.os.Bundle;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-
-import com.example.android.rssfeedlibrary.RssFeedProvider;
-import com.example.android.rssfeedlibrary.RssItem;
-
-import java.util.List;
-
 public class MyListFragment extends Fragment {
 
-    private OnItemSelectedListener listener;
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_rsslist_overview,
-                container, false);
-        Button button = (Button) view.findViewById(R.id.updateButton);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                updateDetail("fake");
-            }
-        });
-        return view;
-    }
-
-    public interface OnItemSelectedListener {
-        public void onRssItemSelected(String link);
-    }
-
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnItemSelectedListener) {
-            listener = (OnItemSelectedListener) context;
-        } else {
-            throw new ClassCastException(context.toString()
-                    + " must implement MyListFragment.OnItemSelectedListener");
-        }
-    }
+..// everything as before
 
     // triggers update of the details fragment                                 
     public void updateDetail(String uri) {  // #<1>
         List<RssItem> list = RssFeedProvider
                 .parse("http://www.vogella.com/article.rss");
-        String text = String.valueOf(list.toString());
-        listener.onRssItemSelected(text);
+        String itemListAsString = String.valueOf(list.toString());
+        listener.onRssItemSelected(itemListAsString);
     }
-
-
-}

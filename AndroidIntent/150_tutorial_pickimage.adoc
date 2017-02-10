@@ -1,4 +1,4 @@
-== Exercise: picking an image via an intent
+== Exercise: Picking an image via an intent
 
 === Target
 		

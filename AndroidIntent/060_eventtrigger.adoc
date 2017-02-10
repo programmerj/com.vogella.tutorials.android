@@ -1,7 +1,0 @@
-== Intents as event triggers
-	
-Intents can be used to send broadcast messages into the Android system.
-A _broadcast receiver_ can register to an event and is notified if such an event is sent.
-	
-Your application can register to system events, e.g., a new email has arrived, system boot is complete or a phone call is received and react accordingly.
-	

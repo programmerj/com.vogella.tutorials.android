@@ -4,47 +4,47 @@
 		
 Continue to use the _RSS Reader_ project. 
 Create a new drawable called _ic_refresh_ via the menu:File[New>Vector Asset] menu entry.
-Select a fitting image from the example.
+Select a fitting image from the provided example images.
 
 === Add menu resources
 		
 Create a new XML resource for your menu called _mainmenu.xml_. 
-Add on entry to the file so that the resulting XML file, similar to the following listing. You may have to type these entries, as the time of this writing Android Studio offers no code completion of menus.
+Add on entry to the file so that the resulting XML file, similar to the following listing. 
 		
 [source,xml]
 ----
+<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
+	<item android:title="Refresh"
+        android:icon="@drawable/ic_refresh"
+        android:id="@+id/action_refresh"
+        android:showAsAction="ifRoom" />
     <item
         android:id="@+id/action_settings"
         android:title="Settings"
         android:showAsAction="never"
         >
     </item>
-</menu>
-----
-
-		
-Create a new XML resource for your menu called _listfragment_menu.xml_. 
-Add on entry to the file so that the resulting XML file, similar to the following listing. You may have to type these entries, as the time of this writing Android Studio offers no code completion of menus.
-		
-[source,xml]
-----
-<?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:title="Refresh"
-        android:icon="@drawable/ic_refresh"
-        android:id="@+id/action_refresh"
-        android:enabled="false"
-        android:showAsAction="ifRoom" />
+     <item
+        android:id="@+id/action_network"
+        android:title="Network Setting"
+        android:showAsAction="never"
+        >
+    </item>
 </menu>
 ----
 
 	
 === Turn of the default action bar from the styling
 
-As you are using your own toolbar, turn of the default one via the _res/values/styles.xml_ file.
+Turn of the default one via the _res/values/styles.xml_ file.
+
+[WARNING]
+====
+This styling requires that `RssFeedActivity` extends `Activity`. 
+Please double-check this.
+====
+
 [source,xml]
 ----
 <resources>
