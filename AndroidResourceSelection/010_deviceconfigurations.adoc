@@ -53,7 +53,7 @@ If for example the Android device has 320 dpi, the Drawable from the _drawable-h
 |4 x 160 dpi = 640 dpi
 |===
 
-=== Icon sizes
+==== Icon sizes
 You should provide your launcher, action bar and notification bar icons in the important five size.
 		
 .Android icons size

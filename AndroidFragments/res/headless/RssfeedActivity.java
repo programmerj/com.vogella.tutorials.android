@@ -14,7 +14,7 @@ public class RssfeedActivity extends Activity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rssfeed);
+        setContentView(R.layout.activity_main);
         stateFragment =
                 (SelectionStateFragment) getFragmentManager()
                         .findFragmentByTag("headless");

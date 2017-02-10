@@ -11,8 +11,7 @@ public class SelectionStateFragment extends Fragment {
     public String lastSelection = "";
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         return null;
     }
 

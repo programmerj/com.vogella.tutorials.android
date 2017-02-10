@@ -51,6 +51,10 @@ The following is a list of useful shortcuts for Android Studio.
 |
 |Moves selected line(s) up or down.
 
+|kbd:[CTRL+Y] 
+|kbd:[Command+Backspace] 
+|Delete line at carret
+
 |===
 
 

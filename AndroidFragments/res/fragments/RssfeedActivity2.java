@@ -12,7 +12,7 @@ public class RssfeedActivity extends Activity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rssfeed);
+        setContentView(R.layout.activity_main);
         if (getResources().getBoolean(R.bool.twoPaneMode)) {
             // all good, we use the fragments defined in the layout
             return;

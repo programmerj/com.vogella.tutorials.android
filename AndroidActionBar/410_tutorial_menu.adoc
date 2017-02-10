@@ -68,7 +68,7 @@ Do the same for the layout for the portrait mode.
 
 [source,xml]
 ----
-include::res/rssfeed/activity_rssfeed_port.xml[]
+include::res/rssfeed/activity_main_port.xml[]
 ----
 		
 		

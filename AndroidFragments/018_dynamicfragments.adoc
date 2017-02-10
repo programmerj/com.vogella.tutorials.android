@@ -7,7 +7,7 @@ In this case the `android:name` attribute points to the corresponding class as d
 		
 [source,xml]
 ----
-include::res/fragments/activity_rssfeed.xml[]
+include::res/fragments/activity_main.xml[]
 ----
 		
 Using this scenario makes sense in case you have different static layout files for different device configurations.
@@ -23,7 +23,7 @@ To modify the fragments in an activity you typically define a `FrameLayout` plac
 		
 [source,xml]
 ----
-include::res/fragmentsdynamic/activity_rssfeed.xml[]
+include::res/fragmentsdynamic/activity_main.xml[]
 ----
 		
 		

@@ -1,16 +1,21 @@
 == Exercise: Using fragments
 
-The following tutorial demonstrates how to use fragments in a standard Android application without using the support library.
-The application uses layouts with different fragments depending on portrait and landscape mode.
+The following tutorial demonstrates how to use fragments in a standard Android application.
+It does not use the support library.
+The application uses different number of fragments depending on portrait and landscape mode.
 		
-In portrait mode the _RssfeedActivity_ shows one fragment.
-From this fragment the user can navigate to another _activity_ which contains another fragment.
+In portrait mode the main activity shows one fragment.
+From this fragment the user can navigate to another activity which contains another fragment.
 		
-In landscape mode _RssfeedActivity_ shows both fragments side by side.
+In landscape mode the main activity shows both fragments side by side.
 		
 === Create Project
 	
-Create a new Android project with the following data. Do NOT use the compability layer.
+Create a new Android project with the following data. 
+[NOTE]
+====
+Ensure you Do NOT use the compatibility layer on the last page of the project wizard.
+====
 
 .Android project
 [cols="1,3",options="header"]
@@ -30,13 +35,23 @@ Create a new Android project with the following data. Do NOT use the compability
 |Empty Activity
 
 |Activity
-|RssfeedActivity
+|RssfeedActivity NOTE This is not the default name
 
 |Layout
-|activity_rssfeed
+|activity_main
+
+|Backward compatibility
+|Not selected NOTE: This is not the default selection
+====
 
 |===
 	
+[WARNING]
+====
+Verify that you activity extends `Activity` to ensure you are not using the backwards compatibility mode.
+If you extends another class, delete the project and create it again.
+Ensure that you deselect the "Backward Compatibility" flag in the project creation wizard.
+====
 	
 === Create layout files for the fragments
 		
@@ -66,9 +81,7 @@ Start with the `DetailFragment` class.
 [source,java]
 ----
 include::res/fragments/DetailFragment.java[]
-----	
-		
-
+----
 		
 Create the `MyListFragment` class. 
 Despite its name it will not display a list of items. 
@@ -82,11 +95,11 @@ include::res/fragments/MyListFragment.java[]
 		
 === Change the main layout file
 		
-Change the existing _activity_rssfeed.xml_ file.
+Change the existing _activity_main.xml_ file.
 
 [source,xml]
 ----
-include::res/fragments/activity_rssfeed.xml[]
+include::res/fragments/activity_main.xml[]
 ----	
 		
 === RssfeedActivity

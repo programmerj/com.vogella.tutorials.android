@@ -18,7 +18,7 @@ public class RssfeedActivity extends Activity implements
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rssfeed);
+        setContentView(R.layout.activity_main);
 
         // #<1>
         Toolbar tb = (Toolbar) findViewById(R.id.toolbar);

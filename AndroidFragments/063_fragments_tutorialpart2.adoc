@@ -5,11 +5,11 @@ In this exercise you adjust your application to support this.
 
 === Create activity layout for portrait mode
 		
-Create the following _activity_rssfeed.xml_ layout file based on the `port` resource qualifier for orientation.
+Create the following _activity_main.xml_ layout file based on the `port` resource qualifier for orientation.
 
 [source,xml]
 ----
-include::res/fragments/activity_rssfeed2.xml[]
+include::res/fragments/activity_main2.xml[]
 ----
 
 === Define a boolean flag dependent of the resource selector
@@ -18,15 +18,18 @@ Create a file in your _res/values_ folder called _config.xml_ with the following
 		
 [source,xml]
 ----
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item type="bool" name="twoPaneMode">false</item>
 </resources>
 ----	
 	
-Create the same file in your _res/values-land_ folder with a different value.
+Create the same file for the landscape configuration with a different value.
+This file is located in your _res/values-land_ folder.
 
 [source,xml]
 ----
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <item type="bool" name="twoPaneMode">true</item>
 </resources>

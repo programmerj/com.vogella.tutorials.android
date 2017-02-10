@@ -16,45 +16,11 @@ include::res/headless/SelectionStateFragment.java[]
 ----
 include::res/headless/RssfeedActivity.java[]
 ----
-
-=== Define a boolean flag dependent of the resource selector
-
-Create a file in your _res/values_ folder called _config.xml_ with the following setting.
-		
-[source,xml]
-----
-include::res/mode/config.xml[]
-----	
-	
-Create the same file in your _res/values-land_ folder with a different value.
-
-[source,xml]
-----
-include::res/mode/config2.xml[]
-----
-
-=== Adjust the RssfeedActivity activity
-		
-Adjust the `RssfeedActivity` class to replace the existing fragment in case you are in single pane mode.
-
-
-[source,java]
-----
-include::res/fragments/RssfeedActivity2.java[]
-----	
-
-<1> This cleanup is necessary because we are using dynamically switching between two fragments and one fragments. 
-That is an unusual scenario, typically the selection of one or two fragment is based on the smallest width of a device and does not change at runtime.
-The `FragmentManager` caches the fragment to optimize performance, so we need to ensure that we remove an existing detailed fragment.
-
 === Validate your implementation
 		
 Test your application. 
-If you run the application in portrait mode, you should see only one fragment. 
-In horizontal mode you see both fragments.
-		
-Switch the orientation of the emulator.
-Press the button in portrait as well as in horizontal mode and verify that the detail activity shows the current time.
+Press the button in horizontal mode and verify that the detail activity shows a value.
+Switch the orientation of the emulator twice and validate the the activity still shows the same value.
 
 image::androidfragmenttutorial10.png[Screenshot]
 		

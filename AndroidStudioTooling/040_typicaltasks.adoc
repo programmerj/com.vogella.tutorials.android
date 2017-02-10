@@ -11,9 +11,14 @@ If you do not see a certain menu entry, try selecting the _app_ entry again.
 [[androidstudio_creatinglayoutfile]]
 === Creating a new layout file
 
-To create a new layout file, select your project, right click on it and select menu:File[New>Android resource file]. 
+To create a new layout file, select your app folder, right click on it and select menu:File[New>Android resource file]. 
 Choose the the _Layout_ option to create a layout file.
 
+[WARNING]
+====
+The availability of the menu entries and the resulting dialog depends on the selected folder.
+If the entry is not available or the resulting dialog is wrong, ensure you select the 'app' folder.
+====
 		
 The easiest way to create a new resource file, e.g., a layout file, is the context menu on the corresponding folder.
 To create a new folder, see <<androidstudio_creatingresourcefolder>>.

@@ -1,10 +1,9 @@
 == Fragments
 
 === What are single-pane or multi-pane layouts?
+
 (((Single-pane layout)))
 (((Multi-pane layout)))
-Android devices exists in a variety of screen sizes and densities.
-
 A _panel_ or _pane_ represents a part of the user interface. 
 The term pane is a general term used to describe the concept that multiple views are combined into one compound view depending on the actual available space.
 
@@ -15,12 +14,12 @@ This is typically called a _single-pane_ layout.
 
 image::panel20.png[Panel]
 
-
 If more space is available, multiple panels can be shown.
 
 image::panel30.png[Panel]
 
 === What are fragments?
+
 (((Fragments)))
 A _fragment_ is an independent Android component which can be used by an activity.
 A fragment encapsulates functionality so that it is easier to reuse within activities and layouts.
@@ -28,16 +27,9 @@ A fragment encapsulates functionality so that it is easier to reuse within activ
 A fragment runs in the context of an activity, but has its own life cycle and typically its own user interface.
 It is also possible to define fragments without an user interface, i.e., headless fragments.
 
-
-=== Fragments and Context access
-
-Fragments don't subclass the `Context` class. 
-Therefore you have to use the `getActivity()` method to get the parent activity.
-
-=== Advantages of using fragments
-
+Android devices exists in a variety of screen sizes and densities.
 Fragments simplify the reuse of components in different layouts and their logic.
-You can easily build single-pane layouts for handsets (phones) and multi-pane layouts for tablets.
+You can  build single-pane layouts for handsets (phones) and multi-pane layouts for tablets.
 You can also use fragments also to support different layout for landscape and portrait orientation on a smartphone.
 
 As it is possible to dynamically add and remove fragments from an activity. 
@@ -50,15 +42,19 @@ This is depicted in the following graphic.
 
 image::fragmentsusage10.png[Fragments usage on a handheld device]
 
-
 The following discussion will assume that you have two fragments (main and detail), but you can also have more. 
 We will also have one main activity and one detailed activity. 
 On a tablet the main activity contains both fragments in its layout, on a handheld it only contains the main fragment.
 
-
 The following screenshots demonstrates this usage. 
 
 image::fragmentsusage20.png[Fragments usage on a tablet device]
+
+=== Fragments and Context access
+
+Fragments don't subclass the `Context` class. 
+Therefore you have to use the `getActivity()` method to get the parent activity.
+
 
 === How to support different screensizes with fragments 
 
@@ -66,39 +62,16 @@ It is possible to define in the layout file of an activity that it contains frag
 You can also modify the fragments of an activity at runtime (dynamic definition).
 
 
-To display different fragments in your activities based on the actual
-available space you can:
+To display different fragments in your activities based on the actual available space you can:
 
-* Use one activity, which displays two fragments
-for tablets
-and
-on
-handset devices. In this case change at runtime the fragments
-displayed by the
-activity whenever necessary. In this scenario you
-typically define instances of the
-`FrameLayout`
-class as placeholder in your layout and add the fragments at
-runtime to them.
+* Use one activity, which displays two fragments for tablets and on handset devices. 
+In this case change at runtime the fragments displayed by the activity whenever necessary.
+In this scenario you typically define instances of the `FrameLayout` class as placeholder in your layout and add the fragments at runtime to them.
 
 * Use separate activities to host each fragment on a handset.
-For example, when the tablet UI uses two fragments
-in an activity,
-use the same activity for handsets, but supply an
-alternative
-layout that includes just one fragment. If
-the
-detailed fragment is
-there, the main
-activity tells the fragment that
-it should update
-itself. If the
-detail
-fragment is not available, the
-main activity
-starts the detailed
-activity.
+An activity may include multiple fragments for a certain configuration and for other configurations a different number.
+If a detailed fragment is there, the main activity tells the fragment that it should update itself. 
+If a detail fragment is not available, the main activity starts the detailed activity.
 
-Which option to select depends on the use case, typical the
-dynamic contribution is more flexible bit a bit harder to implement.
+Which option to select depends on the use case, typical the dynamic contribution is more flexible bit a bit harder to implement.
 

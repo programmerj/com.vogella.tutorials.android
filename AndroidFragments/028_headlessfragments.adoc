@@ -1,5 +1,6 @@
 == Fragments for background processing
 
+[[headlessfragments]]
 === Headless Fragments
 
 Fragments can be used without defining a user interface. 
