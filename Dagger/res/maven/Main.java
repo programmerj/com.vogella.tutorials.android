@@ -7,7 +7,7 @@ import com.vogella.java.dagger2.component.MyComponent;
 public class Main {
 
     @Inject
-    BackendService backendService;
+    BackendService backendService; // #<1>
 
     private MyComponent component;
 

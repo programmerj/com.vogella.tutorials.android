@@ -77,3 +77,4 @@ include::res/maven/Main.java[]
 
 <1> Fields are not automatically injected hence the method call to inject the fields
 
+
