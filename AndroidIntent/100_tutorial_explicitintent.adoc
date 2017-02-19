@@ -1,4 +1,4 @@
-== Exercise: Starting activities
+== Exercise: Activity communication with intents
 
 The following exercise demonstrates how to use an explicit intent to start a sub-activity and how to send data to it.
 	

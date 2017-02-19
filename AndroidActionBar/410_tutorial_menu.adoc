@@ -88,5 +88,5 @@ Ensure that a Toast is displayed if you select the different entries.
 [NOTE]
 ====
 If your device or emulator has an _Option_ menu button, you will not see the overflow menu. 
-Press the _Option_ key to see your second action.
+You need to press the _Option_ key to see the actions which are part of the overflow menu.
 ====	
