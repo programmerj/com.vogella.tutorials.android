@@ -6,6 +6,6 @@ public class MyListFragment extends Fragment {
     public void updateDetail(String uri) {  // #<1>
         List<RssItem> list = RssFeedProvider
                 .parse("http://www.vogella.com/article.rss");
-        String itemListAsString = String.valueOf(list.toString());
+        String itemListAsString = list.toString();
         listener.onRssItemSelected(itemListAsString);
     }
