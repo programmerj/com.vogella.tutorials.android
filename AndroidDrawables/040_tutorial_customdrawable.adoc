@@ -1,16 +1,14 @@
-== Exercise: Create Custom Drawables
+== Exercise: Create Custom rounded corner drawable
 
-NOTE: This example is based on http://www.curious-creature.org/2012/12/11/android-recipe-1-image-with-rounded-corners/[Blog post from Roman Guy].
+[NOTE]
+====
+This example is based on http://www.curious-creature.org/2012/12/11/android-recipe-1-image-with-rounded-corners/[Blog post from Roman Guy].
+====
 
-Create the following Android project called
-_com.vogella.android.drawables.custom_
-based on the
-_Empty Activity_
-template.
+
+Create the following Android project called _com.vogella.android.drawables.custom_ based on the _Empty Activity_ template.
 	
-Create the following custom
-_Drawable_
-class.
+Create the following custom _Drawable_ class.
 	
 [source,java]
 ----
@@ -24,13 +22,8 @@ To use it change your layout file to the following.
 include::res/custom/activity_main.xml[]
 ----	
 	
-Change your
-`MainActivity`
-class to the following. The code assumes that you have a bitmap in
-your
-_drawable_
-folder called
-_dog.png_.
+Change your `MainActivity` class to the following. 
+The code assumes that you have a bitmap in your _drawable_ folder called _dog.png_.
 	
 [source,java]
 ----

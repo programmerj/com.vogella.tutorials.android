@@ -6,10 +6,15 @@ Continue to use the _RSS Reader_ project.
 Create a new drawable called _ic_refresh_ via the menu:File[New>Vector Asset] menu entry.
 Select a fitting image from the provided example images.
 
+[NOTE]
+====
+If the fill color does not fit to your styling, open the created drawable and ajust the color.
+====
+
 === Add menu resources
 		
 Create a new XML resource for your menu called _mainmenu.xml_. 
-Add on entry to the file so that the resulting XML file, similar to the following listing. 
+The resulting XML file should look similar to the following listing. 
 		
 [source,xml]
 ----
@@ -37,7 +42,7 @@ Add on entry to the file so that the resulting XML file, similar to the followin
 	
 === Turn of the default action bar from the styling
 
-Turn of the default one via the _res/values/styles.xml_ file.
+Disable the default action bar one via the _res/values/styles.xml_ file.
 
 [WARNING]
 ====

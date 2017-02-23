@@ -2,62 +2,27 @@
 
 === Using animations
 		
-Android 3.0 introduced the
-_Properties Animation API_
-which allow to change object properties over a predefined
-time
-interval.
-		
-The API allows to define for arbitrary object
-properties a start and
-end value and apply a time-based change to
-this attribute. This API
-can be applied on any Java object not only on
-`Views`.
+Android provides the _Properties Animation API_ which allow to change object properties over a pre-defined time interval.
+It can be used for arbitrary object properties and on any object not only Android views.
 		
 === Animator and AnimatorListener
 		
-The superclass of the animation API is the
-`Animator`
-class. Typically the
-`ObjectAnimator`
-class is used to modify the attributes of an object.
+The superclass of the animation API is the `Animator` class. 
+Typically the `ObjectAnimator` class is used to modify the attributes of an object.
 		
-You can also add an
-`AnimatorListener`
-class to your
-`Animator`
-class. This listener is called in the different phases of the
-animation. You can use this listener to perform actions before or
-after a certain animation, e.g. add or remove a
-`View`
-from a
-`ViewGroup`.
+You can also add an `AnimatorListener` class to your `Animator` class.
+This listener is called in the different phases of the animation. 
+You can use this listener to perform actions before orafter a certain animation, e.g. add or remove a `View` from a `ViewGroup`.
 		
 === ViewPropertyAnimator
 		
-The
-`ViewPropertyAnimator`
-class introduced in Android 3.1 provides a simpler access to typical
-animations which are performed on
-views.
+The `ViewPropertyAnimator` class introduced in Android 3.1 provides  access to typical animations which are performed on views.
 		
-The
-`animate()`
-method on a
-view
-returns the
-`ViewPropertyAnimator`
-object. This object allows
-to perform simultaneous animations. It
-has a
-fluent API and allows
-setting
-the duration of the animation.
+The `animate()` method on a `View` object returns the `ViewPropertyAnimator` object.
+This object allows to perform simultaneous animations.
+It has a fluent API and allows setting the duration of the animation.
 		
-The target of
-`ViewPropertyAnimator`
-is to provide a very simple API for typical animations.
+The target of `ViewPropertyAnimator` is to provide a very simple API for typical animations.
 		
 The following code shows an example of the usage of this method.
 		
@@ -66,18 +31,14 @@ The following code shows an example of the usage of this method.
 include::res/viewproperty/Test.java[]
 ----
 		
-For performance optimization you can also let
-`ViewPropertyAnimator`
-use a hardware layout.
+For performance optimization you can also let `ViewPropertyAnimator` use a hardware layout.
 		
 [source,java]
 ----
 include::res/viewproperty/TestHardware.java[]
 ----		
 		
-You can also directly define a
-`Runnable`
-to be executed at the start and the end of the animation.
+You can also directly define a `Runnable` to be executed at the start and the end of the animation.
 		
 		
 [source,java]
@@ -85,11 +46,8 @@ to be executed at the start and the end of the animation.
 include::res/viewproperty/TestLayoutActions.java[]
 ----		
 		
-The
-`setInterpolator()`
-allows to define an object of type
-`TimeInterpolator`
-which defines the change of the value over time. The standard is
+The `setInterpolator()` allows to define an object of type `TimeInterpolator` which defines the change of the value over time. 
+The standard is
 linear. The Android platform
 defines a few default ones as for example
 `AccelerateDecelerateInterpolator`

@@ -16,8 +16,7 @@ public class MyRoundCornerDrawable extends Drawable {
 
 	public MyRoundCornerDrawable(Bitmap bitmap) {
 		BitmapShader shader;
-		shader = new BitmapShader(bitmap, Shader.TileMode.CLAMP,
-				Shader.TileMode.CLAMP);
+		shader = new BitmapShader(bitmap, Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
 		paint = new Paint();
 		paint.setAntiAlias(true);
 		paint.setShader(shader);

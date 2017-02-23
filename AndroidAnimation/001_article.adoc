@@ -4,15 +4,14 @@
 :experimental:
 :icons:
 :imagesdir: ./img
-Lars Vogel (c) 2009, 2016 vogella GmbH
-Version 2.10, 28.06.2016
+Lars Vogel (c) 2009, 2017 vogella GmbH
+Version 2.11, 28.02.2017
 :docinfodir: ../
 :vgwort: AndroidAnimation
 
 [abstract]
 Android Property Animation API.
-This tutorial describes how to use Animations in Android. 
-The tutorial is based on Android Studio and Android 5.1.
+This tutorial describes how to use the animation API in Android. 
 	
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]

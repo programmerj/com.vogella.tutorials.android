@@ -3,57 +3,34 @@
 === Introduction into the canvas API
 		
 The Canvas API allows to create complex graphical effects.
-You paint on a
-`Bitmap`
-surface.
-The
-`Canvas`
-class provides the drawing methods to draw on a bitmap and the
-`Paint`
-class specifies how you draw on the bitmap.
+You paint on a `Bitmap` surface.
+The `Canvas` class provides the drawing methods to draw on a bitmap.
+The `Paint` class specifies how you draw on the bitmap.
 		
 	
 
 === The Canvas class
 		
-The
-`Canvas`
-object contains the bitmap on which you draw. It also provides
-methods for drawing operations, e.g.
-`drawARGB()`
-for drawing a color,
-`drawBitmap()`
-to draw a
-`Bitmap`,
-`drawText()`
-to draw a text,
-`drawRoundRect()`
-to draw a rectangle with rounded corners and much more.
+The `Canvas` object contains the bitmap on which you draw. 
+It also provides methods for drawing operations:
+
+* `drawARGB()` for drawing a color
+* `drawBitmap()` to draw a `Bitmap`
+* `drawText()` to draw a text
+* `drawRoundRect()` to draw a rectangle with rounded corners and much more.
 		
-	
 === The Paint class
 		
-For drawing on the
-`Canvas`
-object you use an object of type
-`Paint`.
+For drawing on the `Canvas` object you use an object of type `Paint`.
 		
 		
-The
-`Paint`
-class allows to specify the color, font and certain effects for the
-drawing operation.
+The `Paint` class allows to specify the color, font and certain effects for the drawing operation.
 		
 		
-The
-`setStyle()`
-method allows to specify if the  only the outline (
-`Paint.Style.STROKE`
-), the filled part (
-`Paint.Style.FILL`
-) or both (
-`Paint.Style.STROKE_AND_FILL`
-)should be drawn.
+The `setStyle()` method allows to specify how it should be drawn. Option are to paint:
+* Only the outline (`Paint.Style.STROKE`)
+* the filled part (`Paint.Style.FILL`) 
+* both the outline and the filled part (`Paint.Style.STROKE_AND_FILL`)
 		
 		
 You can set the alpha channel of the
@@ -86,23 +63,10 @@ object and use the
 method to draw a rectancle with rounded corners.
 		
 		
-Other
-_Shaders_
-provided by the Android platform are
-`LinearGradient`,
-`RadialGradient`
-and
-`SweepGradient`
-for drawing color gradients.
+Other _Shaders_ provided by the Android platform are `LinearGradient`, `RadialGradient` and `SweepGradient` for drawing color gradients.
 		
 		
-To use a
-_Shaders_
-assign it to your
-`Paint`
-object via the
-`setShader()`
-method.
+To use a _Shaders_ assign it to your `Paint` object via the `setShader()` method.
 		
 		
 If the area which is filled is larger than the

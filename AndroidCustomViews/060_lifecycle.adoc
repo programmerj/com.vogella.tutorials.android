@@ -1,4 +1,4 @@
-== Life cycle
+== Life cycle of a Andoid view
 
 === Life cycle events related to the window
 

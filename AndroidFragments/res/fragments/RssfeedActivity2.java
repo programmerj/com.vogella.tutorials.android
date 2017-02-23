@@ -29,7 +29,6 @@ public class RssfeedActivity extends Activity implements
             }
         }
         MyListFragment listFragment = new MyListFragment();
-        FrameLayout viewById = (FrameLayout) findViewById(R.id.fragment_container);
         getFragmentManager().beginTransaction()
                 .replace(R.id.fragment_container, listFragment).commit();
     }

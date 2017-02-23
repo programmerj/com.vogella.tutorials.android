@@ -1,13 +1,14 @@
 == Exercise: Using the DialogFragment class
 		
-The following demonstrates the usage of the `DialogFragment` dialog in an activity.
-It uses an existing dialog and with a custom layout for the dialog.
-		
+The following demonstrates the usage of the `DialogFragment` fragment to display modal windows..
+Both the re-use of an dialog implementation and a custom layout for the dialog fragment is shown.
+
 === Create project and layout files
 
 Create a new Android project with the `com.android.vogella.com.dialogfragmentexample` package.
 		
-Ensure that the layout file of your activity contains two buttons pointing both to `onClick` method in their `android:onClick` property.
+Add at least two buttons to the activity layout.
+Both should point to the `onClick` method via their `android:onClick` property.
 		
 Create the following layout file, called `fragment_username.xml`.
 		
@@ -41,4 +42,3 @@ include::res/dialog/MainActivity.java[]
 
 If you run your application and click the corresponding button, your dialog should get displayed.
 		
-	

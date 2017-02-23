@@ -1,24 +1,15 @@
-== Using dialogs with DialogFragments
+== Displaying dialogs with DialogFragments
 
-=== Using dialogs in Android
-		
+=== Using fragments for dialogs
 
-To show a dialog in your `Activity` you use an instance of `DialogFragment`. 
-A `DialogFragment` is a fragment that displays a dialog window, floating on top of its activities window. 
-You can either return an existing dialog implementation in your fragment or implement a custom layout to be shown.
+A `DialogFragment` is a fragment that displays a modal window, floating on top of the current activity window. 		
+An instance of `DialogFragment` can be used to display an existing `Dialog`  implementation dialog or a custom view hierarchy.
 
-=== Using existing dialogs
-		
-Your `DialogFragment` can implement the `onCreateDialog` method and return an existing dialog.
 The `Dialog` class is the base class for implementing a dialog. 
-Typically, you use one of its subclasses, e.g., `AlertDialog`, `ProgressDialog`, `DatePickerDialog` or `TimePickerDialog`.
-		
-Android also provides a `ProgressDialog`, which can be opened via a `ProgressDialog.open()` method call.
+Android provides several standard dialog implementation, `AlertDialog`, `ProgressDialog`, `DatePickerDialog` or `TimePickerDialog`.
+Your `DialogFragment` can implement the `onCreateDialog` method and return such a dialog implementation.
 
-=== Custom layout for your DialogFragment
-		
-If you want to create your custom dialog, you create a layout file for the dialog. 
-This layout file can be inflated and returns via the `onCreateView()` method of the fragment.
+If you want to create your custom view hierarchy you can build this in the `onCreateView()` method of the fragment.
 		
 === Communication to the activity via the DialogFragment
 		

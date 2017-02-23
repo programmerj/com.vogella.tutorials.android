@@ -23,6 +23,7 @@ public class ColorOptionsView extends LinearLayout {
 		TypedArray a = context.obtainStyledAttributes(attrs,
 				R.styleable.ColorOptionsView, 0, 0);
 		String titleText = a.getString(R.styleable.ColorOptionsView_titleText);
+		@SuppressWarnings("ResourceAsColor")
 		int valueColor = a.getColor(R.styleable.ColorOptionsView_valueColor,
 				android.R.color.holo_blue_light);
 		a.recycle();

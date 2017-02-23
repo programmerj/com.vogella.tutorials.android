@@ -1,4 +1,4 @@
-== Exercise: Lifecycle
+== Exercise: Tracing the lifecycle with notifications
 
 In this exercise you create an application which allows you to observe the life cycle call of the Android system to your Android application.
 
@@ -15,10 +15,8 @@ include::res/report/TracerActivity.java[]
 
 === Create your activities
 
-Create two activities which extend this one. The first activity
-should
-allow to start the second one via an
-`Intent`.
+Create two activities which extend this one. 
+The first activity should allow to start the second one via an `Intent`.
 
 [source,java]
 ----
@@ -70,7 +68,8 @@ include::res/report/activity_main.xml[]
 ----
 
 Android restores the state of a spinner automatically.
-Ensure that the selection of the spinner is saved and restored between configuration changes or restarts of the activity by the Android system.
+Validate that the selection of the spinner is saved and restored between configuration changes by the Android system.
+Android does that for spinners with a fixed input based on the layout file.
 
 Remove now the fixed array assignment in the layout and assign it to the `Spinner` via source code.
 
