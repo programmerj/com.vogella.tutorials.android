@@ -1,0 +1,41 @@
+== Exercise: Using adapter views with a spinnner
+
+In this exercise you a spinner (drop-down) to your application you created in <<androidstudio_starter>>. 
+
+=== Define a new resources file
+
+Create a new values file called `arrays.xml` with the following content.
+
+[source, xml]
+----
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <string-array name="ides_array">
+            <item>Eclipse </item>
+            <item>IntelliJ</item>
+            <item>Netbeans</item>
+            <item>Visual Studio</item>
+            <item>Android Studio</item>
+        </string-array>
+</resources>
+----
+
+Add a spinner widget to your layout.
+
+Configure it via the following code snippet in your activity.
+
+[source, java]
+----
+Spinner spinner = (Spinner) findViewById(R.id.spinner);
+// Create an ArrayAdapter using the string array and a default spinner layout
+ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
+        R.array.ides_array, android.R.layout.simple_spinner_item);
+// Specify the layout to use when the list of choices appears
+adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+// Apply the adapter to the spinner
+spinner.setAdapter(adapter);
+----
+
+=== Validating
+Start your application and validate the the spinner show the values from the array.
+

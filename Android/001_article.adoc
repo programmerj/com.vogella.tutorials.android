@@ -1,4 +1,4 @@
-= Android development with Android Studio - Tutorial
+= Getting started with Android development - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
@@ -10,8 +10,8 @@ Version 14.4, 20.06.2016
 :vgwort: Android
 
 [abstract]
-This tutorial describes how to create Android applications with Android Studio.
-It is usually based on the latest and greatest Android and Android Studio release.  
+This tutorial describes how to create Android applications.
+It is based on the latest and greatest Android and Android Studio release.  
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
@@ -27,6 +27,7 @@ include::200_exercise_layout.adoc[]
 include::210_exercise_dynamiclayout.adoc[]
 include::../web/advertisement/inBetween03.adoc[]
 
+include::300_exercise_adapterview.adoc[]
 include::340_exercise_resource_imageview.adoc[]
 include::420_scrollview.adoc[]
 include::440_temperature.adoc[]

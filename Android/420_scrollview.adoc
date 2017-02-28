@@ -1,11 +1,8 @@
 == Exercise: Using ScrollView
 	
 This exercise demonstrates the usage of the `ScrollView` view to provide a scrollable user interface component.
-Create an android project
-_de.vogella.android.scrollview_ with an activity called _ScrollViewActivity_.
+Create an android project _de.vogella.android.scrollview_ with an activity called _ScrollViewActivity_.
  
-Use `activity_main.xml` as layout file.
-	
 Change the layout file used in the activity to the following.
 	
 [source,xml]

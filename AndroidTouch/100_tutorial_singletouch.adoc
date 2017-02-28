@@ -5,12 +5,28 @@
 This exercise demonstrates the handling of (single) touch events within a custom view.
 		
 Create an Android project called _com.vogella.android.touch.single_ with the activity called _SingleTouchActivity_.
-		
-Create the following `SingleTouchEventView` class which implements a View which supports single touch.
+This activity uses a `DialogFragment` to set the color which is used for drawing.
+
+Create the following layout called `fragment_colorpicker.xml`.
+
+[source, xml]
+----
+include::res/single/fragment_colorpicker.xml[]
+----
+
+
+Create the following `TouchEventView` class which implements a View which supports single touch.
 		
 [source,java]
 ----
 include::res/single/SingleTouchEventView.java[]
+----
+
+Adjust the `activity_main.xml` layout file to the following.
+
+[source, xml]
+----
+include::res/single/activity_main.xml[]
 ----
 		
 Add this view to your _activity_.

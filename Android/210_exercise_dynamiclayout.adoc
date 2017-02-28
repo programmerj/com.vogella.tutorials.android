@@ -1,6 +1,7 @@
 == Exercise: Influence view layout at runtime
 
-In this exercise you add radio buttons the layout of the application you created in <<androidstudio_starter>> and extended in <<exercise_displayapopup>>.
+In this exercise you add radio buttons the layout of the application you created in <<androidstudio_starter>>. 
+This application was exted in <<exercise_displayapopup>>.
 Depending on the user selection the radio button arrangement will change from horizontal to vertical.
 
 === Add radio group and radio buttons to your layout
@@ -26,8 +27,6 @@ Assign IDs to them, based on the following table.
 
 The resulting layout file should be similar to the following listing.
 
-
-
 [source,xml]
 ----
 include::res/exercise_radiogroup/textlayout.txt[]
@@ -44,30 +43,16 @@ image::exercise_radiogroup20.png[Show the layout, pdfwidth=30%]
 
 === Change radio group orientation dynamically
 
-Change the
-`onCreate()`
-method in your
-activity. Use the
-`findViewById()`
-method to find the
-`RadioGroup`
-in your layout.
+Change the `onCreate()` method in your activity.
+Use the `findViewById()` method to find the `RadioGroup` in your layout.
 
 
+Implement a listener on the radio group which changes the orientation of the radio buttons.
+The new orientation should be based on the current selection of the radio buttons. 
+The selected button, is identified by the ID parameter.
 
-Implement a listener on the radio group
-which changes the
-orientation of the radio buttons based on the
-current
-selection of the
-buttons. Which button is selected, can be
-identified by the ID
-parameter.
 
-[TIP]
-====
-
-`RadioGroup` allows you to add a `RadioGroup.OnCheckedChangeListener` from the `android.widget.RadioGroup` package via the  setOnCheckedChangeListener()` method. 
+`RadioGroup` allows you to add a `RadioGroup.OnCheckedChangeListener` via the  setOnCheckedChangeListener()` method. 
 This listener is notified if the selection of the radio group changes.
 
 You can use the following code as template to implement the listener.
@@ -76,7 +61,6 @@ You can use the following code as template to implement the listener.
 ----
 include::res/exercise_radiogroup/listener.txt[]
 ----
-====
 
 === Validating
 Run your application and select the different radio button.

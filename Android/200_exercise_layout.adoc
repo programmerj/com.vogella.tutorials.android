@@ -4,7 +4,7 @@
 === Review generated layout
 
 In your project which you created in the <<androidstudio_starter>> exercise, open the
-`activity_main.xml`	layout file in the `res/layout`	folder.
+`activity_main.xml` layout file located in the `res/layout` folder.
 
 Investigate the XML layout in the visual editor as well in as the XML structure.
 
@@ -13,7 +13,7 @@ Investigate the XML layout in the visual editor as well in as the XML structure.
 Remove all views, except the top level entry which is the layout manager. 
 In the visual design mode you can remove a view by right-clicking it and by selecting the _Delete_ entry for the context menu.
 
-If necessary change the layout manager to `RelativeLayout`.	
+If necessary, change the layout manager to `RelativeLayout`.	
 The result layout file should look similar to the following file.
 
 [source,java]
@@ -45,7 +45,6 @@ This method is implemented in the next step.
 ====		
 
 After these changes your layout file should be similar to the following code.
-		
 		
 [source,java]
 ----
@@ -104,10 +103,9 @@ Use the `text.getText().toString()` method to read the string in the editor fiel
 ----
 include::res/exercise_layoutsimple/solution_MainActivity.java[]
 ----
- 
 	
 === Validate popup message
 		
-Restart your application and ensure that the popup message displays the text which the text field contains.
+Restart your application and ensure that the message displays the text which the text field contains.
 
 

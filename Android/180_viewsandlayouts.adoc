@@ -131,28 +131,15 @@ include::res/snippets/centerlayout.txt[]
 [[gridlayout_overview]]
 ==== GridLayout
 		
-`GridLayout`
-was introduced with Android 4.0. This layout allows you to organize a
-view into a Grid. GridLayout
-separates its
-drawing area into: rows,
-columns, and cells.
+`GridLayout` allows you to organize views into a grid / table. 
+GridLayout separates its drawing area into: rows, columns, and cells.
 		
-		
-You can specify how many columns you want to define for each
-`View`,
-in which row and column it should be placed as well as how many
-columns and
-rows it should use. If not specified,
-`GridLayout`
-uses defaults, e.g., one column, one row and the position of
-a view
-depends on the order of the declaration.
-		
+You can specify how many columns the grid should have.
+For each view you can specify  in which row and column it should be placed and how many columns and rows it should use. 
+If not specified, `GridLayout` uses defaults, e.g., one column, one row and the view position  depends on the order of the declaration.
 
 		
-The following layout file defines a layout using
-`GridLayout`.
+The following layout file defines a layout using `GridLayout`.
 		
 [source,xml]
 ----
@@ -161,7 +148,6 @@ include::res/gridlayout/main.xml[]
 		
 This creates a user interface similar to the following screenshot.
 
-		
 image::gridlayout.png[GridLayout Activity result, pdfwidth=40%]
 		
 [[gridlayout_scrollview]]
@@ -180,7 +166,6 @@ The following code shows an example layout file which uses a `ScrollView`.
 ----
 include::res/scrollview/simple.xml[]
 ----
-
 		
 The `android:fillViewport="true"` attribute ensures that the scrollview is set to the full screen even if the elements are smaller than one screen.
 		
