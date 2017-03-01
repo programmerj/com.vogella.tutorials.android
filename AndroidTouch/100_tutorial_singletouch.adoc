@@ -19,7 +19,7 @@ Create the following `TouchEventView` class which implements a View which suppor
 		
 [source,java]
 ----
-include::res/single/SingleTouchEventView.java[]
+include::res/single/TouchEventView.java[]
 ----
 
 Adjust the `activity_main.xml` layout file to the following.
