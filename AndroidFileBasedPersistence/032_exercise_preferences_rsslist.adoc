@@ -15,26 +15,24 @@ include::res/preferences/mypreferences.xml[]
 	
 === Create settings activity
 
-Create the class
-`SettingsActivity`
-which extends
-`PreferenceActivity`. This
-activity
-loads the
-preference
-file and allows the user to change
-the values.
+Create the class `SettingsActivity`.
+It should extends `PreferenceActivity`. 
+This activity loads the preference file and allows the user to change the values.
 
 [source,java]
 ----
 include::res/preferences/SettingsActivity.java[]
 ----
 
-Register this class as an activity in your _AndroidManifest.xml_ file.
+[WARNING]
+====
+Remember that you need to register the activity in the Android manifest.
+====
 
 === Connect your settings activity
 
-Open the preference activity via the `onOptionsItemSelected()` method as demonstrated in the following listing.
+Ensure that you open the preference activity via the `onOptionsItemSelected()` method.
+The relevant code is demonstrated in the following listing.
 
 [source,java]
 ----
