@@ -31,7 +31,7 @@ Here is some example code for the `MainActivity`.
 
 [source,java]
 ----
-include::examples/activity/MainActivity.java[]
+include::res/activity/MainActivity.java[]
 ----
 
 [[tutorial_activitylifecycle2]]
@@ -41,6 +41,6 @@ Create a new instrumentation test similar to the following.
 
 [source,java]
 ----
-include::examples/activity/SecondActivityFunctionalTest.java[]
+include::res/activity/SecondActivityFunctionalTest.java[]
 ----
 

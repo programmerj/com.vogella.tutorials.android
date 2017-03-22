@@ -23,12 +23,12 @@ The following listing is an example for your `build.gradle` file to run only the
 
 [source,gradle]
 ----
-include::examples/testgroups/build.gradle[]
+include::res/testgroups/build.gradle[]
 ----
 
 [source,java]
 ----
-include::examples/groups/SecondActivityFunctionalTest.java[]
+include::res/groups/SecondActivityFunctionalTest.java[]
 ----
 
 

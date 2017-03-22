@@ -20,12 +20,12 @@ The following listing is an example of testing a service.
 
 [source,java]
 ----
-include::examples/service/test.java[]
+include::res/service/test.java[]
 ----
 
 [source,shell]
 ----
-include::examples/monkey/restartadb.txt[]
+include::res/monkey/restartadb.txt[]
 ----
 
 [[provider_testing]]

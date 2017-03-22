@@ -19,7 +19,7 @@ If not yet done, also add the JUnit dependency to your Gradle build file.
 
 [source,gradle]
 ----
-include::examples/unittests/simple.gradle[]
+include::res/unittests/simple.gradle[]
 ----
 
 [WARNING]
@@ -30,7 +30,7 @@ test should NOT be treated as normal source folder.
 
 [source,java]
 ----
-include::examples/unittests/wrongentry.txt[]
+include::res/unittests/wrongentry.txt[]
 ----
 ====
 

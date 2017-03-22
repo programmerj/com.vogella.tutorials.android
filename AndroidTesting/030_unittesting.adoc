@@ -26,7 +26,7 @@ To use JUnit tests for your Android application, you need to add the it as depen
 
 [source,gradle]
 ----
-include::examples/unittests/simple.gradle[]
+include::res/unittests/simple.gradle[]
 ----
 
 [[androidtesting_projectstructure_runtunittestsgradle]]
@@ -58,6 +58,6 @@ You can also instruct the Gradle build system to return default values for metho
 
 [source,gradle]
 ----
-include::examples/unittests/config.gradle[]
+include::res/unittests/config.gradle[]
 ----
 

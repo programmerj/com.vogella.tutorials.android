@@ -14,14 +14,14 @@ The following command sends 2000 random events to the application with the `de.v
 
 [source,shell]
 ----
-include::examples/monkey/test1.txt[]
+include::res/monkey/test1.txt[]
 ----
 
 Monkey sometimes causes problems with the adb server. Use the following commands to restart the adb server.
 
 [source,shell]
 ----
-include::examples/monkey/restartadb.txt[]
+include::res/monkey/restartadb.txt[]
 ----
 
 You can use the `-s [seed]`	parameter to ensure that the generated sequence of events is always the same.

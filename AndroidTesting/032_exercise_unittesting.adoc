@@ -14,7 +14,7 @@ If the test folder is missing in your project, follow the process described in <
 
 [source,grade]
 ----
-include::examples/temperature/build.gradle[]
+include::res/temperature/build.gradle[]
 ----
 
 [[firstandroidjunittest_firsttest]]
@@ -24,7 +24,7 @@ In your `app/src/test` directory create the following two test methods for the `
 
 [source,java]
 ----
-include::examples/temperature/ConverterUtilTest.java[]
+include::res/temperature/ConverterUtilTest.java[]
 ----
 
 [[firstandroidjunittest_rununittest]]

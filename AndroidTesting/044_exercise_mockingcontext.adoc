@@ -17,7 +17,7 @@ In an existing or in a new Android application with the package `com.vogella.and
 
 [source,java]
 ----
-include::examples/stubfileoutput/fileapiwrite.txt[]
+include::res/stubfileoutput/fileapiwrite.txt[]
 ----
 
 [[exercise_mockingcontext_createtest]]
@@ -29,5 +29,5 @@ Using Mockito the mocking framework, write a unit test which validates that:
 
 [source,java]
 ----
-include::examples/stubfileoutput/TestCaseExample.java[]
+include::res/stubfileoutput/TestCaseExample.java[]
 ----

@@ -10,14 +10,14 @@ Add the following application object to your application.
 
 [source,java]
 ----
-include::examples/application/MyApplication.java[]
+include::res/application/MyApplication.java[]
 ----
 
 Also declare the application it in your manifest file.
 
 [source,xml]
 ----
-include::examples/application/AndroidManifest.xml[]
+include::res/application/AndroidManifest.xml[]
 ----
 
 [[exercise_applicationtesting_test]] 
@@ -33,7 +33,7 @@ Create the following unit test based on the JUnit 3 testing framework.
 
 [source,java]
 ----
-include::examples/application/RssApplicationTest.java[]
+include::res/application/RssApplicationTest.java[]
 ----
 
 

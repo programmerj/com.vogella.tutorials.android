@@ -57,7 +57,7 @@ You also need to specify `android.support.test.runner.AndroidJUnitRunner` as tes
 
 [source,grade]
 ----
-include::examples/instrumentedtests/simple.gradle[]
+include::res/instrumentedtests/simple.gradle[]
 ----
 
 [[androidtesting_instrumentationtests_testrunner]]
