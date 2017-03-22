@@ -40,7 +40,7 @@ following command.
 include::res/install.txt[]
 ----
 	
-If more then one device is
+If more than one device is
 available you can specify the relevant
 device in your pom.xml. Maven
 can also start and stop an Android

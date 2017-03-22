@@ -42,7 +42,7 @@ This reference is assigned to the row view as a tag via the `setTag()` method.
 		
 If we receive a `convertView` object, we can get the instance of the `ViewHolder` via the `getTag()` method and assign the new attributes to the views via the `ViewHolder` reference.
 		
-While this sounds complex this is approximately 15 % faster then using the `findViewById()` method.
+While this sounds complex this is approximately 15 % faster than using the `findViewById()` method.
 
 [[adapterperformance_example]]
 === Example

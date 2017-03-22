@@ -22,5 +22,5 @@ If you receive the following error message: "error duplicate files in path. Path
 
 [source,text]
 ----
-include::examples/unittests/licence.txt[]
+include::res/unittests/licence.txt[]
 ----
