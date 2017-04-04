@@ -50,13 +50,13 @@ Afterwards select the _Empty Activity_ template.
 
 image::as_first50.png[Creating a new Android Studio project]
 		
-On the last page, ensure that "Backwards Compability is not selected.
+On the last page, ensure that "Backwards Compatibility is not selected.
 
 image::as_first60.png[Creating a new Android Studio project]
 		
 
 === Review the generated project
-The wizard generates now an Android project. 
+
 Review the generated project structure and files.
 
 image::as_first70.png[]

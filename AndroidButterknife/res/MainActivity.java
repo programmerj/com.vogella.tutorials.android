@@ -10,7 +10,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends Activity {
-    @Bind(R.id.textview)
+    @BindView(R.id.textview)
     TextView title;
 
     @Override

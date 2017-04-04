@@ -36,7 +36,13 @@ include::res/filter/BrowserActivity.java[]
 
 === Validating
 
-Install your application. 
+Install your application.
+For this you need to configure Android Studio that you do not have a default activity. 
+
+image::edit_runconfig_browser10.png[]
+
+image::edit_runconfig_browser20.png[]
+
 If you trigger an intent to open a URL, the user should be able to select your custom browser implementation.
 Trigger for this purpose the following intent from one of your Android applications by adding for example an additional button to the application which can trigger the code.
 

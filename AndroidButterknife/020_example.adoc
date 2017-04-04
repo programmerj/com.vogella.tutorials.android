@@ -2,20 +2,12 @@
 
 === Create project
 
-Create a new Android project with the package
-`com.vogella.android.butterknifeexample`. Add a text view with the
-`@+id/textview`
-to it and a button to the existing layout with the
-`@+id/button"`
-ID.
+Create a new Android project with the package `com.vogella.android.butterknifeexample`. 
+Add a text view with the `@+id/textview` to it and a button to the existing layout with the `@+id/button"` ID.
 
 === Add Butterknife to your Gradle build configuratoin
 
-Add the
-`com.jakewharton:butterknife`
-in its latest version as compile dependency
-`build.gradle`
-file.
+Add the `com.jakewharton:butterknife` in its latest version as compile dependency `build.gradle` file.
 
 [source,groovy]
 ----

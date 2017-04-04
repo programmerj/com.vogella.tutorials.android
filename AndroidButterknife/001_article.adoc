@@ -4,8 +4,8 @@
 :experimental:
 :icons:
 :imagesdir: ./img
-Lars Vogel (c) 2009, 2016 vogella GmbH
-Version 0.2, 30.06.2016
+Lars Vogel (c) 2009, 2017 vogella GmbH
+Version 0.4, 04.04.2016
 :docinfodir: ../
 :vgwort: AndroidButterknife
 

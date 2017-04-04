@@ -8,7 +8,7 @@ Select a fitting image from the provided example images.
 
 [NOTE]
 ====
-If the fill color does not fit to your styling, open the created drawable and ajust the color.
+If the fill color does not fit to your styling, open the created drawable and adjust the color.
 ====
 
 === Add menu resources
@@ -63,6 +63,7 @@ Please double-check this.
 === Add a toolbar view to your activity layout
 		
 Change the layout files of your `RssfeedActivity` activity to also contain a toolbar entry.
+For this you need to wrap your existing layout definition into another <code>LinearLayout</code> and add the toolbar to this second layout file.
 		
 [source,xml]
 ----

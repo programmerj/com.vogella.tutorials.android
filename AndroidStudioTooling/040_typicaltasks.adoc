@@ -141,36 +141,30 @@ To see the structure of a class or an interface you can use the _Structure_ view
 This gives you an overview of the selected element, similar to the _Outline_ view in Eclipse.
 
 image::structure_view_in_androidstudio.png[]
+
 [[androidstudio_sourceupdate]]
 === Using Java 8 in Android applications
         
-The latest Gradle plug-in supports the usage of Java 8, with some restrictions. 
+As of Android Studio 2.4 you can use Java 8 features, with some restrictions. 
 As of Android Gingebread (API 9) and above you can use:
 
 * Lambda expressions
 * java.util.function
         
         
-As of Android N you can use:
+As of Android 24 you can use:
 
 * Default and static interface methods
 * Repeatable annotations
 * Streams
 * Reflection APIs
 
-To enable Java 8 in your project use the following settings. Important is the jackOptions part and the compileOptions.
-        
+To enable Java 8 in your project use the following settings. 
 
 [source,java]
 ----
 android {
-  ...
-  defaultConfig {
-    ...
-    jackOptions {
-      enabled true
-    }
-  }
+ ...
   compileOptions {
     sourceCompatibility JavaVersion.VERSION_1_8
     targetCompatibility JavaVersion.VERSION_1_8
