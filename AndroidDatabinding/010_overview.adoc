@@ -7,8 +7,6 @@ This minimizes the necessary code in your application logic to connect to the us
 
 image::db_android10.png[]
 		
-To use data binding, Android Plugin for Gradle 1.5.0 or higher is required.
-
 To enable the usage of data binding in your Android application, add the following snippet to the app/build.gradle file.
 			
 [source,gradle]
@@ -21,17 +19,38 @@ android {
 }
 ----
 
-The data binding information is added to your layout files.
-During the build process this information is and _Binding_ classes are generated based on its information.
-By default, the name of the Binding class is generated based on the name of the layout file. 
+To use data binding you have to add information to your layout files.
+Layout files which supports data binding start with a `layout` root tag followed by a `data` element and a `view` root element. 
+This `view` element contains the standard layout information.
+Without data binding that would be the root of your layout file. 
+
+During the build process this addition layout information is read and `Binding` classes are generated based on its information.
+The generated name of the `Binding` class is based on the name of the layout file. 
 It converts the name to Pascal case and adds the “Binding” suffix to it. 
-For example, if the layout file is called activity_main.xml, the generate class is called `ActivityMainBinding`. 
+For example, if the layout file is called `activity_main.xml`, the generate class is called `ActivityMainBinding`. 
+
+[source,xml]
+----
+ ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+----
+
+You can also inflate layouts for `RecyclerView`, `ViewPager`, or other things that aren’t setting the Activity contents.
+
+
+[source,xml]
+----
+ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater(), container, attachToContainer);
+// get the root view
+View view = binding.getRoot();
+----
+
+
 This class holds all the bindings from the layout properties, i.e., the defined variable to the corresponding views. 
 It also knows how to assign values for the binding expressions.
+
 		
-Layout files which supports data binding start with a _layout_ root tag followed by a _data_ element and a _view_ root element. 
-This view element is what your root would be in a non-binding layout file. 
-The data elements describe data which is available for binding, expressions within the layout are written in the attribute properties using the “@{}” syntax.
+The data elements describe data which is available for binding.
+Expressions within the layout are written in the attribute properties using the “@{}” syntax.
 		
 A sample file looks like the following listing.
 		
@@ -53,9 +72,12 @@ The binding expression can assign the click listener for a View.
 
 === Updating the user interfaces with changes from the data model
 
-Any plain old Java object (POJO) can be used for data binding, but modifying such a Java object will not cause the UI to update.
-To enable this, the data objects must be able to notify about data changes. 
-There are three different data change notification mechanisms, Observable objects, observable fields, and observable collections.
+Any plain old Java object (POJO) can be used for data binding.
+But to update the UI if the data object change, these objects must be able to notify about data changes. 
+There are three different data change notification mechanisms:
+* Observable objects
+* observable fields
+* observable collections
 
 Android provides the `BaseObservable` class which you can extend.
 The data class is responsible for notifying when the properties change. 
@@ -99,10 +121,6 @@ This ensures that updates in the model updates also the UI.
 				
 
 === Example for using data binding
-	
-Layout files which supports data binding start with a _layout_ root tag followed by a _data_ element and a _view_ root element. 
-This view element is what your root would be in a non-binding layout file. 
-The data elements describe data which is available for binding, expressions within the layout are written in the attribute properties using the `“@{}”` syntax.
 	
 A sample file looks like the following listing.
 

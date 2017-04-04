@@ -128,26 +128,14 @@ This allows the adapter to store a reference to the object and call its methods 
 === Using different layouts in recycler view
 		
 The adapter needs to create a layout for each row of the list.
-This root of the layout is typically a
-`ViewGroup`
-(layout manager)
-and contains several other
-views, e.g., an
-`ImageView`
-and a
-`TextView`. The following graphic shows a list with different layouts for odd
-and even rows.
+This root of the layout is typically a `ViewGroup` (layout manager) and contains several other views.
+The following graphic shows a list with different layouts for odd and even rows.
 		
 image::adapter10.png[Adapter provides data and defines the layout per row]
 		
-		
-Within the
-`getItemViewType`
-method the recycler view determines which type should be used for data. The framework call automatically the
-`onCreateViewHolder`
-method if needed for this type. In this method you inflate the correct layout for the type and return a fitting view
-holder.
-		
+Within the `getItemViewType` method the recycler view determines which type should be used for data. 
+The framework calls automatically the `onCreateViewHolder` method if needed for this type.
+In this method you inflate the correct layout for the type and return a fitting view holder.
 
 === Custom animations
 		
@@ -167,4 +155,10 @@ The `notifyItemInserted(position)` method on the adapter can be used to notify t
 		
 The `notifyItemRemoved(position);` method can be used to notify the view that a entry has been deleted in a certain position.
 		
+=== Swipe support for RecyclerView
+
+The `ItemTouchHelper` class that makes swipe-to-dismiss and drag-and-drop simple to implement.
+Implement the `onMove` method for drag and drop and the `onSwiped` for swip support.
+
+
 

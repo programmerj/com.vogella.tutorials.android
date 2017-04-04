@@ -39,10 +39,32 @@ Create the following adapter class.
 include::res/recyclerview/MyAdapter.java[]
 ----
 
-Now you can configure your recyler view in your activity.
+Now you can configure your recycler view in your activity.
 
 [source,java]
 ----
 include::res/recyclerview/Activity.java[]
 ----
 
+== Add swipe to dismiss support
+Add the following code to the end of your `onCreate` method in your activity to configure swipe for your data model.
+
+[source,java]
+----
+ ItemTouchHelper.SimpleCallback simpleItemTouchCallback =
+                new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
+            @Override
+            public boolean onMove(RecyclerView recyclerView, RecyclerView.ViewHolder viewHolder, RecyclerView.ViewHolder target) {
+                return false;
+            }
+
+            @Override
+            public void onSwiped(RecyclerView.ViewHolder viewHolder, int swipeDir) {
+                items.remove(viewHolder.getAdapterPosition());
+                adapter.notifyItemRemoved(viewHolder.getAdapterPosition());
+            }
+        };
+
+        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(simpleItemTouchCallback);
+        itemTouchHelper.attachToRecyclerView(mRecyclerView);
+----

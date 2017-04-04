@@ -17,8 +17,10 @@ public class MyActivity extends Activity {
         mLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(mLayoutManager);
 
-        // specify an adapter (see also next example)
-        mAdapter = new MyAdapter(myDataset);
+        List<String> items = // here the example data is created
+        		
+        // define an adapter
+        mAdapter = new MyAdapter(items);
         recyclerView.setAdapter(mAdapter);
     }
     ...
