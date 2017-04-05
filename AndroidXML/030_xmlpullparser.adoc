@@ -1,11 +1,8 @@
-== Example XmlPullParser
+== Example for using XmlPullParser
 	
-The Javadoc of
-`XmlPullParser`
-gives a nice example how you can use this library.
+The Javadoc of `XmlPullParser` gives a nice example how you can use this library.
 	
 [source,java]
 ----
 include::res/xmlpullparser/example.java[]
 ----	
-

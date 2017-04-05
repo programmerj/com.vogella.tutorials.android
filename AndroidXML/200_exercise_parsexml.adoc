@@ -1,0 +1,42 @@
+== Exercise: Parsing an RSS feed with the XML pull parser
+
+=== Target of this exercise
+
+In this exercise you download RSS feed data from the network using your `com.example.android.rssfeedlibary` project.
+
+=== Add permission to access the Internet
+Add the permission to use the Internet to the Android manifest file of your RSS Reader project.
+
+[source,xml]
+----
+<uses-permission android:name="android.permission.INTERNET"/>
+----
+
+[WARNING]
+====
+Ensure that you added the permission to the correct manifest file. 
+If you add this permission to the library project, Internet access will not work.
+====
+
+The resulting manifest should look similar to the following listing.
+
+[source,xml]
+----
+include::res/net/permission2.txt[]
+----
+
+=== Perform network access
+
+Change the parse method in `RssFeedProvider` so that it reads the RSS feed.
+Also writes the output to the Android log.
+
+[source,java]
+----
+include::res/net/parse.java[]
+----
+
+=== Validating
+
+Start your application and load the RSS feed data.
+
+Once the RSS feed is processed, the `RssItems` should be visible in the list fragment.

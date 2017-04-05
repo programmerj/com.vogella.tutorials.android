@@ -1,4 +1,3 @@
 == Links and Literature
 	
-Nothing listed.
-
+http://simple.sourceforge.net/[Simple] - Library to parse XML

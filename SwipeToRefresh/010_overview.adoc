@@ -1,3 +1,4 @@
+[[swipetorefresh]]
 == Supporting swipe to refresh
 
 Android provides a widget that implements the swipe-to-refresh design pattern, which allows the user to trigger an update with a vertical swipe.
