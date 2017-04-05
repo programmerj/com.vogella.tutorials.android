@@ -160,5 +160,4 @@ The `notifyItemRemoved(position);` method can be used to notify the view that a 
 The `ItemTouchHelper` class that makes swipe-to-dismiss and drag-and-drop simple to implement.
 Implement the `onMove` method for drag and drop and the `onSwiped` for swip support.
 
-
-
+See <<recyclerview_swipe>> for an example implementation.

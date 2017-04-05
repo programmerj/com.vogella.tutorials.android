@@ -45,7 +45,7 @@ Now you can configure your recycler view in your activity.
 ----
 include::res/recyclerview/Activity.java[]
 ----
-
+[[recyclerview_swipe]]
 == Add swipe to dismiss support
 Add the following code to the end of your `onCreate` method in your activity to configure swipe for your data model.
 
