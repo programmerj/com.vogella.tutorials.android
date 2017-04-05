@@ -4,8 +4,11 @@
 	
 The Android platform includes the `json.org` library which allows processing and creating JSON files. 
 
-Alternatively you can use existing Open Source libraries like `GSON` or `Moshi` for your JSON processing.
-	
+[note]
+====
+Prefer using open source libraries like http://www.vogella.com/tutorials/JavaLibrary-Gson/article.html[Gson] or https://github.com/square/moshi[Moshi for JSON processing.
+These libraries are easier to use, faster and provide more flexibility
+====
 
 === Example: Reading JSON
 
