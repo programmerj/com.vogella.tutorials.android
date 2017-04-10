@@ -1,51 +1,45 @@
-package com.vogella.android.test.robolectric;
+package com.vogella.android.robolectric;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-import static org.junit.Assert.*;
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertThat;
+import android.content.Intent;
+import android.widget.Button;
 
-import com.example.BuildConfig;
-import com.example.R;
-import com.example.SecondActivity;
-
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
 import org.robolectric.Shadows;
 import org.robolectric.annotation.Config;
-import org.junit.Before;
-import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.robolectric.shadows.ShadowToast;
 
-import android.content.Intent;
-import android.widget.Button;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertThat;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(constants = BuildConfig.class)
-public class MyActivityTest {
+public class AdditionalMainActivityTest {
 
 	private MainActivity activity;
 
-	@Test
-	public void shouldHaveHappySmiles() throws Exception {
-		String hello = new MainActivity().getResources().getString(
-				R.string.hello_world);
-		assertThat(hello, equalTo("Hello world!"));
-	}
-
 	@Before
 	public void setup()  {
-		activity = Robolectric.buildActivity(MainActivity.class)
-				.create().get();
+		activity = Robolectric.buildActivity(MainActivity.class).create().get();
 	}
+
 	@Test
 	public void checkActivityNotNull() throws Exception {
 		assertNotNull(activity);
 	}
-	
+
+	@Test
+	public void shouldHaveCorrectAppName() throws Exception {
+		String hello = activity.getResources().getString(R.string.app_name);
+		assertThat(hello, equalTo("Hello world!"));
+	}
+
+
 	@Test
 	public void buttonClickShouldStartNewActivity() throws Exception 
 	{
@@ -57,8 +51,7 @@ public class MyActivityTest {
 	
 	@Test
 	public void testButtonClick() throws Exception {
-		MainActivity activity = Robolectric.buildActivity(MainActivity.class)
-				.create().get();
+		MainActivity activity = Robolectric.buildActivity(MainActivity.class).create().get();
 		Button view = (Button) activity.findViewById(R.id.button1);
 		assertNotNull(view);
 		view.performClick();

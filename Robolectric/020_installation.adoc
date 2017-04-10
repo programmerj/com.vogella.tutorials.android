@@ -1,7 +1,7 @@
 [[robotium_installation]]
 == Using Robolectric for your test with Gradle
 
-To use Robolectric for your Android unit tests, simply add the following dependency to your Gradle build file.
+To use Robolectric for your Android unit tests, add the following dependency to your Gradle build file.
 
 [source,gradle]
 ----

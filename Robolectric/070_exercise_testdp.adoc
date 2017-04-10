@@ -5,7 +5,7 @@ A _TextView_ with a margin is created which is then tested.
 
 === Project setup
 
-To test Robolectric create an application called _com.vogella.android.robolectricfiles_.
+Create an application called _com.vogella.android.robolectric_.
 Use the _com.vogella.android.robolectric_ top level package name.
 
 To use Robolectric in your application, add the following dependency to your build.gradle file
@@ -60,3 +60,14 @@ As _Working directory_ use the directory of your app module.
 _Class_ is the file which contains your unit tests (in this case your MainActivityTest class).
 
 Now you can simply select and run this run configuration to run your unit tests.
+
+=== Extend the tests
+
+Extend your activity and your test so that the following tests are successful.
+
+[source,java]
+----
+include::res/firsttest/AdditionalMainActivityTest.java[]
+----
+
+
