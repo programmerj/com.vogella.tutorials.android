@@ -1,0 +1,58 @@
+== Exercise: Using Robolectric and Android Studio to test your Activity
+
+This section describes how to write a simple unit test for an Activity using Robolectric and Android Studio.
+A _TextView_ with a margin is created which is then tested.
+
+=== Project setup
+
+To test Robolectric create an application called _com.vogella.android.robolectricfiles_.
+Use the _com.vogella.android.robolectric_ top level package name.
+
+To use Robolectric in your application, add the following dependency to your build.gradle file
+
+[source,gradle]
+----
+include::res/exercise_testdp/build.gradle[]
+----
+
+=== Create a Activity to test 
+
+Create the following Activity class called _MainActivity_ and place it in your default package.
+
+[source,java]
+----
+include::res/exercise_testdp/MainActivity.java[]
+----
+
+
+Create the following xml layout file called _activity_main.xml_ and place it in your _res/layout_ folder.
+
+[source,xml]
+----
+include::res/exercise_testdp/activity_main.xml[]
+----
+
+=== Create a unit test for an Activity
+
+Create the following test class called _MainActivityTest_ and place it in your _src/test_ directory.
+This class simply tests, that the TextView has a top and bottom margin of 5dp and a left and right margin of 10dp.
+
+[source,java]
+----
+include::res/exercise_testdp/MainActivityTest.java[]
+----
+
+=== Create the run configuration
+
+Now create a run configuration to run your unit test.
+To do so, select _Run_ and then _Edit Configurations..._.
+Use the green _+_ sign at the top left corner to add a new run configuration and select _Android JUnit_.
+Make your JUnit run configuration look like the following:
+
+image::run_configuration.png[]
+
+At _Use classpath of module_ select the app module of your Android application.
+As _Working directory_ use the directory of your app module.
+_Class_ is the file which contains your unit tests (in this case your MainActivityTest class).
+
+Now you can simply select and run this run configuration to run your unit tests.

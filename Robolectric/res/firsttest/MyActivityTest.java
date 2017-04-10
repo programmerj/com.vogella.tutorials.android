@@ -12,7 +12,7 @@ import com.example.SecondActivity;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
-import org.robolectric.RobolectricGradleTestRunner;
+import org.robolectric.RobolectricTestRunner;
 import org.robolectric.Shadows;
 import org.robolectric.annotation.Config;
 import org.junit.Before;
@@ -23,7 +23,7 @@ import org.robolectric.shadows.ShadowToast;
 import android.content.Intent;
 import android.widget.Button;
 
-@RunWith(RobolectricGradleTestRunner.class)
+@RunWith(RobolectricTestRunner.class)
 @Config(constants = BuildConfig.class)
 public class MyActivityTest {
 

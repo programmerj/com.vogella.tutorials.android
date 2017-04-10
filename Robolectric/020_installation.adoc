@@ -8,7 +8,7 @@ To use Robolectric for your Android unit tests, simply add the following depende
 dependencies {
     ...
     // Robolectric
-    testCompile "org.robolectric:robolectric:3.0"
+    testCompile "org.robolectric:robolectric:3.3.2"
 }
 ----
 
@@ -24,7 +24,7 @@ include::res/install/DeckardActivityTest.java[]
 
 [NOTE]
 ====
-Instead of specifying the values via the `@Config` annotation, you could also use a _resources/robolectric.properties_ file. See
+Instead of specifying the values via the `@Config` annotation, you could also use a _resources/robolectric.properties_ file.
 See http://robolectric.org/configuring for more information.
 ====
 
