@@ -42,6 +42,10 @@ This class simply tests, that the TextView has a top and bottom margin of 5dp an
 include::res/exercise_testdp/MainActivityTest.java[]
 ----
 
+A method with a `@Before` annotation runs before every test method and is usually used to do some setup work for the test. 
+In our exercise, the method just creates the MainActivity.
+A method which is annotated with `@Test` is an actual test method and represents a single JUnit test case.
+
 === Create the run configuration
 
 Now create a run configuration to run your unit test.
