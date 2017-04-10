@@ -17,7 +17,7 @@ In an existing or in a new Android application with the package `com.vogella.and
 
 [source,java]
 ----
-include::res/stubfileoutput/fileapiwrite.txt[]
+include::res/stubfileoutput/fileapiwrite.java[]
 ----
 
 [[exercise_mockingcontext_createtest]]
@@ -27,7 +27,9 @@ Using Mockito the mocking framework, write a unit test which validates that:
 * `openFileOutput` is called exactly once
 * the `write()`	method is called at least twice.
 
+ifdef::show_exercise_solution[]
 [source,java]
 ----
 include::res/stubfileoutput/TestCaseExample.java[]
 ----
+endif::show_exercise_solution[]

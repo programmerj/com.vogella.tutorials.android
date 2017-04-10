@@ -1,5 +1,5 @@
 [[activity_testing]]
-== Activity testing
+== User interface testing with activities and fragments
 
 See http://www.vogella.com/tutorials/AndroidTestingEspresso/article.html[Android user interface testing with Espresso] and http://www.vogella.com/tutorials/AndroidTestingUIAutomator/article.html[Cross component testing with UI Automator]
 		.

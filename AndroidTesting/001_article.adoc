@@ -2,10 +2,11 @@
 :linkcss:
 :sectnums:                                                          
 :experimental:
+:show_exercise_solution:
 :icons:
 :imagesdir: ./img
-(c) 2012, 2016 vogella GmbH
-Version 2.2, 30.08.2016
+(c) 2012, 2017 vogella GmbH
+Version 2.5, 10.04.2017
 :docinfodir: ../
 :vgwort: AndroidTesting
 
@@ -33,7 +34,7 @@ include::../web/advertisement/inBetween01.adoc[]
 include::038_instrumentation.adoc[]
 include::044_exercise_mockingcontext.adoc[]
 include::../web/advertisement/inBetween02.adoc[]
-include::100_activitytesting.adoc[]
+include::100_linktoespressoforunittesting.adoc[]
 include::150_android_testextensions.adoc[]
 include::160_tutorial_activitylifecycle.adoc[]
 include::220_monkey.adoc[]

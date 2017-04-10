@@ -16,7 +16,7 @@ The levels can be described as:
 * Applications - Contains the applications, like the Browser, Camera, Gallery, Music and Phone
 * Application framework - An API which allows high-level interactions with the Android system
 * Libraries and runtime - The libraries for many common framework functions, like graphic rendering, data storage, web browsing. 
-Also contains the Android Runtime, as well as the core Java libraries for running Android applications.
+Also contains the Android runtime, as well as the core Java libraries for running Android applications.
 * Linux kernel - Communication layer for the underlying hardware.
 
 === Android versions

@@ -7,14 +7,16 @@ This application is available on Google Play under the following URL: http://pla
 		
 You can also scan the following barcode with your Android phone to install it via the Google Play application.
 		
-image::temparaturebarcode.png[QR Code to install the Android Temperature converter]
-		
+image::temparaturebarcode.png[QR Code to install the Android Temperature converter,pdfwidth=30%]
+
+
 [[tutorialtemperature_project]]
 === Create Project
 		
 Create a new Android project with the following data.
-		
+
 .New Android project
+[cols="1,3",options="header"]
 |===
 |Property |Value
 
@@ -24,8 +26,8 @@ Create a new Android project with the following data.
 |Package name
 |com.vogella.android.temperatureconverter
 
-|API (Minimum, Target, Compile with)
-|Latest
+|Minimum SDK
+|Latest Android release
 
 |Template
 |Empty Activity
@@ -35,12 +37,15 @@ Create a new Android project with the following data.
 
 |Layout
 |activity_main
+
+|Backwards Compability (AppCompat(
+|false (not selected)
 |===
 
 === Create attributes
 		
 Select the _res/values/strings.xml_ file to open the editor for this file. 
-Add the `Color` and String definitions to the file as described by the following table.
+Add the Color and String definitions to the file as described by the following table.
 		
 .New attributes to add
 [cols="1, 2, 2",options="header"]
@@ -66,7 +71,7 @@ Add the `Color` and String definitions to the file as described by the following
 |Calculate
 |===
 
-The entered values should be similar to the following listing.
+Afterwards the file should look similar the following.
 		
 [source,xml]
 ----
@@ -76,17 +81,16 @@ include::res/first/strings.xml[]
 === Creating the layout
 
 		
-Select the _res/layout/activity_main.xml_ file and open the associated Android editor via a double-click on the file.
+Open the _res/layout/activity_main.xml_ file.
 		
 Remove any existing view from your layout, either directly from the XML source or via the graphical editor.
 		
 		
-Afterwards add an LinearLayout, another LinearLayout with one ViewText, EditText as children. 
-Afterwards add a RadioGroup with two radio buttons and a Button to your layout. 
+Afterwards add a `LinearLayout` with one `EditText` as child. 
+Afterwards add a `RadioGroup` with two radio buttons and a button to your layout. 
 Do this either directly in the XML file or via the graphical editor.
 A simple way of organizing the components is to drag and drop them onto the _Component Tree_ view.
 
-		
 The result should look like the following screenshots. 
 The first one shows the component view the second one the preview.
 
@@ -122,31 +126,14 @@ Assign the `fahrenheit` string attribute to the `text` property of the second ra
 image::temperature90.png[Change the text property of the radio button]
 
 		
-Ensure that the `Checked` property is set to `true` for the first `RadioButton`.
+Ensure that the `checked` property is set to `true` for the first `RadioButton`.
 		
 		
-Assign
-`@string/calc`
-to
-the text property of your button and
-assign the value
-`onClick`
-to the
-`OnClick`
-property.
+Assign `@string/calc` to the text property of your button and assign the value `onClick` to the `onClick`  property.
 		
-		
-Set
-the
-`inputType`
-property
-to
-`numberSigned`
-and
-`numberDecimal`
-on the
-`EditText`. As an example you can use the last line in the following XML
-snippet. Also change its ID to "inputValue".
+Set the `inputType` property to `numberSigned` and `numberDecimal` on the `EditText`. 
+As an example you can use the last line in the following XML snippet.
+Also change its ID to "inputValue".
 		
 [source,java]
 ----

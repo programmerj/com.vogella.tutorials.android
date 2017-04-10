@@ -1,0 +1,100 @@
+[[firstandroidjunittest]]
+== Exercise: Create unit test
+
+[[firstandroidjunittest_target]]
+=== Target of this exercise
+
+In this exercise you learn how to create a simple JUnit 5 test for an Android project.
+
+[[firstandroidjunittest_dependencies]]
+=== 
+
+
+=== Add JUnit 5 dependency
+
+Ensure you have the dependency to Junit in your app/build.gradle file. 
+If the test folder is missing in your project, follow the process described in <<androidtesting_creatingtestfolders>> to create it.
+
+You need to add a new plug-in to your main build.gradle file.
+
+[source,groovy]
+----
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+ 
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.2.3'
+        classpath 'de.mannodermaus.gradle.plugins:android-junit5:1.0.0-M2'
+ 
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+ 
+allprojects {
+    repositories {
+        jcenter()
+    }
+}
+ 
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+----
+
+And also use it in your app build file.
+
+[source,groovy]
+----
+apply plugin: 'com.android.application'
+apply plugin: 'de.mannodermaus.android-junit5'
+ 
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.stylingandroid.junit5"
+        minSdkVersion 23
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+ 
+junitPlatform {
+    jupiterVersion '5.0.0-M3'
+    platformVersion '1.0.0-M3'
+}
+ 
+dependencies {
+    compile 'com.android.support:appcompat-v7:25.1.1'
+    testCompile 'junit:junit:4.12'
+    testCompile junitJupiter()
+    testCompile 'org.assertj:assertj-core:3.6.2'
+}
+----
+
+[[firstandroidjunittest_firsttest]]
+=== Create test
+
+In your `app/src/test` directory create the following two test methods for the `ConverterUtil` class.
+
+[source,java]
+----
+include::res/temperature/ConverterUtilTest.java[]
+----
+
+[[firstandroidjunittest_rununittest]]
+=== Run unit tests
+
+Ensure your unit tests are correctly implemented by running test tests. They should run successfully.

@@ -4,14 +4,15 @@
 [[androidtesting_unittests_support]]
 ===	Unit testing in Android
 
-Android uses the term `unit tests` for tests which can run on a local JVM or the Android Runtime.
 
 A unit test verifies in isolation the functionality of a certain component.
 For example, assume a button in an Android activity is used to start another activity. 
 A unit test would determine, if the corresponding intent was issued, not if the second activity was started
 
-The unit tests are executed against a modified version of the `android.jar` Android library where all final modifiers have been stripped off. 
-This allow you to use mocking libraries, like Mockito.
+A unit tests for an Android application can run on a local JVM or the Android runtime.
+If they run on the JVM, they are executed against a modified version of the `android.jar` Android library.
+In this version all final modifiers have been stripped off. 
+This makes it easier to use mocking libraries, like Mockito.
 
 [[androidtesting_unittests_location]]
 === Location of unit tests
@@ -22,7 +23,7 @@ See <<androidtesting_creatingtestfolders>> for the creation of such a test folde
 [[androidtesting_unittests_gradledependencies]]
 === Required dependencies in the Gradle build file
 
-To use JUnit tests for your Android application, you need to add the it as dependency to your Gradle build file.
+To use JUnit tests for your Android application, you need to add it as dependency to your Gradle build file.
 
 [source,gradle]
 ----

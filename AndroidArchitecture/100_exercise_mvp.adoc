@@ -1,9 +1,55 @@
 == Exercise Model View Presenter
 
-Create a new application with the `com.vogella.android.mvp` top level package.
-Design a small application which will later read data user data from Github.
 
-NOTE: Currently you only designing the application, e.g., the data download will be implemented later.
+Here you will design a small application for maintaining tasks.
+=== Create a new application.
+
+.New Android project
+[cols="1,3",options="header"]
+|===
+|Property |Value
+
+|Application Name
+|Task Manager
+
+|Package name
+|com.vogella.android.mvp.tasks
+
+|Minimum SDK
+|Latest Android release
+
+|Template
+|Empty Activity
+
+|Activity
+|MainActivity
+
+|Layout
+|activity_main
+
+|Backwards Compatibility (AppCompat)
+|true (selected)
+|===
+
+[NOTE]
+====
+Currently you only designing the application, e.g., the data download will be implemented later.
+====
+
+=== Create packages
+
+The project groups classes according to their use case.
+Create the following Java packages:
+
+* createtask
+* data
+* overview
+* util
+
+=== Create TasksActivity
+
+Create a new TasksActivity and make it your main entry point for the application.
+
 
 You have an overview screen with the repositories of the selected user. 
 If you click on the repository you would see details for this repository.

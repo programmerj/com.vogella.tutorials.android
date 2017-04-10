@@ -70,11 +70,12 @@ UI Automator allows to write cross application functional tests.
 AndroidJunitRunner provides access to the instrumentation API, via the `InstrumentationRegistery`.
 
 
-* `InstrumentationRegistry.getInstrumentation()`, returns the Instrumentation currently running.
-* `InstrumentationRegistry.getContext()`, returns the Context of this Instrumentation’s package.
-* `InstrumentationRegistry.getTargetContext()`, returns the application Context of the target application.
-* `InstrumentationRegistry.getArguments()`, returns a copy of arguments Bundle that was passed to this Instrumentation. This is useful when you want to access the command line arguments passed to Instrumentation for your test.
+* `InstrumentationRegistry.getInstrumentation()`, returns the `Instrumentation` currently running.
+* `InstrumentationRegistry.getContext()`, returns the `Context` of this Instrumentation’s package.
+* `InstrumentationRegistry.getTargetContext()`, returns the application `Context` of the target application.
+* `InstrumentationRegistry.getArguments()`, returns a copy of arguments `Bundle` that was passed to this Instrumentation. This is useful when you want to access the command line arguments passed to the instrumentation for your test.
 
 It also gives access to the life cycle via the `ActivityLifecycleMonitorRegistry`.
+
 
 
