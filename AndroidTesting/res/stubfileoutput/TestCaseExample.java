@@ -1,12 +1,15 @@
-package com.vogella.android.testing.mockitocontextmock;
+package com.vogella.android.test.juntexamples.mockitotests;
+
 
 import android.content.Context;
 
-import org.junit.Before;
+import com.vogella.android.test.juntexamples.util.Util;
+
+import org.junit.Rule;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
+import org.mockito.junit.MockitoJUnit;
+import org.mockito.junit.MockitoRule;
 
 import java.io.FileOutputStream;
 
@@ -19,30 +22,28 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
-public class TextContextOutputStream {
+public class WriteConfigurationUtilTest {
 
-@Mock
-Context context;
+    @Rule
+    public MockitoRule rule = MockitoJUnit.rule();
+    @Mock
+    Context context;
 
-@Mock
-FileOutputStream fileOutputStream;
+    @Mock
+    FileOutputStream fileOutputStream;
 
-@Before
-public void init(){
-    MockitoAnnotations.initMocks(this);
-}
 
     @Test
-public void writeShouldWriteTwiceToFileSystem() {
-    try {
-        when(context.openFileOutput(anyString(), anyInt())).thenReturn(fileOutputStream);
-        Util.writeConfiguration(context);
-        verify(context, times(1)).openFileOutput(anyString(), anyInt());
-        verify(fileOutputStream, atLeast(2)).write(any(byte[].class));
+    public void writeShouldWriteTwiceToFileSystem() {
+        try {
+            when(context.openFileOutput(anyString(), anyInt())).thenReturn(fileOutputStream);
+            Util.writeConfiguration(context);
+            verify(context, times(1)).openFileOutput(anyString(), anyInt());
+            verify(fileOutputStream, atLeast(2)).write(any(byte[].class));
 
-    } catch (Exception e) {
-        e.printStackTrace();
-        fail();
+        } catch (Exception e) {
+            e.printStackTrace();
+            fail();
+        }
     }
-}
 }

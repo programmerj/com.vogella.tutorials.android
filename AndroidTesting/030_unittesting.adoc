@@ -45,7 +45,7 @@ image::runUnitTestInAndroidStudio10.png[Running Unit tests in Android Studio]
 [[androidtesting_projectstructure_testresults]]
 === Location of test reports
 
-The Test reports are created in the `app/build/reports/tests/debug/`directory. 
+The Test reports are created in the `app/build/reports/tests/debug/` directory. 
 The `index.html` gives an overview and links to the individual test pages.
 
 [[androidtesting_projectstructure_mockingmethods]]

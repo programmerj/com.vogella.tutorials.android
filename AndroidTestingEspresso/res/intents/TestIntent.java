@@ -25,7 +25,10 @@ public class TestIntent {
     @Test
     public void triggerIntentTest() {
         onView(withId(R.id.button)).perform(click());
-        intended(toPackage("testing.android.vogella.com.simpleactivity"));
+        intended(allOf(
+                hasAction(Intent.ACTION_CALL),
+                hasData(INTENT_DATA_PHONE_NUMBER),
+                toPackage(PACKAGE_ANDROID_DIALER)));
     }
 
 }

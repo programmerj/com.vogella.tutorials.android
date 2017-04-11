@@ -124,6 +124,41 @@ This is as demonstrated in the following code example.
 include::res/intentconfig/SecondActivityTest.java[]
 ----
 
+=== Adapter views
+
+AdapterView is a special type of widget that loads its data dynamically from an adapter.
+Only a subset of the data has real views in the current view hierarchy.
+A `onView()` search would not find views for them.
+`onData` can be used to interactive with adapter views, like `ListView`.
+The following gives a few examples.
+
+[source,java]
+----
+// click on an item of type String in a spinner
+// afterwards verify that the view with the R.id.spinnertext_simple id contains "Eclipse"
+onData(allOf(is(instanceOf(String.class)), is("Eclipse"))).perform(click());
+onView(withId()).check(matches(withText(containsString("Eclipse")))); // normal view not adapter view
+
+onData(allOf(is(instanceOf(Map.class)), hasEntry(equalTo("STR"), is("item: 50"))).perform(click());
+
+onData(withItemContent("item: 60")).onChildView(withId(R.id.item_size)).perform(click());
+----
+
+=== Espresso testing with permissions
+
+Via instrumentation you can grand your tests the permission to execute.
+[source,java]
+----
+@Before
+public void grantPermission() {
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        getInstrumentation().getUiAutomation().executeShellCommand(
+                "pm grant " + getTargetContext().getPackageName()
+                        + " android.permission.CALL_PHONE");
+    }
+}
+----
+
 === Espresso UI recorder
 
 Android Studio provides an menu:Run[Record Espresso Test] menu entry which allows you to record the interaction with your application and create a Espresso test from it.
