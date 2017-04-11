@@ -13,12 +13,10 @@ automatically scale to the density of the device.
 include::res/vector/vectordrawable.xml[]
 ----
 	
-Android 5.0 contains also the
-`AnimatedVectorDrawable`
-which allows to combine vector drawables with animations. See
-http://blog.sqisland.com/2014/10/first-look-at-animated-vector-drawable.html[]
-for several examples.
+Android also support animated vector drawables via the  `AnimatedVectorDrawable` class.
+It allows to combine vector drawables with animations. 
+See http://blog.sqisland.com/2014/10/first-look-at-animated-vector-drawable.html for  examples.
 	
-Vector drawbles are also available for older platform via the support library as
-`VectorDrawableCompat`.
+Vector drawables are also available for older platform via the support library as `VectorDrawableCompat`.
 	
+https://shapeshifter.design/ provides online tooling to create animated vector drawables.
