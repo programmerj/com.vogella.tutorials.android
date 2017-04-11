@@ -2,6 +2,7 @@
 == Dependency injection with Dagger 2
 
 === What is Dagger 2?
+
 (((Dependency injection, Dagger 2)))
 (((Dagger)))
 Dagger 2 is dependency injection framework.
@@ -16,7 +17,8 @@ Dagger 2 uses the following annotations:
 * `@Inject`: request dependencies. Can be used on a constructor, a field, or a method
 * `@Component`: enable selected modules and used for performing dependency injection  
 
-In Dagger it is not allowed to use private fields for  field injection as Dagger 2 uses generated code to access the fields and not reflection.
+Dagger 2 uses generated code to access the fields and not reflection.
+Therefore it is not allowed to use private fields for  field injection.
 		
 === Defining dependency providers (object providers)
 		
@@ -76,7 +78,8 @@ If you want to use field injection you have to define a method in your `@Compone
 
 === Using Dagger 2 with Eclipse and Maven
 
-To use Eclipse and Maven together with Dagger 2 you can install the Maven tooling and the apt plug-in which allows Maven to configure the annotation processors. 
+To use Eclipse and Maven together with Dagger 2 you can install the Maven tooling and the apt plug-in which allows Maven to configure the annotation processors.
+
 For Eclipse Maven support use the update site of your release and afterwards install the m2e-apt tooling via the
 http://download.jboss.org/jbosstools/updates/m2e-extensions/m2e-apt update site.
 		

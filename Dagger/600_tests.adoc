@@ -5,7 +5,8 @@ For tests you can your custom modules and setup Dagger to use them.
 The generated builder of Dagger contains methods to set the module. 
 You can use the Dagger build to replace the generated class with the one which should be used for testing.
 	
-This also works well with Mockito. Assume you have the following class you want to test.
+This also works well with Mockito. 
+Assume you have the following class you want to test.
 
 [source,java]
 ----
