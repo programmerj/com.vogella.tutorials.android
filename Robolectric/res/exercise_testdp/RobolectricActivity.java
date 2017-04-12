@@ -3,7 +3,7 @@ package com.vogella.android.robolectric;
 import android.app.Activity;
 import android.os.Bundle;
 
-public class MainActivity extends Activity {
+public class RobolectricActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

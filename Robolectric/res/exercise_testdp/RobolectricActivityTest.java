@@ -14,13 +14,13 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(RobolectricTestRunner.class)
 @Config(constants = BuildConfig.class)
-public class MainActivityTest {
+public class RobolectricActivityTest {
 
-    private MainActivity activity;
+    private RobolectricActivity activity;
 
     @Before
     public void setUp() throws Exception {
-        activity = Robolectric.buildActivity(MainActivity.class)
+        activity = Robolectric.buildActivity(RobolectricActivity.class)
                 .create()
                 .resume()
                 .get();

@@ -1,11 +1,10 @@
-== Exercise: Using Robolectric and Android Studio to test your Activity
+== Exercise: Using Robolectric and Android Studio to test your activity
 
-This section describes how to write a simple unit test for an Activity using Robolectric and Android Studio.
-A _TextView_ with a margin is created which is then tested.
+This exercise describes how to write a unit test for an Activity using Robolectric and Android Studio.
 
 === Project setup
 
-Create an application called _com.vogella.android.robolectric_.
+Create an application called _com.vogella.android.robolectric_ with an activity call `RobolectricActivity`.
 Use the _com.vogella.android.robolectric_ top level package name.
 
 To use Robolectric in your application, add the following dependency to your build.gradle file
@@ -15,35 +14,33 @@ To use Robolectric in your application, add the following dependency to your bui
 include::res/exercise_testdp/build.gradle[]
 ----
 
-=== Create a Activity to test 
+=== Activity to test 
 
-Create the following Activity class called _MainActivity_ and place it in your default package.
+Adjust your activity to the following:
 
 [source,java]
 ----
-include::res/exercise_testdp/MainActivity.java[]
+include::res/exercise_testdp/RobolectricActivity.java[]
 ----
 
-
-Create the following xml layout file called _activity_main.xml_ and place it in your _res/layout_ folder.
+Adjust the layout file of your activity to the following.
 
 [source,xml]
 ----
 include::res/exercise_testdp/activity_main.xml[]
 ----
 
-=== Create a unit test for an Activity
+=== Create a unit test for the ativity
 
-Create the following test class called _MainActivityTest_ and place it in your _src/test_ directory.
-This class simply tests, that the TextView has a top and bottom margin of 5dp and a left and right margin of 10dp.
+Create the following test class and place it in your _src/test_ directory.
+This class tests, that the TextView has a top and bottom margin of 5dp and a left and right margin of 10dp.
 
 [source,java]
 ----
-include::res/exercise_testdp/MainActivityTest.java[]
+include::res/exercise_testdp/RobolectricTest.java[]
 ----
 
-A method with a `@Before` annotation runs before every test method and is usually used to do some setup work for the test. 
-In our exercise, the method just creates the MainActivity.
+A method with a `@Before` annotation creates the RobolectricActivity.
 A method which is annotated with `@Test` is an actual test method and represents a single JUnit test case.
 
 === Create the run configuration
@@ -57,7 +54,7 @@ image::run_configuration.png[]
 
 At _Use classpath of module_ select the app module of your Android application.
 As _Working directory_ use the directory of your app module.
-_Class_ is the file which contains your unit tests (in this case your MainActivityTest class).
+_Class_ is the file which contains your unit tests (in this case your ctivityTest class).
 
 Now you can simply select and run this run configuration to run your unit tests.
 
@@ -67,7 +64,7 @@ Extend your activity and your test so that the following tests are successful.
 
 [source,java]
 ----
-include::res/firsttest/AdditionalMainActivityTest.java[]
+include::res/exercise_testdp/RobolectricActivityTestExtended.java[]
 ----
 
 

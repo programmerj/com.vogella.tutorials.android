@@ -5,13 +5,15 @@
 http://robolectric.org[Robolectric] is a framework that allows you to write unit tests and run them on a desktop JVM while still using Android API.
 
 Robolectric provides a JVM compliant version of the _android.jar_ file. 
-Robolectric provides also implementations for the methods, while the standard Android unit testing support throws exceptions for all Android methods.
+Robolectric handles inflation of views, resource loading, and lots of other stuff that’s implemented in native C code on Android devices. 
 
 This enables you to run your Android tests in your continuous integration environment without any additional setup.
 _Robolectric_ supports resource handling, e.g., inflation of `views`.
 You can also use the `findViewById()` to search in a `view`.
 
 Robolectric is not an integration test framework, i.e., you cannot not test the interaction of Android components with it.
+
+Robolectric does not require additional mocking frameworks, of course it is still possible to use frameworks like Mockito if desired.
 
 
 === Shadow objects
