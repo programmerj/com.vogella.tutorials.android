@@ -1,22 +1,12 @@
 == Lint
 	
-The Android
-_lint_
-tool is a static code analysis tool for Android applications. It
-provides
-command line and IDE supported checks for
-potential bugs
-and optimization improvements for Android
-applications.
+The Android _lint_ tool is a static code analysis tool for Android applications. 
+It provides command line and IDE supported checks for potential bugs and optimization improvements for Android applications.
 	
-Lint checks are automatically
-performed by the Gradle build system. To see the available checks in Android Studio
-menu:File[Settings > Editor > Inspections].
+Lint checks are automatically performed by the Gradle build system. 
+To see the available checks in Android Studio menu:File[Settings > Editor > Inspections].
 	
-You can also run the lint checks manually by right-clicking
-on your
-project and select
-menu:Analyze[Inspect Code].
+You can also run the lint checks manually by right-clicking on your project and select menu:Analyze[Inspect Code].
 	
 You can run link also from the command line. 
 

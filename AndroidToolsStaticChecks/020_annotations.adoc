@@ -1,8 +1,9 @@
 == Android annotations
 	
 The Android support library provides additional annotations which allows the Android tooling to perform better
-checks
-of your Android code basis. The following is a list of the most common used annotations.
+code checks.
+
+The following is a list of the most common used annotations.
 
 * @MainThread - the method code should be executed in the main thread
 * @WorkerThread - the method code should not be executed in the main thread

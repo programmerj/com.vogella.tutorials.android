@@ -4,14 +4,15 @@
 :experimental:
 :icons:
 :imagesdir: ./img
-Lars Vogel (c) 2009, 2016 vogella GmbH
-Version 2.5, 05.07.2016
+Lars Vogel (c) 2009, 2017 vogella GmbH
+Version 2.6, 12.04.2017
 :docinfodir: ../
 :vgwort: AndroidToolsStaticChecks
 
 [abstract]
 Using the Android lint checks.
-This tutorial describes the purpose and the usage of the Android lint checks. 
+This tutorial describes the purpose and the usage of the Android lint checks.
+It also describes how to use the support annotation to improve your code.
 			
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
