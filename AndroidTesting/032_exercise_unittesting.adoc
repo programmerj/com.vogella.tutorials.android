@@ -1,16 +1,23 @@
 [[firstandroidjunittest]]
 == Exercise: Create unit test
 
-[[firstandroidjunittest_target]]
-=== Target of this exercise
-
 In this exercise you learn how to create a simple JUnit4 test for an Android project.
+
+ifdef::include_external_exercise_dependencies[]
+
+[[androidtesting_unittest_exerciseprep]]
+=== Preparation: Create Android project
+
+Create the Android project as described in http://www.vogella.com/tutorials/Android/article.html#tutorialtemperature[Android temperature converter].
+
+endif::include_external_exercise_dependencies[]
+
+
 
 [[firstandroidjunittest_dependencies]]
 === Add JUnit dependency
 
 Ensure you have the dependency to Junit in your app/build.gradle file. 
-If the test folder is missing in your project, follow the process described in <<androidtesting_creatingtestfolders>> to create it.
 
 [source,grade]
 ----

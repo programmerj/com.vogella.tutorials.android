@@ -3,31 +3,26 @@
 
 === Testing Android applications
 
-Android applications run on devices with limited memory, CPU power and power supply. 
-The behavior of the application also depends on external factors like connectivity, general system utilization, etc.
-Therefore, it is very important to debug, test and optimize your Android application. Having a reasonable test coverage for your Android application helps you to enhance and maintain the Android application.
-
-
-As it is not possible to test Android applications on all possible device configurations, it is a common practice to run Android tests on typical device configurations.
-You should test your application at least on one device with the lowest possible configuration.
-In addition you should test on one device with the highest available configuration, e.g., pixel density, screen resolution to ensure that it works fine on these devices.
+Android applications run on a variety of devices.
+Also the Android framework and the surrounding open source frameworks evolve at a high speed.
+To ensure that you application works well, it is import to write software tests.
+This helps you to enhance and maintain the Android application.
 
 Unit testing for Android can be classified into:
 
 * Local unit tests - tests which can run on the JVM. 
-If possible, you should prefer to use local tests. 
-Local tests run much faster compared to the time required to deploy and run the test on an Android device.
-
 * Instrumented unit tests - tests which require the Android system. 
-If you want to test code which use the Android API, you need to run these tests on an Android device.
-Unfortunately, this makes the execution time of the tests longer.
 
 image::androidtestcategories10.png[Android testing categories]
 
+Local unit tests run much faster compared to the time required to deploy and run tests on an Android device.
+Prefer writing local unit tests and only run tests on Android, if you require a real Android system.
+
+If you write local unit test and have dependencies to Android API, you need to replace them, e.g., via a mocking framework like Mockito. 
 
 === What to test on Android applications
 
-You should focus your Android tests on testing the business logic of your application. 
+Your test should focus on the business logic of your application. 
 A good rule of thumb is to have the following distribution of tests:
 
 * 70-80 % unit tests to ensure stability of your code basis
@@ -36,39 +31,26 @@ A good rule of thumb is to have the following distribution of tests:
 
 image::testingstrategy.png[Testing Strategy for Android]
 
-Another important criteria for testing is if you only test your own application or if you test the integration with other applications. 
-If you run tests within your application, you can use testing frameworks which require some knowledge about your application, e.g., the view IDs.
-
-[[androidtesting_preconditions]]
-=== Testing preconditions
-        
-It is good practice in Android testing to have one method called `testPreconditions()` which tests the pre-conditions for all other tests. 
-If this method fails, you know immediately that the assumptions for the other tests have been violated.
-
+You should test your application at least on one device with the lowest possible configuration.
+In addition you should test on one device with the highest available configuration, e.g., pixel density, screen resolution to ensure that it works fine on these devices.
 
 === Tooling support for Android testing
 
-The Android Testing Support library (ATSL) support testing with a JUnit 4-compatible test runner (AndroidJUnitRunner).
-You can run unit tests either on the Java virtual machine or on an Android runtime.
-Also, Google provides a user interface testing framework called Espresso which allows developing Android user interface tests.
+The https://google.github.io/android-testing-support-library/[Android Testing Support library] (ATSL) project from Google provides tooling for Android testing.
+For example, it  (`AndroidJUnitRunner`).
 
-To allow running Android unit tests on the JVM, the Android Gradle plug-in creates a special version of the android.jar (also known as the `Android mockable jar`).
-This file is provided to the unit test so that all fields, methods and classes are available. 
-Any call to the Android mockable JAR results, by default, in an exception.
+[NOTE]
+====
+If you run local unit tests, a special version of the android.jar (also known as the `Android mockable jar`) is created by the tooling.
+This modified JAR file is provided to the unit test so that all fields, methods and classes are available. 
+Any call to the Android mockable JAR results, by default, in an exception, but you can configure Android to return default values. See <<androidtesting_projectstructure_mockingmethods>> for details.
+====
 
-
-Therefore, if your classes do not call the Android API, you can use the _JUnit_ test framework (or any other Java testing framework) without any restrictions. 
-If you have dependencies to the Android API, these dependencies in your code must be replaced for the unit tests, e.g., via a mocking framework like Mockito. 
-See <<androidtesting_projectstructure_mockingmethods>> for information how to define that default values should be returned from the Android mockable jar.
-
-The Android Testing Support Library provides functionality to create and run Android tests. 
-The library contains the `AndroidJUnitRunner`, the Espresso test framework and the UI Automator.
-
-`AndroidJUnitRunner` allows to create and run JUnit 4 tests, while the Espresso test framework can be used to test the User Interface of your application. 
+The library provides a JUnit 4-compatible test runner (`AndroidJUnitRunner`), the Espresso test framework and the UI Automator test framework. 
+Espresso test framework can be used to test the User Interface of your application. 
 UI Automator allows to write cross application functional tests.
 
 AndroidJunitRunner provides access to the instrumentation API, via the `InstrumentationRegistery`.
-
 
 * `InstrumentationRegistry.getInstrumentation()`, returns the `Instrumentation` currently running.
 * `InstrumentationRegistry.getContext()`, returns the `Context` of this Instrumentation’s package.
@@ -77,5 +59,25 @@ AndroidJunitRunner provides access to the instrumentation API, via the `Instrume
 
 It also gives access to the life cycle via the `ActivityLifecycleMonitorRegistry`.
 
+[[androidtesting_projectstructure]]
+=== Android project organization for tests
+
+The following is the default directory structure for your application and test code:
+
+* `app/src/main/java`- for your source code of your main application build
+* `app/src/test/java` - for any unit test which can run on the JVM
+* `app/src/androidTest/java` - for any test which should run on an Android device
 
 
+If you follow this conversion, the Android build system runs your tests on the correct target (JVM or Android device).
+
+.Solving the "error duplicate files in path" error
+[TIP]
+====
+If you receive the following error message: "error duplicate files in path. Path in archive: LICENSE.txt" you can add the following to your `app/gradle.build` file.
+
+[source,text]
+----
+include::res/unittests/licence.txt[]
+----
+====

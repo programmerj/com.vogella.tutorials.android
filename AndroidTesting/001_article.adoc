@@ -3,6 +3,7 @@
 :sectnums:                                                          
 :experimental:
 :show_exercise_solution:
+:include_external_exercise_dependencies:
 :icons:
 :imagesdir: ./img
 (c) 2012, 2017 vogella GmbH
@@ -17,33 +18,21 @@ This tutorial assumes that you are familiar with Android programming in general.
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
-include::018_android_testproject_structure.adoc[]
 include::030_unittesting.adoc[]
-
-== Exercise: Write an Android unit test
-
-include::031_exercise_prep.adoc[]
-
-:leveloffset: 1
 
 include::032_exercise_unittesting.adoc[]
 
-:leveloffset: 0
-
 include::../web/advertisement/inBetween01.adoc[]
 include::038_instrumentation.adoc[]
-include::044_exercise_mockingcontext.adoc[]
-include::../web/advertisement/inBetween02.adoc[]
-include::100_linktoespressoforunittesting.adoc[]
+include::044_exercise_instrumentationtests.adoc[]
+
 include::150_android_testextensions.adoc[]
-include::220_monkey.adoc[]
-include::900_applicationtesting.adoc[]
-include::../web/advertisement/inBetween03.adoc[]
-include::902_exercise_applicationtesting.adoc[]
-include::910_othercomponents.adoc[]
-include::920_usingannotations.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::200_unittesting_android_components.adoc[]
+include::920_exercise_applicationtesting.adoc[]
 include::950_codecoverage.adoc[]
 include::970_monkey.adoc[]
+include::972_linktoespressoforunittesting.adoc[]
 include::980_testfoldercreation.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]

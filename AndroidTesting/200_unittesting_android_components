@@ -1,0 +1,221 @@
+[[testingothercomponents]]
+== Testing Android components
+
+[[activity_testing]]
+=== Activity testing
+
+To test an activity, you use the `ActivityTestRule` class provided by the Android Testing Support Library.
+
+This rule provides functional testing of a single activity. 
+The activity under test will be launched before each test annotated with @Test and before any method annotated with @Before.
+ It will be terminated after the test is completed and all methods annotated with @After are finished.
+ The Activity under Test can be accessed during your test by calling ActivityTestRule#getActivity().
+
+[source,java]
+----
+package com.vogella.android.test.examples;
+
+import android.support.test.filters.MediumTest;
+import android.support.test.rule.ActivityTestRule;
+import android.support.test.runner.AndroidJUnit4;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
+import android.widget.ListView;
+
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import static org.hamcrest.Matchers.greaterThan;
+import static org.hamcrest.Matchers.instanceOf;
+import static org.hamcrest.Matchers.notNullValue;
+import static org.junit.Assert.assertThat;
+
+@MediumTest
+@RunWith(AndroidJUnit4.class)
+public class MainActivityTest {
+
+    @Rule
+   public ActivityTestRule<MainActivity> rule  = new  ActivityTestRule<>(MainActivity.class);
+
+    @Test
+    public void ensureListViewIsPresent() throws Exception {
+        MainActivity activity = rule.getActivity();
+        View viewById = activity.findViewById(R.id.listview);
+        assertThat(viewById,notNullValue());
+        assertThat(viewById, instanceOf(ListView.class));
+        ListView listView = (ListView) viewById;
+        ListAdapter adapter = listView.getAdapter();
+        assertThat(adapter, instanceOf(ArrayAdapter.class));
+        assertThat(adapter.getCount(), greaterThan(5));
+
+    }
+}
+----
+
+To configure the intent which is used to start the activity, override ActivityTestRule#getActivityIntent.
+
+[source,java]
+----
+package com.vogella.android.test.examples;
+
+import android.content.Intent;
+import android.support.test.InstrumentationRegistry;
+import android.support.test.filters.MediumTest;
+import android.support.test.rule.ActivityTestRule;
+import android.support.test.runner.AndroidJUnit4;
+import android.view.View;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+import static org.hamcrest.Matchers.instanceOf;
+import static org.hamcrest.Matchers.is;
+import static org.hamcrest.Matchers.notNullValue;
+import static org.junit.Assert.assertThat;
+
+@MediumTest
+@RunWith(AndroidJUnit4.class)
+public class SecondActivityTest {
+
+    @Rule
+   public ActivityTestRule<SecondActivity> rule  = new  ActivityTestRule<SecondActivity>(SecondActivity.class)
+    {
+        @Override
+        protected Intent getActivityIntent() {
+            InstrumentationRegistry.getTargetContext();
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.putExtra("MYKEY", "Hello");
+            return intent;
+        }
+    };
+
+    @Test
+    public void ensureIntentDataIsDisplayed() throws Exception {
+        SecondActivity activity = rule.getActivity();
+
+        View viewById = activity.findViewById(R.id.target);
+
+        assertThat(viewById,notNullValue());
+        assertThat(viewById, instanceOf(TextView.class));
+        TextView textView = (TextView) viewById;
+        assertThat(textView.getText().toString(),is("Hello"));
+    }
+}
+----
+
+
+[[service_testing]]
+=== Service testing
+
+To test a service, you use the `ServiceTestRule` class provided by the Android Testing Support Library.
+
+This rule provides a simplified mechanism to start and shutdown your service before and after your test. 
+It guarantees that the service is successfully connected when starting (or binding to) a service. 
+The service can be started (or bound) using one of the helper methods. 
+It will automatically be stopped (or unbound) after the test completes and any methods annotated with @After are finished.
+
+[WARNING]
+====
+This rule doesn't support IntentService, because it's automatically destroyed after the `onHandleIntent` method.
+====
+
+The following listing is an example of testing a service.
+
+[source,java]
+----
+include::res/service/test.java[]
+----
+
+[source,shell]
+----
+include::res/monkey/restartadb.txt[]
+----
+
+[[receiver_testing]]
+=== Receiver testing
+
+Receivers can be tested directly.
+Assume the following receiver.
+
+[source,java]
+----
+public class OutgoingCallReceiver extends BroadcastReceiver 
+{
+    @Override
+    public void onReceive(Context ctx, Intent i) 
+    {
+        if(i.getAction().equalsIgnoreCase(Intent.ACTION_NEW_OUTGOING_CALL))
+        {
+            String phoneNum = i.getStringExtra(Intent.EXTRA_PHONE_NUMBER);
+			Intent intent = new Intent(ctx, MyActivity.class);
+            intent.putExtra("phoneNum", phoneNum);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		    ctx.startActivity(intent);
+        }
+    }
+}
+----
+
+
+You can test it, via an instrumented test and Mockito.
+[source,java]
+----
+@Test
+public void testStartActivity() {
+	    // prepare data for onReceive and call it
+        Intent intent = new Intent(Intent.ACTION_NEW_OUTGOING_CALL);
+        intent.putExtra(Intent.EXTRA_PHONE_NUMBER, "01234567890");
+        mReceiver.onReceive(mContext, intent);
+        assertNull(mReceiver.getResultData());
+
+        // what did receiver do?
+        ArgumentCaptor<Intent> argument = 	
+			ArgumentCaptor.forClass(Intent.class);
+        verify(mContext, times(1)).startActivity(argument.capture());
+        Intent receivedIntent = argument.getValue();         
+        assertNull(receivedIntent.getAction());
+        assertEquals("01234567890", receivedIntent.getStringExtra("phoneNum"));
+        assertTrue((receivedIntent.getFlags() &
+		 Intent.FLAG_ACTIVITY_NEW_TASK) != 0);
+    }
+----
+
+[[provider_testing]]
+=== Content provider testing
+
+To test a content provider, you use the `ProviderTestCase2` class.
+`ProviderTestCase2` automatically instantiates the provider under test and inserts an `IsolatedContext` object.
+This context is isolated from the Android system, but still allows file and database access.
+The usage of the `IsolatedContext` object ensures that your _provider_ test does not affect the real device.
+
+`ProviderTestCase2` also provides access to a `MockContentResolver` via the `getMockContentResolver()` method.
+
+You should test all operations of the provider and also what happens if the provider is called with an invalid URI or with an invalid projection.
+
+[[loader_testing]]
+=== Loader testing
+
+To test a loader, you use the `LoaderTestCase`class. 
+It is expected that a JUnit 4 rule will be provided in the future to replace this class.
+
+[[application_testing]]
+== Application testing
+
+The application class contains the logic, data and settings which are relevant for the whole application.
+Therefore you should test this object, to ensure it works correctly.
+
+You can write a  JUnit 4 test  for the application object and test it on the JVM. 
+In this case you would mock all dependencies to the application object.
+
+To test an Android application object on the Android runtime you use the `ApplicationTestCase` class. 
+It would be great if  Google would provide a special JUnit4 rule for testing the application object, but at the moment this is not yet available.
+
+The test runner of the Android tests (`InstrumentationTestRunner`) creates automatically an instance of application during its initialization phase. 
+If you do asynchronous processing in your `onCreate` method you should consider that.
+
+

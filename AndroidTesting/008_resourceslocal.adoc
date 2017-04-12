@@ -13,6 +13,8 @@ http://tools.android.com/tech-docs/unit-testing-support[Unit test support descri
 
 http://www.vogella.com/tutorials/Robolectric/article.html[Using Robolectric for Android unit testing on the JVM]
 
+AndroidToolsStaticChecks[Using static checks in Android for your code]
+
 http://www.vogella.com/tutorials/AndroidTestingEspresso/article.html[Android user interface testing with Espresso]
 
 http://blog.sqisland.com/2015/12/mock-application-in-espresso.html[Chiu-Ki Chan about Mock Application in Espresso for Dependency Injection]

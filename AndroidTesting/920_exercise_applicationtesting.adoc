@@ -1,6 +1,8 @@
 [[exercise_applicationtesting]]
 == Exercise: Testing the Android application
 
+In this exercise you learn how to write tests for your application object.
+
 [[exercise_applicationtesting_project]]	
 === Create project
 

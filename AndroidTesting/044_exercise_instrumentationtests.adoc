@@ -1,0 +1,32 @@
+[[exercise_mockingcontext]]
+== Exercise: Write Android instrumentation test and use mocking
+
+This exercise demonstrates the usage of the Mockito framework for Android tests.
+
+       	
+[[exercise_mockingcontext_class]]		
+=== Create class to test
+
+Add the following utility class. 
+
+[source,java]
+----
+include::res/stubfileoutput/fileapiwrite.java[]
+----
+
+[[exercise_mockingcontext_createtest]]
+=== Create a new unit test
+
+Write a unit test which validates that:
+* `openFileOutput` is called exactly once
+* the `write()`	method is called at least twice.
+
+[source,java]
+----
+include::res/stubfileoutput/TestCaseExample.java[]
+----
+
+[NOTE]
+====
+This test requires a dependency to the Mockito test framework.
+====

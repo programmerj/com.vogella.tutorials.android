@@ -1,9 +1,9 @@
-== Android annotations
-	
-The Android support library provides additional annotations which allows the Android tooling to perform better
-code checks.
+== Support annotations
 
-The following is a list of the most common used annotations.
+Google provides a new annotations package.
+This package  includes a number of metadata annotations, which you can use in your code, to prevent bugs. 
+
+For example:
 
 * @MainThread - the method code should be executed in the main thread
 * @WorkerThread - the method code should not be executed in the main thread
@@ -14,12 +14,45 @@ The following is a list of the most common used annotations.
 * @FloatRange - same as @IntRange but for floats.
 * @CallSuper - specifies that classes that overrides such a method must call the override method in super
 
+
 To use these annotations add the following dependency to your Gradle build file.
-	
-[source,java]
+
+[source]
 ----
-include::res/anno/support.txt[]
+dependencies {
+    compile 'com.android.support:support-annotations:22.2.0'
+}
 ----
+
+The following information describes the most important annotations. 
+See http://tools.android.com/tech-docs/support-annotations for more information.
+
+=== Nullness Annotations
+
+The @Nullable annotation can be used to indicate that a given parameter or return value can be null. 
+Similarly, the @NonNull annotation can be used to indicate that a given parameter (or return value) can not be null.
+
+=== Threading Annotations: @UiThread, @WorkerThread, ...
+
+If a method can only be called from a specific type of thread, you can annotate it with one of the following annotations:
+
+* @UiThread
+* @MainThread
+* @WorkerThread
+* @BinderThread
+
+Example:
+
+[source]
+----
+@WorkerThread
+protected abstract Result doInBackground(Params... params);
+
+@MainThread
+  protected void onProgressUpdate(Progress... values) {
+  }
+----
+
 	
 The Android tooling uses these annotations to find potential errors in your code, via the Android Lint tool.
 These checks are not perfect but can increase the code quality if considered during development.

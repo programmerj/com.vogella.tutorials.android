@@ -1,5 +1,5 @@
 [[androidsystem_tests]]
-==	Writing Instrumentation tests to run on the Android device
+==	Writing tests to run on the Android device
 
 [[androidtesting_instrumentation]]
 === Instrumentation tests
@@ -47,7 +47,6 @@ The Android framework provided in the past specialized mocking classes but these
 === Location of instrumentation tests
 
 As described in <<androidtesting_projectstructure>> the unit tests of an Android project should be located in the `app/src/androidTest/java` folder. 
-See <<androidtesting_creatingtestfolders>> for the creation of such a test folder.
 
 [[androidtesting_instrumentationtests_gradledependencies]]
 === Define dependencies and testInstrumentationRunner in the Gradle build file
@@ -68,14 +67,11 @@ AndroidJUnit4 extends JUnit4, so if you use pure Junit4 syntax and ActivityTestR
 But you need it, if you want to run, i.e., Espresso tests with `ActivityTestRule` and JUnit4.
 
 [[androidtesting_instrumentationtests_runtunittestsgradle]]
-=== Run the unit tests from Gradle
+=== Run the tests on Android 
 
-Run your unit tests with the `gradlew connectedCheck` command.
+Run your local unit tests via Gradle with the `gradlew connectedCheck` command.
 
-[[androidtesting_instrumentationtests_runtunittestsas]]
-=== Run the unit tests from Android Studio
-
-Right-click on your test class in the _Project_ window and select _Run_.
+To run your local unit tests via Android Studio, right-click on your test class in the _Project_ window and select _Run_.
 
 [[androidtesting_instrumentationtests_testresults]]
 === Location of test reports

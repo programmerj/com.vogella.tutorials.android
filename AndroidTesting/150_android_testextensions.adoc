@@ -1,18 +1,16 @@
-
 [[androidtesting_deeper]]
 == More on Android testing
 
 [[androidtesting_assertions]]
 === Android additional assertion
 
-The Android testing API provides the `MoreAsserts` and `ViewAsserts` classes
-in addition to the standard JUnit `Assert` class.
+The Android testing API provides the `MoreAsserts` and `ViewAsserts` classes in addition to the standard JUnit `Assert` class.
+These classes provide additional assert methods for Android specific use cases.
 
 [[androidtesting_testgroups]]
 === Test groups
 
 The `@SmallTest`, `@MediumTest`and `@LargeTest`annotations allows to classify tests.
-
 
 This allows you to run, for example, only short running tests.
 You may run your long running tests on a continuous integration server.

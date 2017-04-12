@@ -1,5 +1,0 @@
-[[androidtesting_unittest_exerciseprep]]
-=== Preparation: Create Android project
-
-Create the Android project as described in http://www.vogella.com/tutorials/Android/article.html#tutorialtemperature[Android temperature converter].
-
