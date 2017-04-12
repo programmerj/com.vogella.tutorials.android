@@ -6,7 +6,6 @@ public class NetworkApi {
 
     @Inject
     public NetworkApi(){
-
     }
 
     public boolean validateUser(String username, String password) {

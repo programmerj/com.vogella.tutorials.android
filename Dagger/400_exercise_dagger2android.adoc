@@ -1,10 +1,8 @@
 [[exercise_androiddagger]]
 == Exercise: Dependency injection in Android activities with Dagger 2
 
-[[exercise_androiddagger_target]]
-=== Target of this exercise
 
-In this exercise Dagger 2 is demonstrated in an Android application.
+In this exercise the usage of the Dagger 2 dependency injection framework in an Android application is demonstrated .
 In our simple app, there is an activity that allows a user to authenticate some credentials. 
 The result value of the implementation is displayed in a text field.
 
@@ -44,13 +42,15 @@ include::res/android/NetworkApi.java[]
 With the `@Inject` annotation for the constructor, we tell Dagger that an object of this class is injectable into other objects.
 Dagger automatically calls this constructor, if an instance of this class is requested. 
 
-Next, create an activity named _MainActivity_ and also create a xml layout file for it named _activity_main.xml_.
-This class is used to demonstrate the dependency injection with the NetworkApi.
+Adjust your activity to receive an instance of `NetworkApi`.
+This demonstrates the dependency injection with the NetworkApi.
 
 [source,java]
 ----
 include::res/android/MainActivity.java[]
 ----
+
+The activity layout file should look similar to the following.
 
 [source,xml]
 ----
@@ -67,7 +67,7 @@ include::res/android/IMainActivitySubcomponent.java[]
 This interface represents a Dagger subcomponent which is able to inherit bindings from any parent (sub-)component. 
 It extends the _AndroidInjector_ to perform member injection on a concrete Android component type (in our case _MainActivity_) and also specifies the corresponding builder.
 
-To add you subcomponent to a parent component create a module named _ActivityModule_ like the following.
+To add your subcomponent to a parent component create a module named _ActivityModule_ like the following.
 
 [source,java]
 ----
