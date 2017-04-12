@@ -37,7 +37,7 @@ This class tests, that the TextView has a top and bottom margin of 5dp and a lef
 
 [source,java]
 ----
-include::res/exercise_testdp/RobolectricTest.java[]
+include::res/exercise_testdp/RobolectricActivityTest.java[]
 ----
 
 A method with a `@Before` annotation creates the RobolectricActivity.
