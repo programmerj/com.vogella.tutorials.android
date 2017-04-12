@@ -6,9 +6,8 @@ import dagger.Subcomponent;
 import dagger.android.AndroidInjector;
 
 @Subcomponent
-public interface IActivitySubcomponent extends AndroidInjector<MainActivity> {
+public interface IMainActivitySubcomponent extends AndroidInjector<MainActivity> {
 
     @Subcomponent.Builder
-    abstract class Builder extends AndroidInjector.Builder<MainActivity> {
-    }
+    abstract class Builder extends AndroidInjector.Builder<MainActivity> {}
 }
