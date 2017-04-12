@@ -1,20 +1,26 @@
 package com.vogella.android.dagger2simple;
 
+import android.app.Activity;
 import android.app.Application;
 
-import com.vogella.android.dagger2simple.components.DaggerDiComponent;
-import com.vogella.android.dagger2simple.components.DiComponent;
+import com.vogella.android.dagger2simple.components.DaggerIApplicationComponent;
 
-public class MyApplication extends Application {
-    DiComponent component;
+import javax.inject.Inject;
+
+import dagger.android.DispatchingAndroidInjector;
+import dagger.android.HasDispatchingActivityInjector;
+
+public class MyApplication extends Application implements HasDispatchingActivityInjector {
+    @Inject DispatchingAndroidInjector<Activity> dispatchingAndroidInjector;
 
     @Override
     public void onCreate() {
         super.onCreate();
-        component = DaggerDiComponent.builder().build();
+        DaggerIApplicationComponent.create().inject(this);
     }
 
-    public DiComponent getComponent() {
-        return component;
+    @Override
+    public DispatchingAndroidInjector<Activity> activityInjector() {
+        return dispatchingAndroidInjector;
     }
-} 
+}

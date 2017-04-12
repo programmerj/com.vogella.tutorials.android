@@ -10,22 +10,26 @@ This makes it difficult to supply dependencies via constructors to Android compo
 [[android_dagger_using]]
 === Using Dagger 2 in Android
 
-To enable Dagger 2 adjust your _build.gradle_ project file.
+To enable Dagger 2 add the following dependencies to your _build.gradle_ file.
 
-[source,xml]
+[source,gradle]
 ----
-include::res/android/build.gradle[]
-----
-		
-Add the following entries to your _app/build.gradle_ file.
-		
-[source,xml]
-----
-include::res/android/appbuild.gradle[]
+compile 'com.google.dagger:dagger:2.10'
+annotationProcessor 'com.google.dagger:dagger-compiler:2.10'
 ----
 
-[NOTE]
-====
-You need to configure apt for each scope in which Dagger should be used.
-For example `apt` for you normal app, `testApt` for your JVM tests and `testAndroidApt` for your Android tests.
-====
+If you want to use classes from the _dagger.android_ package, like _DaggerActivity_, also add the following dependencies to your build.gradle file.
+This is also needed, if you want to inject Activities components like activities or fragments.
+
+[source,gradle]
+----
+compile 'com.google.dagger:dagger-android:2.10'
+annotationProcessor 'com.google.dagger:dagger-android-processor:2.10'
+----
+
+If you want to use the support libraries with Dagger 2, you also have to add the following to your build.gradle
+
+[source,gradle]
+----
+compile 'com.google.dagger:dagger-android-support:2.10'
+----

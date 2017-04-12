@@ -1,5 +1,5 @@
 [[exercise_androiddagger]]
-== Exercise: Dependency injection in Android with Dagger 2
+== Exercise: Dependency injection in Android Activities with Dagger 2
 
 [[exercise_androiddagger_target]]
 === Target of this exercise
@@ -11,76 +11,120 @@ The result value of the implementation is displayed in a text field.
 [[exercise_androiddagger_project]]
 === Create project
 
-Create a new project with the top level package `com.vogella.android.dagger2simple`.
-
-Adjust the layout file of the generated activity. 
-
-[source,xml]
-----
-include::res/android/activity_main.xml[]
-----
+Create a new project called _com.vogella.android.dagger2simple_ with the top level package _com.vogella.android.dagger2simple_.
 	
 [[exercise_androiddagger_gradle]]
 === Enter Gradle dependencies
 
-Add the following entries to your _build.gradle_ project file.
+Add the following dependencies to your _build.gradle_ file.
 
 [source,java]
 ----
-include::res//android/build.gradle[]
-----
-	
-Add the following entries to your _app/build.gradle_ file.
-
-[source,xml]
-----
-include::res/android/appbuild.gradle[]
+compile 'com.google.dagger:dagger:2.10'
+compile 'com.google.dagger:dagger-android:2.10'
+annotationProcessor 'com.google.dagger:dagger-android-processor:2.10'
+annotationProcessor 'com.google.dagger:dagger-compiler:2.10'
 ----
 
 [[exercise_androiddagger_di]]
-=== Define your dependencies graph
+=== Define your dependency graph
 
-Create the following classes for providing dependencies and wiring them up.
+As mentioned above, Android components (activities, fragments, etc.) are instantiated by the Android framework which makes it difficult to use dependency injection on them.
+Fortunately, Dagger provides classes that simplifies the dependency injection into Android components.
+This requires a little setup work to get your application running.
 
-[source,xml]
+First, create an interface with the name _IMainActivitySubcomponent_.
+
+[source,java]
+----
+include::res/android/IMainActivitySubcomponent.java[]
+----
+
+This interface represents a Dagger subcomponent which is able to inherit bindings from any parent (sub-)component. 
+It extends the _AndroidInjector_ to perform member injection on a concrete Android component type (in our case _MainActivity_) and also specifies the corresponding builder.
+
+To add you subcomponent to a parent component create a module named _ActivityModule_ like the following.
+
+[source,java]
+----
+include::res/android/ActivityModule.java[]
+----
+
+With the help of the _subcomponents_ parameter in the `@Module` annotation, the subcomponent is made available to every component that uses the ActivityModule.
+This class offers an abstract method that binds the builder of the subcomponent to the AndroidInjector.Factory.
+
+
+Next, create an interface called _IApplicationComponent_.
+This component is responsible for injecting the _Application_ class.
+
+[source,java]
+----
+include::res/android/IApplicationComponent.java[]
+----
+
+In the `@Component` annotation the modules are specified which are used to create the implementation of the component.
+Here, we now add our ActivityModule and therefore also make use of our subcomponent.
+While we reference our ActivityModule to inject activities, we also reference the _AndroidInjectionModule_ which is needed to ensure the binding of the Android base types (Activities, Fragments, etc.).
+
+
+Now, create a class named _NetworkApi_ like the following.
+This class is used to inject it into an activity.
+
+[source,java]
 ----
 include::res/android/NetworkApi.java[]
 ----
 
-[source,xml]
-----
-include::res/android/NetworkApiModule.java[]
-----
+With the `@Inject` annotation for the constructor, we tell Dagger that an object of this class is injectable into other objects.
+Dagger automatically calls this constructor, if an instance of this class is requested. 
 
-[source,xml]
+Alternatively, for example when you are not allowed to change the injectable class (to annotate the constructor), you have the possibility to provide a new static method to the ActivityModule that returns an instance of the NetworkApi class.
+If you prefer this way, remove the `@Inject` annotation from the NetworkApi constructor, and add the following lines to your ActivityModule class.
+
+[source, java]
 ----
-include::res/android/DiComponent.java[]
+	@Provides
+    static NetworkApi provideNetworkApi(){
+        return new NetworkApi();
+    }
 ----
 
 [[exercise_androiddagger_using]]
 === Wiring up the application
 
-Create the following implementation for your `Application` class. 
-This class builds up the dependency injection context and gives access to it, via the `getComponent` method.
+Next, create a class named _MyApplication_ that extends _Application_ and implements _HasDispatchingActivityInjector_ like the following.
 
 [source,java]
 ----
 include::res/android/MyApplication.java[]
 ----
 
-Of course this class needs to registered via the manifest. 
+Here, we use our IApplicationComponent (not prefixed with _Dagger_) to inject our Application class.
+This way a _DispatchingAndroidInjector_ is injected which is then returned when an injector for an activity is requested (through _activityInjector()_).
+This injector uses the _AndroidInjector.Factory_ which comes from the ActivityModule to find the corresponding builder of the activity (IActivitySubcomponent.Builder).
+It then creates the concrete _AndroidInjector_ (in our case IActivitySubcomponent) which can then be used to inject an activity.
+
+
+Of course the Application class needs to registered via the manifest like the following. 
 
 [source,xml]
 ----
 include::res/android/AndroidManifest.xml[]
 ----
 
-The activity injects the created values into it via the method defined on the @Component class.  
+Create an class called _MainActivity_ and also create a xml layout file called _activity_main.xml_ like the following.
+
+[source,xml]
+----
+include::res/android/activity_main.xml[]
+----
 
 [source,java]
 ----
 include::res/android/MainActivity.java[]
 ----
+
+When now calling _AndroidInjection.inject(this)_ the DispatchingAndroidInjector from the Application class is used to inject the activity with an instance of the NetworkApi class. 
 
 [[exercise_androiddagger_validate]]
 === Validate
