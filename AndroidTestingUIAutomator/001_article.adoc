@@ -1,5 +1,4 @@
 = Android cross component with the UI Automator framework - Tutorial
-:toclevels: 1
 :linkcss:
 :sectnums:                                                          
 :experimental:

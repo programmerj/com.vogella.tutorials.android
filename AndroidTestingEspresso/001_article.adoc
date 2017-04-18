@@ -1,5 +1,4 @@
 = Android user interface testing with Espresso - Tutorial
-:toclevels: 1
 :linkcss:
 :sectnums:                                                          
 :experimental:
