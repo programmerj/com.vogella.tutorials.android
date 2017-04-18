@@ -1,4 +1,5 @@
 = Developing Android unit and instrumentation tests - Tutorial
+:toclevels: 1
 :linkcss:
 :sectnums:                                                          
 :experimental:
