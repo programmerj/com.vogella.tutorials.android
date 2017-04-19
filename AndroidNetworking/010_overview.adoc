@@ -40,8 +40,6 @@ include::res/status/check.txt[]
 	
 This requires the `ACCESS_NETWORK_STATE` permission.
 
-
-
 ===  Good practices for network access under Android
 
 Within an Android application you should avoid performing long running operations on the user interface thread. 

@@ -1,25 +1,18 @@
-= Android Calendar API - Tutorial
+= Using the Android Calendar API - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img
-Lars Vogel (c) 2009, 2016 vogella GmbH
-Version 0.4, 30.06.2016
+Lars Vogel (c) 2009, 2017 vogella GmbH
+Version 0.4, 19.04.2017
 :docinfodir: ../
 :vgwort: AndroidCalendar
 
 [abstract]
-Using the Android Calendar API
-This article describes how to use the Android Calendar API in
-Android 4.0. It is
-based on Eclipse 3.7, Java 1.6 and Android 4.0
-(Ice
-Cream Sandwich).
-			
+This article describes how to use the Android Calendar API in Android.
 	
 include::../web/advertisement/afterTableOfContent.adoc[]
-include::../10_Include/prerequisites/android_prerequisite.adoc[]
 include::010_calendar.adoc[]
 include::../support.adoc[]	
 include::008_resourceslocal.adoc[]

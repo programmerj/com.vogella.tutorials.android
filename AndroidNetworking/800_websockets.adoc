@@ -1,15 +1,10 @@
 == Web Sockets
 
-Web Sockets are a standard based on HTTP for asynchronous
-message-based
-communication between a client and a server. To start a
-web socket communication, you create a HTTP GET request with a special
-HTTP headers. If the server accepts this request, the client and the
-server can send each other messages.
+Web Sockets are a standard based on HTTP for asynchronous message-based communication between a client and a server.
+To start a web socket communication, you create a HTTP GET request with a special HTTP headers. 
+If the server accepts this request, the client and the server can send each other messages.
 
-Messages can be text or binary data and should be relatively
-small, as the web socket protocol is intended to be used with small
-payloads in the data.
+Messages can be text or binary data and should be relatively small, as the web socket protocol is intended to be used with small payloads in the data.
 
 It is good practice to use JSON as data format for the messages.
 

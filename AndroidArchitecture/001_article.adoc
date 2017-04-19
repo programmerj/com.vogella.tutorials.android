@@ -4,18 +4,19 @@
 :experimental:
 :icons:
 :imagesdir: ./img
-Lars Vogel, (c) 2015 vogella GmbH
-Version 0.1, 18.04.2016
+Lars Vogel, (c) 2015, 2017 vogella GmbH
+Version 0.3, 18.04.2017
 :docinfodir: ../
 :vgwort: AndroidArchitecture
 
 [abstract]
 == Android Architecture
 
-This tutorial contains notes about architecture for Android applications which support that its components can be easily tested.
+This tutorial contains notes about architecture for Android applications which improves testability.
 
 include::../web/advertisement/afterTableOfContent.adoc[]			
 include::010_overview.adoc[]
+include::012_modelviewpresenter.adoc[]
 include::020_architecturestyle-buildflavors.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::030_architecturestyle-dependencyinjection.adoc[]

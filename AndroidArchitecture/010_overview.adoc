@@ -1,51 +1,10 @@
-== The Model View Presenter architecture for Android
+== Architectures for Android
 
 The Android programming model encourages the creation of large activities or fragments.
 These components typically contain both business and UI logic. 
 This makes testing and maintenance of Android applications more difficult.
 
-The Model View Presenter (MVP) architecture pattern tries to improve the application architecture  to improve its testability and to ease future maintenance.
-The MVP pattern separates the _data model_, from a _view_ through a _presenter_.
-The presenter handles the logic of the application.
-
-image::mvp_overview.png[]
-
-=== The view in MVP
-
-The view in MVP includes the visual part of our app. 
-This is not the same as the `View` class in Android, it usually implemented via fragments, activities or dialogs.
-It contains only the UI and it does not contain any logic or knowledge of the data displayed.
-In typical implementations the view components in MVP exports an interface that is used by the Presenter.
-The presenter uses these interface methods to manipulate the view.
-Example method names would be: `showProgressBar`, `updateData`.
-
-=== The presenter in MVP
-
-The presenter contains the logic when to update the view.
-It also interacts with the model and fetches and transforms data from the model to update the view.
-The presenter should not have, if possible, a dependency to the Android SDK, e.g., to the `Context` or `Activity`.
-
-
-=== The model in MVP
-
-Contains the data and the code to fetch and update the data. This part of MVP updates the database or communicate with a webserver.
-
-=== Considerations for using the MVP design pattern
-
-MVP makes it easier to test your presenter logic and to replace dependencies.
-But using MVP also comes with a costs, it makes your application code longer.
-Also as the standard Android templates at the moment do not use this approach, not every Android developer will find this code structure easy to understand.
-
-=== Comparison to Model View Controller
-
-In the _Model View Presenter_ pattern, the views more separated from the model. 
-The presenter communicates between model and view.
-This makes it easier to create unit tests
-Generally there is a one to one mapping between view and Presenter, but it is also possible to use multiple presenters for complex views.
-
-
-In the _Model View Controller_ pattern the controllers are behavior based and can share multiple views.
-View can communicate directly with the model.
-
-MVP is currently the pattern that the Android community prefers. 
-
+Several patterns are popular within the Android community to improve testability.
+The most popular architecture choices are:
+* Model View Presenter (MVP) 
+* Model View View Model (MVVM) together with Android Data Binding

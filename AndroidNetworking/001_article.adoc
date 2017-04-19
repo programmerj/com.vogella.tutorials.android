@@ -10,13 +10,12 @@ Version 2.5, 28.06.2016
 :vgwort: AndroidNetworking
 
 [abstract]
-Performing HTTP operations with Android. This article describes how to access web resources via HTTP in Android.
-It is based on Eclipse 4.4, Java 1.6 and Android 5.0 (Lollipop).
+Performing HTTP operations with Android. 
+This article describes how to access web resources via HTTP in Android.
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
-include::../JavaNetworking/010_overview.adoc[]
 include::800_websockets.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
