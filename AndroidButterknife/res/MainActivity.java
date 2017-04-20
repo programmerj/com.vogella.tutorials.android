@@ -5,12 +5,12 @@ import android.os.Bundle;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends Activity {
-    @BindView(R.id.textview)
+    @BindView(R.id.textView)
     TextView title;
 
     @Override
@@ -23,10 +23,8 @@ public class MainActivity extends Activity {
 
     @OnClick(R.id.button)
     public void submit() {
-        Toast.
-        	makeText(MainActivity.this, 
-        			"Hello from Butterknife OnClick annotation", Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this,
+        		"Hello from Butterknife OnClick annotation", Toast.LENGTH_SHORT).show();
     }
-
 
 }

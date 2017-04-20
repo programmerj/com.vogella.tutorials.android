@@ -1,12 +1,13 @@
 == Butterknife
 	
 http://jakewharton.github.io/butterknife/[Butterknife] is a light weight library to inject views into Android components.
+It uses annotation processing.
 	
 The `@BindView` annotation allow to inject views and performs the cast to the correct type for you. 
 The `@@OnClick(R.id.yourid)` annotation allows to add OnClickListener to a view. 
 You can optional define the method parameter of the view in case you want it injected.
 	
-Butterknife includes also findById methods which simplify code that still has to find views on a View, Activity, or Dialog. 
+Butterknife includes also `findById` methods which simplify code that still has to find views on a View, Activity, or Dialog. 
 It uses generics to infer the return type and automatically performs the cast.
 
 [source,java]
@@ -44,3 +45,7 @@ public class YourFragment extends Fragment {
   }
 }
 ----
+
+Annotated attributes and methods cannot be private, as ButterKnife needs to be able to access them from a separate class.
+
+

@@ -1,6 +1,6 @@
 == Links and Literature 
 
-=== Retrofit resources
+=== Butterknife resources
 	
-http://square.github.io/okhttp/[OkHTTP Homepage]
+http://jakewharton.github.io/butterknife/[Butterknife homepage]
 	
