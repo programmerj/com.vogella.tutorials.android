@@ -1,4 +1,4 @@
-public class Student implements Parcelable{
+public class Student implements Parcelable {
         private String id;
         private String name;
         private String grade;
@@ -7,7 +7,7 @@ public class Student implements Parcelable{
         public Student(String id, String name, String grade){
             this.id = id;
             this.name = name;
-            this.grade = grade;
+            thigs.grade = grade;
        }
        // Getter and setter methods
        .........
@@ -43,4 +43,4 @@ public class Student implements Parcelable{
                return new Student[size];
            }
        };
-   }
+}

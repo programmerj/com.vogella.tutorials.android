@@ -4,16 +4,15 @@
 :experimental:
 :icons:
 :imagesdir: ./img
-Lars Vogel (c) 2009, 2016 vogella GmbH
-Version 2.10, 30.06.2016
+Lars Vogel (c) 2009, 2017 vogella GmbH
+Version 2.12, 20.04.2017
 :docinfodir: ../
 :vgwort: AndroidIPC
 
 [abstract]
 How to do Android IPC with parceable and AIDLs.
 
-This tutorial describes how to create your own Parceable implementaton and how to do IPC beetween an activity and service. 
-It is based on Eclipse 4.4, Java 1.6 and Android 4.4.
+This tutorial describes how to create your own Parceable implementation and how to do IPC between an activity and service. 
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 ////content not there
