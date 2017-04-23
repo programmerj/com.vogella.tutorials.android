@@ -1,4 +1,4 @@
-= Android Architecture - Tutorial
+= Android Architecture with MVP or MVVM - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
@@ -17,6 +17,7 @@ This tutorial contains notes about architecture for Android applications which i
 include::../web/advertisement/afterTableOfContent.adoc[]			
 include::010_overview.adoc[]
 include::012_modelviewpresenter.adoc[]
+include::014_modelviewviewmodel.adoc[]
 include::020_architecturestyle-buildflavors.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
 include::030_architecturestyle-dependencyinjection.adoc[]

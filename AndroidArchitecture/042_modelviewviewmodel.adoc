@@ -1,14 +1,13 @@
 == The Model View Presenter architecture for Android
 
-The Model View Presenter (MVP) architecture pattern improve the application architecture to increase testability.
+The Android default templates encourages the creation of large activities or fragments.
+These components typically contain both business and the user interface logic logic. 
+This makes testing and therefore the maintenance of Android applications harder.
+
+The Model View Presenter (MVP) architecture pattern tries to improve the application architecture to increase testability.
 The MVP pattern separates the _data model_, from a _view_ through a _presenter_.
 
 image::mvp_overview.png[]
-
-The following demonstrates an example data flow throw the MVP.
-
-image::mvp-example-dataflow10.png[Example data flow in MVP] 
-
 
 === The view
 
@@ -36,6 +35,12 @@ The presenter should not have, if possible, a dependency to the Android SDK.
 
 Contains the data and the code to fetch and update the data. 
 This part of MVP updates the database or communicate with a webserver.
+
+=== Example data flow
+
+The following demonstrates an example data flow throw the MVP.
+
+image::mvp-example-dataflow10.png[Example data flow in MVP] 
 
 
 === Considerations for using the MVP design pattern

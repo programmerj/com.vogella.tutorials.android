@@ -1,10 +1,12 @@
 == Architectures for Android
 
-The Android programming model encourages the creation of large activities or fragments.
+The Android default templates encourages the creation of large activities or fragments.
 These components typically contain both business and UI logic. 
-This makes testing and maintenance of Android applications more difficult.
+This makes testing and therefore the maintenance of Android applications harder.
 
 Several patterns are popular within the Android community to improve testability.
+
 The most popular architecture choices are:
 * Model View Presenter (MVP) 
 * Model View View Model (MVVM) together with Android Data Binding
+
