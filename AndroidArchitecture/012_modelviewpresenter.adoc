@@ -19,12 +19,6 @@ In typical implementations the view components in MVP exports an interface that 
 The presenter uses these interface methods to manipulate the view.
 Example method names would be: `showProgressBar`, `updateData`.
 
-[NOTE]
-====
-The view in MVP is not the same as the `View` class in Android.
-A view in MVP it usually implemented via a fragment, activity or a dialog.
-====
-
 === The presenter
 
 The presenter triggers the business logic and tells the view when to update.

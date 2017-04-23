@@ -16,12 +16,6 @@ The view model contains the data required for the view.
 In a data binding scenario is uses observable data needed by the view.
 It also allows to pass events to the model.
 
-[NOTE]
-====
-The view in MVP is not the same as the `View` class in Android.
-A view in MVP it usually implemented via a fragment, activity or a dialog.
-====
-
 === The model
 
 Contains the data and the code to fetch and update the data. 
