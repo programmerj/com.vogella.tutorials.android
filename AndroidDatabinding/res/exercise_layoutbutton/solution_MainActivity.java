@@ -1,6 +1,7 @@
 package com.vogella.android.databinding;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -14,7 +15,7 @@ public class MainActivity extends Activity implements MainActivityContract.View 
         super.onCreate(savedInstanceState);
         ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
         MainActivityPresenter mainActivityPresenter = new MainActivityPresenter(this);
-        TemperatureData temperatureData = new TemperatureData("10");
+        TemperatureData temperatureData = new TemperatureData("Hamburg", "10");
         binding.setTemp(temperatureData);
         binding.setPresenter(mainActivityPresenter);
     }
@@ -24,4 +25,5 @@ public class MainActivity extends Activity implements MainActivityContract.View 
         String celsius = temperatureData.getCelsius();
         Toast.makeText(this, celsius, Toast.LENGTH_SHORT).show();
     }
+
 }

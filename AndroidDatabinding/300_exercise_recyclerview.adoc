@@ -1,0 +1,105 @@
+== Exercise: Using data binding for RecyclerView
+		
+In this exercise you learn how to use data binding for a recylerview.
+Continue to use the `com.vogella.android.databinding` package.
+		
+=== Define a new activity and allow to start it
+
+Create a new activity called `SecondActivity`.
+Ensure that you add it to your Android manifest.
+
+Adjust your MVP contract to start the second activity.
+
+[source, java]
+----
+include::res/exercise_recyclerview/MainActivityContract.java[]
+----
+
+Implement this new behavior to start the second activity.
+
+[TIP]
+====
+To start the activity you need also to change your layout file.
+====
+
+
+=== Activate data binding		
+Open your _app/build.gradle_ file and add the dependency to recylerview.
+
+[source,gradle]
+----
+dependencies {
+	// more
+	compile "com.android.support:recyclerview-v7:25.1.1"
+}
+----
+		
+[WARNING]
+====
+Ensure you pick the correct build file.
+====
+
+=== Create icon
+
+Add an _ic_listentry_ icon to your application.
+
+
+
+=== Implement the Recyclerview with data binding.
+
+Create the following layout called `second_main.xml"
+
+[source, xml]
+----
+include::res/exercise_recyclerview/second_main.xml[]
+----
+
+Create the following layout called `rowlayout.xml"
+
+[source, xml]
+----
+include::res/exercise_recyclerview/rowlayout.xml[]
+----
+
+Create the following class:
+
+[source,java]
+----
+include::res/exercise_recyclerview/MyAdapter.java[]
+----
+
+[source,java]
+----
+include::res/exercise_recyclerview/SecondActivity.java[]
+----	
+
+=== Validate your application
+
+Start your application and navigate to your second activity.
+
+Ensure the list is correctly displayed.
+
+=== Extra: Create an abstract class for your adapter
+
+Most of code in adapter can be the same if data binding is used.
+The only requirement is that the object name in the layout file is the same, so that the generated entry in the `BR` class is the same.
+In our example we use `obj` for it.
+
+To reuse most of our adapter, create an abstract class with the logic to bind to any object.
+
+[source,java]
+----
+include::res/exercise_recyclerview/MyBaseAdapter.java[]
+----
+
+Now you can adjust your existing adapter to extend the `MyBaseAdapter`.
+This is left as exercise for the reader.
+
+[NOTE]
+====
+Having this base adapter allows you to reuse lots of code for new adapter implementations.
+====
+
+
+
+

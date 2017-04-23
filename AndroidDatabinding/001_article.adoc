@@ -4,18 +4,20 @@
 :experimental:
 :icons:
 :imagesdir: ./img
-Lars Vogel (c) 2014, 2016 vogella GmbH
-Version 0.5, 25.06.2016
+Lars Vogel (c) 2014, 2017 vogella GmbH
+Version 1.1, 23.04.2017
 :docinfodir: ../
 :vgwort: AndroidDatabinding
 
 [abstract]
-This tutorial describes the usage of data binding in Android applications to synchronize your user interface with your application model and logic..
+This tutorial describes the usage of data binding in Android applications. 
+Data binding allows to synchronize your user interface with your application model and logic.
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
 include::../web/advertisement/inBetween01.adoc[]
-include::200_exercise_layout.adoc[]	
+include::200_exercise_simple_databinding.adoc[]	
+include::300_exercise_recyclerview.adoc[]	
 include::../support.adoc[]						
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]

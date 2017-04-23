@@ -1,18 +1,15 @@
 package com.vogella.android.databinding;
 
-import android.util.Log;
-import android.view.View;
-import android.widget.Toast;
-
-
-public class MainActivityPresenter {
+public class MainActivityPresenter implements MainActivityContract.Presenter {
     private MainActivityContract.View view;
 
     public MainActivityPresenter(MainActivityContract.View view) {
-
         this.view = view;
     }
+    
+    @Override
     public void onShowData(TemperatureData temperatureData) {
         view.showData(temperatureData);
     }
+
 }

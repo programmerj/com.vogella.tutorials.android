@@ -5,7 +5,71 @@
 Android offers support to write declarative layouts using data binding.
 This minimizes the necessary code in your application logic to connect to the user interface elements.
 
-image::db_android10.png[]
+The usage of data binding requires changes in your layout files.
+Such layout files starts with a `layout` root tag followed by a `data` element and a `view` root element. 
+The data elements describe data which is available for binding.
+This `view` element contains your root hierarchy similar to layout files which are not used with data binding.
+References to the data elements or expressions within the layout are written in the attribute properties using the `@{}` or `@={}`,
+
+[source,xml]
+----
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+   <data>
+       <variable name="temp" type="com.vogella.android.databinding.TemperatureData"/> #<1>
+   </data>
+   <LinearLayout #<2>
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView 
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:text="@{temp.location}"/>
+       <TextView 
+       	android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@{temp.celsius}"/>
+   </LinearLayout>
+</layout>
+----
+
+<1> The user variable within data describes a property that may be used within this layout.
+<2> Normal view hierarchy
+
+Android data binding generates a `Binding` class based on this layout.
+This class holds all the bindings from the layout properties, i.e., the defined variable to the corresponding views. 
+It also provides generated setters for your data elements from the layout.
+The name of the generated class is based on the name of the layout file.
+This name is converted to Pascal case and the `Binding` suffix is added to it. 
+For example, if the layout file is called `activity_main.xml`, the generate class is called `ActivityMainBinding`.
+You can inflate the layout and connect your model via this class or the `DataBindingUtil` class.
+
+
+[source,xml]
+----
+
+TemperatureData temperatureData = // your data is created here
+ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
+binding.setTemp(temperatureData); // generated setter based on the data in the layout file
+----
+
+You can also inflate the layout, which is useful for late binding, as for example, in a `RecyclerView`.
+
+[source,java]
+----
+ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater(), container, attachToContainer);
+// get the root view
+View view = binding.getRoot();
+// do more stuff
+TemperatureData temperatureData = // your data is created here
+binding.setTemp(temperatureData); // generated setter based on the data in the layout file
+----
+
+
+You can also inflate layouts for `RecyclerView`, `ViewPager`, or other things that aren’t setting the Activity contents.
+
+=== Enable data binding in your Android application
 		
 To enable the usage of data binding in your Android application, add the following snippet to the app/build.gradle file.
 			
@@ -19,47 +83,6 @@ android {
 }
 ----
 
-To use data binding you have to add information to your layout files.
-Layout files which supports data binding start with a `layout` root tag followed by a `data` element and a `view` root element. 
-This `view` element contains the standard layout information.
-Without data binding that would be the root of your layout file. 
-
-During the build process this addition layout information is read and `Binding` classes are generated based on its information.
-The generated name of the `Binding` class is based on the name of the layout file. 
-It converts the name to Pascal case and adds the “Binding” suffix to it. 
-For example, if the layout file is called `activity_main.xml`, the generate class is called `ActivityMainBinding`. 
-
-[source,xml]
-----
- ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-----
-
-You can also inflate layouts for `RecyclerView`, `ViewPager`, or other things that aren’t setting the Activity contents.
-
-
-[source,xml]
-----
-ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater(), container, attachToContainer);
-// get the root view
-View view = binding.getRoot();
-----
-
-
-This class holds all the bindings from the layout properties, i.e., the defined variable to the corresponding views. 
-It also knows how to assign values for the binding expressions.
-
-		
-The data elements describe data which is available for binding.
-Expressions within the layout are written in the attribute properties using the “@{}” syntax.
-		
-A sample file looks like the following listing.
-		
-[source,xml]
-----
-include::res/main_layout.xml[]
-----
-		
-The user variable within data describes a property that may be used within this layout.
 
 === Data binding for events
 		
@@ -119,15 +142,10 @@ public class TemperatureData extends BaseObservable {
 This listener is invoked on every update and it updates the corresponding views. 
 This ensures that updates in the model updates also the UI.
 				
-
 === Example for using data binding
 	
 A sample file looks like the following listing.
 
-[source,gradle]
-----
-include::res/main_layout.xml[]
-----
 	
 The user variable within data describes a property that may be used within this layout.
 
