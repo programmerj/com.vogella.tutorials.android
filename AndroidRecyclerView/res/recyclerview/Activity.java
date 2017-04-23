@@ -17,7 +17,7 @@ public class MyActivity extends Activity {
         mLayoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(mLayoutManager);
 
-        List<String> items = // here the example data is created
+        List<String> items = Arrays.asList("Test1", "Test2");
         		
         // define an adapter
         mAdapter = new MyAdapter(items);
