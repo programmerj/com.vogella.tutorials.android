@@ -28,9 +28,6 @@ Also create a layout to use in each item.
 ----
 include::res/recyclerview/rowlayout_complex.xml[]
 ----
-		
-
-Note: At the moment the display of the `RecyclerView` is not supported in the graphical preview.
 
 Create the following adapter class.
 
