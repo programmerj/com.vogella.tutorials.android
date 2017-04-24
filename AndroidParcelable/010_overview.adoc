@@ -1,5 +1,5 @@
 [[Parceable]]
-== Parceable
+== Using Parceable
 
 A _Parceable_ is the Android implementation of the Java Serializable. 
 It assumes a certain structure and way of processing it.

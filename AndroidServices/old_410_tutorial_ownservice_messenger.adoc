@@ -36,9 +36,7 @@ Change the _main.xml_ layout to the following.
 include::res/messenger/main.xml[]
 ----
 	
-Change
-`MainActivity`
-to the following.
+Change `MainActivity` to the following.
 	
 [source,java]
 ----

@@ -1,4 +1,4 @@
-= Android IPC - Tutorial
+=  Using Androids Parceable - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
@@ -15,24 +15,9 @@ How to do Android IPC with parceable and AIDLs.
 This tutorial describes how to create your own Parceable implementation and how to do IPC between an activity and service. 
 
 include::../web/advertisement/afterTableOfContent.adoc[]
-////content not there
-include::010_services.adoc[]
-include::012_customservices.adoc[]
-include::020_bindingservices.adoc[]
+include::010_overview.adoc[]
 ////
-include::../web/advertisement/inBetween01.adoc[]
 ////
-include::050_process.adoc[]
-include::060_servicescommunication.adoc[]
-////
-include::../web/advertisement/inBetween02.adoc[]
-////
-include::100_scheduleservice.adoc[]
-include::320_tutorial_intentservice.adoc[]
-////
-include::../web/advertisement/inBetween03.adoc[]
-////
-include::400_exercise_localservice.adoc[]
 ////
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]

@@ -12,12 +12,50 @@ The `IBinder` object can be used by the activity to communicate with the service
 		
 When the binding process has finished, the `onStartCommand()` method in the service is called.
 It receives as parameter the `Intent` object used for the `bindService()` method call.
+
+=== Services in separate processes
+
+==== Running a service in its own process
+
+You can also specify that your `Service` runs in a separate process via the `<android:process=":process_description"> attribute.
+
+[source,xml]
+----
+include::res/service/defineservice.xml[]
+----
+
+The colon prefix in front of the name tells Android that the service is private to its declaring application.
+If the colon is not used, the service would be a global process and can be used by other Android applications.
+
+Running a service in its own process will not block the application in case the service performs long running operations in its main thread.
+But as the services runs in its own process, you need to use some interprocess communication (IPC) to communicate to your service from other parts.
+
+Even if the service runs in its own process, you need to use asynchronous processing to perform
+network access, because Android does not allow network access
+in the main thread of a process.
+
+==== When to run a service in a separate process?
+
+Running a service in its own process gives it its own memory address space.
+And and a garbage collector of the virtual machine in this process does not affect the application process.
+
+Application rarely need to run a service in its own process.
+Running services in its own process makes the communication with other Android components and the service harder to implement.
+
+[NOTE] 
+====
+If you want to make a service to other Android application available, they must run in their own process.
+====
+
+
+
+
 		
 === Local services bindings
 		
 If the service runs in the same process as the activity, it is possible to return the service to the activity. 
 This allows that the activity can call methods of the service directly. This technique is
-demonstrated by <<exercise_bindlocalservice" />.
+demonstrated by <<exercise_bindlocalservice>>.
 		
 === Interprocess communication services bindings
 		

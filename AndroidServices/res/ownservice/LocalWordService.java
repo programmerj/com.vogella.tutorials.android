@@ -6,36 +6,22 @@ import android.os.Binder;
 import android.os.IBinder;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 public class LocalWordService extends Service {
     private final IBinder mBinder = new MyBinder();
-	private List<String> list = new ArrayList<String>();
+	private List<String> resultList = new ArrayList<String>();
 
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
-
-		Random random = new Random();
-		if (random.nextBoolean()) {
-			list.add("Linux");
-		}
-		if (random.nextBoolean()) {
-			list.add("Android");
-		}
-		if (random.nextBoolean()) {
-			list.add("iPhone");
-		}
-		if (random.nextBoolean()) {
-			list.add("Windows7");
-		}
-		if (list.size() >= 20) {
-			list.remove(0);
-		}
+		addResultValues();
 		return Service.START_NOT_STICKY;
 	}
 
 	@Override
 	public IBinder onBind(Intent intent) {
+		addResultValues();
 		return mBinder;
 	}
 
@@ -46,7 +32,12 @@ public class LocalWordService extends Service {
 	}
 
 	public List<String> getWordList() {
-		return list;
+		return resultList;
 	}
 
+	private void addResultValues() {
+		Random random = new Random();
+		List<String> input = Arrays.asList("Linux", "Android","iPhone","Windows7" );
+		resultList.add(input.get(random.nextInt(3)));
+	}
 }

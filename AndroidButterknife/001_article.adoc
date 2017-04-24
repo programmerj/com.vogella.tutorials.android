@@ -15,8 +15,8 @@ This tutorial explains the usage of the butterknife library to inject views into
 
 include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
-include::020_example.adoc[]
-include::030_howdoesitwork.adoc[]
+include::020_howdoesitwork.adoc[]
+include::030_example.adoc[]
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]
 include::../copyright.adoc[]
