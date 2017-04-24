@@ -1,39 +1,20 @@
 == Exercise: Define and consume local service
 	
-This exercise demonstrates how to bind to a local
-service
-from an
-activity.
+This exercise demonstrates how to bind to a local service from an activity.
 	
-The service
-is started after the Android device boots and
-simulates
-that it periodically
-fetches
-data. The
-activity
-binds itself to
-the service to access its data.
+The service is started after the Android device boots and simulates that it periodically fetches data.
+The activity binds itself to the service to access its data.
 	
-Create a new project called
-_de.vogella.android.ownservice.local_
-with
-the
-activity
-called
-_MainActivity_.
+Create a new project called _com.vogella.android.localservice_ with the activity called _MainActivity_ using the _Empty Activity_ template.
 	
-Create the following
-`LocalWordService`
-class.
+Create the following `LocalWordService` class.
 	
 [source,java]
 ----
 include::res/ownservice/LocalWordService.java[]
 ----	
 	
-Create the following two classes, which will be registered as
-`BroadcastReceivers`.
+Create the following two classes, which will be registered as `BroadcastReceivers`.
 	
 [source,java]
 ----

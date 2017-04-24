@@ -1,0 +1,58 @@
+== Exercise: Building an Android application using the firebase database
+
+
+== Create a new project
+
+Create a new project with the _com.vogella.android.firebaseexample_ top level package.
+
+
+== Configure firebase
+
+Logon to https://console.firebase.google.com/
+Create a new project and call it _vogellachat_.
+
+In your new project, select _Add Firebase to your Android app_.
+
+For this you need to get the SHA-1 for your debug keystore:
+
+[source,terminal]
+----
+keytool -exportcert -alias androiddebugkey -keystore ~/.android/debug.keystore -list -v -storepass android
+----
+
+Enter the package and your SHA-1 into the webmask and press _Register app_.
+
+image::firebase-10.png[Firebase registration]
+
+Download the _google-services-json_ file and copy it into the root of your Android app model.
+
+image::firebase-20.png[Firebase registration]
+
+
+== Integrating into your application
+Add the following gradle dependencies to your general gradle file
+
+[source,gradle]
+----
+include::res/build/dependency_parent.txt[]
+----
+Add the following gradle dependencies to your app gradle file
+
+[source,gradle]
+----
+include::res/build/dependency_app.txt[]
+----
+
+=== Configure database access
+
+Select _Sign-In Method_ under authentication and enble Google.
+
+image::firebase-24.png[Sign-in methods] 
+
+image::firebase-26.png[Sign-in methods] 
+
+
+Open the _Rules_ of your database.
+
+image::firebase-30.png[Access rules for the database] 
+

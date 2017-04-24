@@ -32,7 +32,7 @@ include::320_tutorial_intentservice.adoc[]
 ////
 include::../web/advertisement/inBetween03.adoc[]
 ////
-include::400_tutorial_ownservice.adoc[]
+include::400_exercise_localservice.adoc[]
 ////
 include::../support.adoc[]
 include::008_resourceslocal.adoc[]

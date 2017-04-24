@@ -6,7 +6,7 @@ In this exercise the usage of the Dagger 2 dependency injection framework in an 
 In our simple app, there is an activity that allows a user to authenticate his credentials. 
 The result value of the implementation is displayed in a text field.
 
-[TIP
+[TIP]
 ====
 Android studio does not build the project automatically, hence you frequently get compile erros because the generated code is not yet there.
 Select menu:Build[Make Project] to trigger the generation of the code.

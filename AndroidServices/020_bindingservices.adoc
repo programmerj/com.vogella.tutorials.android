@@ -2,55 +2,24 @@
 
 === Binding to services from activities
 		
-If the
-activity
-wants to
-interact with the
-service directly,
-it can use
-the
-`bindService()`
-method to start the
-_service_.
+If the activity wants to interact with the service directly, it can use the `bindService()` method to start the _service_.
 		
-This method requires a
-`ServiceConnection`
-object as a parameter which is called on the service start and when finishing its
-`onBind()`
-method. This method
-returns a
-`IBinder`
-object to the
-`ServiceConnection`.
+This method requires a `ServiceConnection` object as a callback object.
+This object is called once the service started and executed its `onBind()` method. 
+`onBind()` returns a `IBinder` object to the `ServiceConnection` callback.
 		
-This
-`IBinder`
-object
-can be used
-by the
-activity
-to communicate
-with the
-service.
+The `IBinder` object can be used by the activity to communicate with the service.
 		
-When the binding process has finished, the
-`onStartCommand()`
-method in the service is called with the
-`Intent`
-object used for the
-`bindService()`
-method.
+When the binding process has finished, the `onStartCommand()` method in the service is called.
+It receives as parameter the `Intent` object used for the `bindService()` method call.
 		
 === Local services bindings
 		
-If the service runs in the same process as the activity, it is
-possible to return the service to the activity. This allows that the
-activity can call methods of the service directly. This technique is
+If the service runs in the same process as the activity, it is possible to return the service to the activity. 
+This allows that the activity can call methods of the service directly. This technique is
 demonstrated by <<exercise_bindlocalservice" />.
 		
 === Interprocess communication services bindings
 		
-If the service run in its own process, you require IPC
-(Interprocess
-Communication) to communicate with the service.
+If the service run in its own process, you require IPC (Interprocess Communication) to communicate with the service.
 		

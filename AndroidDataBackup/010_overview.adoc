@@ -2,13 +2,8 @@
 
 === Purpose of data backup
 
-The backup service of Android allows you to copy your persistent
-application data to a remote cloud storage. This allows you to
-restore the application data and settings in case the
-user switches
-Android devices, re-installs the application or
-performs a factory
-reset.
+The backup service of Android allows you to copy your persistent application data to a remote cloud storage.
+This allows you to restore the application data and settings in case the user switches Android devices, re-installs the application or performs a factory reset.
 
 Data backup is not required to be available
 on all Android
@@ -35,23 +30,13 @@ package.
 
 === Backup of shared preferences and files
 
-For saving and restoring your data you extend the
-`BackupAgent`
-class.
+For saving and restoring your data you extend the `BackupAgent` class.
 
-The simplest way to implement your backup is to use
-`SharedPreferencesBackupHelper`
-for shared preferences and
-`FileBackupHelper`
-to backup
-files from the internal storage system. Both helper classes
-save and restore automatically the registered files.
+The simplest way to implement your backup is to use `SharedPreferencesBackupHelper` for shared preferences and `FileBackupHelper` to backup files from the internal storage system.
+Both helper classes save and restore automatically the registered files.
 
 === General backup
 
-For a more complex backup you can directly implement the BackupAgent
-and its save and restore methods.
-See
-http://developer.android.com/guide/topics/data/backup.html - Backup Agenda Documentation
-for details.
+For a more complex backup you can directly implement the BackupAgent and its save and restore methods.
+See http://developer.android.com/guide/topics/data/backup.html - Backup Agenda Documentation for details.
 

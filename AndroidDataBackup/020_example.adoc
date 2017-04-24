@@ -2,10 +2,8 @@
 	
 === Project implementation
 		
-The following application uses the
-`com.vogella.android.databackup`
-top level package. This package was registered with the Google
-service.
+The following application uses the `com.vogella.android.databackup` top level package.
+This package was registered with the Google service.
 		
 The backup agenda and the registration key is entered in the
 _AndroidManifest.xml_
@@ -23,7 +21,7 @@ in the following listing.
 [source,java]
 ----
 include::res/backup/MyBackupAgent.java[]
-----		
+----
 	
 === Trigger backup and restore
 
@@ -39,6 +37,17 @@ shell command you can use the following commands.
 		
 [source,java]
 ----
-include::res/backup/backuptest.txt[]
-----		
+// Trigger a backup, usage: 
+// adb shell bmgr backup <package>
+
+// schedule backup
+adb shell bmgr backup com.vogella.android.databackup
+// ensure scheduled backup run
+adb shell bmgr run
+
+// to restore you backup use bmgr restore
+adb shell bmgr restore com.vogella.android.databackup
+----
+
 	
+

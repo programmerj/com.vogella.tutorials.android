@@ -1,21 +1,10 @@
 == Exercise: Using services and service communication
 	
-The following example demonstrates how to use a service
-to
-download a file from the Internet based on a button click from an
-activity. Once done, the service notifies the activity via a broadcast
-receiver that the download is complete.
+The following example demonstrates how to use a service to download a file from the Internet based on a button click from an activity. Once done, the service notifies the activity via a broadcast receiver that the download is complete.
 	
-In this exercise you use the
-`IntentService`
-class, as this class provides automatic background processing.
+In this exercise you use the `IntentService` class, as this class provides automatic background processing.
 	
-Create a new project called
-_com.vogella.android.service.receiver_
-with the
-activity
-called
-_MainActivity_.
+Create a new project called _com.vogella.android.service.receiver_ with the activity called _MainActivity_.
 	
 Create the following class for the service.
 	
@@ -24,14 +13,9 @@ Create the following class for the service.
 include::res/intentservice/DownloadService.java[]
 ----	
 	
-Add this class to the
-_AndroidManifest.xml_
-file. Also add the permission to
-write to external storage and to
-access
-the Internet. The resulting
-_AndroidManifest.xml_
-file should look similar to the following listing.
+Add this class to the _AndroidManifest.xml_ file.
+Also add the permission to write to external storage and to access the Internet.
+The resulting _AndroidManifest.xml_ file should look similar to the following listing.
 	
 [source,xml]
 ----
@@ -45,23 +29,16 @@ Change the layout file of your activity to the following.
 include::res/intentservice/activity_main.xml[]
 ----
 	
-Change
-`MainActivity`
-to the following.
+Change `MainActivity` to the following.
 	
 [source,java]
 ----
 include::res/intentservice/MainActivity.java[]
 ----
 	
-If you run your example and press the button, the download should
-be
-performed by the
-service. Once done, the user interface is updated and
-a `Toast` with the file
-name is shown.
+If you run your example and press the button, the download should be performed by the service. 
+Once done, the user interface is updated and a `Toast` with the file name is shown.
 	
 Change the setting so that the service runs in its own process.
-Ensure that the application still works, as broadcast receivers are
-received across process boundaries.
+Ensure that the application still works, as broadcast receivers are received across process boundaries.
 	

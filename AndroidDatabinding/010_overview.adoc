@@ -241,3 +241,5 @@ This method uses http://www.vogella.com/tutorials/AndroidHandlingImages/article.
         Glide.with(view.getContext()).load(url).into(view);
     }
 ----
+
+

@@ -13,7 +13,7 @@ The Android system currently has two main means to schedule tasks:
 * the (outdated) `AlarmManager` 
 * the `JobScheduler` API.
 
-Modern Android apps should use the `JobScheduler` API.  
+Modern Android applications should use the `JobScheduler` API.  
 Apps can schedule jobs while letting the system optimize based on memory, power, and connectivity conditions. 
 
 

@@ -1,4 +1,4 @@
-= Downloading and handling images in Android applications - Tutorial
+= Downloading and handling images in Android applications with Glide - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:

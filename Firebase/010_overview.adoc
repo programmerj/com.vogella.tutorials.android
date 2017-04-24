@@ -1,0 +1,33 @@
+== Firebase database
+
+Firebase is a real time data base which allows to store tree of lists of objects.
+It allows to synchronize data between different devices.
+It is a NoSQL JSON database.
+
+You can find it under: https://console.firebase.google.com/
+
+
+== Configure firebase
+
+Logon to https://console.firebase.google.com/ and press Add Firebase to your Android app.
+
+
+
+== Integrating into your application
+
+Add the following gradle dependencies to your general gradle file
+
+[source,gradle]
+----
+include::res/build/dependency_parent.txt[]
+----
+Add the following gradle dependencies to your app gradle file
+
+[source,gradle]
+----
+include::res/build/dependency_app.txt[]
+----
+
+== Access
+
+Access to your Firebase Database is configured by a set of rules written in a JSON configuration language.

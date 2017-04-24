@@ -87,3 +87,4 @@ include::res/report/activity_main2.xml[]
 
 Validate that in this case the position in the spinner is still automatically restored.
 
+

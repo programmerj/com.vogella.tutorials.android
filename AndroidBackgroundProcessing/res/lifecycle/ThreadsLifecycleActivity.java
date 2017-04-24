@@ -19,6 +19,7 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.os.SystemClock;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -115,11 +116,7 @@ public class ThreadsLifecycleActivity extends Activity {
 		public void run() {
 			try {
 				// Simulate a slow network
-				try {
-					new Thread().sleep(5000);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
+				SystemClock.sleep(5000);
 				downloadBitmap = downloadBitmap("http://www.devoxx.com/download/attachments/4751369/DV11");
 				// Updates the user interface
 				handler.sendEmptyMessage(0);

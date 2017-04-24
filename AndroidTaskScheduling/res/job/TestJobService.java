@@ -22,8 +22,8 @@ public class TestJobService extends JobService {
 
 	@Override
 	public boolean onStartJob(JobParameters params) {
-		// fake work
-		Log.i(TAG, "on start job: " + params.getJobId());
+	    // run in the main thread
+		// start your service here or perform some asynchronous processing
 		return true;
 	}
 

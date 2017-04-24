@@ -16,12 +16,18 @@ include::res/build.gradle[]
 
 === Use view injection in your Android activity
 
-Change your activity to the following. 
+
+Use `@BindView`, `@OnClick` and `ButterKnife.bind` to get the views injected.
+
+ifdef::show_exercise_solution[]
+
+The following shows a possible solution for your activity. 
 
 [source,java]
 ----
 include::res/MainActivity.java[]
 ----
+endif::show_exercise_solution[]
 	
 === Validate setup
 

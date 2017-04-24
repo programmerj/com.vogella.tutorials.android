@@ -15,7 +15,6 @@ It must also provide a static final method called `CREATOR`	which must implement
 include::res/parcel/Student.java[]
 ----
 	
-
 Once you have defined this, you can put it into the extra of an intent.
 	
 [source,java]

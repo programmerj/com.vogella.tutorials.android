@@ -68,8 +68,6 @@ public class MyJobService extends JobService {
         // true if we'd like to be rescheduled
         return true;
     }
-
-
 }
 
 ----

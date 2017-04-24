@@ -42,11 +42,7 @@ public class ProgressTestActivity extends Activity {
 
 	// Simulating something timeconsuming
 	private void doFakeWork() {
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			e.printStackTrace();
-		}
+		SystemClock.sleep(5000);e.printStackTrace();
 	}
 
 }

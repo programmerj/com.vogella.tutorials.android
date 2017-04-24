@@ -74,5 +74,3 @@ If you press the button, a small popup should be shown with the correct data.
 The first text view should 
 The second `TextView` should update automatically, if you type in the `EditText` field.
 
-
-

@@ -109,4 +109,6 @@ Call `loadRepositories` on your presenter in the `onClick` method of the button.
 In the presenter call the  `setProgressIndicator` method on the view, create some test data and call `showRepositories` repositories on the view with this data.
 
 Would you be able to write unit tests for the presenter which could run on the JVM?
+
+
  

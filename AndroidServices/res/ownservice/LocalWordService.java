@@ -1,18 +1,16 @@
-
-package de.vogella.android.ownservice.local;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
+package com.vogella.android.localservice;
 
 import android.app.Service;
 import android.content.Intent;
 import android.os.Binder;
 import android.os.IBinder;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
 public class LocalWordService extends Service {
-	private final IBinder mBinder = new MyBinder();
-	private ArrayList<String> list = new ArrayList<String>();
+    private final IBinder mBinder = new MyBinder();
+	private List<String> list = new ArrayList<String>();
 
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
@@ -37,7 +35,7 @@ public class LocalWordService extends Service {
 	}
 
 	@Override
-	public IBinder onBind(Intent arg0) {
+	public IBinder onBind(Intent intent) {
 		return mBinder;
 	}
 

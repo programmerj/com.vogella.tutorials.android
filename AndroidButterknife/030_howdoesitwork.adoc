@@ -14,7 +14,7 @@ If a class contains these annotations, it generates a new class based on the _<o
 Here is the generate class from our example. 
 
 [source,java]
------
+----
 // Generated code from Butter Knife. Do not modify!
 package com.vogella.android.butterknifeexample;
 
