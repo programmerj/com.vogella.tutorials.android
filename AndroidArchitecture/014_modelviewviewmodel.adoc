@@ -10,6 +10,16 @@ A view component in MVP contains a visual part of the application.
 
 The view binds to observable variables and actions exposed by the view model typically using the data binding framework.
 
+The view is responsible for handling for example:
+
+* Menus
+* Permissions
+* Event listeners
+* Showing dialogs, Toasts, Snackbars
+* Working with Android `View` and `Widget`
+* Starting activities
+* All functionality which is related to the Android `Context`
+
 === The view model
 
 The view model contains the data required for the view.
@@ -18,10 +28,43 @@ It uses observable data to notify the view about changes.
 It also allows to pass events to the model.
 It is also a value converter from the raw model data to presentation-friendly properties)
 
+The view model has the following responsibilities:
+
+* Exposing data
+* Exposing state (progress, offline, empty, error, etc)
+* Handling visibility
+* Input validation
+* Executing calls to the model
+* Executing methods in the view
+
+The view model should only know about the application context.
+the application context can:
+
+* Start a service
+* Bind to a service
+* Send a broadcast
+* Register a broadcast receiver
+* Load resource values
+
+It cannot:
+
+* Show a dialog
+* Start an activity
+* Inflate a layout
+
+
 === The model
 
 Contains a data provider and the code to fetch and update the data.
-The data can be retrieved from different sources, e.g., a REST API or a database.
+The data can be retrieved from different sources, for example:
+
+* REST API 
+* Realm db
+* SQLite db
+* Handles broadcast
+* Shared Preferences
+* Firebase
+* etc.
 
 Basically the same as the model in the MVP.
 
