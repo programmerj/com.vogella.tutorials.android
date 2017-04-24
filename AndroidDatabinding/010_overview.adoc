@@ -84,7 +84,7 @@ android {
 ----
 
 
-=== Data binding for events
+=== Data binding for events via listener bindings and method references
 		
 Events may be bound to handler methods directly, similar to the way `android:onClick` can be assigned to a method in the activity. 
 Event attribute names are governed by the name of the listener method with a few exceptions. 
@@ -93,12 +93,60 @@ For example, `View.OnLongClickListener` has a `method onLongClick()`, so the att
 To assign an event to its handler, use a normal binding expression, with the value being the method name to call. 
 The binding expression can assign the click listener for a View.
 
+[source,xml]
+----
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="presenter"
+            type="com.vogella.android.databinding.MainActivityPresenter"/>
+    </data>
+
+   
+   	<Button
+            android:text="Start second activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="@{() -> presenter.showList()}"
+            />
+
+</layout>
+----
+
+You could also bind to a method reference via `android:onClick="@{handlers::onClickFriend}"/>`.
+If you methods need parameters, you can also pass your data object to them.
+For example:
+
+[source,java]
+----
+android:onClick="@{(theView) -> presenter.onSaveClick(theView, task)}"
+----
+=== Imports
+
+You can also import classes to use them in your data binding expressions.
+
+[source,java]
+----
+<data>
+    <import type="com.example.MyStringUtils"/>
+    <variable name="user" type="com.example.User"/>
+</data>
+
+<TextView
+   android:text="@{MyStringUtils.capitalize(user.lastName)}"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"/>
+----
+
+
 === Updating the user interfaces with changes from the data model
 
 Any plain old Java object (POJO) can be used for data binding.
-But to update the UI if the data object change, these objects must be able to notify about data changes. 
+But if updates in the data model should also update the user interface, the objects must be able to notify about data changes. 
 There are three different data change notification mechanisms:
-* Observable objects
+* observable objects
 * observable fields
 * observable collections
 
@@ -142,24 +190,54 @@ public class TemperatureData extends BaseObservable {
 This listener is invoked on every update and it updates the corresponding views. 
 This ensures that updates in the model updates also the UI.
 				
-=== Example for using data binding
-	
-A sample file looks like the following listing.
+Alternatively to create a observable class, you can also use `ObservableField` and its subclass for properties.
 
-	
-The user variable within data describes a property that may be used within this layout.
-
-The data object used with this layout may look like the following listing.
-
-	
 [source,java]
 ----
-include::res/User.java[]
+private class TemperatureData {
+   public final ObservableField<String> celsius = new ObservableField<>();
+   public final ObservableField<String> location =  new ObservableField<>();
+}
 ----
-	
+
+To access such fields in your code, use the `set` and `get` methods.
+
 [source,java]
 ----
-include::res/usage.java[]
-----	
+temp.location.set("Hamburg");
+String celsius  = temp.celsius.get();
+----
 
+=== Custom converters
 
+Sometimes you have to perform complex data conversions.
+For this, you can register a custom convertor via the static `@BindingAdapter` method.
+This method can be placed anywhere in your code and can override the default conversion of a field to your data model.
+
+For example, assume that you want to assign a field of your data model to an image view.
+
+[source,xml]
+----
+
+  <ImageView
+            android:id="@+id/icon"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="6dip"
+            android:contentDescription="TODO"
+            android:src="@{obj.url}"
+            />
+----
+
+You can register for this property on `ImageView` with the following method.
+This method uses http://www.vogella.com/tutorials/AndroidHandlingImages/article.html[Glide] to download the image.
+
+[source,java]
+----
+@BindingAdapter("android:src")
+    public static void setImageUrl(ImageView view, String url) {
+        Glide.with(view.getContext()).load(url).into(view);
+    }
+----

@@ -100,6 +100,17 @@ This is left as exercise for the reader.
 Having this base adapter allows you to reuse lots of code for new adapter implementations.
 ====
 
+=== Extra: Add image property to your data model and show it
 
+Add a field `url` to your data model and use http://www.vogella.com/tutorials/AndroidHandlingImages/article.html[Glide] to download such an image.
 
+Examples URLs for images can be found on http://lorempixel.com/.
+
+[source,java]
+----
+@BindingAdapter("android:src")
+    public static void setImageUrl(ImageView view, String url) {
+        Glide.with(view.getContext()).load(url).into(view);
+    }
+----
 

@@ -4,6 +4,9 @@ https://developer.android.com/topic/libraries/data-binding/index.html[Androids D
 
 https://blog.stylingandroid.com/data-binding-part-1[Blog post by  Mark Allison about Data binding]
 
+https://medium.com/google-developers/android-data-binding-custom-setters-55a25a7aea47[Blog about about custom setters in Data binding]
 https://medium.com/google-developers/android-data-binding-recyclerview-db7c40d9f0e4[George Mount about Data Binding and RecyclerView]
 
 https://medium.com/google-developers/android-data-binding-list-tricks-ef3d5630555e[Dynamic view generation with Data Binding]
+
+https://news.realm.io/news/data-binding-android-boyar-mount/[Video introduction into Data Binding]
