@@ -1,6 +1,6 @@
 == The Model View View Model architecture for Android
 
-The Model View View Model design pattern is typical used together with Android data binding.
+The Model View View Model design pattern is also known as Model View Binder.
 
 image::mvvm-overview.png[MMVM pattern] 
 
@@ -13,13 +13,21 @@ The view binds to observable variables and actions exposed by the view model typ
 === The view model
 
 The view model contains the data required for the view.
-In a data binding scenario is uses observable data needed by the view.
+It is an abstraction of the view and exposes public properties and commands.
+It uses observable data to notify the view about changes.
 It also allows to pass events to the model.
+It is also a value converter from the raw model data to presentation-friendly properties)
 
 === The model
 
-Contains the data and the code to fetch and update the data. 
+Contains a data provider and the code to fetch and update the data.
+The data can be retrieved from different sources, e.g., a REST API or a database.
 
 Basically the same as the model in the MVP.
 
+=== Differences to MVP
+
+MVVM uses data binding and is therefore a more event driven architecture.
+MVP typically has a one to one mapping between the presenter and the view, while MVVM can map many views to one view model
+In MVVM the view model has no reference to the view, while in MVP the view knows the presenter.
 

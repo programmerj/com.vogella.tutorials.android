@@ -28,7 +28,7 @@ The presenter should not have, if possible, a dependency to the Android SDK.
 
 === The model
 
-Contains the data and the code to fetch and update the data. 
+Contains a data provider and the code to fetch and update the data. 
 This part of MVP updates the database or communicate with a webserver.
 
 
