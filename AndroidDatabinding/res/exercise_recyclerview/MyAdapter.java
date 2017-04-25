@@ -51,7 +51,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
                 // create a new view
                 LayoutInflater layoutInflater = LayoutInflater.from(parent.getContext());
-                RowlayoutBinding binding = DataBindingUtil.inflate(layoutInflater, R.layout.rowlayout, parent, false);
+                ViewDataBinding binding = DataBindingUtil.inflate(layoutInflater, R.layout.rowlayout, parent, false);
                 // set the view's size, margins, paddings and layout parameters
                 return new MyViewHolder(binding);
         }
