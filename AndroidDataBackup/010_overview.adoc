@@ -21,12 +21,8 @@ save
 to implement this service
 and run it on any device.
 
-To use the backup service you have to register your application
-package for it
-at the following URL:
-https://developer.android.com/google/backup/signup.html - Backup service registration
-. This webpage allows you to get a backup key for a application
-package.
+To use the backup service you have to register your application package for it, via the https://developer.android.com/google/backup/signup.html[Backup service registration]. 
+This webpage allows you to get a backup key for a application package.
 
 === Backup of shared preferences and files
 
@@ -37,6 +33,6 @@ Both helper classes save and restore automatically the registered files.
 
 === General backup
 
-For a more complex backup you can directly implement the BackupAgent and its save and restore methods.
-See http://developer.android.com/guide/topics/data/backup.html - Backup Agenda Documentation for details.
+For a more complex backup you can directly implement the `BackupAgent` and its save and restore methods.
+See http://developer.android.com/guide/topics/data/backup.html[Backup Agenda Documentation] for details.
 

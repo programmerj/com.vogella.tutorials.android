@@ -208,10 +208,10 @@ temp.location.set("Hamburg");
 String celsius  = temp.celsius.get();
 ----
 
-=== Custom converters
+=== Custom converters with BindingAdapter
 
 Sometimes you have to perform complex data conversions.
-For this, you can register a custom convertor via the static `@BindingAdapter` method.
+For this, you can register a custom converter via the static `@BindingAdapter` method.
 This method can be placed anywhere in your code and can override the default conversion of a field to your data model.
 
 For example, assume that you want to assign a field of your data model to an image view.

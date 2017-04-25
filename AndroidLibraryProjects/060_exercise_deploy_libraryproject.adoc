@@ -1,6 +1,6 @@
 == Exercise: Deploy a library project
 
-Create a new library project called `com.vogella.libraries.testlib` with the same top level package.
+Create a new library project called `recyclerbaseadapter` with the same top level package.
 Add the following to its build.gradle file.
 
 [source, gradle]
@@ -18,13 +18,15 @@ uploadArchives {
 }
 ----
 
+Create or move a `MyBaseAdapter` class in this library.
+
 Deploy it by running the `gradle uploadArchives` task.
 
 You can now define a dependency to this library, by adding  mavenLocal() and using:
 
 [source,gradle]
 ----
-compile 'com.vogella.libraries.YOURLIBARYNAME`
+compile 'com.vogella.libraries:recyclerbaseadapter:1.0`
 ----
 
 	

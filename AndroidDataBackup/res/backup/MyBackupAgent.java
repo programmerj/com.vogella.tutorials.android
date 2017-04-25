@@ -13,8 +13,7 @@ public class MyBackupAgent extends BackupAgentHelper {
 
 	@Override
 	public void onCreate() {
-		SharedPreferencesBackupHelper helper = new SharedPreferencesBackupHelper(
-				this, PREFS);
+		SharedPreferencesBackupHelper helper = new SharedPreferencesBackupHelper(this, PREFS);
 		addHelper(PREFS_BACKUP_KEY, helper);
 	}
 

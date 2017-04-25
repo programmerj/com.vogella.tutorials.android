@@ -3,20 +3,17 @@
 === Project implementation
 		
 The following application uses the `com.vogella.android.databackup` top level package.
+Register this application for the backup service via https://developer.android.com/google/backup/signup.html
 This package was registered with the Google service.
 		
-The backup agenda and the registration key is entered in the
-_AndroidManifest.xml_
-file as in the following listing.
+The backup agenda and the registration key is entered in the _AndroidManifest.xml_ file as in the following listing.
 		
 [source,java]
 ----
 include::res/backup/AndroidManifest.xml[]
 ----
 		
-The corresponding backup agent can be implemented as
-demonstrated
-in the following listing.
+The corresponding backup agent can be implemented as demonstrated in the following listing.
 		
 [source,java]
 ----
