@@ -41,7 +41,13 @@ public abstract class MyBaseAdapter extends RecyclerView.Adapter<MyBaseAdapter.M
         public void onBindViewHolder(MyViewHolder holder, int position) {
                 holder.bind(getDataAtPosition(position));
         }
-
+        
+        // default is to not have stable ids
+        @Override
+        public long getItemId(int position) {
+                return View.NO_ID;
+        }
+        
         public abstract Object getDataAtPosition(int position);
 
         public abstract int getLayoutIdForType(int viewType);
