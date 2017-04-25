@@ -35,7 +35,7 @@ With these references your code can avoid the time-consuming `findViewById()` me
 === Adapters
 		
 An _adapter_ manages the data model and adapts it to the individual entries in the widget. 
-It extends the `RecyclerView.Adapter` class and is assiged to the recycler view via the `RecyclerView.setAdapter` method.
+It extends the `RecyclerView.Adapter` class and is assigned to the recycler view via the `RecyclerView.setAdapter` method.
 The input to the adapter of an recycler view can be any arbitrary Java objects. 
 Based on this input the adapter must return the total number of items via its `getItemCount()` method.
 
@@ -125,9 +125,26 @@ If the view should trigger something in the object in which it is used (activity
 This allows the adapter to store a reference to the object and call its methods for feedback.
 		
 
-=== Using different layouts in recycler view
+=== Layouts in recycler view
 		
-The adapter needs to create a layout for each row of the list.
+The adapter needs to provide the view hierarchy for each entry.
+Typical this is done by inflating an XML layout file.
+
+[TIP]
+====
+Use `wrap_content` or `?android:attr/listPreferredItemHeight` for the height of the view container for the row.
+[source, xml]
+----
+<LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/listPreferredItemHeight">
+        <!-- views contained in each line -->
+</LinearLayout>        
+----
+====
+
+
 This root of the layout is typically a `ViewGroup` (layout manager) and contains several other views.
 The following graphic shows a list with different layouts for odd and even rows.
 		
