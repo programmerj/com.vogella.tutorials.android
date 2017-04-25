@@ -30,7 +30,7 @@ The `onData()` method returns an object of type `DataInteraction`.
 		
 The following table describes the available matchers.
 
-[.Table Espresso matchers]
+.Espresso matchers
 |===
 |ViewMatcher|Description
 

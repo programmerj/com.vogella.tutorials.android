@@ -12,6 +12,7 @@ import java.util.Random;
 public class LocalWordService extends Service {
     private final IBinder mBinder = new MyBinder();
 	private List<String> resultList = new ArrayList<String>();
+	private int counter = 1;
 
 	@Override
 	public int onStartCommand(Intent intent, int flags, int startId) {
@@ -38,6 +39,9 @@ public class LocalWordService extends Service {
 	private void addResultValues() {
 		Random random = new Random();
 		List<String> input = Arrays.asList("Linux", "Android","iPhone","Windows7" );
-		resultList.add(input.get(random.nextInt(3)));
+		resultList.add(input.get(random.nextInt(3)) + " " + counter++);
+		if (counter == Integer.MAX_VALUE) {
+			counter = 0;
+		}
 	}
 }

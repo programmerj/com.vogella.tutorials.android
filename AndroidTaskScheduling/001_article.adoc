@@ -14,7 +14,10 @@ This tutorial describes how to schedule tasks in Android with the JobScheduler A
 
 include::../web/advertisement/afterTableOfContent.adoc[]				
 include::010_overview.adoc[]
-include::030_jobscheduler.adoc[]
+
+== Exercise: Preparation
+
+The following exercise is based on the http://www.vogella.com/tutorials/AndroidServices/article.html#exercise-define-and-consume-local-service[Android local service exercise].
 
 include::200_exercise_receiver.adoc[]
 include::../support.adoc[]

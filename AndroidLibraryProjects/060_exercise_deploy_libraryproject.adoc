@@ -1,0 +1,30 @@
+== Exercise: Deploy a library project
+
+Create a new library project called `com.vogella.libraries.testlib` with the same top level package.
+Add the following to its build.gradle file.
+
+[source, gradle]
+----
+
+apply plugin: 'maven'
+
+group = 'com.vogella.libraries'
+version = '1.0'
+
+uploadArchives {
+    repositories {
+        mavenLocal()
+    }
+}
+----
+
+Deploy it by running the `gradle uploadArchives` task.
+
+You can now define a dependency to this library, by adding  mavenLocal() and using:
+
+[source,gradle]
+----
+compile 'com.vogella.libraries.YOURLIBARYNAME`
+----
+
+	

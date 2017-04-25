@@ -1,0 +1,21 @@
+== Using the Eclipse IDE for Android development
+
+=== Introduction
+
+Google promotes Android Studio as primary IDE for Android development.
+As Android uses Gradle it is relatively simple to use the Eclipse IDE for developing Android.
+
+See https://github.com/greensopinion/gradle-android-eclipse.
+
+=== Exercise
+
+Create a new Android project.
+Modify the app/build.gradle based on the description from https://github.com/greensopinion/gradle-android-eclipse
+Import the project into Eclipse via the Gradle import wizard.
+
+Enjoy the performance of the Eclipse IDE while programming.
+
+[NOTE]
+====
+Of course, Eclipse does have any Android specific wizards with this approach.
+====

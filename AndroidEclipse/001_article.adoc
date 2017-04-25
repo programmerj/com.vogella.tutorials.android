@@ -1,0 +1,31 @@
+= Using Eclipse for Android development - Tutorial
+:linkcss:
+:sectnums:                                                          
+:experimental:
+:icons:
+:imagesdir: ./img
+Lars Vogel (c) 2017 vogella GmbH
+Version 0.1, 24.04.2017
+:docinfodir: ../
+:vgwort: AndroidEclipse
+
+[abstract]
+Using the Eclipse IDE for Android development with Gradle.
+
+include::../web/advertisement/afterTableOfContent.adoc[]
+include::010_overview.adoc[]
+include::020_usingactionbar.adoc[]
+include::../web/advertisement/inBetween01.adoc[]
+include::060_tutorial_contexualmenu.adoc[]
+include::106_dynamicactionbar.adoc[]
+include::106_shareactionprovider.adoc[]
+include::../web/advertisement/inBetween02.adoc[]
+include::120_actionbar_homenavigation.adoc[]
+include::400_tutorial_basis.adoc[]
+include::410_tutorial_menu.adoc[]
+include::412_tutorial_intents.adoc[]
+include::420_tutorial_toolbar_fragment_update.adoc[]
+include::../support.adoc[]
+include::008_resourceslocal.adoc[]
+include::../copyright.adoc[]
+
