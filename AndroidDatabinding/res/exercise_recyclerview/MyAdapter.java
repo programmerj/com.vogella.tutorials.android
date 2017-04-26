@@ -30,17 +30,6 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                 }
         }
 
-        public void add(int position, TemperatureData item) {
-                data.add(position, item);
-                notifyItemInserted(position);
-        }
-
-        public void remove(TemperatureData item) {
-                int position = data.indexOf(item);
-                data.remove(position);
-                notifyItemRemoved(position);
-        }
-
         // Provide a suitable constructor (depends on the kind of dataset)
         public MyAdapter(List<TemperatureData> myDataset) {
                 data = myDataset;
@@ -67,7 +56,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         // Return the size of your dataset (invoked by the layout manager)
         @Override
         public int getItemCount() {
-                return data.size();
+            return data.size();
         }
 
 }
