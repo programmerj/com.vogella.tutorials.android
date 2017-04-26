@@ -18,11 +18,11 @@ If you need to pass your customer objects via a `Bundle`, you should implement t
 
 === Implementing Parcelable
 
-A _Parcelable_ is the Android implementation of the Java Serializable. 
+A `Parcelable` is the Android implementation of the Java Serializable. 
 It assumes a certain structure and way of processing it.
-This fast it relatively fast  compared 	to the standard Java serialization.
-	
-	
+This way a `Parcelable`  can be processed relatively fast, compared to the standard Java serialization.
+
+
 To allow your custom object to be parsed to another component they need to implement the `android.os.Parcelable` interface.
 It must also provide a static final method called `CREATOR`	which must implement the `Parcelable.Creator` interface.
 	
