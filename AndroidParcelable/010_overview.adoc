@@ -1,8 +1,8 @@
 [[Parcelable]]
 
-= Understanding Parcelable in Android
+== Understanding Parcelable in Android
 
-== Using Bundle to pass data between Android components 
+=== Using Bundle to pass data between Android components 
 
 The `Bundle` object which is used to pass data to Android components is a key/value store for specialized objects.
 It is similar to a Map but can only contain these specialized objects
@@ -16,7 +16,7 @@ You can place the following objects types into a `Bundle`:
 
 If you need to pass your customer objects via a `Bundle`, you should implement the `Parcelable` interface.
 
-== Implementing Parcelable
+=== Implementing Parcelable
 
 A _Parcelable_ is the Android implementation of the Java Serializable. 
 It assumes a certain structure and way of processing it.
