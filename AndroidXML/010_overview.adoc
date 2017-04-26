@@ -8,12 +8,12 @@ The parser is hosted at http://www.xmlpull.org/[ http://www.xmlpull.org/].
 	
 On Android you use either the `XmlPullParser` or an additioal library like http://simple.sourceforge.net/[Simple] which makes XML parsing easier.
 	
-[note]
-----
+[NOTE]
+====
 The SAX and the DOM  XML parsers are available on Android. 
 SAX and DOM have their limitations, therefore it is not recommended to use them on Android.
 Therefore this tutorial does not give an example for the usage of this library.
 	
 The Java standard provides also the Stax parser. 
 This parser is not part of the Android platform.
-----
+====
