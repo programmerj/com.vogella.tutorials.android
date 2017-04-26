@@ -1,9 +1,7 @@
-
 [[tutorial_activitylifecycle]]
 == Exercise: Life cycle test
 
 [[tutorial_activitylifecycle_target]]
-=== Target of this exercise
 
 In this exercise the instrumentation test framework is demonstrated. 
 For such test, you would typically use higher level frameworks, like Espresso.

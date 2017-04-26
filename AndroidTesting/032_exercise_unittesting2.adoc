@@ -2,7 +2,6 @@
 == Exercise: Create unit test
 
 [[firstandroidjunittest_target]]
-=== Target of this exercise
 
 In this exercise you learn how to create a simple JUnit 5 test for an Android project.
 

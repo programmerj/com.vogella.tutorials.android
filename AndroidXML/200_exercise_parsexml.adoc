@@ -1,7 +1,5 @@
 == Exercise: Parsing an RSS feed with the XML pull parser
 
-=== Target of this exercise
-
 In this exercise you download RSS feed data from the network using your `com.example.android.rssfeedlibary` project.
 
 === Add permission to access the Internet

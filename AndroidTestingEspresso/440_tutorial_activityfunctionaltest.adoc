@@ -1,8 +1,6 @@
 [[tutorial_functionaltestactivity]]
 == Exercise: functional test for activities
 
-=== Target of this exercise
-		
 In this exercise, you start a second activity and validate that is has been started.
 		
 === Write functional test for activities

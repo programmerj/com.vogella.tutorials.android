@@ -1,10 +1,9 @@
 == Exercise: Use JobScheduler from a receiver
 
-=== Target of this exercise
 
-We demonstrate how to trigger a job which triggers a service from a broadcast receiver.
-You registers a receiver for the boot completely event.
-It will trigger the receiver, which registers the job which starts your custom service.
+You learn how to use the Android job scheduler to trigger a service from a broadcast receiver.
+You also register this receiver for the _boot completely_ broadcast.
+The registered receiver uses the job scheduler to trigger your custom service on a regular basis.
 
 === Create the receiver
 

@@ -1,7 +1,5 @@
 == Exercise: Using and defining themes
 
-=== Target of this exercise
-		
 In this exercise you use existing themes and define your own custom theme. You can use an existing Android
 application for this exercise or use the project generation wizard of your IDE to create a new one.
 		
