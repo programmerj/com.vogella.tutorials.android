@@ -54,7 +54,8 @@ ActivityMainBinding binding = DataBindingUtil.setContentView(this, R.layout.acti
 binding.setTemp(temperatureData); // generated setter based on the data in the layout file
 ----
 
-You can also inflate the layout, which is useful for late binding, as for example, in a `RecyclerView`.
+You can use the `inflate` method on the generated class.
+This is useful for using data binding in fragments, `ListView` or `RecyclerView`.
 
 [source,java]
 ----

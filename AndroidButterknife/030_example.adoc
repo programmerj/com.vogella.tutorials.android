@@ -21,7 +21,7 @@ Use `@BindView`, `@OnClick` and `ButterKnife.bind` to get the views injected.
 
 ifdef::show_exercise_solution[]
 
-The following shows a possible solution for your activity. 
+The following shows a possible solution.
 
 [source,java]
 ----
