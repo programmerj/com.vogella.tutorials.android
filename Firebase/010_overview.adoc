@@ -19,13 +19,13 @@ Add the following gradle dependencies to your general gradle file
 
 [source,gradle]
 ----
-include::res/build/dependency_parent.txt[]
+include::res/builder/dependency_parent.txt[]
 ----
 Add the following gradle dependencies to your app gradle file
 
 [source,gradle]
 ----
-include::res/build/dependency_app.txt[]
+include::res/builder/dependency_app.txt[]
 ----
 
 == Access
