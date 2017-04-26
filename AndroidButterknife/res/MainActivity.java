@@ -1,4 +1,4 @@
-package com.vogella.android.butterknifeexample;
+package com.vogella.android.usinglibs;
 
 import android.app.Activity;
 import android.os.Bundle;

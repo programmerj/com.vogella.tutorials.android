@@ -1,0 +1,4 @@
+== Using Auto-Value to generate Parcelable implementations
+
+Writing `Parcelable`s is time-consuming and error-prone process. 
+http://www.vogella.com/tutorials/AutoValue/article.html[AutoValue] and its extensions allow you to generate such classes automatically.

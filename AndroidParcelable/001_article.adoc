@@ -1,4 +1,4 @@
-=  Using Androids Parceable - Tutorial
+=  Understanding Androids Parcelable - Tutorial
 :linkcss:
 :sectnums:                                                          
 :experimental:
@@ -10,12 +10,12 @@ Version 2.12, 20.04.2017
 :vgwort: AndroidIPC
 
 [abstract]
-How to do Android IPC with parceable and AIDLs.
+How to do Android IPC with Parcelable and AIDLs.
 
-This tutorial describes how to create your own Parceable implementation and how to do IPC between an activity and service. 
+This tutorial describes how to create your own Parcelable implementation and how to do IPC between an activity and service. 
 
-include::../web/advertisement/afterTableOfContent.adoc[]
 include::010_overview.adoc[]
+include::020_usingautovalue.adoc[]
 ////
 ////
 ////

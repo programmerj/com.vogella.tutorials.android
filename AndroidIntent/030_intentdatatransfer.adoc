@@ -8,7 +8,7 @@ Optionally an intent can also contain additional data based on an instance of th
 		
 You can also add data directly to the `Bundle` via the overloaded `putExtra()` methods of the `Intent` objects. 
 Extras are key/value pairs. The key is always of type `String`. 
-As value you can use the primitive data types (`int`, `float`, ...) plus objects of type `String`, `Bundle`, `Parceable` and `Serializable`.
+As value you can use the primitive data types (`int`, `float`, ...) plus objects of type `String`, `Bundle`, `Parcelable` and `Serializable`.
 		
 The receiving component can access this information via the `getAction()` and `getData()` methods on the `Intent` object. 
 This `Intent` object can be retrieved via the `getIntent()` method.
