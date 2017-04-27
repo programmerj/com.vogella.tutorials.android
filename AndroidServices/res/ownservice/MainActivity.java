@@ -22,9 +22,7 @@ public class MainActivity extends ListActivity implements ServiceConnection {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         wordList = new ArrayList<String>();
-        adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1,
-                wordList);
+        adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1, wordList);
 
         setListAdapter(adapter);
     }
