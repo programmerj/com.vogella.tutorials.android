@@ -117,3 +117,4 @@ For example, you can check the size of the current device display via it.
 		
 Activities and services extend the `Context` class. 
 Therefore, they can be directly used to access the `Context`.
+
