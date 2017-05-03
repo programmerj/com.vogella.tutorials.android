@@ -132,8 +132,6 @@ Run your application, the user interface should report that dependency injection
 If not, have a look at the generated classes in the _app/build/generated/apt_ folder. 
 The generated classes by Dagger are well structured and should give a hint what went wrong.
 
-image::androiddaggervalidateresult.png[Running application]
-
 === Optional: Use the @Provides annotation
 
 If you have a class that you want to make injectable and you are not allowed to change it (to annotate the constructor), you have the possibility to provide a new static method to your module that returns an instance of that class to make it injectable.
