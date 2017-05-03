@@ -1,6 +1,5 @@
 =  Understanding Androids Parcelable - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

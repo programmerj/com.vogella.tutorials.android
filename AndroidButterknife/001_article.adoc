@@ -1,6 +1,5 @@
 = Using Butterknife for view injection in Android - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

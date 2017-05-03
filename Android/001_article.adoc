@@ -1,6 +1,5 @@
 = Getting started with Android development - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

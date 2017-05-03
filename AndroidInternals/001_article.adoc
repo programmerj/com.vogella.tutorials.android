@@ -1,5 +1,4 @@
 = Android Internals - Tutorial
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

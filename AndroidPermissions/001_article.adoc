@@ -1,6 +1,5 @@
 = The Android permissions model - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

@@ -1,6 +1,5 @@
 = Using lists in Android wth ListView - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

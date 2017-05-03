@@ -1,6 +1,5 @@
 = Handling Media with Android - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

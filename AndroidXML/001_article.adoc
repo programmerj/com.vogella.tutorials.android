@@ -1,6 +1,5 @@
 = Android XML Processing with the XmlPullParser - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

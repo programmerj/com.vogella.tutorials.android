@@ -1,6 +1,5 @@
 = Android Drawables - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

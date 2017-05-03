@@ -1,6 +1,5 @@
 = Creating custom and compound views in Android - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

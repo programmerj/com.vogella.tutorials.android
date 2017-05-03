@@ -1,6 +1,5 @@
 = Android background processing with Handlers, AsyncTask and Loaders - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

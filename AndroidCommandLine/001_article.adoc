@@ -1,6 +1,5 @@
 = Using the Android Debug Bridge (adb) - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

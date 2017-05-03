@@ -1,6 +1,5 @@
 = Android Camera API - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

@@ -1,6 +1,5 @@
 = Android Location API with the fused location provider  - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

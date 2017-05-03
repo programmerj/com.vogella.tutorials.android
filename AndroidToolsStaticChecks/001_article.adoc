@@ -1,6 +1,5 @@
 = Using static checks for Android development with annotations and Lint - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

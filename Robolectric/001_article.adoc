@@ -1,6 +1,5 @@
 = Using Robolectric for Android unit testing on the JVM - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

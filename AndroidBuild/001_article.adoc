@@ -1,6 +1,5 @@
 = Building Android applications with Gradle - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

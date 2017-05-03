@@ -1,6 +1,5 @@
 = Android Persistence with preferences and files - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

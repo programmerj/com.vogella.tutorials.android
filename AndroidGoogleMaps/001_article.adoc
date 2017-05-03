@@ -1,6 +1,5 @@
 = Google Maps Android API v2 - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

@@ -1,6 +1,5 @@
 = Android memory and performance optimization - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

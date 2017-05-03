@@ -1,6 +1,5 @@
 = Android application and activity life cycle - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

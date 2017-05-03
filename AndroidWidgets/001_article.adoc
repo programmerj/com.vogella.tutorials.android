@@ -1,6 +1,5 @@
 = Android (Home screen) Widgets - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

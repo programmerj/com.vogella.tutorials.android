@@ -1,6 +1,5 @@
 = Android user interface testing with Robotium - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

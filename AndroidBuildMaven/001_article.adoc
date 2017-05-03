@@ -1,6 +1,5 @@
 = Building Android Apps with Apache Maven - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

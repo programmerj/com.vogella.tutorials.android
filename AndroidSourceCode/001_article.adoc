@@ -1,6 +1,5 @@
 = Android Source Code - Notes
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

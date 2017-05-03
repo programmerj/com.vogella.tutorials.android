@@ -1,6 +1,5 @@
 = Using the Android Toolbar (ActionBar) - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

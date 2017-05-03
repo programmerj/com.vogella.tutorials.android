@@ -1,6 +1,5 @@
 = Handling single and multi touch on Android - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

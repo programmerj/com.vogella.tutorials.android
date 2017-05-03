@@ -1,6 +1,5 @@
 = Showing dialogs in Android with fragments - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

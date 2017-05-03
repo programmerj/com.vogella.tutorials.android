@@ -1,6 +1,5 @@
 = Using the Jenkins build server to build Android applications - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

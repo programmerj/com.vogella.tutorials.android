@@ -1,6 +1,5 @@
 = Multi-pane development in Android with Fragments - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

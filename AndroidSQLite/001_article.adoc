@@ -1,6 +1,5 @@
 = Android SQLite database and content provider - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

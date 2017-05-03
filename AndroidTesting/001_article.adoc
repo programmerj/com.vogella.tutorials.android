@@ -1,6 +1,5 @@
 = Developing Android unit and instrumentation tests - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :show_exercise_solution:
 :include_external_exercise_dependencies:

@@ -1,6 +1,5 @@
 = Scheduling of tasks with the Android JobScheduler - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

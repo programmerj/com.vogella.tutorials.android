@@ -1,6 +1,5 @@
 = Using Eclipse for Android development - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

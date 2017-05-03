@@ -1,6 +1,5 @@
 = Android Networking - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

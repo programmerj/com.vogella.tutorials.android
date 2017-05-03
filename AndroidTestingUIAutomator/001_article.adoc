@@ -1,6 +1,5 @@
 = Android cross component with the UI Automator framework - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

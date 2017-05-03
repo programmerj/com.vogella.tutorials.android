@@ -1,6 +1,5 @@
 = Creating libraries for Android applications - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

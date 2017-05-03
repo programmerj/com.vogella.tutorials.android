@@ -1,6 +1,5 @@
 = Android BroadcastReceiver - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

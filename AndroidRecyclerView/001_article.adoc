@@ -1,6 +1,5 @@
 = Using lists and grids in Android with RecylerView - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

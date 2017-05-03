@@ -1,6 +1,5 @@
 = Using animations in Android application - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img

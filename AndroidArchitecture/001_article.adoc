@@ -1,6 +1,5 @@
 = Android Architecture with MVP or MVVM - Tutorial
 :linkcss:
-:sectnums:                                                          
 :experimental:
 :icons:
 :imagesdir: ./img
