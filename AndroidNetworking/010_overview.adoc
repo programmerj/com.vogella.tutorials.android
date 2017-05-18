@@ -2,24 +2,30 @@
 
 === Accessing the network in Android
 
+Within an Android application you should avoid performing long running operations on the user interface thread. 
+This includes file and network access.
+
+The Android system crashes your application with a `NetworkOnMainThreadException` exception, if you access  network is accessed from the main thread.
+
 Android contains the standard Java network `java.net` package which can be used to access network resources. 
 The base class for HTTP network access in the `java.net` package is the `HttpURLConnection` class.
 
-[NOTE]
-====
-Older Android versions also contains the Apache `HttpClient` library.
-But Google recommends not to use this library, as Android version of `HttpURLConnection` is highly efficient.
-====
 
 Performing network operations with standard Java API can be cumbersome. 
 You have to open and close a connections, enable caches and ensure to perform the network operation in a background thread.
 
-To simplify these operations several popular Open Source libraries
-are available. The most popular ones are the following:
+To simplify these operations several popular Open Source libraries are available. 
+The most popular ones are the following:
 
 * OkHttp for efficient HTTP access
 * Retrofit for REST based clients
 * Glide for image processing
+
+[NOTE]
+====
+Prefer using OkHttp over the usage of `HttpURLConnection`.
+It is faster than the standard Java library and has a better API.
+====
 
 === Permission to access the network
 
@@ -39,26 +45,6 @@ include::res/status/check.txt[]
 ----	
 	
 This requires the `ACCESS_NETWORK_STATE` permission.
-
-===  Good practices for network access under Android
-
-Within an Android application you should avoid performing long running operations on the user interface thread. 
-This includes file and network access.
-
-As of Android 3.0 (Honeycomb) the system is configured to crash with a `NetworkOnMainThreadException` exception, if network is accessed in the user interface thread.
-
-A typical setup for performing network access in a productive Android application is using a service.
-While it is possible to do network access from an activity or a fragment, using a service typical leads to a better overall design because you code in the activity becomes simpler.
-
-[TIP]
-====
-For testing you can allow network access in the main thread via the following snippet at the beginning of your `onCreate()` method of your activity.
-
-[source,txt]
-----
-include::res/strictmode/turnoff.txt[]
-----
-====
 
 
 

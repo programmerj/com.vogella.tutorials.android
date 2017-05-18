@@ -38,7 +38,7 @@ Create a new Android project with the following data.
 |Layout
 |activity_main
 
-|Backwards Compability (AppCompat(
+|Backwards Compatibility (AppCompat)
 |false (not selected)
 |===
 

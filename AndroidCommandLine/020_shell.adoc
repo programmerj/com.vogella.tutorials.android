@@ -2,6 +2,14 @@
 
 === Starting an activity via the command line
 
+You may have to start adb with root mode before you can use it.
+
+
+[source,bourne]
+----
+adb root
+----
+
 === Copy files from and to your device
 	
 You can copy a file from and to your device via the following commands.

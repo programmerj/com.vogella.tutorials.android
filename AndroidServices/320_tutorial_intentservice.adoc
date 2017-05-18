@@ -1,6 +1,7 @@
 == Exercise: Using services and service communication
 	
-The following example demonstrates how to use a service to download a file from the Internet based on a button click from an activity. Once done, the service notifies the activity via a broadcast receiver that the download is complete.
+The following example demonstrates how to use a service to download a file from the Internet based on a button click from an activity. 
+Once done, the service notifies the activity via a broadcast receiver that the download is complete.
 	
 In this exercise you use the `IntentService` class, as this class provides automatic background processing.
 	

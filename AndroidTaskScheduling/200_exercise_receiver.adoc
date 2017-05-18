@@ -1,6 +1,5 @@
 == Exercise: Use JobScheduler from a receiver
 
-
 You learn how to use the Android job scheduler to trigger a service from a broadcast receiver.
 You also register this receiver for the `android.intent.action.BOOT_COMPLETED` broadcast which is send after a reboot of the Android system.
 The registered receiver uses the job scheduler to trigger your custom service on a regular basis.
