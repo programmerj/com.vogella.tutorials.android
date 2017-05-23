@@ -1,0 +1,74 @@
+[[androidstudio_starter_kotlin]]
+== Exercise: Getting started with Android Studio and Kotlin
+
+At the Google I/O 2017 Google announced that the programming language Kotlin is now officially supported for Android app development using Android Studio.
+After configuration, you can start using Kotlin right away in your existing Android project (no conversion is needed) as Kotlin can call Java code and vice versa.
+This exercise shows how to configure Android Studio for Android app development with Kotlin.
+
+=== Using Kotlin with Android Studio < 3.0
+
+To use Kotlin in Android Studio prior to version 3.0 you have to manually install the Kotlin plugin.
+To do so, start Android Studio and open _Plugins_ from the _Configure_ menu.
+
+image::androidstudio_kotlin10.jpg[Install Kotlin plugin]
+
+Now, press the _Install JetBrains plugin..._ button.
+
+image::androidstudio_kotlin20.jpg[Install Kotlin plugin]
+
+In the opened dialog, search for _Kotlin_, select the corresponding plugin and press _Install_.
+
+image::androidstudio_kotlin30.jpg[Install Kotlin plugin]
+
+After the installation is finished, restart Android Studio and you are ready to use Kotlin.
+
+==== Create new project
+
+It is not possible to create a new Android project using Kotlin from the start in Android Studio < 3.0.
+If you want to create a new project with Kotlin, first follow http://www.vogella.com/tutorials/Android/article.html#androidstudio_starter[this tutorial] to create a new Android Java project.
+Then, follow http://www.vogella.com/tutorials/Android/article.html#add-kotlin-support-to-existing-android-java-project[this part] of the tutorial to add support for Kotlin and convert existing files.
+
+=== Using Kotlin with Android Studio >= 3.0
+
+Starting from Android Studio 3.0 the Kotlin plugin is already installed. 
+No additional setup is required.
+
+==== Create new project
+
+To create a new Android project with Kotlin support enabled, simply check the _Include Kotlin support_ checkbox in the new project wizard.
+
+image::androidstudio_kotlin60.jpg[Create new project]
+
+
+=== Add Kotlin support to existing Android Java project
+
+To configure Kotlin in your project choose menu:Tools[_Kotlin_ > _Configure Kotlin in Project_] from the menu.
+This modifies the project and module build.gradle files.
+The following shows a sample project build.gradle file.
+
+[source,xml]
+----
+include::res/kotlin/project_build.gradle[]
+----	
+
+With the help of the module build.gradle file the _kotlin-android_ plugin is applied and the corresponding dependency is imported.
+The following shows an abridged module build.gradle file.
+
+[source,xml]
+----
+include::res/kotlin/module_build.gradle[]
+----	
+
+The Kotlin plugin also brings support for converting existing Java files to Kotlin files.
+To do so, simply select the desired Java file and choose menu:Code[_Convert Java file to Kotlin file_] from the menu.
+
+image::androidstudio_kotlin50.jpg[Convert Java file]
+
+Remember that you do not have to convert all your existing Java files to Kotlin as Kotlin can call Java code and vice versa.  
+If you have not already configured Kotlin for your project, Android Studio now prompts you to configure it.
+
+=== Create a new Kotlin file
+
+To create a new Kotlin file instead of a Java file, simply choose menu:File[_Kotlin File/Class_] from the menu.
+
+image::androidstudio_kotlin40.jpg[Create Kotlin file]
